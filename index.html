@@ -439,8 +439,8 @@ html.js .fpit.ready .pill{transition:none}
 .fpit:not(.ready) .pill{visibility:hidden}
 .fword{position:relative;overflow:hidden;pointer-events:none;line-height:.78;padding-inline:max(20px,env(safe-area-inset-left,0px));margin-top:-2px}
 .fword span{display:inline-block;font-weight:800;font-size:100px;line-height:.78;letter-spacing:-.045em;white-space:nowrap;color:var(--fg);transform-origin:left top}
-@media(max-width:700px){.fpit{height:300px}.pill{padding:10px 16px}.madlib p{line-height:1.4}}
-.fpit.static{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.fpit.static .pill{position:static;transform:none}
+@media(max-width:700px){.pill{padding:10px 16px;font-size:14px}.madlib p{line-height:1.4}.fword span{line-height:.84}}
+.fpit.static{height:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:28px 20px 26px}.fpit.static .pill{position:static;transform:none!important;visibility:visible}
 @media(prefers-reduced-motion:reduce){.fpit{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.pill{position:static;transform:none;visibility:visible!important}}
 
 </style>
@@ -1090,12 +1090,14 @@ html.js .fpit.ready .pill{transition:none}
   // fit footer wordmark edge to edge
   (function(){
     var w=document.querySelector('[data-fit]'); if(!w) return; var s=w.firstElementChild;
-    function fit(){s.style.fontSize='100px';var r=s.getBoundingClientRect().width,avail=w.clientWidth-parseFloat(getComputedStyle(w).paddingLeft)*2;s.style.fontSize=(100*avail/r)+'px';}
+    function fit(){var sm=window.matchMedia('(max-width:700px)').matches;var want=sm?'DIGITAL<br>LINEUP':'DIGITAL LINEUP';if(s.innerHTML!==want)s.innerHTML=want;s.style.fontSize='100px';var r=s.getBoundingClientRect().width,avail=w.clientWidth-parseFloat(getComputedStyle(w).paddingLeft)*2;s.style.fontSize=(100*avail/r)+'px';}
     fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
   })();
   // footer pill physics
   (function(){
-    var pit=document.querySelector('[data-pit]'); if(!pit||rm) return;
+    var pit=document.querySelector('[data-pit]'); if(!pit) return;
+    var small=window.matchMedia('(max-width:700px)');
+    if(rm||small.matches){pit.classList.add('ready','static');return;}
     var started=false, M, eng, run, raf, bodies=[], pills=[].slice.call(pit.querySelectorAll('.pill')), w, h, lastW=0, lastH=0;
     function teardown(){
       if(!eng) return; cancelAnimationFrame(raf); M.Runner.stop(run); M.Composite.clear(eng.world,false,true); M.Engine.clear(eng); eng=null;
