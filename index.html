@@ -267,6 +267,22 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
 @media (max-width:760px){.office{grid-template-columns:1fr}.office .player{max-width:260px}}
 @media (prefers-reduced-motion:reduce){.blobs i,.marquee .track,.stk{animation:none}html.js .rv,html.js .scroller.rv>*{opacity:1;transform:none;transition:none}}
 
+/* row sizing: one height, true aspect ratios */
+.scroller{align-items:flex-start;--rh:clamp(300px,34vw,440px)}
+.scroller .poster{height:var(--rh);width:auto;aspect-ratio:4/5;flex:0 0 auto}
+.scroller .reel{height:var(--rh);width:auto;aspect-ratio:9/16;flex:0 0 auto}
+.scroller .poster img{width:100%;height:100%;object-fit:contain;background:var(--surface-2)}
+.ident .scroller .reel{width:auto}
+.three .poster{width:auto;aspect-ratio:4/5}
+.three .poster img{object-fit:contain}
+.poster img{object-fit:contain}
+/* manifesto stickers in the margins, never on the words */
+.state{max-width:18ch;padding-inline:clamp(0px,6vw,90px)}
+.stk.s1{--r:-8deg;left:-9%;top:44%}
+.stk.s2{--r:6deg;right:-8%;top:-12%}
+.stk.s3{--r:-5deg;right:-6%;bottom:-14%}
+@media (max-width:1100px){.stk{position:static;display:inline-block;margin:16px 4px 0;animation:none;transform:rotate(var(--r))}.state{padding-inline:0;max-width:22ch}}
+
 /* additions for the generic portfolio */
 .case{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
 .case.alt{background:var(--surface)}
@@ -384,7 +400,7 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
     <h2 class="state">We treat every client's business as ours. Ideas are free. Execution is what you pay for, and it shows in the numbers.
       <span class="stk s1">Not here to be like others</span>
       <span class="stk s2">Six people, one standard</span>
-      <span class="stk s3">Multan to Perth</span>
+      <span class="stk s3">Proof, not promises</span>
     </h2>
   </div>
 </section>
@@ -456,7 +472,7 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
         <div class="kicker"><span class="on">Home services</span><span>Perth, Australia</span><span>Meta ads</span><span>Creative</span><span>Landing pages</span></div>
         <h2>The Hangmaster: TV installation in Perth, booked through Meta ads.</h2>
       </div>
-      <p>Pixel warm-up, custom and lookalike audiences built on conversion data, ad creative, landing page optimisation and monthly reporting for an Australian home-services business. Proof that the playbook travels.</p>
+      <p>Pixel warm-up, custom and lookalike audiences built on conversion data, ad creative, landing page optimisation and monthly reporting for an Australian home-services business. Cost per lead fell from $120 to $25. Proof that the playbook travels.</p>
     </div>
     <div class="three">
       <div class="poster" style="width:auto"><img src="img/tv-ad-post-1.jpg" alt="Hangmaster ad: Stop living with messy TV cables" width="1080" height="1350" loading="lazy"></div>
@@ -464,7 +480,7 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
       <div class="poster" style="width:auto"><img src="img/tv-ad-post-3.jpg" alt="Hangmaster ad: Get your TV perfectly mounted" width="1080" height="1350" loading="lazy"></div>
     </div>
     <div class="facts rv">
-      <div class="fact"><b>$32 &rarr; $25</b><span>cost per lead in three months, on a ~$200 service</span></div>
+      <div class="fact"><b>$120 &rarr; $25</b><span>cost per lead: $120 before Digital Lineup, $25 after three months, on a ~$200 service</span></div>
       <div class="fact"><b>Lookalikes</b><span>audiences built from pixel conversion data, not guesses</span></div>
       <div class="fact"><b>500+ reviews</b><span>the proof we put at the top of every creative</span></div>
     </div>
