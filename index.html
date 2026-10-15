@@ -431,17 +431,17 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
 .fmeta{display:flex;justify-content:space-between;gap:16px;padding-block:22px;font-size:13px;color:var(--muted)}
 .fmeta a{color:var(--muted);text-decoration:none}.fmeta a:hover{color:var(--fg)}
 .fpit{position:relative;height:clamp(220px,24vw,320px);user-select:none;-webkit-user-select:none;touch-action:none;z-index:2}
-.pill{position:absolute;left:0;top:0;display:inline-flex;align-items:center;white-space:nowrap;padding:12px 22px;border-radius:999px;border:1.5px solid var(--fg);color:var(--fg);font-weight:700;font-size:clamp(14px,1.3vw,18px);text-decoration:none;background:var(--bg);cursor:grab;will-change:transform;transform:translate(-50%,-50%)}
-.pill:active{cursor:grabbing}
-.pill.accent{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.pill.ghost{border-style:dashed;color:var(--muted);border-color:var(--muted)}
+.fpit .pill{position:absolute;left:0;top:0;display:inline-flex;align-items:center;white-space:nowrap;padding:12px 22px;border-radius:999px;border:1.5px solid var(--fg);color:var(--fg);font-weight:700;font-size:clamp(14px,1.3vw,18px);text-decoration:none;background:var(--bg);cursor:grab;will-change:transform;transform:translate(-50%,-50%)}
+.fpit .pill:active{cursor:grabbing}
+.fpit .pill.accent{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.fpit .pill.ghost{border-style:dashed;color:var(--muted);border-color:var(--muted)}
 html.js .fpit.ready .pill{transition:none}
 .fpit:not(.ready) .pill{visibility:hidden}
 .fword{position:relative;overflow:hidden;pointer-events:none;line-height:.78;padding-inline:max(20px,env(safe-area-inset-left,0px));margin-top:-2px}
 .fword span{display:inline-block;font-weight:800;font-size:100px;line-height:.78;letter-spacing:-.045em;white-space:nowrap;color:var(--fg);transform-origin:left top}
-@media(max-width:700px){.pill{padding:10px 16px;font-size:14px}.madlib p{line-height:1.4}.fword span{line-height:.84}}
+@media(max-width:700px){.fpit .pill{padding:10px 16px;font-size:14px}.madlib p{line-height:1.4}.fword span{line-height:.84}}
 .fpit.static{height:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:28px 20px 26px}.fpit.static .pill{position:static;transform:none!important;visibility:visible}
-@media(prefers-reduced-motion:reduce){.fpit{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.pill{position:static;transform:none;visibility:visible!important}}
+@media(prefers-reduced-motion:reduce){.fpit{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.fpit .pill{position:static;transform:none;visibility:visible!important}}
 
 </style>
 
