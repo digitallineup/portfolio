@@ -352,6 +352,67 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
 @media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
 .clients{display:flex;flex-wrap:wrap;gap:10px}
 .clients span{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--fg)}
+/* ---- reviews ---- */
+.reviews{border-top:1px solid var(--line);position:relative;overflow:hidden}
+.rv-head{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;margin-bottom:clamp(36px,5vw,72px)}
+.rv-head h2{font-size:clamp(34px,5.2vw,68px);line-height:1.02;max-width:14ch;margin-top:14px}
+.gscore{display:grid;justify-items:end;text-decoration:none;color:var(--fg);gap:2px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(252,252,252,.04);transition:border-color .3s}
+.gscore:hover{border-color:var(--accent)}
+.gscore b{font-size:44px;line-height:1;letter-spacing:-.04em}
+.gscore .stars{color:var(--accent);font-size:18px;letter-spacing:.08em}
+.gscore small{font-size:12px;opacity:.7;letter-spacing:.04em}
+.rstack{position:relative;min-height:380px;max-width:900px;margin:0 auto;outline:none}
+.rcard{position:absolute;inset:0;background:#f6f1ea;color:#03180e;border-radius:22px;padding:clamp(28px,4vw,52px);display:grid;grid-template-rows:auto auto;align-content:start;gap:clamp(18px,3vw,34px);box-shadow:0 30px 80px rgba(0,0,0,.45);transform-origin:50% 60%;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .5s;opacity:0;pointer-events:none;will-change:transform}
+.rcard h3{font-size:clamp(26px,3.6vw,46px);line-height:1.02;letter-spacing:-.035em;margin:0}
+.rbody{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.rbody p{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.5}
+.who{display:grid;justify-items:center;text-align:center;gap:4px}
+.who .av{width:88px;height:88px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700;font-size:26px;letter-spacing:-.02em;margin-bottom:8px}
+.who b{font-size:17px;letter-spacing:-.01em}
+.who small{font-size:13px;opacity:.65}
+.rcard.is-on{opacity:1;transform:none;pointer-events:auto;z-index:5}
+.rcard.is-b1{opacity:1;transform:translateY(-14px) rotate(-3.5deg) scale(.985);z-index:4}
+.rcard.is-b2{opacity:1;transform:translateY(-26px) rotate(3deg) scale(.97);z-index:3}
+.rcard.is-b3{opacity:.9;transform:translateY(-36px) rotate(-1.5deg) scale(.955);z-index:2}
+.rcard.is-out{opacity:0;transform:translateY(40px) rotate(2deg) scale(.98);z-index:6}
+.rcard.is-b1 *,.rcard.is-b2 *,.rcard.is-b3 *{visibility:hidden}
+.rcard.is-b1 h3,.rcard.is-b2 h3{visibility:visible;opacity:.35}
+.rnav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:32px;flex-wrap:wrap}
+.rbtn{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:rgba(252,252,252,.04);color:var(--fg);display:grid;place-items:center;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.rbtn svg{width:22px;height:22px}
+.rbtn:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.rcount{font-size:14px;letter-spacing:.12em;opacity:.8;min-width:72px;text-align:center}
+.rcount b{color:var(--accent)}
+.rhint{flex-basis:100%;text-align:center;font-size:13px;opacity:.55;margin-top:6px}
+@media(max-width:760px){
+  .rv-head{grid-template-columns:1fr}.gscore{justify-items:start}
+  .rbody{grid-template-columns:1fr}
+  .who{grid-template-columns:auto 1fr;justify-items:start;text-align:left;column-gap:14px}
+  .who .av{width:56px;height:56px;font-size:18px;grid-row:span 2;margin:0}
+  .rcard h3{font-size:clamp(24px,6.5vw,34px)}
+  .rbody p{font-size:16px}
+}
+/* ---- contact form ---- */
+.cta .grid{grid-template-columns:1fr 1.15fr;align-items:start}
+.cta .contact{margin-top:36px;grid-template-columns:1fr 1fr;gap:18px 28px}
+.cta .contact b{font-size:18px}
+.cta h2{font-size:clamp(40px,5.6vw,84px)}
+.cform{background:rgba(3,24,14,.08);border:1px solid rgba(3,24,14,.2);border-radius:24px;padding:clamp(22px,3vw,36px);display:grid;gap:14px}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cform label{display:grid;gap:6px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.85}
+.cform input,.cform select,.cform textarea{font:inherit;font-size:16px;letter-spacing:0;text-transform:none;font-weight:400;color:var(--accent-ink);background:rgba(252,252,252,.55);border:1px solid rgba(3,24,14,.18);border-radius:12px;padding:13px 14px;width:100%;box-sizing:border-box;outline:none;transition:border-color .25s,background .25s}
+.cform input:focus,.cform select:focus,.cform textarea:focus{border-color:var(--accent-ink);background:rgba(252,252,252,.85)}
+.cform textarea{min-height:120px;resize:vertical}
+.cform select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2303180e' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px}
+.cform .send{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent-ink);color:var(--accent);font-weight:700;font-size:16px;padding:16px 24px;border-radius:999px;border:0;cursor:pointer;transition:transform .25s,opacity .25s}
+.cform .send:hover{transform:translateY(-2px)}
+.cform .send[disabled]{opacity:.6;cursor:wait;transform:none}
+.cform .fnote{font-size:13px;opacity:.7;margin:0}
+.cform .hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.cform .ok{display:none;padding:18px 20px;border-radius:14px;background:var(--accent-ink);color:#fcfcfc;font-size:16px;line-height:1.45}
+.cform.sent .ok{display:block}.cform.sent .row,.cform.sent label,.cform.sent .send,.cform.sent .fnote{display:none}
+@media(max-width:860px){.cta .grid{grid-template-columns:1fr}.cform .row{grid-template-columns:1fr}.cta .contact{grid-template-columns:1fr}}
+
 </style>
 
 <header class="nav">
@@ -778,21 +839,142 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
   </div>
 </section>
 
-<!-- CTA -->
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="rv-head rv">
+      <div>
+        <span class="eyebrow">Google reviews</span>
+        <h2>What clients say when we are not in the room.</h2>
+      </div>
+      <a class="gscore" href="https://www.google.com/maps/place/?q=place_id:ChIJIx05719V1KoRBS1PhuM0zBk" target="_blank" rel="noopener" aria-label="Digital Lineup on Google Maps, 5.0 rating from 16 reviews">
+        <b>5.0</b>
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <small>16 reviews on Google</small>
+      </a>
+    </div>
+
+    <div class="rstack rv" data-reviews tabindex="0" aria-roledescription="carousel" aria-label="Client reviews">
+      <article class="rcard" data-i="0">
+        <h3>A true extension of our own team.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">MA</span><b>Muhammad Abdullah</b><small>Google review</small></div>
+          <p>Working with Digital Lineup has been a game-changer for our social media strategy. Their team is the perfect blend of professionalism and innovation, consistently bringing fresh, creative ideas to the table that set us apart. Beyond their technical expertise, their supportive approach makes them feel like a true extension of our own team.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="1">
+        <h3>We achieved sales from day one.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">KB</span><b>Karyana Bazar</b><small>Online grocery startup</small></div>
+          <p>We partnered with Digital Lineup in August 2023 for a comprehensive digital marketing package: social media management, Shopify website creation and SEO targeted at the Pakistani market, putting us on the map despite fierce competition. Here is the most surprising part: we achieved sales from day one. A must for startups.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="2">
+        <h3>Our Facebook following has skyrocketed to over 150K.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">SM</span><b>Solar Mandee</b><small>Solar marketplace</small></div>
+          <p>We brought Digital Lineup on board 8 months ago to manage Solar Mandee's social media presence, and the results have been incredible. Our Facebook following has skyrocketed to over 150K thanks to their strategic ad campaigns and eye-catching designs, with a massive 3.5M+ account reach. Their data-driven approach has been instrumental in achieving our monetization goals.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="3">
+        <h3>The quality, creativity and attention to detail in our video is outstanding.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">SA</span><b>Shafat Ali</b><small>Google review</small></div>
+          <p>Absolutely loved working with Ali Hannan. The quality, creativity, and attention to detail in our video is outstanding. Digital Lineup is highly recommended for anyone looking for a top-notch social media marketing team.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="4">
+        <h3>A three-hour consultation that covered everything.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">HS</span><b>Hassan Saeed</b><small>Google review</small></div>
+          <p>Ali Hannan provided us with a powerful three-hour consultation that covered everything from brand awareness to engagement and website strategy. His ideas were clear, practical, and deeply insightful for our business. We are extremely satisfied with the results and highly recommend Digital Lineup to any business looking for real, result-driven marketing support.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="5">
+        <h3>Their attention to detail and creative approach set them apart.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">AH</span><b>Asif Hussain</b><small>Google review</small></div>
+          <p>If you're looking for top-notch photography and expert digital marketing services, Digital Lineup is the go-to choice. Ali Hannan, the owner and driving force behind the agency, is one of the best professionals in the market. His excellent communication skills and strategic planning ensure that your ideas are executed flawlessly.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="6">
+        <h3>Amazing work for my business to bring sales.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">AH</span><b>Amir Hafeez</b><small>Hafeez Fabrics</small></div>
+          <p>Digital Lineup did an amazing work for my business, Hafeez Fabrics, to bring sales and providing best and affordable services. Ali Hannan is a really well experienced social media marketer with amazing talent and communication skills. Highly recommended.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="7">
+        <h3>Outstanding results with creativity and precision.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">FA</span><b>Faizan Azhar</b><small>Google review</small></div>
+          <p>Digital Lineup is a game-changer in the world of digital marketing. Their expertise in social media marketing is truly next level, delivering outstanding results with creativity and precision. The team is highly professional, innovative, and always ahead of trends.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="8">
+        <h3>The Digital Lineup team nailed it.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">MA</span><b>Hafiz Muhammad Mueez Amin</b><small>Google review</small></div>
+          <p>I was requested for graphic designing work and the Digital Lineup team nailed it. I am very much satisfied with their work performance and the quality of work. I must recommend my contacts to take services for your business from the Digital Lineup team.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="rnav rv">
+      <button type="button" class="rbtn" data-prev aria-label="Previous review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <span class="rcount"><b data-cur>01</b> / <span data-total>09</span></span>
+      <button type="button" class="rbtn" data-next aria-label="Next review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <span class="rhint">All five stars. Verbatim from Google.</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA + CONTACT FORM -->
 <section class="cta sec" id="contact">
   <div class="wrap grid">
     <div>
       <img class="mark" src="img/mark-dark.svg" alt="" width="64" height="64">
       <h2>Your brand could be next on this page.</h2>
+      <div class="contact">
+        <div><small>WhatsApp</small><b><a href="https://wa.me/923009590042" target="_blank" rel="noopener">+92 300 959 0042</a></b></div>
+        <div><small>Email</small><b><a href="mailto:digitallineup1@gmail.com">digitallineup1@gmail.com</a></b></div>
+        <div><small>Instagram</small><b><a href="https://www.instagram.com/digitallineup_" target="_blank" rel="noopener">@digitallineup_</a></b></div>
+        <div><small>Office</small><b>Multan, Pakistan</b></div>
+      </div>
     </div>
-    <div class="contact">
-      <div><small>WhatsApp</small><b><a href="https://wa.me/923009590042" target="_blank" rel="noopener">+92 300 959 0042</a></b></div>
-      <div><small>Email</small><b>digitallineup1@gmail.com</b></div>
-      <div><small>Instagram</small><b><a href="https://www.instagram.com/digitallineup_" target="_blank" rel="noopener">@digitallineup_</a></b></div>
-      <div><small>Office</small><b>Multan, Pakistan</b></div>
-    </div>
+    <form class="cform" id="cform" action="https://formsubmit.co/digitallineup1@gmail.com" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="New enquiry from the Digital Lineup portfolio">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row">
+        <label>Name<input type="text" name="name" required autocomplete="name" placeholder="Your name"></label>
+        <label>Company<input type="text" name="company" autocomplete="organization" placeholder="Brand or business"></label>
+      </div>
+      <div class="row">
+        <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@company.com"></label>
+        <label>WhatsApp<input type="tel" name="phone" autocomplete="tel" placeholder="+92 ..."></label>
+      </div>
+      <label>What do you need?
+        <select name="need" required>
+          <option value="" disabled selected>Pick one</option>
+          <option>Video and content production</option>
+          <option>Meta and Google ads</option>
+          <option>Brand identity</option>
+          <option>Social media management</option>
+          <option>Website</option>
+          <option>Not sure yet, let's talk</option>
+        </select>
+      </label>
+      <label>Tell us a little<textarea name="message" required placeholder="What are you launching, and when?"></textarea></label>
+      <button type="submit" class="send">Send it &nearr;</button>
+      <p class="fnote">We reply within one working day, usually faster on WhatsApp.</p>
+      <div class="ok" role="status">Got it. We will be in touch within one working day. If it is urgent, message us on WhatsApp.</div>
+    </form>
   </div>
 </section>
+
 </main>
 <footer class="wrap foot">
   <span>&copy; 2026 Digital Lineup. All client work shown with permission; figures as reported by client platforms.</span>
@@ -803,6 +985,50 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
 (function(){
   document.documentElement.classList.add('js');
   var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // reviews stack
+  (function(){
+    var st=document.querySelector('[data-reviews]'); if(!st) return;
+    var cards=[].slice.call(st.querySelectorAll('.rcard')), n=cards.length, i=0, t, cur=document.querySelector('[data-cur]');
+    document.querySelector('[data-total]').textContent=(n<10?'0':'')+n;
+    function paint(prev){
+      cards.forEach(function(c){c.className='rcard';});
+      cards[i].classList.add('is-on');
+      cards[(i+1)%n].classList.add('is-b1');
+      cards[(i+2)%n].classList.add('is-b2');
+      cards[(i+3)%n].classList.add('is-b3');
+      if(prev!==undefined&&prev!==i&&n>4){cards[prev].classList.add('is-out');}
+      cur.textContent=(i<9?'0':'')+(i+1);
+    }
+    function go(d){var p=i;i=(i+d+n)%n;paint(p);}
+    function arm(){clearInterval(t);if(!rm){t=setInterval(function(){go(1);},7000);}}
+    document.querySelector('[data-next]').addEventListener('click',function(){go(1);arm();});
+    document.querySelector('[data-prev]').addEventListener('click',function(){go(-1);arm();});
+    st.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(1);arm();}if(e.key==='ArrowLeft'){go(-1);arm();}});
+    st.addEventListener('mouseenter',function(){clearInterval(t);});st.addEventListener('mouseleave',arm);
+    var sx=0;st.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+    st.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(dx<0?1:-1);arm();}});
+    function fit(){var h=0;cards.forEach(function(c){h=Math.max(h,c.scrollHeight);});st.style.height=(h+8)+'px';}
+    paint();arm();fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
+  })();
+  // contact form
+  (function(){
+    var f=document.getElementById('cform'); if(!f) return;
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!f.checkValidity()){f.reportValidity();return;}
+      var btn=f.querySelector('.send');btn.disabled=true;btn.textContent='Sending...';
+      var fd=new FormData(f), obj={};fd.forEach(function(v,k){obj[k]=v;});
+      fetch('https://formsubmit.co/ajax/digitallineup1@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(obj)})
+      .then(function(r){if(!r.ok)throw 0;return r.json();})
+      .then(function(){f.classList.add('sent');})
+      .catch(function(){
+        var msg='Hi Digital Lineup, I am '+obj.name+(obj.company?' from '+obj.company:'')+'. Need: '+obj.need+'. '+obj.message+' ('+obj.email+')';
+        window.open('https://wa.me/923009590042?text='+encodeURIComponent(msg),'_blank');
+        f.classList.add('sent');
+      });
+    });
+  })();
+
   // reveals
   var rv=document.querySelectorAll('.rv');
   if('IntersectionObserver' in window && !rm){
