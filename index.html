@@ -227,13 +227,12 @@ p{margin:0}
 .marquee .track{display:flex;gap:40px;align-items:center;white-space:nowrap;width:max-content;animation:mq 38s linear infinite;font-weight:700;font-size:clamp(18px,2.2vw,28px);letter-spacing:-.02em;text-transform:uppercase}
 .marquee .mk{width:22px;height:22px;background:url("img/mark-dark.svg") center/contain no-repeat;display:inline-block}
 @keyframes mq{to{transform:translateX(-50%)}}
-.manifesto{padding-block:clamp(56px,9vw,120px);text-align:center}
+.manifesto{padding-block:clamp(56px,9vw,120px);text-align:center;border-top:1px solid var(--line)}
 .manifesto .eyebrow{display:block;margin-bottom:22px}
-.state{position:relative;display:inline-block;max-width:22ch;font-size:clamp(28px,4.6vw,60px);line-height:1.08;letter-spacing:-.03em}
-.stk{position:absolute;background:var(--accent);color:var(--accent-ink);font-size:clamp(11px,1.1vw,14px);font-weight:700;letter-spacing:0;padding:8px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.35);transform:rotate(var(--r));animation:wob 6s ease-in-out infinite}
-.stk.s1{--r:-8deg;left:-4%;top:28%}.stk.s2{--r:6deg;right:-6%;top:-6%;animation-delay:-2s}.stk.s3{--r:-4deg;right:4%;bottom:-10%;animation-delay:-4s}
-@keyframes wob{0%,100%{transform:rotate(var(--r)) translateY(0)}50%{transform:rotate(calc(var(--r) + 2deg)) translateY(-6px)}}
-@media (max-width:700px){.stk{position:static;display:inline-block;margin:14px 4px 0;animation:none;transform:rotate(var(--r))}}
+.state{display:block;max-width:26ch;margin:0 auto;font-size:clamp(26px,3.6vw,48px);line-height:1.12;letter-spacing:-.025em}
+.state-sub{max-width:54ch;margin:22px auto 0;color:var(--muted);font-size:clamp(15px,1.3vw,18px)}
+.pills{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:34px}
+.stk{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:14px;font-weight:700;padding:10px 18px;border-radius:999px;white-space:nowrap;transform:rotate(var(--r));box-shadow:0 8px 24px rgba(0,0,0,.3)}
 .wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .wall.three-up{grid-template-columns:repeat(3,1fr);gap:18px}
 .wall .cell{position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:var(--surface-2);cursor:pointer}
@@ -276,12 +275,6 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
 .three .poster{width:auto;aspect-ratio:4/5}
 .three .poster img{object-fit:contain}
 .poster img{object-fit:contain}
-/* manifesto stickers in the margins, never on the words */
-.state{max-width:18ch;padding-inline:clamp(0px,6vw,90px)}
-.stk.s1{--r:-8deg;left:-9%;top:44%}
-.stk.s2{--r:6deg;right:-8%;top:-12%}
-.stk.s3{--r:-5deg;right:-6%;bottom:-14%}
-@media (max-width:1100px){.stk{position:static;display:inline-block;margin:16px 4px 0;animation:none;transform:rotate(var(--r))}.state{padding-inline:0;max-width:22ch}}
 
 /* additions for the generic portfolio */
 .case{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
@@ -397,11 +390,13 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
 <section class="manifesto">
   <div class="wrap">
     <span class="eyebrow">A bit about us</span>
-    <h2 class="state">We treat every client's business as ours. Ideas are free. Execution is what you pay for, and it shows in the numbers.
-      <span class="stk s1">Not here to be like others</span>
-      <span class="stk s2">Six people, one standard</span>
-      <span class="stk s3">Proof, not promises</span>
-    </h2>
+    <h2 class="state">We treat every client's business as ours. Ideas are free. Execution is what you pay for, and it shows in the numbers.</h2>
+    <p class="state-sub">A six-person design and content production team in Multan, working for brands in Pakistan and Australia since 2022.</p>
+    <div class="pills">
+      <span class="stk" style="--r:-2deg">Not here to be like others</span>
+      <span class="stk" style="--r:1.5deg">Six people, one standard</span>
+      <span class="stk" style="--r:-1deg">Proof, not promises</span>
+    </div>
   </div>
 </section>
 
