@@ -392,26 +392,54 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
   .rcard h3{font-size:clamp(24px,6.5vw,34px)}
   .rbody p{font-size:16px}
 }
-/* ---- contact form ---- */
-.cta .grid{grid-template-columns:1fr 1.15fr;align-items:start}
-.cta .contact{margin-top:36px;grid-template-columns:1fr 1fr;gap:18px 28px}
-.cta .contact b{font-size:18px}
-.cta h2{font-size:clamp(40px,5.6vw,84px)}
-.cform{background:rgba(3,24,14,.08);border:1px solid rgba(3,24,14,.2);border-radius:24px;padding:clamp(22px,3vw,36px);display:grid;gap:14px}
-.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.cform label{display:grid;gap:6px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.85}
-.cform input,.cform select,.cform textarea{font:inherit;font-size:16px;letter-spacing:0;text-transform:none;font-weight:400;color:var(--accent-ink);background:rgba(252,252,252,.55);border:1px solid rgba(3,24,14,.18);border-radius:12px;padding:13px 14px;width:100%;box-sizing:border-box;outline:none;transition:border-color .25s,background .25s}
-.cform input:focus,.cform select:focus,.cform textarea:focus{border-color:var(--accent-ink);background:rgba(252,252,252,.85)}
-.cform textarea{min-height:120px;resize:vertical}
-.cform select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2303180e' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px}
-.cform .send{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent-ink);color:var(--accent);font-weight:700;font-size:16px;padding:16px 24px;border-radius:999px;border:0;cursor:pointer;transition:transform .25s,opacity .25s}
-.cform .send:hover{transform:translateY(-2px)}
-.cform .send[disabled]{opacity:.6;cursor:wait;transform:none}
-.cform .fnote{font-size:13px;opacity:.7;margin:0}
-.cform .hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
-.cform .ok{display:none;padding:18px 20px;border-radius:14px;background:var(--accent-ink);color:#fcfcfc;font-size:16px;line-height:1.45}
-.cform.sent .ok{display:block}.cform.sent .row,.cform.sent label,.cform.sent .send,.cform.sent .fnote{display:none}
-@media(max-width:860px){.cta .grid{grid-template-columns:1fr}.cform .row{grid-template-columns:1fr}.cta .contact{grid-template-columns:1fr}}
+/* ---- contact (dark) ---- */
+.csec{position:relative;overflow:hidden;border-top:1px solid var(--line);padding-block:clamp(80px,12vw,160px)}
+.csec-glow{position:absolute;right:-10%;top:-20%;width:60vw;height:60vw;max-width:900px;max-height:900px;border-radius:50%;background:radial-gradient(circle,rgba(0,210,76,.22),rgba(0,210,76,0) 62%);filter:blur(30px);pointer-events:none}
+.csec .wrap{position:relative}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.madlib p{font-size:clamp(28px,4.6vw,66px);line-height:1.25;letter-spacing:-.03em;font-weight:700;margin:18px 0 0;max-width:22ch}
+.fld{display:inline-block;vertical-align:baseline;margin:0 .1em}
+.fld input,.fld select{font:inherit;letter-spacing:inherit;color:var(--accent);background:transparent;border:0;border-bottom:3px solid rgba(0,210,76,.35);outline:none;padding:0 .15em .05em;min-width:4ch;max-width:100%;border-radius:0;transition:border-color .25s;appearance:none;-webkit-appearance:none}
+.fld input::placeholder{color:rgba(0,210,76,.4)}
+.fld input:focus,.fld select:focus{border-bottom-color:var(--accent)}
+.fld input:not(:placeholder-shown):invalid{border-bottom-color:#ff6a5c}
+.fld.sel select{cursor:pointer;padding-right:1.1em;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2300d24c' stroke-width='2.5'/%3E%3C/svg%3E") no-repeat right .1em center/.8em}
+.fld.sel select option{color:#03180e;font-size:18px;font-weight:400}
+.fld.sel select:invalid{color:rgba(0,210,76,.4)}
+.mact{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-top:clamp(28px,4vw,48px)}
+.btn.big{font-size:18px;padding:18px 28px;gap:12px;border:0;cursor:pointer;transition:transform .25s}
+.btn.big:hover{transform:translateY(-2px)}
+.btn.big .arr{transition:transform .3s}.btn.big:hover .arr{transform:translate(2px,-2px)}
+.btn.big[disabled]{opacity:.6;cursor:wait;transform:none}
+.mnote{font-size:15px;color:var(--muted)}.mnote a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(3,24,14,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;transition:opacity .3s}
+.modal[hidden]{display:none}.modal.on{opacity:1}
+.modal-card{width:min(440px,100%);text-align:center;padding:40px 32px 32px;border-radius:26px;background:linear-gradient(160deg,rgba(252,252,252,.1),rgba(252,252,252,.03));border:1px solid rgba(252,252,252,.16);box-shadow:0 40px 100px rgba(0,0,0,.5),inset 0 1px 0 rgba(252,252,252,.18);transform:translateY(16px) scale(.96);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.modal.on .modal-card{transform:none}
+.modal-card h3{font-size:40px;letter-spacing:-.04em;margin:18px 0 6px}
+.modal-card p{margin:0 0 26px;font-size:18px;color:var(--muted)}
+.tick{width:72px;height:72px;color:var(--accent)}
+.tick .ring{stroke-dasharray:190;stroke-dashoffset:190}.tick .chk{stroke-dasharray:40;stroke-dashoffset:40}
+.modal.on .tick .ring{animation:dash .7s .1s forwards}.modal.on .tick .chk{animation:dash .45s .6s forwards}
+@keyframes dash{to{stroke-dashoffset:0}}
+/* footer */
+.foot2{position:relative;background:var(--bg);overflow:hidden;border-top:1px solid var(--line)}
+.fmeta{display:flex;justify-content:space-between;gap:16px;padding-block:22px;font-size:13px;color:var(--muted)}
+.fmeta a{color:var(--muted);text-decoration:none}.fmeta a:hover{color:var(--fg)}
+.fpit{position:relative;height:clamp(300px,34vw,420px);user-select:none;-webkit-user-select:none;touch-action:none}
+.pill{position:absolute;left:0;top:0;display:inline-flex;align-items:center;white-space:nowrap;padding:12px 22px;border-radius:999px;border:1.5px solid var(--fg);color:var(--fg);font-weight:700;font-size:clamp(14px,1.3vw,18px);text-decoration:none;background:var(--bg);cursor:grab;will-change:transform;transform:translate(-50%,-50%)}
+.pill:active{cursor:grabbing}
+.pill.accent{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pill.ghost{border-style:dashed;color:var(--muted);border-color:var(--muted)}
+html.js .fpit.ready .pill{transition:none}
+.fpit:not(.ready) .pill{visibility:hidden}
+.fword{position:relative;height:clamp(90px,13vw,190px);overflow:hidden;pointer-events:none;margin-top:-6px}
+.fword span{position:absolute;left:50%;top:0;transform:translateX(-50%);font-weight:800;font-size:clamp(96px,16.2vw,236px);line-height:1;letter-spacing:-.06em;white-space:nowrap;color:var(--fg)}
+@media(max-width:700px){.fpit{height:360px}.pill{padding:10px 16px}.fword{height:60px}.fword span{font-size:28vw}.madlib p{line-height:1.4}}
+.fpit.static{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.fpit.static .pill{position:static;transform:none}
+@media(prefers-reduced-motion:reduce){.fpit{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.pill{position:static;transform:none;visibility:visible!important}}
 
 </style>
 
@@ -930,56 +958,68 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
 </section>
 
 
-<!-- CTA + CONTACT FORM -->
-<section class="cta sec" id="contact">
-  <div class="wrap grid">
-    <div>
-      <img class="mark" src="img/mark-dark.svg" alt="" width="64" height="64">
-      <h2>Your brand could be next on this page.</h2>
-      <div class="contact">
-        <div><small>WhatsApp</small><b><a href="https://wa.me/923009590042" target="_blank" rel="noopener">+92 300 959 0042</a></b></div>
-        <div><small>Email</small><b><a href="mailto:digitallineup1@gmail.com">digitallineup1@gmail.com</a></b></div>
-        <div><small>Instagram</small><b><a href="https://www.instagram.com/digitallineup_" target="_blank" rel="noopener">@digitallineup_</a></b></div>
-        <div><small>Office</small><b>Multan, Pakistan</b></div>
-      </div>
+<!-- CONTACT -->
+<section class="csec sec" id="contact">
+  <div class="csec-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Start something cool</span>
+      <form class="madlib" id="cform" novalidate autocomplete="on">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p>Hi Digital Lineup, I'm
+          <label class="fld"><span class="sr">Name</span><input type="text" name="name" required placeholder="your name" autocomplete="name" size="10"></label>
+          and you can reach me at
+          <label class="fld"><span class="sr">Email</span><input type="email" name="email" required placeholder="your@email.com" autocomplete="email" size="16"></label>.
+          The budget in hand is
+          <label class="fld sel"><span class="sr">Budget in hand</span>
+            <select name="budget" required>
+              <option value="" disabled selected>pick a range</option>
+              <option>under PKR 100k</option>
+              <option>PKR 100k to 300k</option>
+              <option>PKR 300k to 1M</option>
+              <option>PKR 1M plus</option>
+              <option>in USD, let's talk</option>
+              <option>not decided yet</option>
+            </select></label>.
+        </p>
+        <div class="mact">
+          <button type="submit" class="btn big">Send now <span class="arr">&nearr;</span></button>
+          <span class="mnote">Or skip the form: <a href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp +92 300 959 0042</a></span>
+        </div>
+      </form>
     </div>
-    <form class="cform" id="cform" action="https://formsubmit.co/digitallineup1@gmail.com" method="POST" novalidate>
-      <input type="hidden" name="_subject" value="New enquiry from the Digital Lineup portfolio">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <div class="row">
-        <label>Name<input type="text" name="name" required autocomplete="name" placeholder="Your name"></label>
-        <label>Company<input type="text" name="company" autocomplete="organization" placeholder="Brand or business"></label>
-      </div>
-      <div class="row">
-        <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@company.com"></label>
-        <label>WhatsApp<input type="tel" name="phone" autocomplete="tel" placeholder="+92 ..."></label>
-      </div>
-      <label>What do you need?
-        <select name="need" required>
-          <option value="" disabled selected>Pick one</option>
-          <option>Video and content production</option>
-          <option>Meta and Google ads</option>
-          <option>Brand identity</option>
-          <option>Social media management</option>
-          <option>Website</option>
-          <option>Not sure yet, let's talk</option>
-        </select>
-      </label>
-      <label>Tell us a little<textarea name="message" required placeholder="What are you launching, and when?"></textarea></label>
-      <button type="submit" class="send">Send it &nearr;</button>
-      <p class="fnote">We reply within one working day, usually faster on WhatsApp.</p>
-      <div class="ok" role="status">Got it. We will be in touch within one working day. If it is urgent, message us on WhatsApp.</div>
-    </form>
   </div>
 </section>
 
+<div class="modal" id="sentmodal" role="dialog" aria-modal="true" aria-labelledby="sm-title" hidden>
+  <div class="modal-card">
+    <svg class="tick" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="3" class="ring"/><path d="M19 33l9 9 17-18" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="chk"/></svg>
+    <h3 id="sm-title">Got it.</h3>
+    <p>Our team will shortly get back to you.</p>
+    <button type="button" class="btn" data-close>Done</button>
+  </div>
+</div>
 </main>
-<footer class="wrap foot">
-  <span>&copy; 2026 Digital Lineup. All client work shown with permission; figures as reported by client platforms.</span>
-  <span>Design and content production agency &middot; Multan</span>
+
+<footer class="foot2" id="footer">
+  <div class="fmeta wrap">
+    <span>&copy; 2026 Digital Lineup. Multan, Pakistan.</span>
+    <a href="#top">Back to top &uarr;</a>
+  </div>
+  <div class="fpit" data-pit aria-label="Contact links">
+    <a class="pill" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="pill" href="mailto:digitallineup1@gmail.com">Email</a>
+    <a class="pill" href="https://www.instagram.com/digitallineup_" target="_blank" rel="noopener">Instagram</a>
+    <a class="pill" href="https://www.linkedin.com/company/digitallineup" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="pill" href="https://www.facebook.com/digitallineup" target="_blank" rel="noopener">Facebook</a>
+    <a class="pill" href="https://www.google.com/maps/place/?q=place_id:ChIJIx05719V1KoRBS1PhuM0zBk" target="_blank" rel="noopener">Google 5.0</a>
+    <a class="pill accent" href="#contact">Start something cool</a>
+    <a class="pill ghost" href="#top">Carrier pigeon</a>
+  </div>
+  <div class="fword" aria-hidden="true"><span>digital lineup</span></div>
 </footer>
+<script src="js/matter.min.js" defer></script>
+
 
 <script>
 (function(){
@@ -1010,24 +1050,57 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
     function fit(){var h=0;cards.forEach(function(c){h=Math.max(h,c.scrollHeight);});st.style.height=(h+8)+'px';}
     paint();arm();fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
   })();
-  // contact form
+  // contact form + modal
   (function(){
-    var f=document.getElementById('cform'); if(!f) return;
+    var f=document.getElementById('cform'), m=document.getElementById('sentmodal'); if(!f||!m) return;
+    function open(){m.hidden=false;requestAnimationFrame(function(){m.classList.add('on');});m.querySelector('[data-close]').focus();}
+    function close(){m.classList.remove('on');setTimeout(function(){m.hidden=true;},300);}
+    m.querySelector('[data-close]').addEventListener('click',close);
+    m.addEventListener('click',function(e){if(e.target===m)close();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)close();});
     f.addEventListener('submit',function(e){
       e.preventDefault();
       if(!f.checkValidity()){f.reportValidity();return;}
-      var btn=f.querySelector('.send');btn.disabled=true;btn.textContent='Sending...';
-      var fd=new FormData(f), obj={};fd.forEach(function(v,k){obj[k]=v;});
-      fetch('https://formsubmit.co/ajax/digitallineup1@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(obj)})
-      .then(function(r){if(!r.ok)throw 0;return r.json();})
-      .then(function(){f.classList.add('sent');})
-      .catch(function(){
-        var msg='Hi Digital Lineup, I am '+obj.name+(obj.company?' from '+obj.company:'')+'. Need: '+obj.need+'. '+obj.message+' ('+obj.email+')';
-        window.open('https://wa.me/923009590042?text='+encodeURIComponent(msg),'_blank');
-        f.classList.add('sent');
-      });
+      var btn=f.querySelector('.btn.big');btn.disabled=true;btn.firstChild.textContent='Sending ';
+      var fd=new FormData(f),o={};fd.forEach(function(v,k){o[k]=v;});o._subject='New enquiry from the Digital Lineup portfolio';o._template='table';o._captcha='false';
+      var done=function(){btn.disabled=false;btn.firstChild.textContent='Send now ';f.reset();open();};
+      fetch('https://formsubmit.co/ajax/digitallineup1@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(o)})
+      .then(function(r){if(!r.ok)throw 0;return r.json();}).then(done)
+      .catch(function(){window.open('https://wa.me/923009590042?text='+encodeURIComponent('Hi Digital Lineup, I am '+o.name+' ('+o.email+'). Budget in hand: '+o.budget+'.'),'_blank');done();});
     });
   })();
+  // footer pill physics
+  (function(){
+    var pit=document.querySelector('[data-pit]'); if(!pit||rm) return;
+    var started=false;
+    function start(){
+      if(started||!window.Matter) return; started=true;
+      var M=window.Matter, eng=M.Engine.create({enableSleeping:true}), W=eng.world, pills=[].slice.call(pit.querySelectorAll('.pill')), bodies=[];
+      var w=pit.clientWidth,h=pit.clientHeight,T=60;
+      function walls(){return [M.Bodies.rectangle(w/2,h+T/2,w*2,T,{isStatic:true}),M.Bodies.rectangle(-T/2,h/2,T,h*4,{isStatic:true}),M.Bodies.rectangle(w+T/2,h/2,T,h*4,{isStatic:true})];}
+      var ws=walls(); M.Composite.add(W,ws);
+      pills.forEach(function(p,i){
+        var r=p.getBoundingClientRect(),pw=r.width,ph=r.height;
+        var b=M.Bodies.rectangle(w*0.15+Math.random()*w*0.7,-ph-i*(ph+40)-Math.random()*60,pw,ph,{chamfer:{radius:ph/2},restitution:.2,friction:.6,frictionAir:.02,angle:(Math.random()-.5)*.4});
+        bodies.push(b); M.Composite.add(W,b);
+      });
+      pit.classList.add('ready');
+      var mouse=M.Mouse.create(pit); var mc=M.MouseConstraint.create(eng,{mouse:mouse,constraint:{stiffness:.15,damping:.1,render:{visible:false}}});
+      M.Composite.add(W,mc);
+      // let page scroll over the pit: strip wheel capture
+      mouse.element.removeEventListener('wheel',mouse.mousewheel);mouse.element.removeEventListener('DOMMouseScroll',mouse.mousewheel);
+      // click vs drag
+      var sx,sy; pit.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY;});
+      pills.forEach(function(p){p.addEventListener('click',function(e){if(Math.hypot(e.clientX-sx,e.clientY-sy)>6){e.preventDefault();}});});
+      var run=M.Runner.create(); M.Runner.run(run,eng);
+      (function loop(){bodies.forEach(function(b,i){var p=pills[i];p.style.transform='translate(-50%,-50%) translate('+b.position.x+'px,'+b.position.y+'px) rotate('+b.angle+'rad)';});requestAnimationFrame(loop);})();
+      var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){var nw=pit.clientWidth,nh=pit.clientHeight;if(nw===w&&nh===h)return;M.Composite.remove(W,ws);w=nw;h=nh;ws=walls();M.Composite.add(W,ws);bodies.forEach(function(b){M.Body.setPosition(b,{x:Math.min(Math.max(b.position.x,40),w-40),y:Math.min(b.position.y,h-20)});M.Sleeping.set(b,false);});},200);});
+    }
+    var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){if(window.Matter)start();else{var s=document.querySelector('script[src*="matter"]');s&&s.addEventListener('load',start);}io.disconnect();}},{threshold:.2});
+    io.observe(pit);
+    setTimeout(function(){if(!started){pit.classList.add('ready','static');}},5000);
+  })();
+
 
   // reveals
   var rv=document.querySelectorAll('.rv');
