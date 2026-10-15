@@ -297,6 +297,39 @@ html.js .team.rv>.member{opacity:0;transform:translateY(24px);transition:opacity
 html.js .team.rv.in>.member{opacity:1;transform:none}
 html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.in>.member:nth-child(3){transition-delay:.14s}html.js .team.rv.in>.member:nth-child(4){transition-delay:.21s}html.js .team.rv.in>.member:nth-child(5){transition-delay:.28s}html.js .team.rv.in>.member:nth-child(6){transition-delay:.35s}
 
+/* Hangmaster editorial case */
+.hm-case{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,5vw,72px);align-items:center;margin-bottom:clamp(32px,5vw,64px)}
+.hm-num{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:14px 0 18px;line-height:1}
+.hm-num s{font-size:clamp(34px,4.5vw,64px);color:var(--muted);text-decoration-color:rgba(0,210,76,.8);text-decoration-thickness:4px;letter-spacing:-.03em;font-weight:700}
+.hm-num .arrow{font-size:clamp(28px,3.5vw,48px);color:var(--accent)}
+.hm-num b{font-size:clamp(84px,11vw,160px);letter-spacing:-.05em;color:var(--accent);text-shadow:0 0 60px rgba(0,210,76,.35)}
+.hm-copy{color:var(--muted);max-width:46ch;font-size:16px}
+.hm-list{list-style:none;margin:26px 0 0;padding:0;display:grid}
+.hm-list li{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line);font-size:14.5px}
+.hm-list li b{font-size:15px}.hm-list li span{color:var(--muted)}
+.hm-deck{position:relative;height:clamp(420px,46vw,640px);perspective:1400px}
+.hm-deck .card{position:absolute;top:8%;left:50%;width:46%;aspect-ratio:4/5;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);transform-origin:center bottom;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .7s;background:var(--surface-2)}
+.hm-deck .card img{width:100%;height:100%;object-fit:cover}
+.hm-deck .c1{transform:translateX(-92%) rotate(-10deg) translateY(6%) rotateY(14deg);z-index:1;filter:brightness(.78)}
+.hm-deck .c2{transform:translateX(-50%) translateY(-2%);z-index:3}
+.hm-deck .c3{transform:translateX(-8%) rotate(10deg) translateY(6%) rotateY(-14deg);z-index:2;filter:brightness(.78)}
+.hm-deck:hover .c1{transform:translateX(-118%) rotate(-14deg) translateY(2%) rotateY(18deg);filter:brightness(.95)}
+.hm-deck:hover .c3{transform:translateX(18%) rotate(14deg) translateY(2%) rotateY(-18deg);filter:brightness(.95)}
+.hm-deck:hover .c2{transform:translateX(-50%) translateY(-6%) scale(1.03)}
+.glass-stat{position:absolute;left:-2%;bottom:4%;z-index:5;width:min(250px,60%);padding:16px 16px 12px;border-radius:16px;background:linear-gradient(160deg,rgba(252,252,252,.14),rgba(252,252,252,.05));border:1px solid rgba(252,252,252,.2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 24px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(252,252,252,.2);animation:float 8s ease-in-out infinite}
+.gs-head{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.gs-head b{font-size:22px;color:var(--accent);letter-spacing:-.02em;text-transform:none}
+.gs-bars{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;align-items:end;height:84px;margin-top:14px}
+.gs-bars i{position:relative;display:block;height:var(--h);background:linear-gradient(to top,var(--accent),rgba(0,210,76,.35));border-radius:6px 6px 2px 2px;transform-origin:bottom;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.gs-bars i:first-child{background:linear-gradient(to top,rgba(252,252,252,.35),rgba(252,252,252,.12))}
+.gs-bars i em{position:absolute;left:50%;top:-18px;transform:translateX(-50%);font-style:normal;font-size:11px;font-weight:700;color:var(--fg);white-space:nowrap}
+html.js .rv:not(.in) .gs-bars i{transform:scaleY(0)}
+.gs-foot{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px;font-size:10.5px;color:var(--muted);text-align:center}
+.glass-pill{position:absolute;z-index:5;font-size:12px;font-weight:700;padding:8px 13px;border-radius:999px;background:rgba(3,24,14,.55);border:1px solid rgba(252,252,252,.18);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);animation:float 7s ease-in-out infinite}
+.glass-pill.p1{right:4%;top:2%;animation-delay:-3s}.glass-pill.p2{right:-2%;bottom:18%;animation-delay:-5s}
+@media (max-width:900px){.hm-case{grid-template-columns:1fr}.hm-deck{height:min(90vw,520px)}.hm-deck .card{width:52%}.hm-deck .c1{transform:translateX(-100%) rotate(-9deg) translateY(6%)}.hm-deck .c3{transform:translateX(0) rotate(9deg) translateY(6%)}.glass-stat{width:200px;left:0}.glass-pill.p2{right:0}}
+@media (prefers-reduced-motion:reduce){.glass-stat,.glass-pill{animation:none}}
+
 /* additions for the generic portfolio */
 .case{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
 .case.alt{background:var(--surface)}
@@ -490,15 +523,29 @@ html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.
       </div>
       <p>Pixel warm-up, custom and lookalike audiences built on conversion data, ad creative, landing page optimisation and monthly reporting for an Australian home-services business. Cost per lead fell from $120 to $25. Proof that the playbook travels.</p>
     </div>
-    <div class="three">
-      <div class="poster" style="width:auto"><img src="img/tv-ad-post-1.jpg" alt="Hangmaster ad: Stop living with messy TV cables" width="1080" height="1350" loading="lazy"></div>
-      <div class="poster" style="width:auto"><img src="img/tv-ad-post-2.jpg" alt="Hangmaster ad: Is your TV wall looking like this?" width="1080" height="1350" loading="lazy"></div>
-      <div class="poster" style="width:auto"><img src="img/tv-ad-post-3.jpg" alt="Hangmaster ad: Get your TV perfectly mounted" width="1080" height="1350" loading="lazy"></div>
-    </div>
-    <div class="facts rv">
-      <div class="fact"><b>$120 &rarr; $25</b><span>cost per lead: $120 before Digital Lineup, $25 after three months, on a ~$200 service</span></div>
-      <div class="fact"><b>Lookalikes</b><span>audiences built from pixel conversion data, not guesses</span></div>
-      <div class="fact"><b>500+ reviews</b><span>the proof we put at the top of every creative</span></div>
+    <div class="hm-case rv">
+      <div class="hm-result">
+        <span class="eyebrow">Cost per lead, three months</span>
+        <div class="hm-num"><s>$120</s><span class="arrow" aria-hidden="true">&rarr;</span><b>$25</b></div>
+        <p class="hm-copy">$120 per lead before Digital Lineup. $25 after three months of pixel warm-up, lookalike audiences and creative that shows the finished room. On a ~$200 service, that is the difference between an ad account that costs money and one that books the week.</p>
+        <ul class="hm-list">
+          <li><b>Lookalikes</b><span>audiences built from pixel conversion data, not guesses</span></li>
+          <li><b>500+ reviews</b><span>the proof we put at the top of every creative</span></li>
+          <li><b>Landing pages</b><span>optimised with the ads, so clicks become quotes</span></li>
+        </ul>
+      </div>
+      <div class="hm-deck" aria-label="Three Meta ad creatives for The Hangmaster">
+        <div class="card c1"><img src="img/tv-ad-post-1.jpg" alt="Hangmaster ad: Stop living with messy TV cables" width="1080" height="1350" loading="lazy"></div>
+        <div class="card c2"><img src="img/tv-ad-post-2.jpg" alt="Hangmaster ad: Is your TV wall looking like this?" width="1080" height="1350" loading="lazy"></div>
+        <div class="card c3"><img src="img/tv-ad-post-3.jpg" alt="Hangmaster ad: Get your TV perfectly mounted" width="1080" height="1350" loading="lazy"></div>
+        <div class="glass-stat">
+          <div class="gs-head"><span>Cost per lead</span><b>&minus;79%</b></div>
+          <div class="gs-bars"><i style="--h:100%"><em>$120</em></i><i style="--h:21%"><em>$25</em></i></div>
+          <div class="gs-foot"><span>Before</span><span>After 3 months</span></div>
+        </div>
+        <div class="glass-pill p1">Perth, AU</div>
+        <div class="glass-pill p2">Meta Ads Manager</div>
+      </div>
     </div>
     <div class="row-head rv">
       <h3>Creative that shows the finished room</h3>
