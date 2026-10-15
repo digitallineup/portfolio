@@ -762,7 +762,7 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
     var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
     rv.forEach(function(el){ro.observe(el);});
     var sweep=function(){var vh=window.innerHeight;rv.forEach(function(el){if(!el.classList.contains('in')&&el.getBoundingClientRect().top<vh*0.98){el.classList.add('in');}});};
-    window.addEventListener('scroll',sweep,{passive:true});window.addEventListener('hashchange',function(){setTimeout(sweep,50);});setTimeout(sweep,300);
+    window.addEventListener('scroll',sweep,{passive:true});window.addEventListener('hashchange',function(){setTimeout(sweep,50);});setTimeout(sweep,300);setTimeout(sweep,1200);setTimeout(sweep,3000);window.addEventListener('load',function(){setTimeout(sweep,100);});
   } else { rv.forEach(function(el){el.classList.add('in');}); }
   // counters
   var cs=document.querySelectorAll('[data-count]');
