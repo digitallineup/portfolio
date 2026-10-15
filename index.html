@@ -276,6 +276,27 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
 .three .poster img{object-fit:contain}
 .poster img{object-fit:contain}
 
+/* team: glass cards */
+.team-sec{position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.team-sec::before{content:"";position:absolute;left:50%;top:40%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(0,210,76,.16),rgba(0,210,76,0) 60%);filter:blur(40px);pointer-events:none}
+.team-sec .wrap{position:relative}
+.team{gap:18px}
+.member{position:relative;border-radius:22px;padding:10px 10px 12px;background:linear-gradient(160deg,rgba(252,252,252,.09),rgba(252,252,252,.025));border:1px solid rgba(252,252,252,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 24px 60px rgba(0,0,0,.4),inset 0 1px 0 rgba(252,252,252,.16);transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .5s,box-shadow .5s;overflow:hidden;gap:0}
+.member::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(252,252,252,.14) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s ease;pointer-events:none}
+.member:hover{transform:translateY(-8px);border-color:rgba(0,210,76,.55);box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 1px rgba(0,210,76,.25),inset 0 1px 0 rgba(252,252,252,.2)}
+.member:hover::after{transform:translateX(120%)}
+.member .ph{border-radius:14px;aspect-ratio:1/1.2;position:relative}
+.member .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(3,24,14,.55),transparent 55%)}
+.member .ph img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.member:hover .ph img{transform:scale(1.05)}
+.member .info{padding:14px 6px 4px;display:grid;gap:5px}
+.member .info b{font-size:15px;letter-spacing:-.01em}
+.member .info span{font-size:12.5px;color:var(--muted);display:inline-flex;align-items:flex-start;gap:7px;line-height:1.35}
+.member .info span::before{content:"";flex:0 0 6px;width:6px;height:6px;margin-top:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+html.js .team.rv>.member{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+html.js .team.rv.in>.member{opacity:1;transform:none}
+html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.in>.member:nth-child(3){transition-delay:.14s}html.js .team.rv.in>.member:nth-child(4){transition-delay:.21s}html.js .team.rv.in>.member:nth-child(5){transition-delay:.28s}html.js .team.rv.in>.member:nth-child(6){transition-delay:.35s}
+
 /* additions for the generic portfolio */
 .case{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
 .case.alt{background:var(--surface)}
@@ -721,7 +742,7 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
 </section>
 
 <!-- TEAM -->
-<section class="sec" id="team" style="padding-top:0">
+<section class="sec team-sec" id="team">
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">The team</span>
@@ -729,12 +750,12 @@ html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.r
       <p>We opened our first physical office in September 2026, four years after the first client. Everything here was made by the people below, in-house.</p>
     </div>
     <div class="team rv">
-      <div class="member"><div class="ph"><img src="img/ali-hannan-founder.jpg" alt="Ali Hannan Siddique" width="1400" height="1980" loading="lazy"></div><b>Ali Hannan Siddique</b><span>Founder</span></div>
-      <div class="member"><div class="ph"><img src="img/usama-content-production-head.jpg" alt="M. Usama Mumtaz" width="1400" height="1980" loading="lazy"></div><b>M. Usama Mumtaz</b><span>Content Production Head</span></div>
-      <div class="member"><div class="ph"><img src="img/naveed-media-head.jpg" alt="Naveed" width="1400" height="1980" loading="lazy"></div><b>Naveed</b><span>Media Head</span></div>
-      <div class="member"><div class="ph"><img src="img/kashan-ali-designing-head.jpg" alt="Kashan Ali" width="1400" height="1980" loading="lazy"></div><b>Kashan Ali</b><span>Designing Head</span></div>
-      <div class="member"><div class="ph"><img src="img/huzaifa-ejaz-project-manager.jpg" alt="Huzaifa Aijaz" width="1400" height="1980" loading="lazy"></div><b>Huzaifa Aijaz</b><span>Project Manager</span></div>
-      <div class="member"><div class="ph"><img src="img/atir-abbas-digital-strategist.jpg" alt="Atir Abbas" width="1400" height="1980" loading="lazy"></div><b>Atir Abbas</b><span>Digital Strategist</span></div>
+      <div class="member"><div class="ph"><img src="img/ali-hannan-founder.jpg" alt="Ali Hannan Siddique" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Ali Hannan Siddique</b><span>Founder</span></div></div>
+      <div class="member"><div class="ph"><img src="img/usama-content-production-head.jpg" alt="M. Usama Mumtaz" width="1400" height="1980" loading="lazy"></div><div class="info"><b>M. Usama Mumtaz</b><span>Content Production Head</span></div></div>
+      <div class="member"><div class="ph"><img src="img/naveed-media-head.jpg" alt="Naveed" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Naveed</b><span>Media Head</span></div></div>
+      <div class="member"><div class="ph"><img src="img/kashan-ali-designing-head.jpg" alt="Kashan Ali" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Kashan Ali</b><span>Designing Head</span></div></div>
+      <div class="member"><div class="ph"><img src="img/huzaifa-ejaz-project-manager.jpg" alt="Huzaifa Aijaz" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Huzaifa Aijaz</b><span>Project Manager</span></div></div>
+      <div class="member"><div class="ph"><img src="img/atir-abbas-digital-strategist.jpg" alt="Atir Abbas" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Atir Abbas</b><span>Digital Strategist</span></div></div>
     </div>
   </div>
 </section>
