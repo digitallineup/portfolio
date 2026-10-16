@@ -212,20 +212,27 @@ body.menu-open .menu ul a{transform:none;opacity:1}
 @media(max-width:860px){.stats .grid{grid-template-columns:1fr 1fr}.stats .box{min-height:160px}}
 
 /* ---- process ---- */
-.process .wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(24px,5vw,80px);align-items:start;position:relative}
-.process .side{position:sticky;top:120px}
-.process .side h2{font-size:clamp(36px,5vw,76px);margin-top:16px}
-.process .side p{color:var(--ink-2);margin-top:18px;max-width:34ch}
-.pstack{display:grid;gap:18px}
-.pcard{position:sticky;top:calc(76px + 24px);border-radius:26px;padding:clamp(26px,3vw,44px);min-height:min(62vh,520px);display:grid;grid-template-rows:auto 1fr auto;background:var(--sand);box-shadow:0 24px 60px rgba(11,31,21,.1)}
-.pcard:nth-child(2){top:calc(76px + 40px);background:var(--mint)}.pcard:nth-child(3){top:calc(76px + 56px);background:#fff;border:1px solid var(--line)}.pcard:nth-child(4){top:calc(76px + 72px);background:var(--green);color:var(--cream)}
-.pcard .t{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.pcard .t h3{font-size:clamp(24px,2.4vw,36px)}
-.pcard .t span{font-size:12px;letter-spacing:.12em;font-weight:700;opacity:.6;text-transform:uppercase}
-.pcard .n{font-size:clamp(120px,16vw,240px);font-weight:800;letter-spacing:-.07em;line-height:.9;text-align:center;color:var(--ink);opacity:.9;margin-block:10px}
-.pcard:nth-child(4) .n{color:var(--lime)}
-.pcard p{font-size:clamp(15px,1.2vw,18px);line-height:1.45;max-width:42ch;opacity:.85}
-@media(max-width:860px){.process .wrap{grid-template-columns:1fr}.process .side{position:static}.pcard{min-height:0}.pcard .n{font-size:110px}}
+.process .wrap{display:grid;grid-template-columns:1.3fr minmax(360px,520px) .8fr;gap:clamp(20px,4vw,60px);align-items:start;position:relative}
+.process .side{position:sticky;top:50vh;transform:translateY(-50%)}
+.process .side h2{font-size:clamp(32px,3.4vw,56px);white-space:nowrap;margin-top:16px;line-height:1}
+.process .side p{color:var(--ink-2);margin-top:18px;max-width:30ch}
+.process .art{position:sticky;top:50vh;transform:translateY(-50%);justify-self:center;width:min(100%,300px);aspect-ratio:1;display:grid;place-items:center}
+.process .art svg{width:100%;height:100%;overflow:visible}
+.process .art .mk{animation:bob 6s ease-in-out infinite;transform-origin:50% 50%}
+.process .art .orb{animation:spin 14s linear infinite;transform-origin:150px 150px}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pstack{display:grid;gap:0;padding-bottom:12vh}
+.pcard{position:sticky;top:calc(50vh - 36vh);height:72vh;max-height:680px;margin-bottom:12vh;border-radius:26px;padding:clamp(26px,3vw,40px);display:grid;grid-template-rows:auto 1fr auto;text-align:center;background:var(--sand);box-shadow:0 -10px 40px rgba(11,31,21,.08)}
+.pcard:nth-child(2){background:var(--mint)}.pcard:nth-child(3){background:var(--sand)}.pcard:nth-child(4){background:var(--mint)}
+.pcard:last-child{margin-bottom:0}
+.pcard:nth-child(2){top:calc(50vh - 36vh + 26px)}.pcard:nth-child(3){top:calc(50vh - 36vh + 52px)}.pcard:nth-child(4){top:calc(50vh - 36vh + 78px)}
+.pcard .t{display:grid;gap:6px;justify-items:center}
+.pcard .t h3{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.03em}
+.pcard .t span{font-size:12px;letter-spacing:.12em;font-weight:700;opacity:.55;text-transform:uppercase}
+.pcard .n{font-size:clamp(140px,19vw,260px);font-weight:800;letter-spacing:-.07em;line-height:.85;color:#fff;align-self:center;text-shadow:0 10px 30px rgba(11,31,21,.08)}
+.pcard p{font-size:clamp(15px,1.15vw,18px);line-height:1.45;max-width:34ch;margin:0 auto;opacity:.85}
+@media(max-width:1000px){.process .wrap{grid-template-columns:1fr}.process .side,.process .art{position:static;transform:none}.process .art{display:none}.pcard,.pcard:nth-child(n){height:auto;min-height:0;margin-bottom:24px;top:96px}.pcard .n{font-size:120px;padding-block:20px}}
 
 
 /* ---- pinned expand + statement + squiggle ---- */
@@ -237,7 +244,7 @@ body.menu-open .menu ul a{transform:none;opacity:1}
 .pin svg.river{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .pin svg.river path{fill:none;stroke:var(--cream);stroke-linecap:round;stroke-linejoin:round;stroke-width:28}
 @media(max-width:700px){.pin{height:300vh}.pin .block{width:70vw;height:40vw}.pin svg.river path{stroke-width:18}}
-.process{position:relative;padding-block:clamp(60px,8vw,120px) clamp(72px,10vw,150px);overflow:hidden}
+.process{position:relative;padding-block:clamp(60px,8vw,120px) clamp(72px,10vw,150px);overflow:clip}
 .process .bgsq{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .process .bgsq path{fill:none;stroke:rgba(11,31,21,.045);stroke-width:110;stroke-linecap:round;stroke-linejoin:round}
 
@@ -509,7 +516,7 @@ body.menu-open .menu ul a{transform:none;opacity:1}
   <div class="wrap">
     <div class="side rv">
       <span class="eyebrow">How we work</span>
-      <h2>This is how we ship.</h2>
+      <h2>This is how<br>we ship.</h2>
       <p>Four steps, no mystery. You see the work at every stage, and the numbers at the end.</p>
     </div>
     <div class="pstack">
@@ -517,6 +524,12 @@ body.menu-open .menu ul a{transform:none;opacity:1}
       <article class="pcard"><div class="t"><h3>Concept</h3><span>Week 1 to 2</span></div><div class="n">2</div><p>Two or three directions, shown as real mockups in your brand, not mood boards. You pick one. We refine it until it is right.</p></article>
       <article class="pcard"><div class="t"><h3>Production</h3><span>Week 2 to 4</span></div><div class="n">3</div><p>Our crew, our studio, our editors. Shoot days, design rounds and motion, all in-house, so the thing you approved is the thing that ships.</p></article>
       <article class="pcard"><div class="t"><h3>Launch and report</h3><span>Ongoing</span></div><div class="n">4</div><p>We publish, run the ads and send you a report you can read in two minutes. Then we do it again, better, with what we learned.</p></article>
+    </div>
+    <div class="art" aria-hidden="true">
+      <svg viewBox="0 0 300 300">
+        <g class="orb"><circle cx="150" cy="150" r="128" fill="none" stroke="rgba(11,31,21,.18)" stroke-width="1.5" stroke-dasharray="4 10"/><circle cx="278" cy="150" r="7" fill="#00d24c"/></g>
+        <g class="mk"><image href="../img/mark-dark.svg" x="85" y="85" width="130" height="130"/></g>
+      </svg>
     </div>
   </div>
 </section>
@@ -727,10 +740,10 @@ body.menu-open .menu ul a{transform:none;opacity:1}
     document.querySelector('[data-rnext]').addEventListener('click',function(){row.scrollBy({left:w(),behavior:'smooth'});});
     document.querySelector('[data-rprev]').addEventListener('click',function(){row.scrollBy({left:-w(),behavior:'smooth'});});
   })();
-  // process stack scale
+  // process stack: back card recedes as next covers it
   (function(){
     var cards=[].slice.call(document.querySelectorAll('.pcard')); if(!cards.length) return;
-    function st(){cards.forEach(function(c,i){var n=cards[i+1];if(!n)return;var r=c.getBoundingClientRect(),nr=n.getBoundingClientRect();var o=Math.min(1,Math.max(0,(r.bottom-nr.top)/r.height));c.style.transform='scale('+(1-o*0.05)+')';c.style.opacity=1-o*0.25;});}
+    function st(){cards.forEach(function(c,i){var n=cards[i+1];if(!n){c.style.transform='';return;}var r=c.getBoundingClientRect(),nr=n.getBoundingClientRect();var o=Math.min(1,Math.max(0,(r.bottom-nr.top)/r.height));c.style.transform='scale('+(1-o*0.05)+')';c.style.filter='brightness('+(1-o*.06)+')';});}
     if(!rm){addEventListener('scroll',st,{passive:true});addEventListener('resize',st);st();}
   })();
   // contact form + modal
