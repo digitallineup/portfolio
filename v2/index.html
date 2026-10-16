@@ -61,10 +61,14 @@ h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
 .btn.lime{background:#d4ff5a;color:#03180e}
 .btn.lime .ic{background:#03180e;color:#d4ff5a}
 .btn.lime:hover{box-shadow:0 14px 34px rgba(212,255,90,.35)}
-.stage{position:relative;height:clamp(240px,22vw,330px);margin-top:clamp(20px,2.6vw,40px);perspective:1400px;perspective-origin:50% 35%}
+.stage{position:relative;height:clamp(240px,22vw,330px);margin-top:clamp(20px,2.6vw,40px);perspective:1150px;perspective-origin:50% 40%}
 .ring{position:absolute;left:50%;top:50%;transform-style:preserve-3d}
 .rc{position:absolute;left:0;top:0;width:clamp(120px,12vw,180px);aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#fff;color:var(--ink);box-shadow:0 24px 50px rgba(0,0,0,.28);backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity}
 .rc img,.rc video{width:100%;height:100%;object-fit:cover;display:block}
+.rc.tall{width:clamp(108px,10.5vw,158px);aspect-ratio:3/4}
+.rc.sq{width:clamp(124px,12.4vw,188px);aspect-ratio:1/1}
+.rc.wide{width:clamp(150px,15vw,228px);aspect-ratio:5/4}
+.rc{border-radius:18px}
 .rc .tag{position:absolute;left:8px;bottom:8px;right:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:10px;padding:7px 9px;font-size:11px;font-weight:700;line-height:1.2;color:var(--ink)}
 .rc .tag small{display:block;font-weight:500;color:var(--muted);font-size:10px}
 .rc.info{padding:14px;display:flex;flex-direction:column;justify-content:space-between}
@@ -424,20 +428,20 @@ body.menu-open .menu ul a{transform:none;opacity:1}
   </div>
   <div class="stage" aria-label="Selected work">
     <div class="ring" data-ring>
-      <div class="rc"><img src="../img/lc-2-01.jpg" alt="Lume storefront identity"><span class="tag">Lume Beauty Studio<small>Brand identity</small></span></div>
-      <div class="rc info"><small>Google rating</small><div><b>5.0</b><span style="color:#f5b400;letter-spacing:.1em">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><span>16 reviews from clients in Multan, Lahore and Perth</span></div>
+      <div class="rc tall"><img src="../img/lc-2-01.jpg" alt="Lume storefront identity"><span class="tag">Lume Beauty Studio<small>Brand identity</small></span></div>
+      <div class="rc info sq"><small>Google rating</small><div><b>5.0</b><span style="color:#f5b400;letter-spacing:.1em">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><span>16 reviews from clients in Multan, Lahore and Perth</span></div>
       <div class="rc"><video src="../media/apex-11m.mp4" poster="../media/apex-11m.poster.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="tag">Apex Solar<small>11M views, one creator film</small></span></div>
-      <div class="rc"><img src="../img/hm-tv-1.jpg" alt="The Hangmaster ad"><span class="tag">The Hangmaster<small>$120 to $25 per lead</small></span></div>
-      <div class="rc info dark"><small>Cost per lead</small><b>$120&rarr;$25</b><span>Meta ads, creative and landing pages for The Hangmaster, Perth</span></div>
+      <div class="rc wide"><img src="../img/hm-tv-1.jpg" alt="The Hangmaster ad"><span class="tag">The Hangmaster<small>$120 to $25 per lead</small></span></div>
+      <div class="rc info dark sq"><small>Cost per lead</small><b>$120&rarr;$25</b><span>Meta ads, creative and landing pages for The Hangmaster, Perth</span></div>
       <div class="rc"><img src="../img/mascot-model-town-post-1.jpg" alt="Shan Electronics mascot"><span class="tag">Shan Electronics<small>Mascot campaign</small></span></div>
-      <div class="rc info"><small>Reach</small><b>100M+</b><svg viewBox="0 0 120 46" preserveAspectRatio="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00d24c" stop-opacity=".45"/><stop offset="1" stop-color="#00d24c" stop-opacity="0"/></linearGradient></defs><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4 L120,46 L0,46Z" fill="url(#sg)"/><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4" fill="none" stroke="#00b341" stroke-width="2"/></svg><span>views across client work</span></div>
-      <div class="rc"><img src="../img/main-platter-2.jpg" alt="Shangrilla BBQ platter post"><span class="tag">Shangrilla<small>Food photography and social</small></span></div>
-      <div class="rc"><img src="../img/posts-capxa-02.jpg" alt="Capxa social post"><span class="tag">Capxa<small>Identity and social</small></span></div>
-      <div class="rc info limec"><small style="color:#03180e;opacity:.6">Output</small><b>1,000+</b><span>films, reels, posters, identities and sites shipped</span></div>
-      <div class="rc"><img src="../img/more-than-printing-company.jpg" alt="Rainbow Printing post"><span class="tag">Rainbow Printing<small>B2B content</small></span></div>
+      <div class="rc info wide"><small>Reach</small><b>100M+</b><svg viewBox="0 0 120 46" preserveAspectRatio="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00d24c" stop-opacity=".45"/><stop offset="1" stop-color="#00d24c" stop-opacity="0"/></linearGradient></defs><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4 L120,46 L0,46Z" fill="url(#sg)"/><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4" fill="none" stroke="#00b341" stroke-width="2"/></svg><span>views across client work</span></div>
+      <div class="rc tall"><img src="../img/main-platter-2.jpg" alt="Shangrilla BBQ platter post"><span class="tag">Shangrilla<small>Food photography and social</small></span></div>
+      <div class="rc sq"><img src="../img/posts-capxa-02.jpg" alt="Capxa social post"><span class="tag">Capxa<small>Identity and social</small></span></div>
+      <div class="rc info limec tall"><small style="color:#03180e;opacity:.6">Output</small><b>1,000+</b><span>films, reels, posters, identities and sites shipped</span></div>
+      <div class="rc wide"><img src="../img/more-than-printing-company.jpg" alt="Rainbow Printing post"><span class="tag">Rainbow Printing<small>B2B content</small></span></div>
       <div class="rc"><video src="../media/shangrilla-eid.mp4" poster="../media/shangrilla-eid.poster.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="tag">Shangrilla<small>Eid campaign film</small></span></div>
-      <div class="rc"><img src="../img/industry-solar.jpg" alt="Rainbow solar industry post"><span class="tag">Rainbow Printing<small>Campaign design</small></span></div>
-      <div class="rc"><img src="../img/cake-of-the-month.jpg" alt="Shangrilla bakery post"><span class="tag">Shangrilla Bakers<small>Product design</small></span></div>
+      <div class="rc sq"><img src="../img/industry-solar.jpg" alt="Rainbow solar industry post"><span class="tag">Rainbow Printing<small>Campaign design</small></span></div>
+      <div class="rc tall"><img src="../img/cake-of-the-month.jpg" alt="Shangrilla bakery post"><span class="tag">Shangrilla Bakers<small>Product design</small></span></div>
     </div>
   </div>
   <div class="rated">Rated 5.0 on Google by our clients<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
@@ -771,18 +775,24 @@ body.menu-open .menu ul a{transform:none;opacity:1}
   // 3D work ring
   (function(){
     var ring=document.querySelector('[data-ring]'); if(!ring) return;
-    var cs=[].slice.call(ring.children), N=cs.length, step=12.5, span=N*step, off=0, last=performance.now(), R=1000, slow=false;
-    function size(){ var cw=cs[0].getBoundingClientRect().width||190; R=Math.max(330,Math.min(1150,innerWidth*0.7)); step=Math.min(30,(cw+18)/R*57.3); span=N*step; }
-    size(); addEventListener('resize',size);
+    var cs=[].slice.call(ring.children), N=cs.length, pos=[], span=360, off=0, last=performance.now(), R=900, slow=false;
+    function size(){
+      var vw=innerWidth, gap=vw<700?18:Math.max(22,vw*0.024);
+      R=vw<700?Math.max(300,vw*0.95):Math.max(560,Math.min(1080,vw*0.6));
+      var acc=0; pos=[];
+      cs.forEach(function(c){ var w=c.offsetWidth; pos.push((acc+w/2)/R*57.2958); acc+=w+gap; });
+      span=acc/R*57.2958;
+    }
+    size(); addEventListener('resize',size); addEventListener('load',size);
     ring.parentNode.addEventListener('mouseenter',function(){slow=true;}); ring.parentNode.addEventListener('mouseleave',function(){slow=false;});
     function frame(t){
       var dt=Math.min(50,t-last); last=t; if(!rm) off+=dt*(slow?0.0012:0.0045);
       for(var i=0;i<N;i++){
-        var th=((i*step+off)%span+span)%span - span/2;
+        var th=((pos[i]+off)%span+span)%span - span/2;
         var c=cs[i], a=Math.abs(th);
-        if(a>88){ c.style.opacity=0; c.style.visibility='hidden'; continue; }
+        if(a>84){ c.style.opacity=0; c.style.visibility='hidden'; continue; }
         c.style.visibility='visible';
-        c.style.opacity= a>70 ? (88-a)/18 : 1;
+        c.style.opacity= a>64 ? Math.max(0,(84-a)/20) : 1;
         c.style.transform='translate(-50%,-50%) translateZ('+(-R)+'px) rotateY('+th+'deg) translateZ('+R+'px)';
       }
       requestAnimationFrame(frame);
