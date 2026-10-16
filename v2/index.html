@@ -144,15 +144,15 @@ h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
 @keyframes vmq{to{transform:translateY(-50%)}}
 .scard:hover .gcols .run{animation-play-state:paused}
 
-/* interlude: green statement */
-.state{background:var(--green);color:var(--cream);padding-block:clamp(90px,14vw,200px);position:relative;overflow:hidden;margin-top:clamp(40px,6vw,90px)}
-.state h2{font-size:clamp(34px,6vw,92px);letter-spacing:-.045em;max-width:16ch;margin:0 auto;text-align:center;line-height:1}
-.state h2 .w{display:inline-block;opacity:.18;transition:opacity .5s}
-.state h2 .w.on{opacity:1}
-.state h2 em{font-style:normal;color:var(--lime)}
-.state .sq{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.state .sq path{fill:none;stroke:var(--cream);stroke-width:26;stroke-linecap:round;stroke-linejoin:round;opacity:.12}
-
+/* interlude: statement */
+.state{background:var(--cream);padding-block:clamp(90px,14vw,200px);position:relative;overflow:hidden;margin-top:clamp(20px,4vw,60px)}
+.state .wrap{display:grid;grid-template-columns:1fr minmax(220px,300px);gap:clamp(28px,5vw,80px);align-items:center}
+.state h2{font-size:clamp(32px,4.8vw,76px);letter-spacing:-.045em;line-height:1.02;text-align:left;max-width:none}
+.state h2 .w{display:inline-block;color:rgba(11,31,21,.16);transition:color .6s var(--ease)}
+.state h2 .w.on{color:var(--ink)}
+.state .side{border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:var(--sand);box-shadow:0 24px 60px rgba(11,31,21,.14);transform:rotate(2deg)}
+.state .side video,.state .side img{width:100%;height:100%;object-fit:cover}
+@media(max-width:860px){.state .wrap{grid-template-columns:1fr}.state .side{max-width:320px;transform:none}}
 /* reveal */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .9s var(--ease)}
 .rv.in{opacity:1;transform:none}
@@ -441,9 +441,9 @@ body.menu-open .menu ul a{transform:none;opacity:1}
 </section>
 
 <section class="state" id="about">
-  <svg class="sq" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path data-ink d="M-40,520 C180,420 260,120 420,160 C600,205 560,470 760,440 C960,410 900,120 1120,150 C1300,175 1340,420 1500,380"/></svg>
   <div class="wrap">
-    <h2 data-words>Good design gets you noticed. <em>Numbers</em> keep you hired.</h2>
+    <h2 data-words>We believe good design gets you noticed, the right numbers keep you hired, and the right people make both happen.</h2>
+    <div class="side"><video src="../media/dl-branding.mp4" poster="../media/dl-branding.poster.jpg" muted loop playsinline preload="metadata" data-loop></video></div>
   </div>
 </section>
 
@@ -643,14 +643,12 @@ body.menu-open .menu ul a{transform:none;opacity:1}
   var vids=document.querySelectorAll('video[data-loop]');
   var vo=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){v.play().catch(function(){});}else{v.pause();}});},{threshold:.25});
   vids.forEach(function(v){vo.observe(v);});
-  // statement: words light up + squiggle draws with scroll
-  var st=document.querySelector('.state'), sw=st.querySelectorAll('.w'), ink=st.querySelector('[data-ink]'), L=ink.getTotalLength();
-  ink.style.strokeDasharray=L; ink.style.strokeDashoffset=L;
+  // statement: words darken with scroll
+  var st=document.querySelector('.state'), sw=st.querySelectorAll('.w');
   function prog(){
     var r=st.getBoundingClientRect(), vh=innerHeight;
-    var p=Math.min(1,Math.max(0,(vh-r.top)/(r.height+vh*0.6)));
-    ink.style.strokeDashoffset=L*(1-Math.min(1,p*1.25));
-    var n=Math.round(sw.length*Math.min(1,p*1.5));
+    var p=Math.min(1,Math.max(0,(vh*0.85-r.top)/(r.height+vh*0.25)));
+    var n=Math.round(sw.length*p);
     sw.forEach(function(w,i){w.classList.toggle('on',i<n);});
   }
   addEventListener('scroll',prog,{passive:true}); addEventListener('resize',prog); prog();
