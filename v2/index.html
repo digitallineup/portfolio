@@ -265,6 +265,15 @@ body.menu-open .menu ul a{transform:none;opacity:1}
 .rcard .who{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px solid rgba(251,246,239,.15)}
 .rcard .av{width:40px;height:40px;border-radius:50%;background:var(--lime);color:var(--lime-ink);display:grid;place-items:center;font-weight:700;font-size:14px}
 .rcard .who b{display:block;font-size:15px}.rcard .who small{opacity:.65;font-size:12px}
+.gbadge{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:12px 16px 12px 14px;text-decoration:none;color:var(--ink);box-shadow:0 14px 34px rgba(11,31,21,.08);transition:transform .35s var(--ease),box-shadow .35s}
+.gbadge:hover{transform:translateY(-2px);box-shadow:0 20px 44px rgba(11,31,21,.14)}
+.gbadge .glogo{width:40px;height:40px;flex:none}
+.gbadge .gtxt{display:grid;grid-template-columns:auto auto;align-items:center;column-gap:8px;line-height:1.1}
+.gbadge .gtxt b{font-size:30px;letter-spacing:-.04em}
+.gbadge .gtxt .stars{color:#FBBC04;font-size:16px;letter-spacing:.06em}
+.gbadge .gtxt small{grid-column:1/-1;font-size:12px;color:var(--muted);margin-top:3px}
+.gbadge .gcta{font-size:12px;font-weight:700;padding:8px 12px;border-radius:999px;background:var(--cream-2);white-space:nowrap}
+@media(max-width:600px){.gbadge .gcta{display:none}}
 .rnav{display:flex;gap:10px;justify-content:flex-end}
 .rnav button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:background .25s,color .25s}
 .rnav button:hover{background:var(--ink);color:var(--cream)}
@@ -543,7 +552,11 @@ body.menu-open .menu ul a{transform:none;opacity:1}
         <h2>They bet on us. It paid off.</h2>
       </div>
       <div class="g">
-        <a class="score" href="https://www.google.com/maps/place/?q=place_id:ChIJIx05719V1KoRBS1PhuM0zBk" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><b>5.0</b><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small>16 reviews on Google</small></a>
+        <a class="gbadge" href="https://www.google.com/maps/place/?q=place_id:ChIJIx05719V1KoRBS1PhuM0zBk" target="_blank" rel="noopener" aria-label="Digital Lineup on Google, rated 5.0 from 16 reviews">
+          <img class="glogo" src="../img/google-g.svg" alt="" width="40" height="40" onerror="this.remove()">
+          <span class="gtxt"><b>5.0</b><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><small>16 reviews on Google</small></span>
+          <span class="gcta">Read on Google &nearr;</span>
+        </a>
         <div class="rnav"><button type="button" data-rprev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-rnext aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
       </div>
     </div>
