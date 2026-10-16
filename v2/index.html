@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Digital Lineup</title>
+<meta name="description" content="Digital Lineup is a design and content production agency in Multan. Video, brand identity, performance marketing and social, with the numbers next to every piece.">
+<meta name="theme-color" content="#FBF6EF">
+<meta property="og:title" content="Digital Lineup">
+<meta property="og:description" content="A creative agency that ships work with numbers next to it. Video, identity, ads, social.">
+<meta property="og:image" content="https://digitallineup.github.io/portfolio/og.jpg">
+<link rel="icon" href="../img/mark-dark.svg">
+<link rel="preload" as="video" href="../media/apex-11m.mp4" type="video/mp4">
+<style>
+:root{
+  --cream:#FBF6EF; --cream-2:#F4ECE1; --sand:#EFE3D3; --mint:#DCEDE2; --sage:#CFE3D6;
+  --ink:#0B1F15; --ink-2:#2A3A32; --muted:#6B7A72; --line:rgba(11,31,21,.12);
+  --green:#03180e; --lime:#00d24c; --lime-ink:#03180e;
+  --r:28px; --r-s:18px;
+  --font:"Helvetica Neue",Helvetica,"Inter",Arial,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
+.w i{font-style:normal;display:inline-block}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:clamp(20px,3vw,40px)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--ink-2)}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:var(--lime-ink);font-weight:700;font-size:15px;padding:14px 22px;border-radius:999px;text-decoration:none;white-space:nowrap;border:0;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,210,76,.28)}
+.btn.dark{background:var(--ink);color:var(--cream)}
+.btn.dark:hover{box-shadow:0 14px 34px rgba(11,31,21,.22)}
+.btn.ghost{background:transparent;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.ghost:hover{box-shadow:none;background:var(--ink);color:var(--cream)}
+.btn .ic{width:34px;height:34px;border-radius:50%;background:rgba(3,24,14,.12);display:grid;place-items:center;margin:-8px -10px -8px 2px}
+.btn .ic svg{width:16px;height:16px}
+.btn.dark .ic{background:rgba(251,246,239,.16)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:60;background:rgba(251,246,239,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.nav .logo img{height:34px;width:auto}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:28px;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--ink-2);transition:color .2s}.nav ul a:hover{color:var(--ink)}
+@media(max-width:860px){.nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;padding-top:clamp(56px,8vw,112px);overflow:hidden}
+.hero .copy{text-align:center;max-width:980px;margin:0 auto}
+.hero h1{font-size:clamp(44px,7.4vw,112px);letter-spacing:-.045em;line-height:.96}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom}
+.hero h1 .w i{display:inline-block;font-style:normal;transform:translateY(110%);opacity:0;transition:transform .9s var(--ease),opacity .6s}
+.hero h1 .w i.in{transform:none;opacity:1}
+.hero h1 em{font-style:normal;color:var(--lime);position:relative}
+.hero p.lead{font-size:clamp(17px,1.6vw,22px);line-height:1.45;color:var(--ink-2);max-width:48ch;margin:26px auto 0}
+.hero .acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.hero .trust{display:flex;gap:10px 22px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:28px;font-size:13px;color:var(--muted)}
+.hero .trust b{color:var(--ink);font-weight:700}
+.hero .trust .stars{color:var(--lime);letter-spacing:.06em}
+
+/* fan of work cards */
+.fan{position:relative;height:clamp(300px,36vw,540px);margin-top:clamp(36px,5vw,72px);perspective:1400px}
+.fan .card{position:absolute;left:50%;bottom:0;width:clamp(150px,19vw,280px);aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:var(--sand);box-shadow:0 30px 70px rgba(11,31,21,.22);transform-origin:50% 100%;transform:translateX(-50%) translateY(60px) rotate(0deg) scale(.92);opacity:0;transition:transform 1.1s var(--ease),opacity .8s}
+.fan .card img,.fan .card video{width:100%;height:100%;object-fit:cover}
+.fan .card .stat{position:absolute;left:12px;top:12px;background:var(--lime);color:var(--lime-ink);font-weight:700;font-size:12px;padding:7px 11px;border-radius:999px;letter-spacing:-.01em;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.fan .card .stat.light{background:var(--cream);color:var(--ink)}
+.fan .card .name{position:absolute;left:14px;bottom:12px;color:#fff;font-weight:700;font-size:14px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.fan.in .card{opacity:1}
+.fan.in .c3{transform:translateX(-50%) translateY(0) scale(1);z-index:5}
+.fan.in .c2{transform:translateX(calc(-50% - 78%)) translateY(28px) rotate(-6deg) scale(.96);z-index:4}
+.fan.in .c4{transform:translateX(calc(-50% + 78%)) translateY(28px) rotate(6deg) scale(.96);z-index:4}
+.fan.in .c1{transform:translateX(calc(-50% - 148%)) translateY(72px) rotate(-12deg) scale(.9);z-index:3}
+.fan.in .c5{transform:translateX(calc(-50% + 148%)) translateY(72px) rotate(12deg) scale(.9);z-index:3}
+.fan .card:hover{z-index:9}
+.fan.in .card:hover{transform:translateX(var(--hx,-50%)) translateY(-10px) rotate(0) scale(1.03)}
+.fan.in .c1:hover{--hx:calc(-50% - 148%)}.fan.in .c2:hover{--hx:calc(-50% - 78%)}.fan.in .c4:hover{--hx:calc(-50% + 78%)}.fan.in .c5:hover{--hx:calc(-50% + 148%)}
+.fan .c1{transition-delay:.05s}.fan .c2{transition-delay:.12s}.fan .c3{transition-delay:.2s}.fan .c4{transition-delay:.12s}.fan .c5{transition-delay:.05s}
+.hero .fade{position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(180deg,rgba(251,246,239,0),var(--cream));pointer-events:none}
+@media(max-width:700px){
+  .fan{height:62vw;margin-top:34px}
+  .fan .card{width:44vw}
+  .fan.in .c2{transform:translateX(calc(-50% - 62%)) translateY(26px) rotate(-7deg) scale(.94)}
+  .fan.in .c4{transform:translateX(calc(-50% + 62%)) translateY(26px) rotate(7deg) scale(.94)}
+  .fan.in .c1,.fan.in .c5{opacity:0}
+}
+
+/* logo strip */
+.logos{padding-block:clamp(40px,6vw,80px) 0}
+.logos p{text-align:center;font-size:14px;color:var(--muted);margin-bottom:22px}
+.lmq{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.lmq .track{display:flex;gap:14px;width:max-content;animation:mq 42s linear infinite}
+.lmq:hover .track{animation-play-state:paused}
+.lmq .tile{display:flex;align-items:center;gap:10px;height:64px;padding:0 26px;border-radius:16px;background:var(--sand);font-weight:700;font-size:15px;letter-spacing:-.01em;white-space:nowrap;color:var(--ink-2)}
+.lmq .tile small{font-weight:500;color:var(--muted);font-size:12px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* services */
+.services{position:relative;padding-block:clamp(120px,17vw,260px) clamp(40px,6vw,90px)}
+.services .mark{position:absolute;left:50%;top:clamp(10px,2vw,30px);transform:translateX(-50%);font-size:clamp(72px,17vw,250px);font-weight:800;letter-spacing:-.05em;line-height:1;color:var(--ink);opacity:.045;white-space:nowrap;pointer-events:none;user-select:none}
+.services .head{text-align:center;max-width:760px;margin:0 auto clamp(40px,6vw,80px);position:relative}
+.services .head h2{font-size:clamp(34px,5vw,68px);margin-top:16px}
+.services .head p{color:var(--ink-2);font-size:clamp(16px,1.3vw,19px);margin-top:16px;max-width:52ch;margin-inline:auto}
+.stack{display:grid;gap:22px}
+.scard{position:sticky;top:calc(72px + 18px);border-radius:var(--r);overflow:hidden;min-height:min(78vh,720px);display:grid;grid-template-columns:1fr 1.25fr;box-shadow:0 30px 80px rgba(11,31,21,.12);transform-origin:50% 0;transition:transform .6s var(--ease)}
+.scard:nth-child(2){top:calc(72px + 34px)}.scard:nth-child(3){top:calc(72px + 50px)}.scard:nth-child(4){top:calc(72px + 66px)}
+.scard.t-sand{background:var(--sand)}.scard.t-mint{background:var(--mint)}.scard.t-cream{background:#fff;border:1px solid var(--line)}
+.scard.t-green{background:var(--green);color:var(--cream)}
+.scard .txt{padding:clamp(26px,3.5vw,54px);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.scard .num{font-size:13px;letter-spacing:.14em;font-weight:700;opacity:.6}
+.scard h3{font-size:clamp(30px,3.6vw,54px);margin-top:14px;max-width:11ch}
+.scard .txt p{font-size:clamp(16px,1.25vw,19px);line-height:1.45;margin-top:18px;max-width:40ch;opacity:.85}
+.scard .pts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.scard .pts span{font-size:13px;font-weight:600;padding:8px 13px;border-radius:999px;border:1.5px solid currentColor;opacity:.75}
+.scard .proof{display:flex;align-items:baseline;gap:12px}
+.scard .proof b{font-size:clamp(40px,4.6vw,72px);letter-spacing:-.05em;line-height:1}
+.scard .proof span{font-size:14px;opacity:.75;max-width:18ch;line-height:1.3}
+.scard.t-green .proof b{color:var(--lime)}
+.scard .vis{position:relative;overflow:hidden;background:rgba(11,31,21,.06)}
+.scard .vis video,.scard .vis img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.scard .vis .grid3{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:clamp(16px,2vw,28px);align-items:center}
+.scard .vis .grid3 img{position:static;height:auto;aspect-ratio:4/5;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.scard .vis .grid3 img:nth-child(2){transform:translateY(-22px)}
+.scard .vis .chip{position:absolute;right:18px;top:18px;background:var(--cream);color:var(--ink);font-weight:700;font-size:12px;padding:8px 12px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.scard .arrow{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--cream);display:grid;place-items:center;position:absolute;right:18px;top:18px;z-index:2}
+.scard.t-green .arrow{background:var(--lime);color:var(--lime-ink)}
+.scard .arrow svg{width:18px;height:18px}
+@media(max-width:860px){
+  .scard{grid-template-columns:1fr;min-height:0}
+  .scard .vis{aspect-ratio:4/3}
+  .scard .txt{padding:24px 22px 26px}
+  .scard h3{max-width:none}
+}
+
+/* interlude: green statement */
+.state{background:var(--green);color:var(--cream);padding-block:clamp(90px,14vw,200px);position:relative;overflow:hidden;margin-top:clamp(40px,6vw,90px)}
+.state h2{font-size:clamp(34px,6vw,92px);letter-spacing:-.045em;max-width:16ch;margin:0 auto;text-align:center;line-height:1}
+.state h2 .w{display:inline-block;opacity:.18;transition:opacity .5s}
+.state h2 .w.on{opacity:1}
+.state h2 em{font-style:normal;color:var(--lime)}
+.state .sq{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.state .sq path{fill:none;stroke:var(--cream);stroke-width:26;stroke-linecap:round;stroke-linejoin:round;opacity:.12}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* temp foot */
+.tfoot{padding:clamp(56px,8vw,110px) 0 60px;text-align:center}
+.tfoot h2{font-size:clamp(32px,5vw,70px)}
+.tfoot p{color:var(--muted);margin-top:14px}
+.tfoot .acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.tfoot .note{display:inline-block;margin-top:46px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);padding:8px 14px;border-radius:999px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 .w i,.fan .card{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Digital Lineup"><img src="logo-dark.svg" alt="Digital Lineup" width="92" height="34"></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <a class="btn" href="#contact">Start something cool <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <span class="eyebrow">Multan &middot; Est. 2022</span>
+      <h1 style="margin-top:22px" data-words>The agency that ships work <em>with the numbers next to it.</em></h1>
+      <p class="lead">Video, brand identity, ads and social for brands that wanted to look bigger than they were. Four years, one team, every piece made in-house.</p>
+      <div class="acts">
+        <a class="btn" href="#contact">Let's build your brand <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn ghost" href="#work">See the work</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b>5.0</b> on Google</span>
+        <span><b>100M+</b> views on client work</span>
+        <span><b>1,000+</b> assets shipped</span>
+      </div>
+    </div>
+  </div>
+  <div class="fan" data-fan>
+    <a class="card c1" href="#work"><img src="../img/lc-2-01.jpg" alt="Lume Beauty Studio storefront identity" loading="eager"><span class="stat light">Brand identity</span><span class="name">Lume</span></a>
+    <a class="card c2" href="#work"><video src="../media/shangrilla-eid.mp4" poster="../media/shangrilla-eid.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="stat light">Eid film</span><span class="name">Shangrilla</span></a>
+    <a class="card c3" href="#work"><video src="../media/apex-11m.mp4" poster="../media/apex-11m.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="stat">11M views</span><span class="name">Apex Solar</span></a>
+    <a class="card c4" href="#work"><img src="../img/hm-tv-1.jpg" alt="The Hangmaster TV installation ad" loading="eager"><span class="stat">$120 &rarr; $25 per lead</span><span class="name">The Hangmaster</span></a>
+    <a class="card c5" href="#work"><img src="../img/mascot-model-town-post-1.jpg" alt="Shan Electronics mascot campaign" loading="eager"><span class="stat light">Mascot campaign</span><span class="name">Shan Electronics</span></a>
+  </div>
+</section>
+
+<section class="logos">
+  <p>Brands that trusted us with the work</p>
+  <div class="lmq" aria-hidden="true">
+    <div class="track">
+      <span class="tile">Apex Solar <small>Energy</small></span><span class="tile">Shangrilla <small>F&amp;B</small></span><span class="tile">The Hangmaster <small>Perth</small></span><span class="tile">Rainbow Printing <small>B2B</small></span><span class="tile">Capxa <small>Agency</small></span><span class="tile">Lume <small>Beauty</small></span><span class="tile">Shan Electronics <small>Retail</small></span><span class="tile">Boota Brothers <small>Flour mills</small></span><span class="tile">Solar Mandee <small>Marketplace</small></span><span class="tile">Al Shifa <small>Healthcare</small></span><span class="tile">Hamid Enterprises <small>Sanitary</small></span><span class="tile">Spice &amp; Grill <small>Restaurant</small></span>
+      <span class="tile">Apex Solar <small>Energy</small></span><span class="tile">Shangrilla <small>F&amp;B</small></span><span class="tile">The Hangmaster <small>Perth</small></span><span class="tile">Rainbow Printing <small>B2B</small></span><span class="tile">Capxa <small>Agency</small></span><span class="tile">Lume <small>Beauty</small></span><span class="tile">Shan Electronics <small>Retail</small></span><span class="tile">Boota Brothers <small>Flour mills</small></span><span class="tile">Solar Mandee <small>Marketplace</small></span><span class="tile">Al Shifa <small>Healthcare</small></span><span class="tile">Hamid Enterprises <small>Sanitary</small></span><span class="tile">Spice &amp; Grill <small>Restaurant</small></span>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="mark" aria-hidden="true">SERVICES</div>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">What we do</span>
+      <h2>Four things. Done properly.</h2>
+      <p>Most agencies sell twelve services and are average at ten. We kept the four that move a brand and built a team around each one.</p>
+    </div>
+    <div class="stack">
+
+      <article class="scard t-sand">
+        <div class="txt">
+          <div>
+            <div class="num">01</div>
+            <h3>Video &amp; content production</h3>
+            <p>Films, reels, product shoots and creator campaigns. Our own crew, lights and camera, on site where it matters, edited in-house the same week.</p>
+            <div class="pts"><span>Brand films</span><span>Reels</span><span>Creator campaigns</span><span>Product shoots</span></div>
+          </div>
+          <div class="proof"><b>11M</b><span>views on one Apex Solar creator film</span></div>
+        </div>
+        <div class="vis"><video src="../media/apex-bts.mp4" poster="../media/apex-bts.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+      </article>
+
+      <article class="scard t-mint">
+        <div class="txt">
+          <div>
+            <div class="num">02</div>
+            <h3>Performance marketing</h3>
+            <p>Meta and Google ads with the creative, landing pages and pixel work done by the same team, so nothing gets lost between the strategy deck and the ad account.</p>
+            <div class="pts"><span>Meta ads</span><span>Google ads</span><span>Landing pages</span><span>Lookalike audiences</span></div>
+          </div>
+          <div class="proof"><b>$120 &rarr; $25</b><span>cost per lead for The Hangmaster, Perth</span></div>
+        </div>
+        <div class="vis"><div class="grid3"><img src="../img/tv-ad-post-1.jpg" alt=""><img src="../img/hm-tv-1.jpg" alt=""><img src="../img/tv-ad-post-3.jpg" alt=""></div><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+      </article>
+
+      <article class="scard t-cream">
+        <div class="txt">
+          <div>
+            <div class="num">03</div>
+            <h3>Brand identity</h3>
+            <p>Logo, system, signage, packaging and the brand book that makes it all hold together, for businesses that are about to be seen by a lot more people.</p>
+            <div class="pts"><span>Logo &amp; system</span><span>Brand book</span><span>Signage</span><span>Packaging</span></div>
+          </div>
+          <div class="proof"><b>4</b><span>full identities on this page, brand books included</span></div>
+        </div>
+        <div class="vis"><video src="../media/lume.mp4" poster="../media/lume.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="chip">Lume Beauty Studio</span></div>
+      </article>
+
+      <article class="scard t-green">
+        <div class="txt">
+          <div>
+            <div class="num">04</div>
+            <h3>Social media management</h3>
+            <p>Daily content, design and community for brands that want a feed people actually follow. Strategy, posting, ads and reporting, one team, one standard.</p>
+            <div class="pts"><span>Content calendar</span><span>Design</span><span>Community</span><span>Reporting</span></div>
+          </div>
+          <div class="proof"><b>150K</b><span>Facebook followers built for Solar Mandee in 8 months</span></div>
+        </div>
+        <div class="vis"><video src="../media/garden-platter.mp4" poster="../media/garden-platter.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="state" id="about">
+  <svg class="sq" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true"><path data-ink d="M-40,520 C180,420 260,120 420,160 C600,205 560,470 760,440 C960,410 900,120 1120,150 C1300,175 1340,420 1500,380"/></svg>
+  <div class="wrap">
+    <h2 data-words>Good design gets you noticed. <em>Numbers</em> keep you hired.</h2>
+  </div>
+</section>
+
+<section class="tfoot" id="contact">
+  <div class="wrap">
+    <h2 class="rv">Work, reviews, team and contact come next.</h2>
+    <p class="rv">This is the first pass: palette, hero, clients and services.</p>
+    <div class="acts rv">
+      <a class="btn" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn ghost" href="../">See current live site</a>
+    </div>
+    <span class="note">v2 preview &middot; not public</span>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // split headline words
+  document.querySelectorAll('[data-words]').forEach(function(h){
+    var out='';
+    h.childNodes.forEach(function(n){
+      if(n.nodeType===3){ n.textContent.split(/(\s+)/).forEach(function(t){ if(t.trim()) out+='<span class="w"><i>'+t+'</i></span>'; else if(t) out+=' '; }); }
+      else { var tag=n.tagName.toLowerCase(); out+='<'+tag+'>'; n.textContent.split(/(\s+)/).forEach(function(t){ if(t.trim()) out+='<span class="w"><i>'+t+'</i></span>'; else if(t) out+=' '; }); out+='</'+tag+'>'; }
+    });
+    h.innerHTML=out;
+  });
+  // hero words in
+  var hw=document.querySelectorAll('.hero h1 .w i');
+  hw.forEach(function(i,k){ setTimeout(function(){ i.classList.add('in'); }, 120+k*70); });
+  // fan in
+  var fan=document.querySelector('[data-fan]'); setTimeout(function(){ fan.classList.add('in'); }, 350);
+  // reveals
+  var rv=document.querySelectorAll('.rv');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15});
+  rv.forEach(function(el){io.observe(el);});
+  // autoplay loops in view
+  var vids=document.querySelectorAll('video[data-loop]');
+  var vo=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){v.play().catch(function(){});}else{v.pause();}});},{threshold:.25});
+  vids.forEach(function(v){vo.observe(v);});
+  // statement: words light up + squiggle draws with scroll
+  var st=document.querySelector('.state'), sw=st.querySelectorAll('.w'), ink=st.querySelector('[data-ink]'), L=ink.getTotalLength();
+  ink.style.strokeDasharray=L; ink.style.strokeDashoffset=L;
+  function prog(){
+    var r=st.getBoundingClientRect(), vh=innerHeight;
+    var p=Math.min(1,Math.max(0,(vh-r.top)/(r.height+vh*0.6)));
+    ink.style.strokeDashoffset=L*(1-Math.min(1,p*1.25));
+    var n=Math.round(sw.length*Math.min(1,p*1.5));
+    sw.forEach(function(w,i){w.classList.toggle('on',i<n);});
+  }
+  addEventListener('scroll',prog,{passive:true}); addEventListener('resize',prog); prog();
+  // sticky stack: scale back cards slightly as the next one covers them
+  var cards=[].slice.call(document.querySelectorAll('.scard'));
+  function stack(){
+    cards.forEach(function(c,i){
+      var next=cards[i+1]; if(!next) return;
+      var r=c.getBoundingClientRect(), nr=next.getBoundingClientRect();
+      var overlap=Math.min(1,Math.max(0,(r.bottom-nr.top)/r.height));
+      c.style.transform='scale('+(1-overlap*0.06)+') translateY('+(-overlap*10)+'px)';
+      c.style.filter='brightness('+(1-overlap*0.08)+')';
+    });
+  }
+  if(!rm){ addEventListener('scroll',stack,{passive:true}); addEventListener('resize',stack); stack(); }
+})();
+</script>
+</body>
+</html>
