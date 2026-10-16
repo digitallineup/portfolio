@@ -63,21 +63,19 @@ h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
 .btn.lime:hover{box-shadow:0 14px 34px rgba(212,255,90,.35)}
 .stage{position:relative;height:clamp(240px,22vw,330px);margin-top:clamp(20px,2.6vw,40px);perspective:1300px;perspective-origin:50% 40%}
 .ring{position:absolute;left:50%;top:50%;transform-style:preserve-3d}
-.rc{position:absolute;left:0;top:0;width:clamp(120px,12vw,180px);aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#fff;color:var(--ink);box-shadow:0 24px 50px rgba(0,0,0,.28);backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity}
+.rc{position:absolute;left:0;top:0;width:clamp(124px,12vw,182px);aspect-ratio:4/5;border-radius:8px;overflow:hidden;background:#fff;color:var(--ink);box-shadow:0 22px 46px rgba(10,50,110,.28);backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity;container-type:inline-size}
 .rc img,.rc video{width:100%;height:100%;object-fit:cover;display:block}
-.rc.tall{width:clamp(108px,10.5vw,158px);aspect-ratio:3/4}
-.rc.sq{width:clamp(124px,12.4vw,188px);aspect-ratio:1/1}
-.rc.wide{width:clamp(150px,15vw,228px);aspect-ratio:5/4}
-.rc{border-radius:18px}
-.rc .tag{position:absolute;left:8px;bottom:8px;right:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:10px;padding:7px 9px;font-size:11px;font-weight:700;line-height:1.2;color:var(--ink)}
-.rc .tag small{display:block;font-weight:500;color:var(--muted);font-size:10px}
-.rc.info{padding:14px;display:flex;flex-direction:column;justify-content:space-between}
-.rc.info small{font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
-.rc.info b{font-size:clamp(26px,2.4vw,38px);letter-spacing:-.05em;line-height:1}
-.rc.info span{font-size:11px;color:var(--ink-2);line-height:1.3}
-.rc.info svg{width:100%;height:46px}
-.rc.dark{background:#0b1f15;color:#fff}.rc.dark b{font-size:clamp(18px,1.7vw,26px);white-space:nowrap}.rc.dark small{color:rgba(255,255,255,.55)}.rc.dark span{color:rgba(255,255,255,.75)}.rc.dark b{color:#d4ff5a}
-.rc.limec{background:#d4ff5a}
+.rc .tag{position:absolute;left:5cqw;right:5cqw;bottom:5cqw;background:rgba(255,255,255,.94);border-radius:5px;padding:4.5cqw 5.5cqw;line-height:1.2;color:var(--ink);font-size:7.2cqw;font-weight:700;letter-spacing:-.01em}
+.rc .tag small{display:block;font-weight:500;color:var(--muted);font-size:5.8cqw;margin-top:1.2cqw;letter-spacing:0}
+.rc.info{display:grid;grid-template-rows:auto 1fr auto;padding:clamp(10px,1.05vw,15px);gap:4px}
+.rc.info small{font-size:5.6cqw;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted);align-self:start}
+.rc.info .mid{align-self:center}
+.rc.info b{display:block;font-size:20cqw;letter-spacing:-.05em;line-height:.95;white-space:nowrap}
+.rc.info .st{display:block;color:#f5b400;letter-spacing:.12em;font-size:7.5cqw;margin-top:3cqw}
+.rc.info svg{display:block;width:100%;height:24cqw;margin-top:4cqw}
+.rc.info p{margin:0;font-size:6.2cqw;line-height:1.35;color:var(--ink-2);align-self:end}
+.rc.dark{background:#0b1f15;color:#fff}.rc.dark small{color:rgba(255,255,255,.55)}.rc.dark p{color:rgba(255,255,255,.75)}.rc.dark b{color:#d4ff5a;font-size:15cqw}
+.rc.limec{background:#d4ff5a}.rc.limec small{color:rgba(3,24,14,.6)}.rc.limec p{color:#03180e}
 .hero .rated{position:relative;text-align:center;color:#0b2a4a;padding:clamp(10px,1.4vw,20px) 0 clamp(22px,2.6vw,34px);font-size:13px;font-weight:600}
 .hero .rated .stars{display:block;color:#f5b400;letter-spacing:.18em;font-size:14px;margin-top:4px}
 @media(max-width:700px){
@@ -428,20 +426,20 @@ body.menu-open .menu ul a{transform:none;opacity:1}
   </div>
   <div class="stage" aria-label="Selected work">
     <div class="ring" data-ring>
-      <div class="rc tall"><img src="../img/lc-2-01.jpg" alt="Lume storefront identity"><span class="tag">Lume Beauty Studio<small>Brand identity</small></span></div>
-      <div class="rc info sq"><small>Google rating</small><div><b>5.0</b><span style="color:#f5b400;letter-spacing:.1em">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><span>16 reviews from clients in Multan, Lahore and Perth</span></div>
+      <div class="rc"><img src="../img/lc-2-01.jpg" alt="Lume storefront identity"><span class="tag">Lume Beauty Studio<small>Brand identity</small></span></div>
+      <div class="rc info"><small>Google rating</small><div class="mid"><b>5.0</b><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><p>16 reviews from our clients</p></div>
       <div class="rc"><video src="../media/apex-11m.mp4" poster="../media/apex-11m.poster.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="tag">Apex Solar<small>11M views, one creator film</small></span></div>
-      <div class="rc wide"><img src="../img/hm-tv-1.jpg" alt="The Hangmaster ad"><span class="tag">The Hangmaster<small>$120 to $25 per lead</small></span></div>
-      <div class="rc info dark sq"><small>Cost per lead</small><b>$120&rarr;$25</b><span>Meta ads, creative and landing pages for The Hangmaster, Perth</span></div>
+      <div class="rc"><img src="../img/hm-tv-1.jpg" alt="The Hangmaster ad"><span class="tag">The Hangmaster<small>$120 to $25 per lead</small></span></div>
+      <div class="rc info dark"><small>Cost per lead</small><div class="mid"><b>$120&rarr;$25</b></div><p>Meta ads for The Hangmaster, Perth</p></div>
       <div class="rc"><img src="../img/mascot-model-town-post-1.jpg" alt="Shan Electronics mascot"><span class="tag">Shan Electronics<small>Mascot campaign</small></span></div>
-      <div class="rc info wide"><small>Reach</small><b>100M+</b><svg viewBox="0 0 120 46" preserveAspectRatio="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00d24c" stop-opacity=".45"/><stop offset="1" stop-color="#00d24c" stop-opacity="0"/></linearGradient></defs><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4 L120,46 L0,46Z" fill="url(#sg)"/><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4" fill="none" stroke="#00b341" stroke-width="2"/></svg><span>views across client work</span></div>
-      <div class="rc tall"><img src="../img/main-platter-2.jpg" alt="Shangrilla BBQ platter post"><span class="tag">Shangrilla<small>Food photography and social</small></span></div>
-      <div class="rc sq"><img src="../img/posts-capxa-02.jpg" alt="Capxa social post"><span class="tag">Capxa<small>Identity and social</small></span></div>
-      <div class="rc info limec tall"><small style="color:#03180e;opacity:.6">Output</small><b>1,000+</b><span>films, reels, posters, identities and sites shipped</span></div>
-      <div class="rc wide"><img src="../img/more-than-printing-company.jpg" alt="Rainbow Printing post"><span class="tag">Rainbow Printing<small>B2B content</small></span></div>
+      <div class="rc info"><small>Reach</small><div class="mid"><b>100M+</b><svg viewBox="0 0 120 46" preserveAspectRatio="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00d24c" stop-opacity=".45"/><stop offset="1" stop-color="#00d24c" stop-opacity="0"/></linearGradient></defs><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4 L120,46 L0,46Z" fill="url(#sg)"/><path d="M0,40 L15,36 L30,38 L45,28 L60,30 L75,18 L90,20 L105,8 L120,4" fill="none" stroke="#00b341" stroke-width="2"/></svg></div><p>views across client work</p></div>
+      <div class="rc"><img src="../img/main-platter-2.jpg" alt="Shangrilla BBQ platter post"><span class="tag">Shangrilla<small>Food photography and social</small></span></div>
+      <div class="rc"><img src="../img/posts-capxa-02.jpg" alt="Capxa social post"><span class="tag">Capxa<small>Identity and social</small></span></div>
+      <div class="rc info limec"><small>Output</small><div class="mid"><b>1,000+</b></div><p>films, reels, posters and identities shipped</p></div>
+      <div class="rc"><img src="../img/more-than-printing-company.jpg" alt="Rainbow Printing post"><span class="tag">Rainbow Printing<small>B2B content</small></span></div>
       <div class="rc"><video src="../media/shangrilla-eid.mp4" poster="../media/shangrilla-eid.poster.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="tag">Shangrilla<small>Eid campaign film</small></span></div>
-      <div class="rc sq"><img src="../img/industry-solar.jpg" alt="Rainbow solar industry post"><span class="tag">Rainbow Printing<small>Campaign design</small></span></div>
-      <div class="rc tall"><img src="../img/cake-of-the-month.jpg" alt="Shangrilla bakery post"><span class="tag">Shangrilla Bakers<small>Product design</small></span></div>
+      <div class="rc"><img src="../img/industry-solar.jpg" alt="Rainbow solar industry post"><span class="tag">Rainbow Printing<small>Campaign design</small></span></div>
+      <div class="rc"><img src="../img/cake-of-the-month.jpg" alt="Shangrilla bakery post"><span class="tag">Shangrilla Bakers<small>Product design</small></span></div>
     </div>
   </div>
   <div class="rated">Rated 5.0 on Google by our clients<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
