@@ -168,12 +168,12 @@ body.on-hero:not(.menu-open) .nav .lnk{color:#fff}
 body.on-hero:not(.menu-open) .nav .burger i{background:#fff}
 body.on-hero:not(.menu-open) .nav .logo .ld{display:none}
 body.on-hero:not(.menu-open) .nav .logo .lw{display:block}
-.nav .lnk{justify-self:start;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding:10px 0}
-.nav .logo{justify-self:center}
+.nav .lnk{justify-self:start;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding:10px 0;line-height:1}
+.nav .logo{justify-self:center;display:flex;align-items:center}
 .nav .logo img{height:36px;width:auto}
-.nav .burger{justify-self:end;width:46px;height:46px;border-radius:50%;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;padding:0}
+.nav .burger{justify-self:end;width:46px;height:46px;border-radius:50%;border:0;background:transparent;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:5px;cursor:pointer;padding:0 0 0 10px}
 .nav .burger i{display:block;width:24px;height:2px;background:var(--ink);border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
-.nav .burger i+i{margin-top:5px}
+.nav .burger i{flex:none}
 body.menu-open .nav .burger i:nth-child(1){transform:translateY(7px) rotate(45deg)}
 body.menu-open .nav .burger i:nth-child(2){opacity:0}
 body.menu-open .nav .burger i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
