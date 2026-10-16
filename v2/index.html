@@ -110,9 +110,9 @@ h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
 .scard .txt p{font-size:clamp(16px,1.25vw,19px);line-height:1.45;margin-top:18px;max-width:40ch;opacity:.85}
 .scard .pts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .scard .pts span{font-size:13px;font-weight:600;padding:8px 13px;border-radius:999px;border:1.5px solid currentColor;opacity:.75}
-.scard .proof{display:flex;align-items:baseline;gap:12px}
-.scard .proof b{font-size:clamp(40px,4.6vw,72px);letter-spacing:-.05em;line-height:1}
-.scard .proof span{font-size:14px;opacity:.75;max-width:18ch;line-height:1.3}
+.scard .proof{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:14px}
+.scard .proof b{font-size:clamp(38px,4.2vw,66px);letter-spacing:-.05em;line-height:.9;white-space:nowrap}
+.scard .proof span{font-size:14px;opacity:.75;max-width:20ch;line-height:1.3;padding-bottom:.25em}
 .scard.t-green .proof b{color:var(--lime)}
 .scard .vis{position:relative;overflow:hidden;background:rgba(11,31,21,.06)}
 .scard .vis video,.scard .vis img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
@@ -129,6 +129,20 @@ h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1}
   .scard .txt{padding:24px 22px 26px}
   .scard h3{max-width:none}
 }
+
+
+.scard .vis.book .scrollv{position:absolute;inset:0;overflow-y:auto;scrollbar-width:none;background:#0b1f15}
+.scard .vis.book .scrollv::-webkit-scrollbar{display:none}
+.scard .vis.book .scrollv img{position:static;width:100%;height:auto;display:block}
+.scard .vis.gal{background:#07150e}
+.gcols{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:12px;overflow:hidden}
+.gcols .col{overflow:hidden;position:relative;border-radius:14px}
+.gcols .run{display:flex;flex-direction:column;gap:12px;will-change:transform;animation:vmq 36s linear infinite}
+.gcols .c2 .run{animation-direction:reverse;animation-duration:44s}
+.gcols .c3 .run{animation-duration:40s}
+.scard .vis.gal .gcols video{position:static;inset:auto;width:100%;aspect-ratio:9/16;height:auto;object-fit:cover;border-radius:14px;flex:none}
+@keyframes vmq{to{transform:translateY(-50%)}}
+.scard:hover .gcols .run{animation-play-state:paused}
 
 /* interlude: green statement */
 .state{background:var(--green);color:var(--cream);padding-block:clamp(90px,14vw,200px);position:relative;overflow:hidden;margin-top:clamp(40px,6vw,90px)}
@@ -380,7 +394,7 @@ body.menu-open .menu ul a{transform:none;opacity:1}
           </div>
           <div class="proof"><b>11M</b><span>views on one Apex Solar creator film</span></div>
         </div>
-        <div class="vis"><video src="../media/apex-bts.mp4" poster="../media/apex-bts.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+        <div class="vis"><video src="../media/apex-1m.mp4" poster="../media/apex-1m.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
       </article>
 
       <article class="scard t-mint">
@@ -406,7 +420,7 @@ body.menu-open .menu ul a{transform:none;opacity:1}
           </div>
           <div class="proof"><b>4</b><span>full identities on this page, brand books included</span></div>
         </div>
-        <div class="vis"><video src="../media/lume.mp4" poster="../media/lume.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="chip">Lume Beauty Studio</span></div>
+        <div class="vis book" data-book><div class="scrollv"><img src="../img/bk-capxa.jpg" alt="Capxa brand book" loading="lazy"></div><span class="chip">Capxa brand book &middot; scroll</span></div>
       </article>
 
       <article class="scard t-green">
@@ -419,7 +433,7 @@ body.menu-open .menu ul a{transform:none;opacity:1}
           </div>
           <div class="proof"><b>150K</b><span>Facebook followers built for Solar Mandee in 8 months</span></div>
         </div>
-        <div class="vis"><video src="../media/garden-platter.mp4" poster="../media/garden-platter.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+        <div class="vis gal"><div class="gcols"><div class="col c1"><div class="run"><video src="../media/can-hello.mp4" poster="../media/can-hello.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/brownie.mp4" poster="../media/brownie.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/chinese-concept.mp4" poster="../media/chinese-concept.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/can-hello.mp4" poster="../media/can-hello.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/brownie.mp4" poster="../media/brownie.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/chinese-concept.mp4" poster="../media/chinese-concept.poster.jpg" muted loop playsinline preload="metadata" data-loop></video></div></div><div class="col c2"><div class="run"><video src="../media/can-weekdays.mp4" poster="../media/can-weekdays.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/kiwi.mp4" poster="../media/kiwi.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/garden-platter.mp4" poster="../media/garden-platter.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/can-weekdays.mp4" poster="../media/can-weekdays.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/kiwi.mp4" poster="../media/kiwi.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/garden-platter.mp4" poster="../media/garden-platter.poster.jpg" muted loop playsinline preload="metadata" data-loop></video></div></div><div class="col c3"><div class="run"><video src="../media/bts-cupcake.mp4" poster="../media/bts-cupcake.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/can-cake.mp4" poster="../media/can-cake.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/shan-reel.mp4" poster="../media/shan-reel.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/bts-cupcake.mp4" poster="../media/bts-cupcake.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/can-cake.mp4" poster="../media/can-cake.poster.jpg" muted loop playsinline preload="metadata" data-loop></video><video src="../media/shan-reel.mp4" poster="../media/shan-reel.poster.jpg" muted loop playsinline preload="metadata" data-loop></video></div></div></div><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
       </article>
 
     </div>
@@ -769,6 +783,13 @@ body.menu-open .menu ul a{transform:none;opacity:1}
     var pio=new IntersectionObserver(function(es){if(es[0].isIntersecting){if(window.Matter)start();else{var s=document.querySelector('script[src*="matter"]');s&&s.addEventListener('load',start);}pio.disconnect();}},{threshold:.2});
     pio.observe(pit);
     setTimeout(function(){if(!started&&!window.Matter){pit.classList.add('ready','static');}},6000);
+  })();
+  // brand book auto scroll
+  (function(){
+    var b=document.querySelector('[data-book] .scrollv'); if(!b) return; var on=false,hover=false,dir=1;
+    b.addEventListener('pointerenter',function(){hover=true;}); b.addEventListener('pointerleave',function(){hover=false;});
+    new IntersectionObserver(function(es){on=es[0].isIntersecting;},{threshold:.3}).observe(b);
+    (function step(){ if(on&&!hover&&!rm){ b.scrollTop+=0.6*dir; var max=b.scrollHeight-b.clientHeight; if(b.scrollTop>=max-1) dir=-1; if(b.scrollTop<=0) dir=1; } requestAnimationFrame(step); })();
   })();
 })();
 </script>
