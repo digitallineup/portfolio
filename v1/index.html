@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Digital Lineup Portfolio</title>
+<meta name="description" content="Digital Lineup is a design and content production agency in Multan, Pakistan. Brand identity, social media, video production, Meta ads, creator campaigns and websites, with the numbers next to every piece.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digitallineup.com/v1/">
+<meta property="og:title" content="Digital Lineup · Portfolio">
+<meta property="og:description" content="Brand identity, social media, video production and Meta ads. Four years of work for brands in Pakistan and Australia, with the numbers.">
+<meta property="og:image" content="https://digitallineup.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout concept: one long dark-green editorial scroll. Giant Helvetica headlines, full-bleed video,
+   poster rows that break the grid. Boldness lives in the type scale and the Apex section; everything else is quiet. */
+:root{
+  --bg:#03180e;          /* deepest brand green, page ground */
+  --surface:#08291a;     /* brand card green */
+  --surface-2:#0d3522;   /* raised card */
+  --line:rgba(252,252,252,.10);
+  --fg:#fcfcfc;
+  --muted:#9db5a7;       /* green-biased grey */
+  --accent:#00d24c;
+  --accent-ink:#03180e;
+  --font:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.muted{color:var(--muted)}
+.sec{padding-block:clamp(64px,9vw,128px)}
+.sec-head{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:clamp(28px,4vw,56px);max-width:900px}
+.sec-head h2{font-size:clamp(34px,5.2vw,68px);line-height:1.02}
+.sec-head p{font-size:clamp(17px,1.4vw,20px);max-width:62ch}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(3,24,14,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.nav .logo{height:30px;width:auto}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav li a{font-size:14px;text-decoration:none;color:var(--muted)}
+.nav li a:hover,.nav li a:focus-visible{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;text-decoration:none;white-space:nowrap}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+@media (max-width:860px){.nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;padding-block:clamp(56px,8vw,110px) clamp(40px,6vw,80px);overflow:hidden}
+.hero .wrap{position:relative}
+.hero .for{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.hero .for .pill{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--muted)}
+.hero .for .pill b{color:var(--fg);font-weight:700}
+.h1wrap{position:relative;display:inline-block;max-width:100%}
+.hero h1{font-size:clamp(68px,15.4vw,208px);line-height:.86;letter-spacing:-.045em;white-space:nowrap}
+.hero h1 .o{color:var(--accent)}
+.tags{position:absolute;inset:0;pointer-events:none}
+.tag{position:absolute;letter-spacing:0;line-height:1.3;font-weight:500;display:inline-flex;align-items:center;gap:8px;background:rgba(8,41,26,.85);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;color:var(--fg);box-shadow:0 10px 30px rgba(0,0,0,.35);white-space:nowrap;animation:float 7s ease-in-out infinite}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.tag:nth-child(2){animation-delay:-2s}.tag:nth-child(3){animation-delay:-4s}.tag:nth-child(4){animation-delay:-1s}.tag:nth-child(5){animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (max-width:760px){.tags{display:none}}
+.hero .sub{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:end;margin-top:clamp(28px,4vw,48px)}
+.hero .sub p.lead{font-size:clamp(19px,2vw,26px);line-height:1.3;max-width:30ch;font-weight:500}
+.hero .sub .meta{display:grid;gap:10px;font-size:14px;color:var(--muted);justify-items:start}
+.hero .sub .meta b{color:var(--fg)}
+@media (max-width:760px){.hero .sub{grid-template-columns:1fr}}
+.seal{position:absolute;right:0;top:-8px;width:132px;height:132px;animation:spin 24s linear infinite}
+.seal text{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;fill:var(--muted);font-family:var(--font)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:1000px){.seal{display:none}}
+
+/* film */
+.film{position:relative;border-radius:18px;overflow:hidden;background:var(--surface);aspect-ratio:16/9;max-width:100%}
+.film video{width:100%;height:100%;object-fit:cover}
+.film .bar{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:linear-gradient(to top,rgba(3,24,14,.85),transparent);font-size:13px;color:var(--fg)}
+.film .bar button{white-space:nowrap;background:rgba(3,24,14,.7);border:1px solid var(--line);color:var(--fg);border-radius:999px;padding:8px 14px;font:inherit;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.film .bar button:hover{border-color:var(--accent)}
+
+/* stats strip */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:28px 20px 28px 0;border-right:1px solid var(--line);margin-right:20px}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{display:block;font-size:clamp(30px,3.6vw,52px);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.stat{border-right:0;border-bottom:1px solid var(--line);margin-right:0}.stat:nth-last-child(-n+1){border-bottom:0}}
+
+/* players */
+.player{position:relative;border-radius:16px;overflow:hidden;background:var(--surface);isolation:isolate}
+.player video{width:100%;height:100%;object-fit:cover}
+.player .play{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(to top,rgba(3,24,14,.55),rgba(3,24,14,0) 50%);border:0;cursor:pointer;padding:0;color:var(--fg);font:inherit;width:100%}
+.player .play .ring{width:74px;height:74px;border-radius:50%;background:var(--accent);display:grid;place-items:center;box-shadow:0 12px 40px rgba(0,210,76,.35);transition:transform .25s}
+.player .play:hover .ring{transform:scale(1.06)}
+.player .play .ring svg{width:26px;height:26px;fill:var(--accent-ink);margin-left:3px}
+.player .label{position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;align-items:end;gap:10px;pointer-events:none;font-size:13px}
+.player .label .t{font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.player .label .v{background:var(--accent);color:var(--accent-ink);font-weight:700;padding:5px 10px;border-radius:999px;font-size:12px;white-space:nowrap}
+.player.playing .play,.player.playing .label{display:none}
+.wide{aspect-ratio:16/9}
+.tall{aspect-ratio:9/16}
+.loop{aspect-ratio:1/1}
+
+/* apex */
+.apex{background:var(--surface)}
+.apex-grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:stretch}
+.apex-grid .tall{align-self:stretch;aspect-ratio:auto;min-height:420px}
+.apex-grid .tall video{position:absolute;inset:0}
+@media (max-width:900px){.apex-grid{grid-template-columns:1fr}.apex-grid .tall{aspect-ratio:9/16;min-height:0}.apex-grid .tall video{position:static}}
+.apex-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.fact{background:var(--surface-2);border-radius:16px;padding:22px 22px 24px;display:grid;gap:6px}
+.fact b{font-size:clamp(28px,3vw,40px);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.fact span{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.apex-facts{grid-template-columns:1fr}}
+.bts-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px;align-items:center}
+.bts-row .copy{padding:8px 0}
+.bts-row .copy h3{font-size:clamp(24px,2.6vw,34px);line-height:1.12;margin-bottom:12px}
+.bts-row .copy p{color:var(--muted);max-width:48ch}
+@media (max-width:900px){.bts-row{grid-template-columns:1fr}}
+
+/* poster rows */
+.row-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:clamp(40px,6vw,72px) 0 18px}
+.row-head h3{font-size:clamp(22px,2.4vw,30px);line-height:1.15}
+.row-head p{color:var(--muted);font-size:14px;max-width:46ch}
+.scroller{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.scroller>*{flex:0 0 auto;scroll-snap-align:start}
+.poster{width:min(260px,66vw);aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:var(--surface-2)}
+.poster img{width:100%;height:100%;object-fit:cover}
+.poster.sq{aspect-ratio:4/5}
+.reel{width:min(250px,62vw);aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:var(--surface-2);position:relative}
+.reel .play .ring{width:56px;height:56px}
+.reel .play .ring svg{width:20px;height:20px}
+
+/* bridge */
+.bridge{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:start}
+.bridge h2{font-size:clamp(32px,4.4vw,56px);line-height:1.04}
+.bridge ol{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:n}
+.bridge li{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line);counter-increment:n}
+.bridge li:last-child{border-bottom:1px solid var(--line)}
+.bridge li::before{content:counter(n,decimal-leading-zero);font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.1em;padding-top:5px}
+.bridge li b{display:block;font-size:19px;margin-bottom:6px;letter-spacing:-.01em}
+.bridge li p{color:var(--muted);font-size:15.5px;max-width:52ch}
+@media (max-width:900px){.bridge{grid-template-columns:1fr}}
+
+/* production */
+.prod-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:20px}
+@media (max-width:900px){.prod-grid{grid-template-columns:1fr}}
+.bts-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.bts-strip .loop{border-radius:12px;overflow:hidden;background:var(--surface-2);aspect-ratio:4/5}
+.bts-strip video{width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){.bts-strip{grid-template-columns:repeat(2,1fr)}}
+.caption{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* brand identity */
+.ident{background:var(--surface)}
+.ident .scroller .reel{width:min(300px,70vw)}
+
+/* feed grid */
+.feed{columns:4;column-gap:14px}
+.feed figure{margin:0 0 14px;aspect-ratio:4/5;break-inside:avoid;border-radius:12px;overflow:hidden;background:var(--surface-2);position:relative}
+.feed img{width:100%;height:100%;object-fit:cover}
+.feed figcaption{position:absolute;left:10px;bottom:10px;font-size:11.5px;background:rgba(3,24,14,.75);border:1px solid var(--line);padding:4px 9px;border-radius:999px;color:var(--fg)}
+@media (max-width:1000px){.feed{columns:3}}
+@media (max-width:640px){.feed{columns:2}}
+
+/* services */
+.services{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(24px,5vw,72px);align-items:start}
+.services .reel{width:100%;max-width:360px}
+.svc{list-style:none;margin:0;padding:0;display:grid}
+.svc li{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line)}
+.svc li:last-child{border-bottom:1px solid var(--line)}
+.svc li b{font-size:clamp(22px,2.6vw,34px);letter-spacing:-.02em;font-weight:700}
+.svc li span{font-size:14px;color:var(--muted);text-align:right;max-width:30ch}
+@media (max-width:900px){.services{grid-template-columns:1fr}.services .reel{max-width:280px}.svc li{grid-template-columns:1fr}.svc li span{text-align:left;max-width:none}}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.member{display:grid;gap:10px}
+.member .ph{aspect-ratio:1/1.3;border-radius:12px;overflow:hidden;background:var(--surface-2)}
+.member .ph img{width:100%;height:100%;object-fit:cover}
+.member b{font-size:15px}
+.member span{font-size:13px;color:var(--muted)}
+@media (max-width:900px){.team{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.team{grid-template-columns:repeat(2,1fr)}}
+
+/* cta */
+.cta{background:var(--accent);color:var(--accent-ink)}
+.cta h2{font-size:clamp(40px,7vw,104px);line-height:.95;letter-spacing:-.04em;max-width:12ch}
+.cta .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.cta .contact{display:grid;gap:14px;font-size:16px}
+.cta .contact div{display:grid;gap:2px;padding-top:12px;border-top:1px solid rgba(3,24,14,.25)}
+.cta .contact small{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.cta .contact b{font-size:clamp(18px,2vw,24px);letter-spacing:-.01em;word-break:break-word}
+.cta .contact a{text-decoration:none}
+.cta .mark{width:64px;height:auto;margin-bottom:28px}
+@media (max-width:900px){.cta .grid{grid-template-columns:1fr}}
+.foot{padding-block:28px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.logo-mk{fill:var(--accent)}.logo-wd{fill:var(--fg)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.tag,.seal{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<style>
+
+/* motion layer */
+.hero{position:relative;overflow:hidden}
+.blobs{position:absolute;inset:-20% -10%;pointer-events:none;filter:blur(70px);opacity:.55}
+.blobs i{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(0,210,76,.55),rgba(0,210,76,0) 70%);animation:drift 18s ease-in-out infinite}
+.blobs i:nth-child(1){width:52vw;height:52vw;left:-10%;top:-10%}
+.blobs i:nth-child(2){width:40vw;height:40vw;right:-5%;top:10%;animation-delay:-6s;background:radial-gradient(circle,rgba(13,53,34,.9),rgba(13,53,34,0) 70%)}
+.blobs i:nth-child(3){width:36vw;height:36vw;left:35%;bottom:-20%;animation-delay:-12s}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(4%,6%) scale(1.08)}66%{transform:translate(-3%,-4%) scale(.95)}}
+.hero .wrap{position:relative;z-index:1}
+.marquee{background:var(--accent);color:var(--accent-ink);overflow:hidden;padding-block:14px;margin-block:clamp(40px,6vw,80px) clamp(44px,6vw,84px)}
+.marquee .track{display:flex;gap:48px;align-items:center;white-space:nowrap;width:max-content;animation:mq 60s linear infinite;font-weight:700;font-size:clamp(14px,1.3vw,18px);letter-spacing:.08em;text-transform:uppercase;will-change:transform}
+.marquee .mk{width:16px;height:16px;background:url("../img/mark-dark.svg") center/contain no-repeat;display:inline-block}
+@keyframes mq{to{transform:translateX(-50%)}}
+.manifesto{padding-block:clamp(56px,9vw,120px);text-align:center;border-top:1px solid var(--line)}
+.manifesto .eyebrow{display:block;margin-bottom:22px}
+.state{display:block;max-width:26ch;margin:0 auto;font-size:clamp(26px,3.6vw,48px);line-height:1.12;letter-spacing:-.025em}
+.state-sub{max-width:54ch;margin:22px auto 0;color:var(--muted);font-size:clamp(15px,1.3vw,18px)}
+.pills{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:34px}
+.stk{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:14px;font-weight:700;padding:10px 18px;border-radius:999px;white-space:nowrap;transform:rotate(var(--r));box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.wall{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.wall.three-up{grid-template-columns:repeat(3,1fr);gap:18px}
+.wall .cell{position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:var(--surface-2);cursor:pointer}
+.wall .cell video{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.wall .cell:hover video{transform:scale(1.03)}
+.wall .cell span{position:absolute;left:10px;bottom:10px;right:10px;font-size:12px;font-weight:700;text-shadow:0 2px 10px rgba(0,0,0,.7);pointer-events:none}
+.wall .cell.sound::after{content:"Sound on";position:absolute;top:10px;right:10px;font-size:11px;background:var(--accent);color:var(--accent-ink);padding:4px 8px;border-radius:999px;font-weight:700}
+@media (max-width:900px){.wall{grid-template-columns:repeat(3,1fr)}.wall.three-up{grid-template-columns:repeat(3,1fr);gap:10px}}
+@media (max-width:560px){.wall{grid-template-columns:repeat(2,1fr)}.wall.three-up{grid-template-columns:1fr 1fr}}
+.poster,.reel,.feed figure,.member .ph{transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+.poster:hover,.reel:hover{transform:translateY(-6px) scale(1.015);box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.poster img{transition:transform .8s}.poster:hover img{transform:scale(1.05)}
+.rv{opacity:1;transform:none}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+html.js .rv.in{opacity:1;transform:none}
+html.js .scroller.rv>*{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
+html.js .scroller.rv.in>*{opacity:1;transform:none}
+html.js .scroller.rv.in>*:nth-child(2){transition-delay:.08s}html.js .scroller.rv.in>*:nth-child(3){transition-delay:.16s}html.js .scroller.rv.in>*:nth-child(4){transition-delay:.24s}html.js .scroller.rv.in>*:nth-child(5){transition-delay:.32s}html.js .scroller.rv.in>*:nth-child(n+6){transition-delay:.4s}
+.svcpath{background:var(--surface);overflow:hidden}
+.pathwrap{position:relative;max-width:1200px;margin:0 auto}
+.pathsvg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.pathsvg path{fill:none;stroke-width:14;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.pathsvg .ghost{stroke:rgba(252,252,252,.08)}
+.pathsvg .ink{stroke:var(--accent);stroke-dasharray:1;stroke-dashoffset:1;pathLength:1}
+.svcs{list-style:none;margin:0;padding:clamp(20px,4vw,60px) 0;display:grid;gap:clamp(40px,7vw,110px);position:relative;z-index:1}
+.svcs li{position:relative;left:var(--x);max-width:46%;display:grid;gap:8px}
+.svcs li b{font-size:clamp(26px,4vw,54px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;text-shadow:0 0 24px var(--surface),0 0 12px var(--surface)}
+.svcs li span{font-size:14.5px;color:var(--muted);max-width:36ch;background:var(--surface);display:inline-block;padding:4px 0;border-radius:6px}
+@media (max-width:760px){.svcs li{left:0;max-width:100%}.pathsvg{display:none}}
+.office{display:grid;grid-template-columns:300px 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+@media (max-width:760px){.office{grid-template-columns:1fr}.office .player{max-width:260px}}
+@media (prefers-reduced-motion:reduce){.blobs i,.marquee .track,.stk{animation:none}html.js .rv,html.js .scroller.rv>*{opacity:1;transform:none;transition:none}}
+
+/* row sizing: one height, true aspect ratios */
+.scroller{align-items:flex-start;--rh:clamp(300px,34vw,440px)}
+.scroller .poster{height:var(--rh);width:auto;aspect-ratio:4/5;flex:0 0 auto}
+.scroller .reel{height:var(--rh);width:auto;aspect-ratio:9/16;flex:0 0 auto}
+.scroller .poster img{width:100%;height:100%;object-fit:contain;background:var(--surface-2)}
+.ident .scroller .reel{width:auto}
+.three .poster{width:auto;aspect-ratio:4/5}
+.three .poster img{object-fit:contain}
+.poster img{object-fit:contain}
+
+/* team: glass cards */
+.team-sec{position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.team-sec::before{content:"";position:absolute;left:50%;top:40%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(0,210,76,.16),rgba(0,210,76,0) 60%);filter:blur(40px);pointer-events:none}
+.team-sec .wrap{position:relative}
+.team{gap:18px}
+.member{position:relative;border-radius:22px;padding:10px 10px 12px;background:linear-gradient(160deg,rgba(252,252,252,.09),rgba(252,252,252,.025));border:1px solid rgba(252,252,252,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 24px 60px rgba(0,0,0,.4),inset 0 1px 0 rgba(252,252,252,.16);transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .5s,box-shadow .5s;overflow:hidden;gap:0}
+.member::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(252,252,252,.14) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s ease;pointer-events:none}
+.member:hover{transform:translateY(-8px);border-color:rgba(0,210,76,.55);box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 1px rgba(0,210,76,.25),inset 0 1px 0 rgba(252,252,252,.2)}
+.member:hover::after{transform:translateX(120%)}
+.member .ph{border-radius:14px;aspect-ratio:1/1.2;position:relative}
+.member .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(3,24,14,.55),transparent 55%)}
+.member .ph img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.member:hover .ph img{transform:scale(1.05)}
+.member .info{padding:14px 6px 4px;display:grid;gap:5px}
+.member .info b{font-size:15px;letter-spacing:-.01em}
+.member .info span{font-size:12.5px;color:var(--muted);display:inline-flex;align-items:flex-start;gap:7px;line-height:1.35}
+.member .info span::before{content:"";flex:0 0 6px;width:6px;height:6px;margin-top:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+html.js .team.rv>.member{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+html.js .team.rv.in>.member{opacity:1;transform:none}
+html.js .team.rv.in>.member:nth-child(2){transition-delay:.07s}html.js .team.rv.in>.member:nth-child(3){transition-delay:.14s}html.js .team.rv.in>.member:nth-child(4){transition-delay:.21s}html.js .team.rv.in>.member:nth-child(5){transition-delay:.28s}html.js .team.rv.in>.member:nth-child(6){transition-delay:.35s}
+
+/* Perth installer case */
+.hm-case{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(28px,5vw,72px);align-items:center;margin-bottom:clamp(32px,5vw,64px)}
+.hm-num{display:grid;line-height:.95}
+.hm-num s{font-size:clamp(40px,5vw,72px);color:var(--muted);text-decoration-thickness:3px;text-decoration-color:var(--accent);letter-spacing:-.03em;font-weight:700}
+.hm-num b{font-size:clamp(110px,15vw,220px);letter-spacing:-.06em;color:var(--accent);text-shadow:0 0 70px rgba(0,210,76,.3)}
+.hm-copy{color:var(--muted);max-width:30ch;font-size:16px;margin-top:14px}
+.hm-deck{position:relative;height:clamp(380px,42vw,600px);perspective:1400px}
+.hm-deck .card{position:absolute;top:6%;left:50%;width:44%;aspect-ratio:4/5;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);transform-origin:center bottom;transition:transform .7s cubic-bezier(.2,.8,.2,1);background:var(--surface-2)}
+.hm-deck .card img{width:100%;height:100%;object-fit:cover}
+.hm-deck .c1{transform:translateX(-96%) rotate(-7deg) translateY(5%);z-index:1}
+.hm-deck .c2{transform:translateX(-50%);z-index:3}
+.hm-deck .c3{transform:translateX(-4%) rotate(7deg) translateY(5%);z-index:2}
+.hm-deck:hover .c1{transform:translateX(-112%) rotate(-10deg) translateY(2%)}
+.hm-deck:hover .c3{transform:translateX(12%) rotate(10deg) translateY(2%)}
+.hm-deck:hover .c2{transform:translateX(-50%) translateY(-4%)}
+@media (max-width:900px){.hm-case{grid-template-columns:1fr}.hm-deck{height:min(88vw,520px)}.hm-deck .card{width:50%}}
+
+/* additions for the generic portfolio */
+.case{padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
+.case.alt{background:var(--surface)}
+.case-head{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:clamp(24px,4vw,48px)}
+.case-head h2{font-size:clamp(30px,4.4vw,58px);line-height:1.04}
+.case-head .kicker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.case-head .kicker span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--muted)}
+.case-head .kicker span.on{border-color:var(--accent);color:var(--accent)}
+.case-head p{color:var(--muted);max-width:52ch;font-size:16.5px}
+@media (max-width:900px){.case-head{grid-template-columns:1fr}}
+.two{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+@media (max-width:900px){.two{grid-template-columns:1fr}}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:900px){.three{grid-template-columns:1fr}}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.facts .fact{background:var(--surface-2)}
+.case.alt .facts .fact{background:var(--bg)}
+@media (max-width:900px){.facts{grid-template-columns:1fr}}
+.books{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.book{border-radius:16px;overflow:hidden;background:#fff;position:relative}
+.book .scrollv{height:min(720px,80vh);overflow-y:auto;scrollbar-width:thin;scroll-behavior:smooth}
+.book .scrollv img{width:100%;display:block}
+.book .tag{position:absolute;left:14px;top:14px;animation:none;pointer-events:none}
+.book .hint{position:absolute;right:14px;bottom:14px;font-size:12px;background:rgba(3,24,14,.75);border:1px solid var(--line);color:var(--fg);padding:5px 10px;border-radius:999px;pointer-events:none}
+@media (max-width:900px){.books{grid-template-columns:1fr}.book .scrollv{height:520px}}
+.wide-img{border-radius:14px;overflow:hidden;background:var(--surface-2);aspect-ratio:1400/990}
+.wide-img img{width:100%;height:100%;object-fit:cover}
+.sectors{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.sector{border:1px solid var(--line);border-radius:14px;padding:18px 18px 20px;display:grid;gap:6px}
+.sector b{font-size:17px}.sector span{font-size:13.5px;color:var(--muted)}
+@media (max-width:900px){.sectors{grid-template-columns:repeat(2,1fr)}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{border-top:1px solid var(--line);padding-top:18px;counter-increment:s;display:grid;gap:8px}
+.step::before{content:counter(s,decimal-leading-zero);font-size:12px;color:var(--accent);letter-spacing:.14em;font-weight:700}
+.step b{font-size:19px;letter-spacing:-.01em}.step p{font-size:14.5px;color:var(--muted)}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+.clients{display:flex;flex-wrap:wrap;gap:10px}
+.clients span{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--fg)}
+/* ---- reviews ---- */
+.reviews{border-top:1px solid var(--line);position:relative;overflow:hidden}
+.rv-head{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;margin-bottom:clamp(36px,5vw,72px)}
+.rv-head h2{font-size:clamp(34px,5.2vw,68px);line-height:1.02;max-width:14ch;margin-top:14px}
+.gscore{display:grid;justify-items:end;text-decoration:none;color:var(--fg);gap:2px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(252,252,252,.04);transition:border-color .3s}
+.gscore:hover{border-color:var(--accent)}
+.gscore b{font-size:44px;line-height:1;letter-spacing:-.04em}
+.gscore .stars{color:var(--accent);font-size:18px;letter-spacing:.08em}
+.gscore small{font-size:12px;opacity:.7;letter-spacing:.04em}
+.rstack{position:relative;min-height:380px;max-width:900px;margin:0 auto;outline:none}
+.rcard{position:absolute;inset:0;background:#f6f1ea;color:#03180e;border-radius:22px;padding:clamp(28px,4vw,52px);display:grid;grid-template-rows:auto auto;align-content:start;gap:clamp(18px,3vw,34px);box-shadow:0 30px 80px rgba(0,0,0,.45);transform-origin:50% 60%;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .5s;opacity:0;pointer-events:none;will-change:transform}
+.rcard h3{font-size:clamp(26px,3.6vw,46px);line-height:1.02;letter-spacing:-.035em;margin:0}
+.rbody{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.rbody p{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.5}
+.who{display:grid;justify-items:center;text-align:center;gap:4px}
+.who .av{width:88px;height:88px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700;font-size:26px;letter-spacing:-.02em;margin-bottom:8px}
+.who b{font-size:17px;letter-spacing:-.01em}
+.who small{font-size:13px;opacity:.65}
+.rcard.is-on{opacity:1;transform:none;pointer-events:auto;z-index:5}
+.rcard.is-b1{opacity:1;transform:translateY(-14px) rotate(-3.5deg) scale(.985);z-index:4}
+.rcard.is-b2{opacity:1;transform:translateY(-26px) rotate(3deg) scale(.97);z-index:3}
+.rcard.is-b3{opacity:.9;transform:translateY(-36px) rotate(-1.5deg) scale(.955);z-index:2}
+.rcard.is-out{opacity:0;transform:translateY(40px) rotate(2deg) scale(.98);z-index:6}
+.rcard.is-b1 *,.rcard.is-b2 *,.rcard.is-b3 *{visibility:hidden}
+.rcard.is-b1 h3,.rcard.is-b2 h3{visibility:visible;opacity:.35}
+.rnav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:32px;flex-wrap:wrap}
+.rbtn{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:rgba(252,252,252,.04);color:var(--fg);display:grid;place-items:center;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.rbtn svg{width:22px;height:22px}
+.rbtn:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.rcount{font-size:14px;letter-spacing:.12em;opacity:.8;min-width:72px;text-align:center}
+.rcount b{color:var(--accent)}
+.rhint{flex-basis:100%;text-align:center;font-size:13px;opacity:.55;margin-top:6px}
+@media(max-width:760px){
+  .rv-head{grid-template-columns:1fr}.gscore{justify-items:start}
+  .rbody{grid-template-columns:1fr}
+  .who{grid-template-columns:auto 1fr;justify-items:start;text-align:left;column-gap:14px}
+  .who .av{width:56px;height:56px;font-size:18px;grid-row:span 2;margin:0}
+  .rcard h3{font-size:clamp(24px,6.5vw,34px)}
+  .rbody p{font-size:16px}
+}
+/* ---- contact (dark) ---- */
+.csec{position:relative;overflow:hidden;border-top:1px solid var(--line);padding-block:clamp(80px,12vw,160px)}
+.csec-glow{position:absolute;right:-10%;top:-20%;width:60vw;height:60vw;max-width:900px;max-height:900px;border-radius:50%;background:radial-gradient(circle,rgba(0,210,76,.22),rgba(0,210,76,0) 62%);filter:blur(30px);pointer-events:none}
+.csec .wrap{position:relative}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.madwrap{text-align:center}
+.nw{white-space:nowrap}
+.madlib p{font-size:clamp(24px,3.9vw,56px);line-height:1.3;letter-spacing:-.03em;font-weight:700;margin:18px auto 0;max-width:26ch}
+.fld{display:inline-block;vertical-align:baseline;margin:0 .1em}
+.fld input,.fld select{font:inherit;letter-spacing:inherit;color:var(--accent);background:transparent;border:0;border-bottom:3px solid rgba(0,210,76,.35);outline:none;padding:0 .15em .05em;min-width:4ch;max-width:100%;border-radius:0;transition:border-color .25s;appearance:none;-webkit-appearance:none}
+.fld input::placeholder{color:rgba(0,210,76,.4)}
+.fld input:focus,.fld select:focus{border-bottom-color:var(--accent)}
+.fld input:not(:placeholder-shown):invalid{border-bottom-color:#ff6a5c}
+.fld.sel select{cursor:pointer;padding-right:1.1em;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2300d24c' stroke-width='2.5'/%3E%3C/svg%3E") no-repeat right .1em center/.8em}
+.fld.sel select option{color:#03180e;font-size:18px;font-weight:400}
+.fld.sel select:invalid{color:rgba(0,210,76,.4)}
+.mact{display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:clamp(28px,4vw,48px)}
+.btn.big{font-size:18px;padding:18px 28px;gap:12px;border:0;cursor:pointer;transition:transform .25s}
+.btn.big:hover{transform:translateY(-2px)}
+.btn.big .arr{transition:transform .3s}.btn.big:hover .arr{transform:translate(2px,-2px)}
+.btn.big[disabled]{opacity:.6;cursor:wait;transform:none}
+.mnote{font-size:15px;color:var(--muted)}.mnote a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(3,24,14,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;transition:opacity .3s}
+.modal[hidden]{display:none}.modal.on{opacity:1}
+.modal-card{width:min(440px,100%);text-align:center;padding:40px 32px 32px;border-radius:26px;background:linear-gradient(160deg,rgba(252,252,252,.1),rgba(252,252,252,.03));border:1px solid rgba(252,252,252,.16);box-shadow:0 40px 100px rgba(0,0,0,.5),inset 0 1px 0 rgba(252,252,252,.18);transform:translateY(16px) scale(.96);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.modal.on .modal-card{transform:none}
+.modal-card h3{font-size:40px;letter-spacing:-.04em;margin:18px 0 6px}
+.modal-card p{margin:0 0 26px;font-size:18px;color:var(--muted)}
+.tick{width:72px;height:72px;color:var(--accent)}
+.tick .ring{stroke-dasharray:190;stroke-dashoffset:190}.tick .chk{stroke-dasharray:40;stroke-dashoffset:40}
+.modal.on .tick .ring{animation:dash .7s .1s forwards}.modal.on .tick .chk{animation:dash .45s .6s forwards}
+@keyframes dash{to{stroke-dashoffset:0}}
+/* footer */
+.foot2{position:relative;background:var(--bg);overflow:hidden;border-top:1px solid var(--line)}
+.fmeta{display:flex;justify-content:space-between;gap:16px;padding-block:22px;font-size:13px;color:var(--muted)}
+.fmeta a{color:var(--muted);text-decoration:none}.fmeta a:hover{color:var(--fg)}
+.fpit{position:relative;height:clamp(220px,24vw,320px);user-select:none;-webkit-user-select:none;touch-action:none;z-index:2}
+.fpit .pill{position:absolute;left:0;top:0;display:inline-flex;align-items:center;white-space:nowrap;padding:12px 22px;border-radius:999px;border:1.5px solid var(--fg);color:var(--fg);font-weight:700;font-size:clamp(14px,1.3vw,18px);text-decoration:none;background:var(--bg);cursor:grab;will-change:transform;transform:translate(-50%,-50%)}
+.fpit .pill:active{cursor:grabbing}
+.fpit .pill.accent{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.fpit .pill.ghost{border-style:dashed;color:var(--muted);border-color:var(--muted)}
+html.js .fpit.ready .pill{transition:none}
+.fpit:not(.ready) .pill{visibility:hidden}
+.fword{position:relative;overflow:hidden;pointer-events:none;line-height:.78;padding-inline:max(20px,env(safe-area-inset-left,0px));margin-top:-2px}
+.fword span{display:inline-block;font-weight:800;font-size:100px;line-height:.78;letter-spacing:-.045em;white-space:nowrap;color:var(--fg);transform-origin:left top}
+@media(max-width:700px){.fpit .pill{padding:10px 16px;font-size:14px}.madlib p{line-height:1.4}.fword span{line-height:.84}}
+.fpit.static{height:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:28px 20px 26px}.fpit.static .pill{position:static;transform:none!important;visibility:visible}
+@media(prefers-reduced-motion:reduce){.fpit{height:auto;display:flex;flex-wrap:wrap;gap:12px;padding:20px}.fpit .pill{position:static;transform:none;visibility:visible!important}}
+
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" aria-label="Digital Lineup"><img class="logo" src="../img/logo-lockup.svg" alt="Digital Lineup" width="160" height="30"></a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#identity">Identity</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="https://wa.me/923009590042" target="_blank" rel="noopener">Start something cool &nearr;</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="for">
+      <span class="pill"><b>Digital Lineup</b></span>
+      <span class="pill">Selected work 2022 to 2026</span>
+      <span class="pill">Multan, Pakistan</span>
+    </div>
+    <svg class="seal" viewBox="0 0 132 132" aria-hidden="true">
+      <defs><path id="c" d="M66,66 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs>
+      <text><textPath href="#c">Design &middot; Production &middot; Growth &middot; Multan &middot;</textPath></text>
+    </svg>
+    <div class="h1wrap">
+    <h1>Port<span class="o">f</span>olio</h1>
+      <div class="tags" aria-hidden="true">
+        <span class="tag" style="left:4%;top:-6%">Brand identity</span>
+        <span class="tag" style="left:52%;top:-10%">Influencer campaigns</span>
+        <span class="tag" style="left:72%;top:58%">Video production</span>
+        <span class="tag" style="left:20%;top:92%">Meta ads</span>
+        <span class="tag" style="left:56%;top:104%">Websites</span>
+      </div>
+    </div>
+    <div class="sub">
+      <p class="lead">A design and content production agency. Four years of work for brands that wanted to look bigger than they were, with the numbers next to every piece.</p>
+      <div class="meta">
+        <span>Energy &middot; F&amp;B &middot; Retail &middot; Education &middot; Printing &middot; Home services</span>
+        <span>Full-service: identity, social, video, ads, web</span>
+        <a class="btn ghost" href="#work">See the work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Brand identity</span><span class="mk"></span><span>Social media management</span><span class="mk"></span><span>Video production</span><span class="mk"></span><span>Meta ads</span><span class="mk"></span><span>Creator campaigns</span><span class="mk"></span><span>CGI product film</span><span class="mk"></span><span>Websites</span><span class="mk"></span>
+  <span>Brand identity</span><span class="mk"></span><span>Social media management</span><span class="mk"></span><span>Video production</span><span class="mk"></span><span>Meta ads</span><span class="mk"></span><span>Creator campaigns</span><span class="mk"></span><span>CGI product film</span><span class="mk"></span><span>Websites</span><span class="mk"></span>
+</div></div>
+
+<section class="wrap" style="padding-bottom:clamp(40px,6vw,80px)">
+  <div class="film" id="dlfilm">
+    <video id="storyvid" src="../media/dl-story.mp4" poster="../media/dl-story.poster.jpg" muted autoplay loop playsinline preload="metadata"></video>
+    <div class="bar">
+      <span>Digital Lineup in 47 seconds</span>
+      <button type="button" id="soundbtn" aria-pressed="false">Sound on</button>
+    </div>
+  </div>
+  <div class="stats" style="margin-top:28px">
+    <div class="stat"><b data-count="4" data-suffix=" yrs">4 yrs</b><span>in business, office opened in Multan 2026</span></div>
+    <div class="stat"><b data-count="1000" data-suffix="+">1,000+</b><span>assets produced for clients</span></div>
+    <div class="stat"><b data-count="100" data-suffix="M+">100M+</b><span>total viewership across client work</span></div>
+    <div class="stat"><b data-count="100" data-suffix="%">100%</b><span>client retention</span></div>
+    <div class="stat"><b data-count="11" data-suffix="">11</b><span>clients across energy, F&amp;B, retail, printing and education</span></div>
+  </div>
+</section>
+
+
+<section class="manifesto">
+  <div class="wrap">
+    <span class="eyebrow">A bit about us</span>
+    <h2 class="state">We treat every client's business as ours. Ideas are free. Execution is what you pay for, and it shows in the numbers.</h2>
+    <p class="state-sub">A six-person design and content production team in Multan, working with brands since 2022.</p>
+    <div class="pills">
+      <span class="stk" style="--r:-2deg">Not here to be like others</span>
+      <span class="stk" style="--r:1.5deg">Six people, one standard</span>
+      <span class="stk" style="--r:-1deg">Proof, not promises</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work" style="padding-top:clamp(32px,5vw,64px)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">The work</span>
+      <h2>Eleven clients. Seven sectors. One standard.</h2>
+      <p>Every piece on this page was made in-house by the Digital Lineup team: strategy, design, filming, editing, motion and media buying. Scroll by client, or jump to a sector.</p>
+    </div>
+    <div class="clients">
+      <span>Apex Solar</span><span>Shangrilla Group</span><span>Shan Electronics</span><span>Capxa</span><span>Spice &amp; Grill</span><span>Lume Beauty Studio</span><span>Boota Brothers</span><span>Rainbow Printing</span><span>Hamid Enterprises</span><span>Al Shifa Educational Complex</span>
+    </div>
+  </div>
+</section>
+
+<!-- APEX -->
+<section class="case alt" id="apex">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">Energy</span><span>Meta ads</span><span>Influencer campaigns</span><span>Design system</span><span>Two years</span></div>
+        <h2>Apex Solar: 1,200 followers to 142,000, then an influencer factory across six cities.</h2>
+      </div>
+      <p>Pakistani lithium batteries, 1300W to 16kW. We run their Meta ads, celebrity and creator content, the product design system and the installer rewards programme. The two films below are the ones that went furthest.</p>
+    </div>
+    <div class="apex-grid">
+      <div class="player wide" data-player>
+        <video src="../media/apex-11m.mp4" poster="../media/apex-11m.poster.jpg" preload="metadata" playsinline></video>
+        <button class="play" type="button" aria-label="Play: Apex Solar influencer film, 11 million views"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button>
+        <div class="label"><span class="t">Influencer film &middot; Karachi retail</span><span class="v">11M+ views</span></div>
+      </div>
+      <div class="player tall" data-player>
+        <video src="../media/apex-1m.mp4" poster="../media/apex-1m.poster.jpg" preload="metadata" playsinline></video>
+        <button class="play" type="button" aria-label="Play: Apex Solar viral reel, 1 million views"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button>
+        <div class="label"><span class="t">Creator reel &middot; service centre story</span><span class="v">1M+ views</span></div>
+      </div>
+    </div>
+    <div class="facts rv">
+      <div class="fact"><b>1,200 &rarr; 142K</b><span>Instagram growth under Digital Lineup</span></div>
+      <div class="fact"><b>~PKR 2.5</b><span>per follower on the 156,000-follower Meta campaign</span></div>
+      <div class="fact"><b>6 cities</b><span>creator programme with on-ground production in Karachi and Multan</span></div>
+    </div>
+    <div class="row-head rv">
+      <h3>One product system, every battery in the range. Plus the calendar.</h3>
+      <p>Same light, same set, same type across the range, then expos, lucky draws, the installer Points Mall and national days.</p>
+    </div>
+    <div class="scroller rv">
+      <div class="poster"><img src="../img/apex-16k.jpg" alt="Apex 16K poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/5220-pro-1.jpg" alt="Apex 5220 Pro poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/apex-viral-zaroonx-5220-2.jpg" alt="Apex 1300 lifestyle poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/poster-1.jpg" alt="Apex 16K Karachi skyline poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/lahore-expo-poster-1.jpg" alt="Apex at Lahore Solar Expo" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/battery-lucky-draw.jpg" alt="Apex lucky draw poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/introduction-of-points-rewards.jpg" alt="Apex Points Mall poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/the-solar-show-poster-1.jpg" alt="Hello Islamabad poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/apex-6-sep-post.jpg" alt="Apex Defence Day poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/apex-father-s-day.jpg" alt="Apex Father's Day poster" width="1080" height="1350" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PERTH INSTALLER -->
+<section class="case" id="perth-installer">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">Home services</span><span>Perth, Australia</span><span>Meta ads</span><span>Creative</span><span>Landing pages</span></div>
+        <h2>A Perth TV mounting and picture hanging business, booked through Meta ads.</h2>
+      </div>
+      <p>Meta ads, creative and landing pages for an Australian home-services business, delivered through a partner agency. Lookalike audiences built from real leads.</p>
+    </div>
+    <div class="hm-case rv">
+      <div class="hm-result">
+        <div class="hm-num"><s>$120</s><b>&lt;$30</b></div>
+        <p class="hm-copy">Cost per lead for a Perth installer. Before Digital Lineup, and after.</p>
+      </div>
+      <div class="hm-deck" aria-label="Three Meta ad creatives for a Perth installer">
+        <div class="card c1"><img src="../img/perth-installer-ad-1.jpg" alt="Ad: Stop living with messy TV cables" width="1080" height="1350" loading="lazy"></div>
+        <div class="card c2"><img src="../img/perth-installer-ad-2.jpg" alt="Ad: Is your TV wall looking like this?" width="1080" height="1350" loading="lazy"></div>
+        <div class="card c3"><img src="../img/perth-installer-ad-3.jpg" alt="Ad: Get your TV perfectly mounted" width="1080" height="1350" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="row-head rv">
+      <h3>Creative that shows the finished room</h3>
+      <p>Service creative for every job type: TVs, mirrors, pictures, shelves, dryers.</p>
+    </div>
+    <div class="scroller rv">
+      <div class="poster"><img src="../img/perth-installer-tv-1.jpg" alt="TV mounting ad for a Perth installer" width="1080" height="1208" loading="lazy"></div>
+      <div class="poster"><img src="../img/perth-installer-mirror-1.jpg" alt="Mirror installation ad for a Perth installer" width="1080" height="1208" loading="lazy"></div>
+      <div class="poster"><img src="../img/perth-installer-picture-1.jpg" alt="Picture hanging ad for a Perth installer" width="1080" height="1208" loading="lazy"></div>
+      <div class="poster"><img src="../img/perth-installer-shelf-cabinets-1.jpg" alt="Shelf installation ad for a Perth installer" width="1080" height="1208" loading="lazy"></div>
+      <div class="poster"><img src="../img/perth-installer-dryer-1.jpg" alt="Dryer wall mount ad for a Perth installer" width="1080" height="1208" loading="lazy"></div>
+      <div class="poster"><img src="../img/perth-installer-tv-2.jpg" alt="TV mounting ad for a Perth installer" width="1080" height="1208" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHANGRILLA -->
+<section class="case alt" id="shangrilla">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">F&amp;B</span><span>Restaurant group</span><span>Film</span><span>Social</span><span>Campaigns</span></div>
+        <h2>Shangrilla Group: a bakery, a Chinese restaurant and a garden BBQ, one agency.</h2>
+      </div>
+      <p>Monthly social for three outlets, an Eid TVC, the Can Cakes launch that ran fully organic, Cake of the Month, and food photography that made Shangrilla's feed the best-looking one in Multan.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="player wide" data-player>
+        <video src="../media/shangrilla-eid.mp4" poster="../media/shangrilla-eid.poster.jpg" preload="none" playsinline></video>
+        <button class="play" type="button" aria-label="Play: Shangrilla Cuisine Bakers Eid film"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button>
+        <div class="label"><span class="t">Shangrilla Cuisine Bakers &middot; Eid film</span><span class="v">TVC</span></div>
+      </div>
+      <div class="player tall" data-player style="aspect-ratio:auto;min-height:320px">
+        <video src="../media/can-cake.mp4" poster="../media/can-cake.poster.jpg" preload="none" playsinline style="position:absolute;inset:0"></video>
+        <button class="play" type="button" aria-label="Play: Can Cakes campaign reel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button>
+        <div class="label"><span class="t">Can Cakes &middot; launch reel</span><span class="v">Organic, no boost</span></div>
+      </div>
+    </div>
+    <div class="row-head rv">
+      <h3>Food that looks like it costs more than it does</h3>
+      <p>Chinese menu series, Gardens platters, Can Cakes, seasonal posts and a 1980s throwback.</p>
+    </div>
+    <div class="scroller rv">
+      <div class="poster"><img src="../img/chowmien.jpg" alt="Shangrilla Chinese chowmein poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/img-7953.jpg" alt="Can Cake: Mood off hai" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/main-platter-2.jpg" alt="Shangrilla Gardens BBQ platter" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/chicken-almond.jpg" alt="Chicken almond poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/lotus-sundae.jpg" alt="Lotus sundae poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/cake-of-the-month.jpg" alt="Cake of the month" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/restaurant-poster.jpg" alt="Shangrilla Chinese menu poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/father-day-shangrilla-garden-1.jpg" alt="Shangrilla Gardens Father's Day" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/shangrilla-1980-s-style.jpg" alt="Shangrilla 1980s style poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/khajoor-biscuit.jpg" alt="Date delight biscuits poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="reel player" data-player><video src="../media/shangrilla-feed.mp4" poster="../media/shangrilla-feed.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Shangrilla feed film"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Feed film</span></div></div>
+    </div>
+
+    <div class="row-head rv">
+      <h3>Product film, shot on our table</h3>
+      <p>Short loops for the feed: cans, platters, drinks, brownies, wings. Tap any one for sound.</p>
+    </div>
+    <div class="wall">
+      <div class="cell" data-wall><video src="../media/can-weekdays.mp4" poster="../media/can-weekdays.poster.jpg" muted loop playsinline preload="metadata"></video><span>Can Cakes &middot; weekdays</span></div>
+      <div class="cell" data-wall><video src="../media/kiwi.mp4" poster="../media/kiwi.poster.jpg" muted loop playsinline preload="metadata"></video><span>Kiwi lemonade</span></div>
+      <div class="cell" data-wall><video src="../media/garden-platter.mp4" poster="../media/garden-platter.poster.jpg" muted loop playsinline preload="metadata"></video><span>BBQ platter</span></div>
+      <div class="cell" data-wall><video src="../media/brownie.mp4" poster="../media/brownie.poster.jpg" muted loop playsinline preload="metadata"></video><span>Maison brownies</span></div>
+      <div class="cell" data-wall><video src="../media/chinese-concept.mp4" poster="../media/chinese-concept.poster.jpg" muted loop playsinline preload="metadata"></video><span>Chinese &middot; concept film</span></div>
+      <div class="cell" data-wall><video src="../media/can-hello.mp4" poster="../media/can-hello.poster.jpg" muted loop playsinline preload="metadata"></video><span>Say hello to Can Cakes</span></div>
+    </div>
+    <div class="bts-strip">
+      <div class="loop" data-loop><video src="../media/bts-bakery.mp4" poster="../media/bts-bakery.poster.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="loop" data-loop><video src="../media/bts-bakery2.mp4" poster="../media/bts-bakery2.poster.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="loop" data-loop><video src="../media/bts-cupcake.mp4" poster="../media/bts-cupcake.poster.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="loop" data-loop><video src="../media/apex-bts.mp4" poster="../media/apex-bts.poster.jpg" muted loop playsinline preload="metadata"></video></div>
+    </div>
+    <p class="caption">On set: bakery film, tabletop cupcake shoot, and a creator shoot in Karachi. Our own crew, lights and camera.</p>
+  </div>
+</section>
+
+<!-- IDENTITY -->
+<section class="case" id="identity">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">Brand identity</span><span>Logo</span><span>Colour and type</span><span>Applications</span><span>Launch reels</span></div>
+        <h2>A logo isn't a brand. A system is.</h2>
+      </div>
+      <p>Three full identity systems, delivered as brand books: Capxa (a marketing agency), Shan Electronics (a retailer with a mascot and two branches) and Spice &amp; Grill (a restaurant that came to us with only a name). Scroll inside each book.</p>
+    </div>
+    <div class="books rv">
+      <div class="book"><span class="tag">Capxa &middot; Marketing agency</span><div class="scrollv"><img src="../img/bk-capxa.jpg" alt="Capxa brand book" loading="lazy"></div><span class="hint">Scroll</span></div>
+      <div class="book"><span class="tag">Shan Electronics &middot; Retail</span><div class="scrollv"><img src="../img/bk-shan.jpg" alt="Shan Electronics brand book" loading="lazy"></div><span class="hint">Scroll</span></div>
+      <div class="book"><span class="tag">Spice &amp; Grill &middot; Restaurant</span><div class="scrollv"><img src="../img/bk-spice.jpg" alt="Spice and Grill brand book" loading="lazy"></div><span class="hint">Scroll</span></div>
+    </div>
+    <div class="row-head rv">
+      <h3>Lume Beauty Studio and the launch reels</h3>
+      <p>A salon identity built from one flower, plus the motion reels each identity launched with.</p>
+    </div>
+    <div class="scroller rv">
+      <div class="reel player" data-player><video src="../media/lume.mp4" poster="../media/lume.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Lume identity reel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Lume &middot; identity reel</span></div></div>
+      <div class="reel player" data-player><video src="../media/lume-short.mp4" poster="../media/lume-short.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Lume logo reveal"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Lume &middot; logo reveal</span></div></div>
+      <div class="poster"><img src="../img/bk-lume-01.jpg" alt="Lume logo on maroon" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/bk-lume-07.jpg" alt="Lume storefront" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/bk-lume-10.jpg" alt="Lume uniform" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/bk-lume-12.jpg" alt="Lume packaging" width="1080" height="1350" loading="lazy"></div>
+      <div class="reel player" data-player><video src="../media/capxa.mp4" poster="../media/capxa.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Capxa identity reel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Capxa &middot; identity reel</span></div></div>
+      <div class="reel player" data-player><video src="../media/shan.mp4" poster="../media/shan.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Shan Electronics brand story"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Shan &middot; brand story</span></div></div>
+      <div class="reel player" data-player><video src="../media/spice-grill.mp4" poster="../media/spice-grill.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Spice and Grill identity reel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Spice &amp; Grill &middot; identity reel</span></div></div>
+      <div class="reel player" data-player><video src="../media/dl-branding.mp4" poster="../media/dl-branding.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Digital Lineup branding showreel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Branding showreel</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHAN + RETAIL -->
+<section class="case alt" id="shan">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">Retail</span><span>Mascot</span><span>Social</span><span>Branch launches</span></div>
+        <h2>Shan Electronics: a mascot that opens branches.</h2>
+      </div>
+      <p>"Shan sy kharido." A CGI mascot in a green hoodie announced the Model Town branch, then Nagana Chowk, then the Northern Bypass, on top of the identity we built for the shop itself.</p>
+    </div>
+    <div class="scroller rv">
+      <div class="reel player" data-player><video src="../media/shan-reel.mp4" poster="../media/shan-reel.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: Shan Electronics branding reel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">Meet the new Shan</span></div></div>
+      <div class="poster"><img src="../img/mascot-model-town-post-1.jpg" alt="Shan mascot: Model Town" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/mascot-nagana-chowk-post-3.jpg" alt="Shan mascot: Nagana Chowk" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/mascot-bypass-post-2.jpg" alt="Shan mascot: Northern Bypass" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/couple-poster-1.jpg" alt="Shan tower banner poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/tcl-t3-pro-21.jpg" alt="Shan TCL AC poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/cammode-poster-5.jpg" alt="Hamid Enterprises commode poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/sanitary-post.jpg" alt="Hamid Enterprises bathroom poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/tile-poster-1.jpg" alt="Hamid Enterprises tile poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/jummah-poster-white-theme.jpg" alt="Hamid Enterprises Jummah poster" width="1080" height="1350" loading="lazy"></div>
+    </div>
+    <p class="caption">Also in this row: Hamid Enterprises, a Multan sanitation retailer. Witty copy, product as hero, no stock-photo bathrooms.</p>
+  </div>
+</section>
+
+
+<!-- CGI -->
+<section class="case" id="cgi">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">CGI and 3D</span><span>Product film</span><span>Hamid Enterprises</span><span>Rainbow Printing</span></div>
+        <h2>When the product can't come to the studio, we build the studio around the product.</h2>
+      </div>
+      <p>3D product animation for a sanitation retailer (a wall-hung commode and a laminar-flow basin mixer) and a packaging printer (a pouch forming out of light in ten seconds). No shoot, no shipping, every angle.</p>
+    </div>
+    <div class="wall three-up">
+      <div class="cell" data-wall><video src="../media/hamid-commode.mp4" poster="../media/hamid-commode.poster.jpg" muted loop playsinline preload="metadata"></video><span>Hamid &middot; wall-hung commode, CGI</span></div>
+      <div class="cell" data-wall><video src="../media/hamid-tap.mp4" poster="../media/hamid-tap.poster.jpg" muted loop playsinline preload="metadata"></video><span>Hamid &middot; basin mixer, CGI</span></div>
+      <div class="cell" data-wall><video src="../media/rainbow-particles.mp4" poster="../media/rainbow-particles.poster.jpg" muted loop playsinline preload="metadata"></video><span>Rainbow &middot; pouch from particles</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RAINBOW + B2B -->
+<section class="case" id="b2b">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">B2B</span><span>Printing</span><span>LinkedIn</span><span>Education</span></div>
+        <h2>Rainbow Printing: B2B content that gets read by procurement, not just liked.</h2>
+      </div>
+      <p>LinkedIn and Instagram for a packaging printer: myth-versus-fact posts, the Lay's packaging-evolution case study, pre-press mistakes, a solar-powered plant, and a halal certification announcement. Plus admissions work for Al Shifa Educational Complex.</p>
+    </div>
+    <div class="scroller rv">
+      <div class="reel player" data-player><video src="../media/rainbow-b2b.mp4" poster="../media/rainbow-b2b.poster.jpg" preload="none" playsinline></video><button class="play" type="button" aria-label="Play: four B2B post ideas reel"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button><div class="label"><span class="t">B2B brand? Steal these 4 ideas</span></div></div>
+      <div class="poster"><img src="../img/scaling-poster.jpg" alt="Rainbow: Market leaders don't age, they evolve" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/myth-fact-poster.jpg" alt="Rainbow myth vs fact poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/print-mistake-before-printing.jpg" alt="Rainbow: why packaging projects fail" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/packaging-around-the-world.jpg" alt="Rainbow: packaging around the world" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/halal-certified.jpg" alt="Rainbow halal certified" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/industry-solar.jpg" alt="Rainbow solar operated printing" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/rainbow.jpg" alt="Rainbow Father's Day poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/bs-it-new-poster-1.jpg" alt="Al Shifa BS-IT admissions poster" width="1080" height="1350" loading="lazy"></div>
+      <div class="poster"><img src="../img/al-shifa-14-august-post.jpg" alt="Al Shifa Independence Day poster" width="1080" height="1350" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WEB -->
+<section class="case alt" id="web">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <div class="kicker"><span class="on">Web</span><span>Webflow</span><span>Drone</span><span>On-site production</span></div>
+        <h2>Boota Brothers: a flour mill website that opens with its own aerial film.</h2>
+      </div>
+      <p>Four mills, three decades. We shot on site, drone and ground, and built the company site on Webflow with the footage embedded: company, process, portfolio, contact. Experience-led web is a high-ticket service we only take on when the content exists to carry it.</p>
+    </div>
+    <div class="two">
+      <div class="player wide" data-player>
+        <video src="../media/dl-growth.mp4" poster="../media/dl-growth.poster.jpg" preload="none" playsinline style="object-fit:contain;background:var(--bg)"></video>
+        <button class="play" type="button" aria-label="Play: what we do film"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button>
+        <div class="label"><span class="t">What we do &middot; 40 seconds</span></div>
+      </div>
+      <div class="player tall" data-player style="aspect-ratio:auto;min-height:320px">
+        <video src="../media/boota.mp4" poster="../media/boota.poster.jpg" preload="none" playsinline style="position:absolute;inset:0"></video>
+        <button class="play" type="button" aria-label="Play: Boota Brothers website film"><span class="ring"><svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span></button>
+        <div class="label"><span class="t">Boota Brothers &middot; bootagroup.com</span><span class="v">Webflow</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr class="rule">
+
+<!-- SERVICES -->
+<section class="sec svcpath" id="services">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin-inline:auto;justify-items:center">
+      <span class="eyebrow">Our services</span>
+      <h2>The end-to-end services you would need to grow.</h2>
+    </div>
+    <div class="pathwrap">
+      <svg class="pathsvg" viewBox="0 0 1200 1500" preserveAspectRatio="none" aria-hidden="true">
+        <path class="ghost" d="M1180,40 C900,120 300,80 220,260 C140,440 980,420 1000,560 C1020,700 120,660 160,840 C200,1020 1040,980 1060,1140 C1080,1300 300,1280 60,1460"/>
+        <path class="ink" d="M1180,40 C900,120 300,80 220,260 C140,440 980,420 1000,560 C1020,700 120,660 160,840 C200,1020 1040,980 1060,1140 C1080,1300 300,1280 60,1460"/>
+      </svg>
+      <ul class="svcs">
+        <li style="--x:8%"><b>Brand identity</b><span>Logo, colour, type, applications, brand book and a launch reel.</span></li>
+        <li style="--x:52%"><b>Social media management</b><span>Content hierarchy, calendar, design, posting, community, monthly report.</span></li>
+        <li style="--x:4%"><b>Video production</b><span>TVCs, product films, reels, BTS, CGI and 3D product pieces.</span></li>
+        <li style="--x:50%"><b>Performance marketing</b><span>Meta and Google ads, pixel and audience builds, lead funnels.</span></li>
+        <li style="--x:10%"><b>Creator campaigns</b><span>Sourcing, scripting, whitelisting and on-ground production, city by city.</span></li>
+        <li style="--x:48%"><b>Websites</b><span>Webflow and custom builds, experience-led, with the content shot to fill them.</span></li>
+      </ul>
+    </div>
+    <div class="steps" style="margin-top:clamp(40px,6vw,72px)">
+      <div class="step"><b>Brief</b><p>One call. We ask what the business needs to sell, not what it wants to post.</p></div>
+      <div class="step"><b>Concept</b><p>Hooks, scripts, moodboards. You approve the idea before anything is shot.</p></div>
+      <div class="step"><b>Production</b><p>Our crew, lights, camera, motion and design. On site where it matters.</p></div>
+      <div class="step"><b>Publish and report</b><p>Posting, ads and a monthly report with numbers you can take to a partner.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="sec team-sec" id="team">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">The team</span>
+      <h2>Six people. One office in Multan. Every piece on this page.</h2>
+      <p>We opened our first physical office in September 2026, four years after the first client. Everything here was made by the people below, in-house.</p>
+    </div>
+    <div class="team rv">
+      <div class="member"><div class="ph"><img src="../img/ali-hannan-founder.jpg" alt="Ali Hannan Siddique" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Ali Hannan Siddique</b><span>Founder</span></div></div>
+      <div class="member"><div class="ph"><img src="../img/usama-content-production-head.jpg" alt="M. Usama Mumtaz" width="1400" height="1980" loading="lazy"></div><div class="info"><b>M. Usama Mumtaz</b><span>Content Production Head</span></div></div>
+      <div class="member"><div class="ph"><img src="../img/naveed-media-head.jpg" alt="Naveed" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Naveed</b><span>Media Head</span></div></div>
+      <div class="member"><div class="ph"><img src="../img/kashan-ali-designing-head.jpg" alt="Kashan Ali" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Kashan Ali</b><span>Designing Head</span></div></div>
+      <div class="member"><div class="ph"><img src="../img/huzaifa-ejaz-project-manager.jpg" alt="Huzaifa Aijaz" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Huzaifa Aijaz</b><span>Project Manager</span></div></div>
+      <div class="member"><div class="ph"><img src="../img/atir-abbas-digital-strategist.jpg" alt="Atir Abbas" width="1400" height="1980" loading="lazy"></div><div class="info"><b>Atir Abbas</b><span>Digital Strategist</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="rv-head rv">
+      <div>
+        <span class="eyebrow">Google reviews</span>
+        <h2>What clients say when we are not in the room.</h2>
+      </div>
+      <a class="gscore" href="https://www.google.com/maps/place/?q=place_id:ChIJIx05719V1KoRBS1PhuM0zBk" target="_blank" rel="noopener" aria-label="Digital Lineup on Google Maps, 5.0 rating from 16 reviews">
+        <b>5.0</b>
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <small>16 reviews on Google</small>
+      </a>
+    </div>
+
+    <div class="rstack rv" data-reviews tabindex="0" aria-roledescription="carousel" aria-label="Client reviews">
+      <article class="rcard" data-i="0">
+        <h3>A true extension of our own team.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">MA</span><b>Muhammad Abdullah</b><small>Google review</small></div>
+          <p>Working with Digital Lineup has been a game-changer for our social media strategy. Their team is the perfect blend of professionalism and innovation, consistently bringing fresh, creative ideas to the table that set us apart. Beyond their technical expertise, their supportive approach makes them feel like a true extension of our own team.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="1">
+        <h3>We achieved sales from day one.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">KB</span><b>Karyana Bazar</b><small>Online grocery startup</small></div>
+          <p>We partnered with Digital Lineup in August 2023 for a comprehensive digital marketing package: social media management, Shopify website creation and SEO targeted at the Pakistani market, putting us on the map despite fierce competition. Here is the most surprising part: we achieved sales from day one. A must for startups.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="2">
+        <h3>Our Facebook following has skyrocketed to over 150K.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">SM</span><b>Solar Mandee</b><small>Solar marketplace</small></div>
+          <p>We brought Digital Lineup on board 8 months ago to manage Solar Mandee's social media presence, and the results have been incredible. Our Facebook following has skyrocketed to over 150K thanks to their strategic ad campaigns and eye-catching designs, with a massive 3.5M+ account reach. Their data-driven approach has been instrumental in achieving our monetization goals.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="3">
+        <h3>The quality, creativity and attention to detail in our video is outstanding.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">SA</span><b>Shafat Ali</b><small>Google review</small></div>
+          <p>Absolutely loved working with Ali Hannan. The quality, creativity, and attention to detail in our video is outstanding. Digital Lineup is highly recommended for anyone looking for a top-notch social media marketing team.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="4">
+        <h3>A three-hour consultation that covered everything.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">HS</span><b>Hassan Saeed</b><small>Google review</small></div>
+          <p>Ali Hannan provided us with a powerful three-hour consultation that covered everything from brand awareness to engagement and website strategy. His ideas were clear, practical, and deeply insightful for our business. We are extremely satisfied with the results and highly recommend Digital Lineup to any business looking for real, result-driven marketing support.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="5">
+        <h3>Their attention to detail and creative approach set them apart.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">AH</span><b>Asif Hussain</b><small>Google review</small></div>
+          <p>If you're looking for top-notch photography and expert digital marketing services, Digital Lineup is the go-to choice. Ali Hannan, the owner and driving force behind the agency, is one of the best professionals in the market. His excellent communication skills and strategic planning ensure that your ideas are executed flawlessly.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="6">
+        <h3>Amazing work for my business to bring sales.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">AH</span><b>Amir Hafeez</b><small>Hafeez Fabrics</small></div>
+          <p>Digital Lineup did an amazing work for my business, Hafeez Fabrics, to bring sales and providing best and affordable services. Ali Hannan is a really well experienced social media marketer with amazing talent and communication skills. Highly recommended.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="7">
+        <h3>Outstanding results with creativity and precision.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">FA</span><b>Faizan Azhar</b><small>Google review</small></div>
+          <p>Digital Lineup is a game-changer in the world of digital marketing. Their expertise in social media marketing is truly next level, delivering outstanding results with creativity and precision. The team is highly professional, innovative, and always ahead of trends.</p>
+        </div>
+      </article>
+      <article class="rcard" data-i="8">
+        <h3>The Digital Lineup team nailed it.</h3>
+        <div class="rbody">
+          <div class="who"><span class="av">MA</span><b>Hafiz Muhammad Mueez Amin</b><small>Google review</small></div>
+          <p>I was requested for graphic designing work and the Digital Lineup team nailed it. I am very much satisfied with their work performance and the quality of work. I must recommend my contacts to take services for your business from the Digital Lineup team.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="rnav rv">
+      <button type="button" class="rbtn" data-prev aria-label="Previous review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <span class="rcount"><b data-cur>01</b> / <span data-total>09</span></span>
+      <button type="button" class="rbtn" data-next aria-label="Next review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <span class="rhint">All five stars. Verbatim from Google.</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="csec sec" id="contact">
+  <div class="csec-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv madwrap">
+      <span class="eyebrow">Start something cool</span>
+      <form class="madlib" id="cform" novalidate autocomplete="on">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p>Hi Digital Lineup, I'm
+          <label class="fld"><span class="sr">Name</span><input type="text" name="name" required placeholder="your name" autocomplete="name" size="9"></label>
+          and you can reach me at
+          <span class="nw"><label class="fld"><span class="sr">Email</span><input type="email" name="email" required placeholder="your@email.com" autocomplete="email" size="13"></label>.</span>
+          I&nbsp;need
+          <label class="fld sel"><span class="sr">Service</span>
+            <select name="service" required>
+              <option value="" disabled selected>pick a service</option>
+              <option>video and content production</option>
+              <option>Meta and Google ads</option>
+              <option>brand identity</option>
+              <option>social media management</option>
+              <option>a website</option>
+              <option>not sure yet</option>
+            </select></label>
+          and the budget in&nbsp;hand&nbsp;is
+          <span class="nw"><label class="fld sel"><span class="sr">Budget in hand</span>
+            <select name="budget" required>
+              <option value="" disabled selected>pick a range</option>
+              <option>under PKR 100k</option>
+              <option>PKR 100k to 300k</option>
+              <option>PKR 300k to 1M</option>
+              <option>PKR 1M plus</option>
+              <option>in USD, let's talk</option>
+              <option>not decided yet</option>
+            </select></label>.</span>
+        </p>
+        <div class="mact">
+          <button type="submit" class="btn big">Send now <span class="arr">&nearr;</span></button>
+          <span class="mnote">Or skip the form: <a href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp +92 300 959 0042</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="sentmodal" role="dialog" aria-modal="true" aria-labelledby="sm-title" hidden>
+  <div class="modal-card">
+    <svg class="tick" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="3" class="ring"/><path d="M19 33l9 9 17-18" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="chk"/></svg>
+    <h3 id="sm-title">Got it.</h3>
+    <p>Our team will shortly get back to you.</p>
+    <button type="button" class="btn" data-close>Done</button>
+  </div>
+</div>
+</main>
+
+<footer class="foot2" id="footer">
+  <div class="fmeta wrap">
+    <span>&copy; 2026 Digital Lineup. Multan, Pakistan.</span>
+    <a href="#top">Back to top &uarr;</a>
+  </div>
+  <div class="fpit" data-pit aria-label="Contact links">
+    <a class="pill" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="pill" href="mailto:hello@digitallineup.com">Email</a>
+    <a class="pill" href="https://www.instagram.com/digitallineup_" target="_blank" rel="noopener">Instagram</a>
+    <a class="pill" href="https://www.linkedin.com/company/digitallineup" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="pill" href="https://www.facebook.com/digitallineup" target="_blank" rel="noopener">Facebook</a>
+    <a class="pill" href="https://www.google.com/maps/place/?q=place_id:ChIJIx05719V1KoRBS1PhuM0zBk" target="_blank" rel="noopener">Google 5.0</a>
+    <a class="pill accent" href="#contact">Start something cool</a>
+    <a class="pill ghost" href="#top">Carrier pigeon</a>
+  </div>
+  <div class="fword" aria-hidden="true" data-fit><span>DIGITAL LINEUP</span></div>
+</footer>
+<script src="../js/matter.min.js" defer></script>
+
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // reviews stack
+  (function(){
+    var st=document.querySelector('[data-reviews]'); if(!st) return;
+    var cards=[].slice.call(st.querySelectorAll('.rcard')), n=cards.length, i=0, t, cur=document.querySelector('[data-cur]');
+    document.querySelector('[data-total]').textContent=(n<10?'0':'')+n;
+    function paint(prev){
+      cards.forEach(function(c){c.className='rcard';});
+      cards[i].classList.add('is-on');
+      cards[(i+1)%n].classList.add('is-b1');
+      cards[(i+2)%n].classList.add('is-b2');
+      cards[(i+3)%n].classList.add('is-b3');
+      if(prev!==undefined&&prev!==i&&n>4){cards[prev].classList.add('is-out');}
+      cur.textContent=(i<9?'0':'')+(i+1);
+    }
+    function go(d){var p=i;i=(i+d+n)%n;paint(p);}
+    function arm(){clearInterval(t);if(!rm){t=setInterval(function(){go(1);},7000);}}
+    document.querySelector('[data-next]').addEventListener('click',function(){go(1);arm();});
+    document.querySelector('[data-prev]').addEventListener('click',function(){go(-1);arm();});
+    st.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(1);arm();}if(e.key==='ArrowLeft'){go(-1);arm();}});
+    st.addEventListener('mouseenter',function(){clearInterval(t);});st.addEventListener('mouseleave',arm);
+    var sx=0;st.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+    st.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(dx<0?1:-1);arm();}});
+    function fit(){var h=0;cards.forEach(function(c){h=Math.max(h,c.scrollHeight);});st.style.height=(h+8)+'px';}
+    paint();arm();fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
+  })();
+  // contact form + modal
+  (function(){
+    var f=document.getElementById('cform'), m=document.getElementById('sentmodal'); if(!f||!m) return;
+    // size selects to their chosen text
+    var meas=document.createElement('span');meas.style.cssText='position:absolute;visibility:hidden;white-space:nowrap;top:-9999px';document.body.appendChild(meas);
+    function sizeSel(s){var cs=getComputedStyle(s);meas.style.font=cs.font;meas.style.letterSpacing=cs.letterSpacing;meas.textContent=s.options[s.selectedIndex].text;s.style.width=(meas.getBoundingClientRect().width+parseFloat(cs.fontSize)*1.5)+'px';}
+    var sels=[].slice.call(f.querySelectorAll('select'));sels.forEach(function(s){sizeSel(s);s.addEventListener('change',function(){sizeSel(s);});});
+    window.addEventListener('resize',function(){sels.forEach(sizeSel);});window.addEventListener('load',function(){sels.forEach(sizeSel);});
+    function open(){m.hidden=false;requestAnimationFrame(function(){m.classList.add('on');});m.querySelector('[data-close]').focus();}
+    function close(){m.classList.remove('on');setTimeout(function(){m.hidden=true;},300);}
+    m.querySelector('[data-close]').addEventListener('click',close);
+    m.addEventListener('click',function(e){if(e.target===m)close();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)close();});
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!f.checkValidity()){f.reportValidity();return;}
+      var btn=f.querySelector('.btn.big');btn.disabled=true;btn.firstChild.textContent='Sending ';
+      var fd=new FormData(f),o={};fd.forEach(function(v,k){o[k]=v;});o._subject='New enquiry from the Digital Lineup portfolio';o._template='table';o._captcha='false';
+      var done=function(){btn.disabled=false;btn.firstChild.textContent='Send now ';f.reset();sels.forEach(sizeSel);open();};
+      fetch('https://formsubmit.co/ajax/hello@digitallineup.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(o)})
+      .then(function(r){if(!r.ok)throw 0;return r.json();}).then(done)
+      .catch(function(){window.open('https://wa.me/923009590042?text='+encodeURIComponent('Hi Digital Lineup, I am '+o.name+' ('+o.email+'). Budget in hand: '+o.budget+'.'),'_blank');done();});
+    });
+  })();
+  // fit footer wordmark edge to edge
+  (function(){
+    var w=document.querySelector('[data-fit]'); if(!w) return; var s=w.firstElementChild;
+    function fit(){var sm=window.matchMedia('(max-width:700px)').matches;var want=sm?'DIGITAL<br>LINEUP':'DIGITAL LINEUP';if(s.innerHTML!==want)s.innerHTML=want;s.style.fontSize='100px';var r=s.getBoundingClientRect().width,avail=w.clientWidth-parseFloat(getComputedStyle(w).paddingLeft)*2;s.style.fontSize=(100*avail/r)+'px';}
+    fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
+  })();
+  // footer pill physics
+  (function(){
+    var pit=document.querySelector('[data-pit]'); if(!pit) return;
+    var small=window.matchMedia('(max-width:700px)');
+    if(rm||small.matches){pit.classList.add('ready','static');return;}
+    var started=false, M, eng, run, raf, bodies=[], pills=[].slice.call(pit.querySelectorAll('.pill')), w, h, lastW=0, lastH=0;
+    function teardown(){
+      if(!eng) return; cancelAnimationFrame(raf); M.Runner.stop(run); M.Composite.clear(eng.world,false,true); M.Engine.clear(eng); eng=null;
+    }
+    function build(){
+      M=window.Matter; teardown();
+      pit.classList.remove('ready'); w=pit.clientWidth; h=pit.clientHeight; lastW=w; lastH=h;
+      eng=M.Engine.create({enableSleeping:true}); var W=eng.world, T=600, n=pills.length; bodies=[];
+      M.Composite.add(W,[M.Bodies.rectangle(w/2,h+T/2,w+T*2,T,{isStatic:true}),M.Bodies.rectangle(-T/2,h/2-h,T,h*4,{isStatic:true}),M.Bodies.rectangle(w+T/2,h/2-h,T,h*4,{isStatic:true})]);
+      pills.forEach(function(p,i){
+        p.style.transform='translate(-50%,-50%)';
+        var r=p.getBoundingClientRect(),pw=r.width,ph=r.height;
+        var x=w*((i+.5)/n)+(Math.random()-.5)*w*.12; x=Math.min(Math.max(x,pw/2+4),w-pw/2-4);
+        var bd=M.Bodies.rectangle(x,-ph-i*(ph+30)-Math.random()*40,pw,ph,{chamfer:{radius:ph/2},restitution:.2,friction:.6,frictionAir:.02,angle:(Math.random()-.5)*.4});
+        bd.pw=pw;bd.ph=ph; bodies.push(bd); M.Composite.add(W,bd);
+      });
+      pit.classList.add('ready');
+      var mouse=M.Mouse.create(pit), mc=M.MouseConstraint.create(eng,{mouse:mouse,constraint:{stiffness:.15,damping:.1}});
+      M.Composite.add(W,mc);
+      mouse.element.removeEventListener('wheel',mouse.mousewheel);mouse.element.removeEventListener('DOMMouseScroll',mouse.mousewheel);
+      run=M.Runner.create(); M.Runner.run(run,eng);
+      (function loop(){
+        bodies.forEach(function(bd,i){
+          var hx=bd.pw/2, hy=bd.ph/2;
+          if(bd.position.x<hx||bd.position.x>w-hx||bd.position.y>h-hy+1){M.Body.setPosition(bd,{x:Math.min(Math.max(bd.position.x,hx),w-hx),y:Math.min(bd.position.y,h-hy)});M.Body.setVelocity(bd,{x:0,y:0});}
+          pills[i].style.transform='translate(-50%,-50%) translate('+bd.position.x+'px,'+bd.position.y+'px) rotate('+bd.angle+'rad)';
+        });
+        raf=requestAnimationFrame(loop);
+      })();
+    }
+    function start(){ if(started||!window.Matter) return; started=true; build(); }
+    var sx,sy; pit.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY;});
+    pills.forEach(function(p){p.addEventListener('click',function(e){if(Math.hypot(e.clientX-sx,e.clientY-sy)>6){e.preventDefault();}});});
+    var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(started&&(pit.clientWidth!==lastW||pit.clientHeight!==lastH))build();},250);});
+    var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){if(window.Matter)start();else{var s=document.querySelector('script[src*="matter"]');s&&s.addEventListener('load',start);}io.disconnect();}},{threshold:.2});
+    io.observe(pit);
+    setTimeout(function(){if(!started){pit.classList.add('ready','static');}},5000);
+  })();
+
+
+  // reveals
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !rm){
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){ro.observe(el);});
+    var sweep=function(){var vh=window.innerHeight;rv.forEach(function(el){if(!el.classList.contains('in')&&el.getBoundingClientRect().top<vh*0.98){el.classList.add('in');}});};
+    window.addEventListener('scroll',sweep,{passive:true});window.addEventListener('hashchange',function(){setTimeout(sweep,50);});setTimeout(sweep,300);setTimeout(sweep,1200);setTimeout(sweep,3000);window.addEventListener('load',function(){setTimeout(sweep,100);});
+  } else { rv.forEach(function(el){el.classList.add('in');}); }
+  // counters
+  var cs=document.querySelectorAll('[data-count]');
+  function run(el){var t=+el.getAttribute('data-count'),s=el.getAttribute('data-suffix')||'',st=null;function f(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1400);p=1-Math.pow(1-p,3);el.textContent=Math.round(t*p).toLocaleString('en-US')+s;if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
+  if('IntersectionObserver' in window && !rm){var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);co.unobserve(e.target);}});},{threshold:.6});cs.forEach(function(c){co.observe(c);});}
+  // wall loops: play when visible, click toggles sound
+  var cells=document.querySelectorAll('[data-wall]');
+  if('IntersectionObserver' in window){var wo=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target.querySelector('video');if(e.isIntersecting){v.play().catch(function(){});}else{v.pause();}});},{threshold:.2});cells.forEach(function(c){wo.observe(c);});}
+  cells.forEach(function(c){var v=c.querySelector('video');c.addEventListener('click',function(){cells.forEach(function(o){if(o!==c){o.classList.remove('sound');o.querySelector('video').muted=true;}});v.muted=!v.muted;c.classList.toggle('sound',!v.muted);if(!v.muted){v.currentTime=0;v.play().catch(function(){});}});});
+  // scroll-drawn service path
+  var ink=document.querySelector('.pathsvg .ink'),wrap=document.querySelector('.pathwrap');
+  if(ink&&wrap){var L=ink.getTotalLength();ink.style.strokeDasharray=L;ink.style.strokeDashoffset=L;
+    function upd(){var r=wrap.getBoundingClientRect(),vh=window.innerHeight;var p=(vh*0.85-r.top)/(r.height+vh*0.5);p=Math.max(0,Math.min(1,p));ink.style.strokeDashoffset=L*(1-p);}
+    if(rm){ink.style.strokeDashoffset=0;}else{window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();}
+  }
+})();
+</script>
+
+<script>
+(function(){
+  var icon='<svg viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg>';
+  // click-to-play players
+  document.querySelectorAll('[data-player]').forEach(function(p){
+    var v=p.querySelector('video'), b=p.querySelector('.play');
+    if(!v||!b) return;
+    b.addEventListener('click',function(){
+      document.querySelectorAll('[data-player] video').forEach(function(o){ if(o!==v && !o.paused){ o.pause(); } });
+      v.controls=true; v.muted=false; p.classList.add('playing');
+      var pr=v.play(); if(pr&&pr.catch){ pr.catch(function(){ v.muted=true; v.play().catch(function(){ p.classList.remove('playing'); v.controls=false; }); }); }
+    });
+    v.addEventListener('ended',function(){ p.classList.remove('playing'); v.controls=false; });
+    v.addEventListener('pause',function(){ if(v.ended||v.currentTime===0){ p.classList.remove('playing'); v.controls=false; } });
+  });
+  // hero film sound toggle
+  var sv=document.getElementById('storyvid'), sb=document.getElementById('soundbtn');
+  if(sv&&sb){
+    sb.addEventListener('click',function(){
+      if(sv.muted){ sv.muted=false; sv.currentTime=0; sv.play(); sb.textContent='Sound off'; sb.setAttribute('aria-pressed','true'); }
+      else { sv.muted=true; sb.textContent='Sound on'; sb.setAttribute('aria-pressed','false'); }
+    });
+  }
+  // autoplay loops only while visible
+  var loops=document.querySelectorAll('[data-loop] video');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ var v=e.target; if(e.isIntersecting){ v.play().catch(function(){}); } else { v.pause(); } }); },{threshold:.2});
+    loops.forEach(function(v){ io.observe(v); });
+    if(sv) io.observe(sv);
+  } else { loops.forEach(function(v){ v.play().catch(function(){}); }); }
+})();
+</script>
+</body>
+</html>
