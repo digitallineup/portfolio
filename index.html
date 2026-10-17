@@ -899,7 +899,7 @@ body.menu-open .menu ul a{transform:none;opacity:1}
       var fd=new FormData(f),o={};fd.forEach(function(v,k){o[k]=v;});o._subject='New enquiry from digitallineup site';o._template='table';o._captcha='false';
       var done=function(){btn.disabled=false;btn.firstChild.textContent='Send now ';f.reset();sels.forEach(sizeSel);open();};
       o.page='digitallineup.com';
-      var LEADS_URL='';
+      var LEADS_URL='https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec';
       (LEADS_URL?fetch(LEADS_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)}):fetch('https://formsubmit.co/ajax/hello@digitallineup.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(o)}).then(function(r){if(!r.ok)throw 0;return r.json();}))
       .then(done)
       .catch(function(){window.open('https://wa.me/923009590042?text='+encodeURIComponent('Hi Digital Lineup, I am '+o.name+' ('+o.email+'). Need: '+o.service+'. Budget in hand: '+o.budget+'.'),'_blank');done();});

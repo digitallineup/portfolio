@@ -404,7 +404,7 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
     er.style.display='none';
     var btn=f.querySelector('button'); btn.disabled=true; btn.textContent='Sending...';
     d._subject='Installer page lead: '+d.business; d._template='table'; d._captcha='false'; d.page='digitallineup.com/installers';
-    var LEADS_URL='';
+    var LEADS_URL='https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec';
     (LEADS_URL?fetch(LEADS_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}):fetch('https://formsubmit.co/ajax/hello@digitallineup.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;}))
       .then(function(){f.classList.add('sent');})
       .catch(function(){btn.disabled=false;btn.textContent='Send';er.textContent='That didn\'t send. Please try again, or message us on WhatsApp.';er.style.display='block';});
