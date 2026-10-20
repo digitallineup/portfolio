@@ -96,6 +96,10 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
 .crumb{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px}
 .crumb a{text-decoration:none}
 .ah h1{font-size:clamp(30px,4.6vw,48px);margin:14px 0 18px}
+.tile b.nm{font-size:20px;line-height:1.2}
+.ah .lead{color:var(--muted);font-size:18px;max-width:58ch}
+.mform{margin:34px 0 0}
+.body.solo{max-width:820px}
 .ah .meta{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted)}
 .ah .meta span{display:inline-flex;align-items:center;gap:6px}
 .ah .meta svg{width:15px;height:15px}
@@ -189,6 +193,9 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
   .side{display:block}.side .stick{position:sticky;top:92px}
   .mtoc{display:none}
   .prose{max-width:760px}
+  .ah.pg .wrap{grid-template-columns:1fr}
+  .mform{display:none}
+  .body.solo{grid-template-columns:1fr}
 }
 @media (max-width:560px){.top nav .hide-s{display:none}.card .im{height:var(--h,210px)}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.card,.rv{opacity:1;transform:none}.bh h1 span i{transform:none}}
@@ -220,13 +227,17 @@ var links=[].slice.call(document.querySelectorAll('.side .toc a')),heads=links.m
 function act(){var y=120,cur=heads[0];heads.forEach(function(h){if(h.getBoundingClientRect().top<y)cur=h;});links.forEach(function(a){a.classList.toggle('on',cur&&a.getAttribute('href')==='#'+cur.id);});}
 addEventListener('scroll',act,{passive:true});act();
 document.querySelectorAll('.prose table').forEach(function(t){var w=document.createElement('div');w.className='tw';t.parentNode.insertBefore(w,t);w.appendChild(t);});
-var f=document.getElementById('sf');if(f)f.addEventListener('submit',function(e){e.preventDefault();var d=Object.fromEntries(new FormData(f));if(d._honey)return;if(!d.name||!d.email)return;
-  d.page='digitallineup.com'+location.pathname;d.service='Blog: '+document.title;var b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';
-  fetch('"""+LEADS_URL+"""',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(){f.classList.add('sent');}).catch(function(){b.disabled=false;b.textContent='Send';});});
+['sf','sf2'].forEach(function(id){var f=document.getElementById(id);if(f)f.addEventListener('submit',function(e){e.preventDefault();var d=Object.fromEntries(new FormData(f));if(d._honey)return;if(!d.name||!d.email)return;
+  d.page='digitallineup.com'+location.pathname;d.service=(location.pathname.indexOf('/blog/')===0?'Blog: ':'Page: ')+document.title;var b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';
+  fetch('"""+LEADS_URL+"""',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(){f.classList.add('sent');}).catch(function(){b.disabled=false;b.textContent='Send';});});});
 })();</script>"""
 
 ICON_CAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>'
 ICON_CLK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
+
+
+NAV = [('services', '/services/', 'Services', 'hide-s'), ('work', '/work/', 'Work', 'hide-s'),
+       ('blog', '/blog/', 'Blog', ''), ('about', '/about/', 'About', 'hide-s')]
 
 
 def page(title, desc, path, body, ld, og_image, og_type='website', js='', nav_on='blog'):
@@ -239,9 +250,10 @@ def page(title, desc, path, body, ld, og_image, og_type='website', js='', nav_on
 <meta name="theme-color" content="#FBF6EF"><link rel="icon" href="/img/mark-dark.svg"><link rel="alternate" type="application/rss+xml" title="Digital Lineup blog" href="/blog/feed.xml">
 {ldtag}<style>{CSS}</style></head><body>
 <header class="top"><div class="wrap"><a href="/" aria-label="Digital Lineup home"><img src="/logo-dark.svg" alt="Digital Lineup" width="98" height="36"></a>
-<nav><a class="hide-s" href="/#services">Services</a><a class="hide-s" href="/work/">Work</a><a class="on" href="/blog/">Blog</a><a class="go" href="/#contact">Let's talk</a></nav></div></header>
+<nav>{''.join(f'<a class="{"on " if nav_on == k else ""}{c}" href="{h}">{t}</a>' for k, h, t, c in NAV)}<a class="go" href="/contact/">Let's talk</a></nav></div></header>
 <main>{body}</main>
 <footer class="foot"><div class="wrap"><span>&copy; {datetime.date.today().year} Digital Lineup. Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Multan, Pakistan.</span>
+<span><a href="/services/">Services</a> &middot; <a href="/work/">Work</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="/about/">About</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/privacy-policy/">Privacy</a></span>
 <span><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a> &middot; <a href="https://wa.me/923009590042">WhatsApp +92 300 959 0042</a> &middot; <a href="https://www.instagram.com/digitallineup_/">Instagram</a> &middot; <a href="https://www.linkedin.com/company/digital-lineup-agency">LinkedIn</a> &middot; <a href="https://www.facebook.com/digitallineup1">Facebook</a> &middot; <a href="https://www.youtube.com/@DigitalLineup">YouTube</a></span></div></footer>
 {js}</body></html>
 """
@@ -273,6 +285,47 @@ def quick_answers(body_html):
         faq.append({'@type': 'Question', 'name': html.unescape(re.sub('<[^>]+>', '', q.group(1))),
                     'acceptedAnswer': {'@type': 'Answer', 'text': html.unescape(re.sub(r'\s+', ' ', re.sub('<[^>]+>', ' ', q.group(2)))).strip()}})
     return body_html[:m.start(2)] + out + body_html[m.end(2):], faq
+
+
+def build_pages(md):
+    """Static site pages (about, services, contact, privacy) from tools/pages/*.md."""
+    urls = []
+    for f in sorted(glob.glob(os.path.join(ROOT, 'tools/pages/*.md'))):
+        raw = open(f, encoding='utf-8').read()
+        fm, body_md = re.match(r'^---\n(.*?)\n---\n(.*)$', raw, re.S).groups()
+        meta = dict(l.split(':', 1) for l in fm.splitlines() if ':' in l)
+        meta = {k.strip(): v.strip() for k, v in meta.items()}
+        md.reset()
+        body_html = md.convert(body_md)
+        body_html, faq = quick_answers(body_html)
+        path = meta['path']
+        url = SITE + path
+        toc = ''.join(f'<a href="#{t["id"]}">{esc(html.unescape(t["name"]))}</a>' for t in md.toc_tokens)
+        side_card = """<div class="scard"><span class="rb">Google <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i> 5.0</span><h3>Tell us what you are building.</h3><p>Video, branding, Meta ads and social, made in-house in Multan.</p>
+<form id="sf" novalidate><input name="name" placeholder="Your name" autocomplete="name" required><input name="email" type="email" placeholder="Work email" autocomplete="email" required><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Start your project</button></form>
+<div class="ok" role="status">Thanks. Our team will get back to you shortly.</div><p class="note">16 five-star reviews on Google</p></div>"""
+        noside = meta.get('noside') == 'yes'
+        side = '' if noside else f'<aside class="side"><div class="stick"><nav class="toc" aria-label="On this page"><b>On this page</b>{toc}</nav>{side_card}</div></aside>'
+        mobile_form = '' if noside else '<div class="mform">' + side_card.replace('id="sf"', 'id="sf2"') + '</div>'
+        cta = '' if noside else '<div class="cta rv"><h2>Start a project with Digital Lineup</h2><p>Tell us what you are building. We usually reply the same day.</p><div class="row"><a class="btn" href="https://wa.me/923009590042">WhatsApp us</a><a class="btn ghost" href="mailto:hello@digitallineup.com">Email hello@digitallineup.com</a></div></div>'
+        body = f"""<section class="ah pg"><div class="wrap"><div>
+<nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>&rsaquo;</span><span>{esc(meta['title'])}</span></nav>
+<h1>{esc(meta['title'])}</h1><p class="lead">{esc(meta.get('lead', ''))}</p></div></div></section>
+<div class="wrap body{' solo' if noside else ''}">{side}<article class="prose">{body_html}{mobile_form}{cta}</article></div>"""
+        ptype = {'/about/': 'AboutPage', '/contact/': 'ContactPage'}.get(path, 'WebPage')
+        ld = [{'@context': 'https://schema.org', '@type': ptype, 'name': meta['title'], 'url': url, 'description': meta['description'],
+               'isPartOf': {'@id': SITE + '/#website'}, 'about': ORG, 'inLanguage': 'en'},
+              {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                  {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
+                  {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]}]
+        if faq:
+            ld.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': faq})
+        out = os.path.join(ROOT, path.strip('/'))
+        os.makedirs(out, exist_ok=True)
+        open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(
+            page(meta.get('seo_title', meta['title']), meta['description'], path, body, ld, SITE + '/og.jpg', 'website', JS_POST, meta.get('nav', '')))
+        urls.append((path, datetime.date.today().isoformat(), '0.5' if noside else '0.8'))
+    return urls
 
 
 def build():
@@ -342,8 +395,10 @@ def build():
     open(os.path.join(ROOT, 'blog', 'feed.xml'), 'w', encoding='utf-8').write(
         f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Digital Lineup blog</title><link>{SITE}/blog/</link><description>Notes from the work.</description>{items}</channel></rss>\n')
 
+    site_urls = build_pages(md)
+
     today = datetime.date.today().isoformat()
-    urls = [('/', today, '1.0'), ('/work/', today, '0.8'), ('/installers/', today, '0.8'), ('/blog/', today, '0.8')]
+    urls = [('/', today, '1.0')] + site_urls + [('/work/', today, '0.8'), ('/installers/', today, '0.8'), ('/blog/', today, '0.8')]
     urls += [('/work/' + os.path.basename(f), today, '0.6') for f in sorted(glob.glob(os.path.join(ROOT, 'work/*.html'))) if not f.endswith('index.html')]
     urls += [(f"/blog/{p['slug']}/", p.get('updated', p['date']), '0.7') for p in posts]
     sm = ''.join(f'<url><loc>{SITE}{u}</loc><lastmod>{d}</lastmod><priority>{pr}</priority></url>' for u, d, pr in urls)

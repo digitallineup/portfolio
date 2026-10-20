@@ -16,6 +16,9 @@ Key facts:
 ## Main pages
 
 - [Home](https://digitallineup.com/): services, selected work, process, reviews, team, contact
+- [Services](https://digitallineup.com/services/): video production, Meta and Google ads, brand identity, social media management
 - [Portfolio](https://digitallineup.com/work/): case studies for every client
+- [About](https://digitallineup.com/about/): story, team, numbers and clients
+- [Contact](https://digitallineup.com/contact/): WhatsApp, email and studio address in Multan
 - [Meta ads for installers in Australia](https://digitallineup.com/installers/): packages in AUD, real campaign data
 - [Blog](https://digitallineup.com/blog/): articles with real campaign numbers
