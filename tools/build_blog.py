@@ -99,6 +99,7 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
 .tile b.nm{font-size:20px;line-height:1.2}
 .ah .lead{color:var(--muted);font-size:18px;max-width:58ch}
 .mform{margin:34px 0 0}
+.founder{border-radius:22px;overflow:hidden;max-width:360px;margin:0 0 26px}.founder img{width:100%;height:auto}
 .body.solo{max-width:820px}
 .ah .meta{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted)}
 .ah .meta span{display:inline-flex;align-items:center;gap:6px}
@@ -295,6 +296,8 @@ def build_pages(md):
         fm, body_md = re.match(r'^---\n(.*?)\n---\n(.*)$', raw, re.S).groups()
         meta = dict(l.split(':', 1) for l in fm.splitlines() if ':' in l)
         meta = {k.strip(): v.strip() for k, v in meta.items()}
+        if meta.get('draft') == 'yes' and not os.environ.get('DL_PREVIEW'):
+            continue
         md.reset()
         body_html = md.convert(body_md)
         body_html, faq = quick_answers(body_html)
@@ -318,6 +321,14 @@ def build_pages(md):
               {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
                   {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
                   {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]}]
+        if meta.get('person') == 'yes':
+            ld[0]['@type'] = 'ProfilePage'
+            ld[0]['mainEntity'] = {'@type': 'Person', '@id': SITE + '/#ali', 'name': 'Ali Hannan Siddique',
+                                   'alternateName': 'Ali Hannan', 'jobTitle': 'Founder', 'url': url,
+                                   'image': SITE + '/img/ali-hannan-founder.jpg', 'worksFor': ORG,
+                                   'homeLocation': {'@type': 'Place', 'name': 'Multan, Pakistan'},
+                                   'knowsAbout': ['Meta ads', 'Performance marketing', 'Content production',
+                                                  'Brand identity', 'Social media marketing', 'Computer science']}
         if faq:
             ld.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': faq})
         out = os.path.join(ROOT, path.strip('/'))
