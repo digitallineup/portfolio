@@ -34,3 +34,7 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Ping IndexNow (Bing, Copilot, Yandex)
+        run: |
+          sleep 30
+          python tools/indexnow.py
