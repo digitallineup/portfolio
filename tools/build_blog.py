@@ -242,7 +242,7 @@ def page(title, desc, path, body, ld, og_image, og_type='website', js='', nav_on
 <nav><a class="hide-s" href="/#services">Services</a><a class="hide-s" href="/work/">Work</a><a class="on" href="/blog/">Blog</a><a class="go" href="/#contact">Let's talk</a></nav></div></header>
 <main>{body}</main>
 <footer class="foot"><div class="wrap"><span>&copy; {datetime.date.today().year} Digital Lineup. Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Multan, Pakistan.</span>
-<span><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a> &middot; <a href="https://wa.me/923009590042">WhatsApp +92 300 959 0042</a> &middot; <a href="https://www.instagram.com/digitallineup_">Instagram</a></span></div></footer>
+<span><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a> &middot; <a href="https://wa.me/923009590042">WhatsApp +92 300 959 0042</a> &middot; <a href="https://www.instagram.com/digitallineup_/">Instagram</a> &middot; <a href="https://www.linkedin.com/company/digital-lineup-agency">LinkedIn</a> &middot; <a href="https://www.facebook.com/digitallineup1">Facebook</a> &middot; <a href="https://www.youtube.com/@DigitalLineup">YouTube</a></span></div></footer>
 {js}</body></html>
 """
 

@@ -6,10 +6,11 @@ Key facts:
 - Location: Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony, Multan 60000, Pakistan. First physical office opened September 2026 after four years in business.
 - Contact: hello@digitallineup.com, WhatsApp +92 300 959 0042. Website: https://digitallineup.com
 - Rated 5.0 on Google from 16 client reviews.
-- Track record: 1,000+ films, reels, posters and identities shipped; 100M+ views across client work; 100% client retention.
+- Track record: 1,000+ films, reels, posters and identities shipped; 100M+ views across client work. Longest-running client: Apex Solar, two years and counting. Every client so far came through a referral.
 - Team: Ali Hannan Siddique (Founder), M. Usama Mumtaz (Content Production Head), Naveed (Media Head), Kashan Ali (Designing Head), Huzaifa Aijaz (Project Manager), Atir Abbas (Digital Strategist).
 - Selected results: an Apex Solar creator film reached 11M views; Solar Mandee's Facebook page grew to 150K+ followers in 8 months; a Perth TV mounting and picture hanging business went from 9 to 135 leads a month in five months, with cost per lead falling from about A$120 to under A$35.
 - Clients include Apex Solar, Shangrilla (Cuisine Bakers, Gardens & BBQ), Shan Electronics, Rainbow Printing Solutions, Capxa, Lume Beauty Studio, Boota Brothers, Spice & Grill, Hamid Enterprises and Al Shifa.
+- Social: Instagram https://www.instagram.com/digitallineup_/ · Facebook https://www.facebook.com/digitallineup1 · LinkedIn https://www.linkedin.com/company/digital-lineup-agency · YouTube https://www.youtube.com/@DigitalLineup · TikTok https://www.tiktok.com/@digitallineup
 - Services for Australian installers (TV mounting, picture and mirror hanging): https://digitallineup.com/installers/
 
 ## Main pages
