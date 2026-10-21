@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Solar company marketing in Pakistan: how Apex Solar and Solar Mandee grew (keywords: solar company marketing Pakistan, solar leads Pakistan, solar business Facebook page growth). Data: work/apex-solar.html, 11M-view creator film, Solar Mandee 150K+ followers in 8 months.
 - [ ] School and college admissions marketing in Pakistan (keywords: school admission campaign ideas Pakistan, college admissions marketing Pakistan). Data: work/al-shifa.html.
 - [ ] Brand identity process for a new business in Pakistan: logo to brand book (keywords: brand identity design Pakistan, brand book example, logo design process). Data: work/capxa.html, work/lume.html, work/spice-and-grill.html.
 - [ ] Product photography for retail shops in Pakistan (keywords: product photography Multan, product photography for ecommerce Pakistan). Data: work/hamid-enterprises.html.
@@ -33,6 +32,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-10-21 solar-company-marketing-in-pakistan (primary keyword: solar company marketing in Pakistan)
 - [x] 2026-10-20 meta-ads-for-tv-mounting-businesses
 - [x] 2026-10-20 how-to-choose-a-digital-marketing-agency-in-pakistan
 - [x] 2026-10-20 restaurant-and-bakery-marketing-in-multan
