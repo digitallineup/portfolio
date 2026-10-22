@@ -20,7 +20,7 @@ Key facts:
   - [Video production in Multan](https://digitallineup.com/services/video-production-multan/)
   - [Social media management in Pakistan](https://digitallineup.com/services/social-media-management-pakistan/)
   - [Meta ads agency in Pakistan](https://digitallineup.com/services/meta-ads-agency-pakistan/)
-  - [Branding agency in Multan](https://digitallineup.com/services/branding-agency-multan/)
+  - [Branding & identity](https://digitallineup.com/services/branding-identity/)
   - [Website design in Pakistan](https://digitallineup.com/services/website-design-pakistan/)
 - [Portfolio](https://digitallineup.com/work/): case studies for every client
 - [About](https://digitallineup.com/about/): story, team, numbers and clients

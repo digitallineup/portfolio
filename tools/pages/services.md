@@ -49,7 +49,7 @@ Meta and Google ads with the creative, landing pages and pixel work done by the 
 
 ## 3. Brand identity
 
-Logo, brand system, signage, packaging and the brand book that holds it all together, for businesses that are about to be seen by a lot more people. [More on branding in Multan](/services/branding-agency-multan/).
+Logo, brand system, signage, packaging and the brand book that holds it all together, for businesses that are about to be seen by a lot more people. [More on branding and identity](/services/branding-identity/).
 
 - Logo and visual system
 - Brand book and guidelines

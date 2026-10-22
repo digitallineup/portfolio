@@ -7,6 +7,7 @@ path: /services/branding-agency-multan/
 parent: Services|/services/
 nav: services
 service: Brand identity design
+draft: yes
 ---
 
 <div class="heroimg tall"><img src="/work/assets/img/lume-01.jpg" alt="Lume Beauty Studio brand identity designed by Digital Lineup" width="1080" height="1350"></div>
