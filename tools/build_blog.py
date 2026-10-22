@@ -99,6 +99,8 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
 .tile b.nm{font-size:20px;line-height:1.2}
 .ah .lead{color:var(--muted);font-size:18px;max-width:58ch}
 .mform{margin:34px 0 0}
+.heroimg{border-radius:22px;overflow:hidden;margin:0 0 26px}.heroimg img{width:100%;height:auto}.heroimg.tall{max-width:380px}
+@media (max-width:560px){.heroimg.tall img{aspect-ratio:1/1;object-fit:cover}}
 .founder{border-radius:22px;overflow:hidden;max-width:360px;margin:0 0 26px}.founder img{width:100%;height:auto}
 .body.solo{max-width:820px}
 .ah .meta{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted)}
@@ -311,8 +313,10 @@ def build_pages(md):
         side = '' if noside else f'<aside class="side"><div class="stick"><nav class="toc" aria-label="On this page"><b>On this page</b>{toc}</nav>{side_card}</div></aside>'
         mobile_form = '' if noside else '<div class="mform">' + side_card.replace('id="sf"', 'id="sf2"') + '</div>'
         cta = '' if noside else '<div class="cta rv"><h2>Start a project with Digital Lineup</h2><p>Tell us what you are building. We usually reply the same day.</p><div class="row"><a class="btn" href="https://wa.me/923009590042">WhatsApp us</a><a class="btn ghost" href="mailto:hello@digitallineup.com">Email hello@digitallineup.com</a></div></div>'
+        parent = meta.get('parent', '').split('|') if meta.get('parent') else None
+        parent_html = f'<a href="{parent[1]}">{esc(parent[0])}</a><span>&rsaquo;</span>' if parent else ''
         body = f"""<section class="ah pg"><div class="wrap"><div>
-<nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>&rsaquo;</span><span>{esc(meta['title'])}</span></nav>
+<nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>&rsaquo;</span>{parent_html}<span>{esc(meta['title'])}</span></nav>
 <h1>{esc(meta['title'])}</h1><p class="lead">{esc(meta.get('lead', ''))}</p></div></div></section>
 <div class="wrap body{' solo' if noside else ''}">{side}<article class="prose">{body_html}{mobile_form}{cta}</article></div>"""
         ptype = {'/about/': 'AboutPage', '/contact/': 'ContactPage'}.get(path, 'WebPage')
@@ -321,6 +325,14 @@ def build_pages(md):
               {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
                   {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
                   {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]}]
+        if parent:
+            ld[1]['itemListElement'] = [ld[1]['itemListElement'][0],
+                {'@type': 'ListItem', 'position': 2, 'name': parent[0], 'item': SITE + parent[1]},
+                {'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url}]
+        if meta.get('service'):
+            ld.append({'@context': 'https://schema.org', '@type': 'Service', 'name': meta['service'], 'serviceType': meta['service'],
+                       'provider': ORG, 'areaServed': [{'@type': 'City', 'name': 'Multan'}, {'@type': 'Country', 'name': 'Pakistan'}, {'@type': 'Country', 'name': 'Australia'}],
+                       'url': url, 'description': meta['description']})
         if meta.get('person') == 'yes':
             ld[0]['@type'] = 'ProfilePage'
             ld[0]['mainEntity'] = {'@type': 'Person', '@id': SITE + '/#ali', 'name': 'Ali Hannan Siddique',
