@@ -219,4 +219,4 @@ document.querySelectorAll('.prose table').forEach(function(t){var w=document.cre
 ['sf','sf2'].forEach(function(id){var f=document.getElementById(id);if(f)f.addEventListener('submit',function(e){e.preventDefault();var d=Object.fromEntries(new FormData(f));if(d._honey)return;if(!d.name||!d.email)return;
   d.page='digitallineup.com'+location.pathname;d.service=(location.pathname.indexOf('/blog/')===0?'Blog: ':'Page: ')+document.title;var b=f.querySelector('button');b.disabled=true;b.textContent='Sending...';
   fetch('https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(){f.classList.add('sent');}).catch(function(){b.disabled=false;b.textContent='Send';});});});
-})();</script><script src="/js/footer.js?v=20261022b" defer></script></body></html>
+})();</script><script src="/js/footer.js?v=20261023" defer></script></body></html>

@@ -1,5 +1,5 @@
 /* Shared site footer: wordmark fit + draggable pills (needs /js/matter.min.js). */
-(function(){
+(function(){function start(){
 var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   // footer wordmark fit
   (function(){
@@ -48,4 +48,6 @@ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
     pio.observe(pit);
     setTimeout(function(){if(!started&&!window.Matter){pit.classList.add('ready','static');}},6000);
   })();
+}
+if(window.requestIdleCallback)requestIdleCallback(start,{timeout:800});else setTimeout(start,0);
 })();

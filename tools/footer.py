@@ -4,7 +4,7 @@ import datetime
 
 import pathlib as _p
 HEAD = '<style id="ft-css">' + (_p.Path(__file__).resolve().parent.parent / 'css/footer.css').read_text(encoding='utf-8').replace('\n', '') + '</style>'
-SCRIPTS = '<script src="/js/footer.js?v=20261022b" defer></script>'
+SCRIPTS = '<script src="/js/footer.js?v=20261023" defer></script>'
 
 
 def footer_html(contact_href='/contact/'):
