@@ -31,7 +31,7 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 var done=0;function go(){if(done)return;done=1;
 if(GA){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+GA;document.head.appendChild(s);}
 if(CL){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CL);}}
-['scroll','pointerdown','keydown','touchstart'].forEach(function(t){addEventListener(t,go,{once:true,passive:true})});setTimeout(go,3500);})();
+['pointerdown','keydown','touchstart','wheel'].forEach(function(t){addEventListener(t,go,{once:true,passive:true})});setTimeout(go,9000);})();
 </script>
 """ % (json.dumps(GA), json.dumps(CL))
 n = 0

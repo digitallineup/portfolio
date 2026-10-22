@@ -779,15 +779,20 @@ body.menu-open .menu ul a{transform:none;opacity:1}
     }
     size(); addEventListener('resize',size); addEventListener('load',size);
     ring.parentNode.addEventListener('mouseenter',function(){slow=true;}); ring.parentNode.addEventListener('mouseleave',function(){slow=false;});
+    var vis=[],ops=[],onScreen=true;
+    cs.forEach(function(c){c.style.willChange='transform,opacity';});
+    if('IntersectionObserver' in window){new IntersectionObserver(function(es){onScreen=es[0].isIntersecting;if(onScreen){last=performance.now();requestAnimationFrame(frame);}}).observe(ring.parentNode);}
     function frame(t){
+      if(!onScreen) return;
       var dt=Math.min(50,t-last); last=t; if(!rm) off+=dt*(slow?0.0012:0.0045);
       for(var i=0;i<N;i++){
         var th=((pos[i]+off)%span+span)%span - span/2;
         var c=cs[i], a=Math.abs(th);
-        if(a>84){ c.style.opacity=0; c.style.visibility='hidden'; continue; }
-        c.style.visibility='visible';
-        c.style.opacity= a>64 ? Math.max(0,(84-a)/20) : 1;
-        c.style.transform='translate(-50%,-50%) translateZ('+(-R)+'px) rotateY('+th+'deg) translateZ('+R+'px)';
+        if(a>84){ if(vis[i]!==0){ c.style.opacity=0; c.style.visibility='hidden'; vis[i]=0; } continue; }
+        if(vis[i]!==1){ c.style.visibility='visible'; vis[i]=1; }
+        var o=a>64 ? Math.max(0,(84-a)/20) : 1; o=Math.round(o*50)/50;
+        if(ops[i]!==o){ c.style.opacity=o; ops[i]=o; }
+        c.style.transform='translate(-50%,-50%) translateZ('+(-R)+'px) rotateY('+th.toFixed(2)+'deg) translateZ('+R+'px)';
       }
       requestAnimationFrame(frame);
     }
@@ -812,15 +817,19 @@ body.menu-open .menu ul a{transform:none;opacity:1}
   addEventListener('scroll',prog,{passive:true}); addEventListener('resize',prog); prog();
   // sticky stack: scale back cards slightly as the next one covers them
   var cards=[].slice.call(document.querySelectorAll('.scard'));
-  function stack(){
+  var stTick=false;
+  function stackNow(){
+    stTick=false;
+    var rects=cards.map(function(c){return c.getBoundingClientRect();});
     cards.forEach(function(c,i){
-      var next=cards[i+1]; if(!next) return;
-      var r=c.getBoundingClientRect(), nr=next.getBoundingClientRect();
+      var nr=rects[i+1]; if(!nr) return;
+      var r=rects[i];
       var overlap=Math.min(1,Math.max(0,(r.bottom-nr.top)/r.height));
       c.style.transform='scale('+(1-overlap*0.06)+') translateY('+(-overlap*10)+'px)';
       c.style.filter='brightness('+(1-overlap*0.08)+')';
     });
   }
+  function stack(){ if(!stTick){ stTick=true; requestAnimationFrame(stackNow); } }
   if(!rm){ addEventListener('scroll',stack,{passive:true}); addEventListener('resize',stack); stack(); }
   // menu
   var burger=document.querySelector('.burger');
