@@ -450,6 +450,10 @@ section.s{padding:clamp(90px,12vw,170px) 0}
 @media (max-width:1100px){.score,.goals,.also{grid-template-columns:1fr 1fr}}
 @media (max-width:760px){.kpi,.score,.goals,.also{grid-template-columns:1fr}.kpi .nums{grid-template-columns:1fr 1fr 1fr;gap:8px}.kpi dl{grid-template-columns:64px 1fr}}
 
+/* long sections render when they scroll near the viewport */
+.shots,.stack,.proc,.ind,.revs,.faq,.goals,.also,.duo{content-visibility:auto}
+.shots{contain-intrinsic-size:auto 1200px}.stack{contain-intrinsic-size:auto 2400px}.proc{contain-intrinsic-size:auto 900px}.ind{contain-intrinsic-size:auto 500px}.revs{contain-intrinsic-size:auto 400px}.faq{contain-intrinsic-size:auto 700px}.goals{contain-intrinsic-size:auto 400px}.also{contain-intrinsic-size:auto 200px}.duo{contain-intrinsic-size:auto 500px}
+
 /* breadcrumb */
 .crumb{font-size:14px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
 .crumb a:hover{color:var(--ink)}
@@ -602,4 +606,4 @@ and the budget in&nbsp;hand&nbsp;is
   </div>
   <div class="fword" aria-hidden="true" data-fit><span>DIGITAL LINEUP</span></div>
 </footer>
-<script src="/js/header.js?v=20261022" defer></script><script src="/services/assets/svc.js?v=20261023b" defer></script><script src="/js/footer.js?v=20261022b" defer></script></body></html>
+<script src="/js/header.js?v=20261022" defer></script><script src="/services/assets/svc.js?v=20261023c" defer></script><script src="/js/footer.js?v=20261022b" defer></script></body></html>
