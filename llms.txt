@@ -16,12 +16,21 @@ Key facts:
 ## Main pages
 
 - [Home](https://digitallineup.com/): services, selected work, process, reviews, team, contact
+- [Services](https://digitallineup.com/services/): video production, Meta and Google ads, brand identity, social media management
+  - [Video production in Multan](https://digitallineup.com/services/video-production-multan/)
+  - [Social media management in Pakistan](https://digitallineup.com/services/social-media-management-pakistan/)
+  - [Meta ads agency in Pakistan](https://digitallineup.com/services/meta-ads-agency-pakistan/)
+  - [Branding agency in Multan](https://digitallineup.com/services/branding-agency-multan/)
+  - [Website design in Pakistan](https://digitallineup.com/services/website-design-pakistan/)
 - [Portfolio](https://digitallineup.com/work/): case studies for every client
+- [About](https://digitallineup.com/about/): story, team, numbers and clients
+- [Contact](https://digitallineup.com/contact/): WhatsApp, email and studio address in Multan
 - [Meta ads for installers in Australia](https://digitallineup.com/installers/): packages in AUD, real campaign data
 - [Blog](https://digitallineup.com/blog/): articles with real campaign numbers
 
 ## Articles
 
+- [Solar Company Marketing in Pakistan: What We Learned Growing Apex Solar and Solar Mandee](https://digitallineup.com/blog/solar-company-marketing-in-pakistan/): Solar company marketing in Pakistan from real work: an 11M-view creator film, an installer rewards programme, three expos and a page grown to 150K followers.
 - [How to Choose a Digital Marketing Agency in Pakistan: 10 Questions to Ask Before You Pay](https://digitallineup.com/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/): Ten questions that separate a real digital marketing agency in Pakistan from a page that posts for you. Ownership, in-house video, reporting, contracts and red flags.
 - [Meta Ads for TV Mounting Businesses: How a Perth Installer Went From 9 to 135 Leads a Month](https://digitallineup.com/blog/meta-ads-for-tv-mounting-businesses/): Real Meta Ads numbers from a Perth TV mounting and picture hanging business: 388 leads in five months and cost per lead down from $119.63 to $32.17 AUD.
 - [Restaurant and Bakery Marketing in Multan: What Actually Sells on Social Media](https://digitallineup.com/blog/restaurant-and-bakery-marketing-in-multan/): What we learned running social media, food photography and launch campaigns for Shangrilla's bakery, Chinese restaurant and garden BBQ in Multan, including a launch that worked with zero ad spend.

@@ -17,6 +17,9 @@ Write a post as blog/posts/<slug>.md with a header like:
 Then run:  python3 tools/build_blog.py   (GitHub Actions also runs it on every push.)
 """
 import html, json, os, re, glob, datetime
+import sys as _sys, pathlib as _pl
+_sys.path.insert(0, str(_pl.Path(__file__).resolve().parent))
+from footer import footer_html, HEAD as FOOT_HEAD, SCRIPTS as FOOT_JS
 import markdown
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -251,14 +254,12 @@ def page(title, desc, path, body, ld, og_image, og_type='website', js='', nav_on
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="{og_type}"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{og_image}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FBF6EF"><link rel="icon" href="/img/mark-dark.svg"><link rel="alternate" type="application/rss+xml" title="Digital Lineup blog" href="/blog/feed.xml">
-{ldtag}<style>{CSS}</style></head><body>
+{ldtag}<style>{CSS}</style>{FOOT_HEAD}</head><body>
 <header class="top"><div class="wrap"><a href="/" aria-label="Digital Lineup home"><img src="/logo-dark.svg" alt="Digital Lineup" width="98" height="36"></a>
 <nav>{''.join(f'<a class="{"on " if nav_on == k else ""}{c}" href="{h}">{t}</a>' for k, h, t, c in NAV)}<a class="go" href="/contact/">Let's talk</a></nav></div></header>
 <main>{body}</main>
-<footer class="foot"><div class="wrap"><span>&copy; {datetime.date.today().year} Digital Lineup. Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Multan, Pakistan.</span>
-<span><a href="/services/">Services</a> &middot; <a href="/work/">Work</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="/about/">About</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/privacy-policy/">Privacy</a></span>
-<span><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a> &middot; <a href="https://wa.me/923009590042">WhatsApp +92 300 959 0042</a> &middot; <a href="https://www.instagram.com/digitallineup_/">Instagram</a> &middot; <a href="https://www.linkedin.com/company/digital-lineup-agency">LinkedIn</a> &middot; <a href="https://www.facebook.com/digitallineup1">Facebook</a> &middot; <a href="https://www.youtube.com/@DigitalLineup">YouTube</a></span></div></footer>
-{js}</body></html>
+{footer_html()}
+{js}{FOOT_JS}</body></html>
 """
 
 

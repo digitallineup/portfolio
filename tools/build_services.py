@@ -5,13 +5,15 @@ The shell adds the header with the Services mega-menu, the FAQ, the lead form,
 the footer and the JSON-LD (Service, BreadcrumbList, FAQPage).
 Shared CSS and JS live in /services/assets/.
 """
-import json, pathlib, re, html
+import json, pathlib, re, html, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from footer import footer_html, HEAD as FOOT_HEAD, SCRIPTS as FOOT_JS
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / 'tools' / 'services'
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
-VER = '20261022'
+VER = '20261022b'
 
 I = {  # small line icons for the mega-menu
     'cam': '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
@@ -73,7 +75,7 @@ def faq_html(faqs):
 
 
 def form_html(service):
-    opts = ''.join(f'<option{" selected" if n == service else ""}>{esc(n)}</option>' for c, n, d, u, ic in MENU) + '<option>Something else</option>'
+    opts = ''.join(f'<option{" selected" if n == service else ""}>{esc(n)}</option>' for c, n, d, u, ic in MENU) + f'<option{" selected" if service not in [m[1] for m in MENU] else ""}>Something else</option>'
     pills = ''.join(f'<label><input type="radio" name="budget" value="{esc(b)}"><span>{esc(b)}</span></label>' for b in BUDGETS)
     return f'''<section class="contact" id="contact"><div class="wrap g">
 <div class="side"><span class="eyebrow" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.25)">Start a project</span>
@@ -129,8 +131,8 @@ def build_one(src):
                       'address': {'@type': 'PostalAddress', 'addressLocality': 'Multan', 'addressCountry': 'PK'}}},
         {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
-            {'@type': 'ListItem', 'position': 2, 'name': 'Services', 'item': SITE + '/services/'},
-            {'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url}]},
+            {'@type': 'ListItem', 'position': 2, 'name': 'Services', 'item': SITE + '/services/'}]
+            + ([{'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url}] if path != '/services/' else [])},
     ]
     if faqs:
         ld.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
@@ -144,7 +146,7 @@ def build_one(src):
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{robots}<link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{og}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ffffff"><link rel="icon" href="/img/mark-dark.svg">
-<link rel="stylesheet" href="/services/assets/svc.css?v={VER}">{ldtag}</head><body>
+<link rel="stylesheet" href="/services/assets/svc.css?v={VER}">{FOOT_HEAD}{ldtag}</head><body>
 <a class="sr" href="#main">Skip to content</a>
 <div class="cur" aria-hidden="true"><span></span></div>
 <header class="hd"><div class="wrap"><a class="logo" href="/" aria-label="Digital Lineup home"><img src="/logo-dark.svg" alt="Digital Lineup" width="98" height="36"></a>
@@ -152,8 +154,8 @@ def build_one(src):
 <a class="cta" href="#contact">Start a project</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button></div></header>
 {mobile_menu()}
 <main id="main">{body}{faq_html(faqs) if faqs else ''}{form_html(svc)}</main>
-{footer()}
-<script src="/services/assets/svc.js?v={VER}" defer></script></body></html>
+{footer_html('#contact')}
+<script src="/services/assets/svc.js?v={VER}" defer></script>{FOOT_JS}</body></html>
 '''
     out = ROOT / path.strip('/') / 'index.html'
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -161,6 +163,26 @@ def build_one(src):
     return path
 
 
+def add_to_sitemap(paths):
+    sm = ROOT / 'sitemap.xml'
+    if not sm.exists():
+        return
+    x = sm.read_text(encoding='utf-8')
+    import datetime
+    today = datetime.date.today().isoformat()
+    for p in paths:
+        loc = f'<loc>{SITE}{p}</loc>'
+        if loc not in x:
+            x = x.replace('</urlset>', f'<url>{loc}<lastmod>{today}</lastmod><priority>0.8</priority></url></urlset>')
+    sm.write_text(x, encoding='utf-8')
+
+
 if __name__ == '__main__':
+    public = []
     for f in sorted(SRC.glob('*.html')):
-        print('built', build_one(f))
+        path = build_one(f)
+        print('built', path)
+        meta = json.loads(re.match(r'\s*<!--(.*?)-->', f.read_text(encoding='utf-8'), re.S).group(1))
+        if not meta.get('noindex'):
+            public.append(path)
+    add_to_sitemap(public)

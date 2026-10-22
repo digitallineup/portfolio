@@ -116,7 +116,7 @@ button{font:inherit;color:inherit}
 .foot{border-top:1px solid var(--line)}.foot .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:22px;font-size:13px;color:var(--muted)}.foot a{color:var(--muted);text-decoration:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}.rv{opacity:1;transform:none}}
 .ln{display:inline-block}@media(max-width:600px){.ln{display:block}}
-</style></head><body><header class="nav"><div class="wrap">
+</style><link rel="stylesheet" href="/css/footer.css?v=20261022"></head><body><header class="nav"><div class="wrap">
 <a class="lnk" href="../#contact">Contact</a>
 <a class="logo" href="../" aria-label="Digital Lineup home"><img src="../logo-dark.svg" alt="Digital Lineup" width="98" height="36"></a>
 <a class="lnk r" href="./">All work</a>
@@ -185,7 +185,27 @@ button{font:inherit;color:inherit}
 <div class="acts"><a class="btn" href="../#contact">Start something cool <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
 <a class="btn ghost" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp us</a></div>
 </div></section>
-<footer class="foot"><div class="wrap"><span>&copy; 2026 Digital Lineup. Multan, Pakistan.</span><a href="#top">Back to top &uarr;</a></div></footer><script>(function(){
+<footer class="foot2" id="footer">
+  <div class="fmeta wrap">
+    <span>&copy; 2026 Digital Lineup. Multan, Pakistan.</span>
+    <nav class="flinks" aria-label="Site pages"><a href="/services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
+    <a href="#">Back to top &uarr;</a>
+  </div>
+  <div class="fpit" data-pit aria-label="Contact links">
+    <a class="pill" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="pill" href="mailto:hello@digitallineup.com">Email</a>
+    <a class="pill" href="https://www.instagram.com/digitallineup_/" target="_blank" rel="noopener">Instagram</a>
+    <a class="pill" href="https://www.linkedin.com/company/digital-lineup-agency" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="pill" href="https://www.facebook.com/digitallineup1" target="_blank" rel="noopener">Facebook</a>
+    <a class="pill" href="https://www.youtube.com/@DigitalLineup" target="_blank" rel="noopener">YouTube</a>
+    <a class="pill" href="https://www.tiktok.com/@digitallineup" target="_blank" rel="noopener">TikTok</a>
+    <a class="pill" href="https://www.google.com/maps?cid=114504805028664053" target="_blank" rel="noopener">Google 5.0</a>
+    <a class="pill" href="/services/">Services</a>
+    <a class="pill accent" href="/contact/">Start something cool</a>
+    <a class="pill ghost" href="#">Carrier pigeon</a>
+  </div>
+  <div class="fword" aria-hidden="true" data-fit><span>DIGITAL LINEUP</span></div>
+</footer><script>(function(){
   var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   // reveals
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
@@ -227,4 +247,4 @@ button{font:inherit;color:inherit}
     var f=ch.dataset.f; tiles.forEach(function(t){t.classList.toggle('hide',f!=='all'&&t.dataset.tag!==f);});
   });});
 })();
-</script></body></html>
+</script><script src="/js/matter.min.js" defer></script><script src="/js/footer.js?v=20261022" defer></script></body></html>
