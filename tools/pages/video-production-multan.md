@@ -7,6 +7,7 @@ path: /services/video-production-multan/
 parent: Services|/services/
 nav: services
 service: Video production
+draft: yes
 ---
 
 <div class="heroimg tall"><img src="/work/assets/vid/hamid-porta.poster.jpg" alt="Product film for Hamid Enterprises shot by Digital Lineup in Multan" width="720" height="1280"></div>

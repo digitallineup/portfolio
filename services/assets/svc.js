@@ -52,7 +52,7 @@ if(fl&&FINE&&!RM){var fx=0,fy=0,gx=0,gy=0,fon=false,fims=$$('img',fl);
 }
 
 /* scroll-driven motion */
-var cols=$$('.collage .col'),coll=$('.collage'),cards=$$('.card'),book=$('.book'),meter=$('.book .meter i'),reel=$('.reel'),films=$('.films'),steps=$('.steps'),bar=$('.steps .bar'),stepEls=$$('.step');
+var cols=$$('.collage .col'),coll=$('.collage'),cards=$$('.card'),book=$('.book'),meter=$('.book .meter i'),filmSecs=$$('.films').map(function(f){return {f:f,r:$('.reel',f)}}).filter(function(o){return o.r}),steps=$('.steps'),bar=$('.steps .bar'),stepEls=$$('.step');
 var ticking=false;
 function tick(){ticking=false;var vh=innerHeight;
  fills.forEach(function(f){var r=f.el.getBoundingClientRect(),p=clamp((vh*.88-r.top)/(r.height+vh*.45),0,1),n=Math.round(p*f.ws.length);f.ws.forEach(function(s,i){s.classList.toggle('on',i<n)})});
@@ -62,7 +62,7 @@ function tick(){ticking=false;var vh=innerHeight;
   var nr=nx.getBoundingClientRect(),cr=c.getBoundingClientRect(),p=clamp((cr.bottom-nr.top)/cr.height,0,1);c.style.transform='scale('+(1-p*.08)+')';if(sh)sh.style.opacity=(p*.45).toFixed(3)});
  if(book){var b=book.getBoundingClientRect(),p=clamp(-b.top/(b.height-vh),0,1),im=bookImgs[bookCur];if(meter)meter.style.width=(p*100)+'%';
   if(im&&im.complete){var scr=im.parentNode,max=im.offsetHeight-scr.offsetHeight;bookImgs.forEach(function(x){x.style.transform='translate3d(0,'+(-Math.max(0,x.offsetHeight-scr.offsetHeight)*p)+'px,0)'})}}
- if(reel&&films){var r2=films.getBoundingClientRect();if(r2.bottom>0&&r2.top<vh){var p2=clamp((vh-r2.top)/(vh+r2.height),0,1),max2=Math.max(0,reel.scrollWidth-innerWidth+40);reel.style.transform='translate3d('+(-max2*p2)+'px,0,0)'}}
+ filmSecs.forEach(function(o){var r2=o.f.getBoundingClientRect();if(r2.bottom>0&&r2.top<vh){var p2=clamp((vh-r2.top)/(vh+r2.height),0,1),max2=Math.max(0,o.r.scrollWidth-innerWidth+40);o.r.style.transform='translate3d('+(-max2*p2)+'px,0,0)'}});
  if(steps){var s=steps.getBoundingClientRect(),p3=clamp((vh*.6-s.top)/s.height,0,1);bar.style.height=(p3*(s.height-16))+'px';stepEls.forEach(function(st){st.classList.toggle('on',st.getBoundingClientRect().top<vh*.6)})}
 }
 addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(tick)}},{passive:true});

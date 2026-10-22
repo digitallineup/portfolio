@@ -16,12 +16,15 @@ Key facts:
 ## Main pages
 
 - [Home](https://digitallineup.com/): services, selected work, process, reviews, team, contact
-- [Services](https://digitallineup.com/services/): video production, Meta and Google ads, brand identity, social media management
-  - [Video production in Multan](https://digitallineup.com/services/video-production-multan/)
-  - [Social media management in Pakistan](https://digitallineup.com/services/social-media-management-pakistan/)
-  - [Meta ads agency in Pakistan](https://digitallineup.com/services/meta-ads-agency-pakistan/)
+- [Services](https://digitallineup.com/services/): photography, video, creator campaigns, Meta ads, social media, branding and websites
+  - [Food photography](https://digitallineup.com/services/food-photography/)
+  - [Product photography](https://digitallineup.com/services/product-photography/)
+  - [Video production](https://digitallineup.com/services/video-production/)
+  - [Creator and influencer campaigns](https://digitallineup.com/services/influencer-marketing/)
+  - [Meta ads](https://digitallineup.com/services/meta-ads/)
+  - [Social media management](https://digitallineup.com/services/social-media-management/)
   - [Branding & identity](https://digitallineup.com/services/branding-identity/)
-  - [Website design in Pakistan](https://digitallineup.com/services/website-design-pakistan/)
+  - [Website design](https://digitallineup.com/services/website-design/)
 - [Portfolio](https://digitallineup.com/work/): case studies for every client
 - [About](https://digitallineup.com/about/): story, team, numbers and clients
 - [Contact](https://digitallineup.com/contact/): WhatsApp, email and studio address in Multan

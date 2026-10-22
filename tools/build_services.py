@@ -15,7 +15,7 @@ SRC = ROOT / 'tools' / 'services'
 SVC_CSS = (ROOT / 'services' / 'assets' / 'svc.css').read_text(encoding='utf-8')
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
-VER = '20261022e'
+VER = '20261022f'
 
 BUDGETS = ['PKR 120K to 250K', 'PKR 250K to 500K', 'PKR 500K plus', 'in USD, let\'s talk', 'not decided yet']
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
@@ -153,6 +153,34 @@ def add_to_sitemap(paths):
     sm.write_text(x, encoding='utf-8')
 
 
+REDIRECTS = {
+    '/services/branding-agency-multan/': '/services/branding-identity/',
+    '/services/video-production-multan/': '/services/video-production/',
+    '/services/meta-ads-agency-pakistan/': '/services/meta-ads/',
+    '/services/social-media-management-pakistan/': '/services/social-media-management/',
+    '/services/website-design-pakistan/': '/services/website-design/',
+}
+
+
+def write_redirects():
+    """GitHub Pages has no server redirects, so old URLs get a tiny page that points to the new one."""
+    for old, new in REDIRECTS.items():
+        out = ROOT / old.strip('/') / 'index.html'
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved | Digital Lineup</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><link rel="canonical" href="{SITE}{new}"><meta http-equiv="refresh" content="0; url={new}"></head><body><p>This page has moved to <a href="{new}">{SITE}{new}</a>.</p></body></html>
+''', encoding='utf-8')
+
+
+def drop_from_sitemap():
+    sm = ROOT / 'sitemap.xml'
+    if not sm.exists():
+        return
+    x = sm.read_text(encoding='utf-8')
+    for old in REDIRECTS:
+        x = re.sub(r'<url><loc>' + re.escape(SITE + old) + r'</loc>.*?</url>', '', x)
+    sm.write_text(x, encoding='utf-8')
+
+
 if __name__ == '__main__':
     public = []
     for f in sorted(SRC.glob('*.html')):
@@ -162,3 +190,5 @@ if __name__ == '__main__':
         if not meta.get('noindex'):
             public.append(path)
     add_to_sitemap(public)
+    write_redirects()
+    drop_from_sitemap()

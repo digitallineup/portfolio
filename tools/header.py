@@ -23,14 +23,14 @@ I = {  # small line icons for the mega-menu
 }
 # (column, name, one-liner, url, icon). URLs switch to the new pages as each one ships.
 MENU = [
-    ('Photography', 'Food Photography', 'Restaurants, bakeries, menus', '/services/', 'cam'),
-    ('Photography', 'Product Photography', 'Ecommerce, catalogues, ads', '/services/', 'box'),
-    ('Production', 'Video Production', 'Brand films, reels, drone', '/services/video-production-multan/', 'film'),
-    ('Production', 'Creator Campaigns', 'Influencer films that travel', '/work/apex-solar.html', 'star'),
-    ('Growth', 'Meta Ads', 'Leads and sales, tracked', '/services/meta-ads-agency-pakistan/', 'chart'),
-    ('Growth', 'Social Media Management', 'Content, posting, community', '/services/social-media-management-pakistan/', 'chat'),
+    ('Photography', 'Food Photography', 'Restaurants, bakeries, menus', '/services/food-photography/', 'cam'),
+    ('Photography', 'Product Photography', 'Ecommerce, catalogues, ads', '/services/product-photography/', 'box'),
+    ('Production', 'Video Production', 'Brand films, reels, drone', '/services/video-production/', 'film'),
+    ('Production', 'Creator Campaigns', 'Influencer films that travel', '/services/influencer-marketing/', 'star'),
+    ('Growth', 'Meta Ads', 'Leads and sales, tracked', '/services/meta-ads/', 'chart'),
+    ('Growth', 'Social Media Management', 'Content, posting, community', '/services/social-media-management/', 'chat'),
     ('Brand & Web', 'Branding & Identity', 'Logos, systems, brand books', '/services/branding-identity/', 'pen'),
-    ('Brand & Web', 'Website Design', 'Fast sites that convert', '/services/website-design-pakistan/', 'web'),
+    ('Brand & Web', 'Website Design', 'Fast sites that convert', '/services/website-design/', 'web'),
 ]
 
 def icon(k):

@@ -7,6 +7,7 @@ path: /services/social-media-management-pakistan/
 parent: Services|/services/
 nav: services
 service: Social media management
+draft: yes
 ---
 
 <div class="heroimg tall"><img src="/work/assets/img/garden-01.jpg" alt="Shangrilla Gardens and BBQ social media post designed by Digital Lineup" width="1200" height="1500"></div>
