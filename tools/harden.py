@@ -18,7 +18,9 @@ CSP = ("default-src 'self'; "
        "base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'; "
        "upgrade-insecure-requests")
 TAGS = (f'<meta http-equiv="Content-Security-Policy" content="{CSP}">\n'
-        '<meta name="referrer" content="strict-origin-when-cross-origin">\n')
+        '<meta name="referrer" content="strict-origin-when-cross-origin">\n'
+        # Anti-clickjacking: frame-ancestors is ignored in a meta CSP, so refuse to render inside a foreign frame.
+        '<style id="afc">html{display:none}</style><script>if(self===top){var a=document.getElementById("afc");a.parentNode.removeChild(a)}else{try{top.location=self.location}catch(e){}}</script>\n')
 # Analytics: loaded after the first scroll/tap or 3.5s idle so phone speed is unaffected.
 # Also records leads (form posts to the Apps Script) and WhatsApp clicks as GA4 events.
 ANALYTICS = ''

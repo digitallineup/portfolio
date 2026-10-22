@@ -30,12 +30,21 @@ jobs:
           python tools/apply_footer.py
           python tools/optimize_images.py
           python tools/harden.py
+      - name: Stage only public files into _site
+        run: |
+          mkdir _site
+          tar -cf - --exclude=./.git --exclude=./.github --exclude=./_site --exclude=./tools \
+            --exclude=./v1 --exclude=./v2 --exclude=./blog/posts \
+            --exclude='*.py' --exclude='*.pyc' --exclude=__pycache__ \
+            --exclude=./.gitignore --exclude='*.md' --exclude=.DS_Store . | tar -xf - -C _site
+          test -f _site/index.html && test -f _site/llms.txt && test -f _site/CNAME
+          ! test -e _site/tools
       - uses: actions/configure-pages@v5
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
       - name: Ping IndexNow (Bing, Copilot, Yandex)
