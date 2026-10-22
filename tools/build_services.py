@@ -12,6 +12,7 @@ from header import MENU, header_html, HEAD as HEAD_CSS, SCRIPTS as HEAD_JS
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / 'tools' / 'services'
+SVC_CSS = (ROOT / 'services' / 'assets' / 'svc.css').read_text(encoding='utf-8')
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
 VER = '20261022e'
@@ -124,7 +125,7 @@ def build_one(src):
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{robots}<link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{og}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FBF6EF"><link rel="icon" href="/img/mark-dark.svg">
-<link rel="stylesheet" href="/services/assets/svc.css?v={VER}">{HEAD_CSS}{FOOT_HEAD}{ldtag}</head><body>
+<style id="svc-css">{SVC_CSS}</style>{HEAD_CSS}{FOOT_HEAD}{ldtag}</head><body>
 <a class="sr" href="#main">Skip to content</a>
 <div class="cur" aria-hidden="true"><span></span></div>
 {header_html(meta.get('nav', 'services'), svc, '#contact')}

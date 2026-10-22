@@ -339,6 +339,7 @@ section.s{padding:clamp(90px,12vw,170px) 0}
 .qnav .qlink{margin-left:auto;font-size:15px;border-bottom:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.85)}
 .giant{overflow:hidden;padding:clamp(60px,8vw,120px) 0;display:grid;gap:4px}
 .giant>div{display:flex;gap:.4em;white-space:nowrap;will-change:transform;font-size:clamp(64px,13vw,220px);font-weight:600;letter-spacing:-.05em;line-height:.92}
+.giant span::before{content:attr(data-t)}
 .giant .gl1 span{color:var(--ink)}
 .giant .gl2 span{color:transparent;-webkit-text-stroke:2px var(--ink)}
 .giant .gl2 span.o{color:var(--lime);-webkit-text-stroke:0}
