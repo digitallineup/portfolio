@@ -128,7 +128,7 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
 .scard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;margin-top:26px;box-shadow:0 30px 60px -40px rgba(3,24,14,.35)}
 .scard .rb{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:10px;padding:6px 10px}
 .scard .rb i{color:#f5a623;font-style:normal;letter-spacing:1px}
-.scard h3{font-size:19px;margin:14px 0 6px}
+.scard h3,.scard .sh{font-size:19px;margin:14px 0 6px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .scard p{font-size:13px;color:var(--muted);line-height:1.5}
 .scard form{display:grid;gap:8px;margin-top:14px}
 .scard input{font:inherit;font-size:15px;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--cream);width:100%}
@@ -163,7 +163,7 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
 .tldr b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px;color:var(--muted)}
 .tldr ul{margin:0}
 .panel{background:var(--cream-2);border:1px solid var(--line);border-radius:24px;padding:22px;margin:8px 0 28px}
-.panel>h4{font-size:22px;letter-spacing:-.02em;font-weight:600}
+.panel>h2,.panel>h3,.panel>h4{font-size:22px;letter-spacing:-.02em;font-weight:600}
 .panel>p{font-size:16px;color:var(--ink-2);margin:6px 0 16px}
 .steps{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(150px,1fr);gap:10px;background:var(--lime);border-radius:18px;padding:14px;overflow-x:auto;scroll-snap-type:x mandatory}
 .step{background:#fff;border-radius:14px;padding:16px 14px;scroll-snap-align:start;min-height:170px}
@@ -307,7 +307,7 @@ def build_pages(md):
         path = meta['path']
         url = SITE + path
         toc = ''.join(f'<a href="#{t["id"]}">{esc(html.unescape(t["name"]))}</a>' for t in md.toc_tokens)
-        side_card = """<div class="scard"><span class="rb">Google <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i> 5.0</span><h3>Tell us what you are building.</h3><p>Video, branding, Meta ads and social, made in-house in Multan.</p>
+        side_card = """<div class="scard"><span class="rb">Google <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i> 5.0</span><p class="sh">Tell us what you are building.</p><p>Video, branding, Meta ads and social, made in-house in Multan.</p>
 <form id="sf" novalidate><input name="name" placeholder="Your name" autocomplete="name" required><input name="email" type="email" placeholder="Work email" autocomplete="email" required><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Start your project</button></form>
 <div class="ok" role="status">Thanks. Our team will get back to you shortly.</div><p class="note">16 five-star reviews on Google</p></div>"""
         noside = meta.get('noside') == 'yes'
@@ -371,7 +371,7 @@ def build():
         else:
             cta_html = '<div class="cta rv"><h2>Want this for your brand?</h2><p>Video, brand identity, Meta ads and social media, made in-house by our team in Multan. Tell us what you are building.</p><div class="row"><a class="btn" href="/#contact">Start a project</a><a class="btn ghost" href="https://wa.me/923009590042">WhatsApp us</a></div></div>'
             side_h, side_p = 'Your brand should look as good as it is.', 'Video, branding, Meta ads and social, made in-house in Multan.'
-        side_card = f"""<div class="scard"><span class="rb">Google <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i> 5.0</span><h3>{side_h}</h3><p>{side_p}</p>
+        side_card = f"""<div class="scard"><span class="rb">Google <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i> 5.0</span><p class="sh">{side_h}</p><p>{side_p}</p>
 <form id="sf" novalidate><input name="name" placeholder="Your name" autocomplete="name" required><input name="email" type="email" placeholder="Work email" autocomplete="email" required><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Start your project</button></form>
 <div class="ok" role="status">Thanks. Our team will get back to you shortly.</div><p class="note">16 five-star reviews on Google</p></div>"""
         body = f"""<section class="ah"><div class="wrap"><div>
@@ -397,7 +397,7 @@ def build():
         out = os.path.join(ROOT, 'blog', p['slug'])
         os.makedirs(out, exist_ok=True)
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(
-            page(p.get('seo_title', p['title']) + ' | Digital Lineup', p['description'], f"/blog/{p['slug']}/", body, ld, cover_abs, 'article', JS_POST))
+            page((lambda t: t + ' | Digital Lineup' if len(t) <= 43 else t)(p.get('seo_title', p['title'])), p['description'], f"/blog/{p['slug']}/", body, ld, cover_abs, 'article', JS_POST))
 
     tags = []
     for p in posts:
@@ -411,7 +411,7 @@ def build():
     ld = [{'@context': 'https://schema.org', '@type': 'Blog', 'name': 'Digital Lineup blog', 'url': SITE + '/blog/', 'publisher': ORG,
            'blogPost': [{'@type': 'BlogPosting', 'headline': p['title'], 'url': f"{SITE}/blog/{p['slug']}/", 'datePublished': p['date']} for p in posts]}]
     open(os.path.join(ROOT, 'blog', 'index.html'), 'w', encoding='utf-8').write(
-        page('Blog: Meta Ads, Content Production and Branding Insights | Digital Lineup',
+        page('Blog: Marketing, Video & Branding Insights | Digital Lineup',
              'Practical, numbers-first articles on Meta ads, content production, branding and social media from Digital Lineup, an agency in Multan, Pakistan.',
              '/blog/', body, ld, SITE + '/og-home.jpg', 'website', JS_INDEX))
 

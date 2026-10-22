@@ -1,8 +1,8 @@
 ---
 title: Video Production Company in Multan
-seo_title: Video Production Company in Multan | Brand Films & Reels | Digital Lineup
+seo_title: Corporate Video Production & Brand Films | Digital Lineup
 lead: Brand films, reels, product films and creator campaigns, shot by our own crew in Multan and edited in-house the same week.
-description: Digital Lineup is a video production company in Multan, Pakistan. Brand films, reels, product films, drone shoots and creator campaigns, with real results.
+description: Corporate video production, brand films, reels, product films and drone shoots by Digital Lineup, with real results from real clients.
 path: /services/video-production-multan/
 parent: Services|/services/
 nav: services
@@ -29,7 +29,7 @@ Most reels are edited within the same week as the shoot. Larger brand films foll
 
 ## Video results we can show
 
-<div class="panel"><h4>Real numbers from our films</h4><p>From client work on our portfolio.</p>
+<div class="panel"><h3>Real numbers from our films</h3><p>From client work on our portfolio.</p>
 <div class="tiles">
 <div class="tile g"><small>Creator film</small><b>11M views</b><span>Apex Solar</span></div>
 <div class="tile"><small>Second creator film</small><b>1M+ views</b><span>Apex Solar</span></div>
@@ -48,7 +48,7 @@ Most reels are edited within the same week as the shoot. Larger brand films foll
 
 ## How a video project runs
 
-<div class="panel"><h4>From brief to published film</h4><p>You see the work at every stage.</p>
+<div class="panel"><h3>From brief to published film</h3><p>You see the work at every stage.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Brief</b><span>What the film must do, who it is for, where it runs</span></div>
 <div class="step"><i>02</i><b>Script and shot list</b><span>Hook, story and every shot planned before the shoot day</span></div>

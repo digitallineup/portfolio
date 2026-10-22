@@ -1,8 +1,8 @@
 ---
 title: Meta Ads Agency in Pakistan
-seo_title: Meta Ads Agency in Pakistan | Facebook & Instagram Ads | Digital Lineup
+seo_title: Meta Ads Agency: Facebook & Instagram Ads | Digital Lineup
 lead: Facebook and Instagram ads with the creative, tracking and landing pages done by the same team, for brands in Pakistan and worldwide.
-description: Digital Lineup runs Meta ads (Facebook and Instagram) from Multan for brands in Pakistan and worldwide: pixel tracking, ad creative, lookalikes and monthly reports.
+description: Meta ads agency for brands in Pakistan and worldwide: Facebook and Instagram ads, pixel tracking, ad creative and monthly reports.
 path: /services/meta-ads-agency-pakistan/
 parent: Services|/services/
 nav: services
@@ -29,7 +29,7 @@ The first month is mostly tracking, structure and testing. For an installation b
 
 ## Meta ads results we can show
 
-<div class="panel"><h4>Installer client, April to August 2026</h4><p>Straight from the Meta Ads report. All figures in AUD.</p>
+<div class="panel"><h3>Installer client, April to August 2026</h3><p>Straight from the Meta Ads report. All figures in AUD.</p>
 <div class="tiles">
 <div class="tile g"><small>Leads per month</small><b>9 &rarr; 135</b><span>In five months</span></div>
 <div class="tile"><small>Cost per lead</small><b>$119.63 &rarr; $29.57</b><span>April to July</span></div>

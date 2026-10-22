@@ -1,6 +1,6 @@
 ---
 title: Solar Company Marketing in Pakistan: What We Learned Growing Apex Solar and Solar Mandee
-seo_title: Solar Company Marketing in Pakistan: Lessons From 11M Views
+seo_title: Solar Company Marketing in Pakistan
 description: Solar company marketing in Pakistan from real work: an 11M-view creator film, an installer rewards programme, three expos and a page grown to 150K followers.
 date: 2026-10-21
 cover: /blog/covers/solar-company-marketing-pakistan.jpg
@@ -12,7 +12,7 @@ Every second solar page in Pakistan posts the same thing: a panel on a rooftop, 
 
 Apex Solar, a Pakistani lithium battery brand selling everything from a 1300W unit to a 16kW system, is our longest-running client: two years and counting. We have also handled social media for Solar Mandee, a solar marketplace. Between them we have made creator films, product posters, expo campaigns and an installer rewards programme. This is what actually worked, with the real numbers.
 
-<div class="panel"><h4>The work, in numbers</h4><p>Real results from Apex Solar and Solar Mandee.</p>
+<div class="panel"><h2>The work, in numbers</h2><p>Real results from Apex Solar and Solar Mandee.</p>
 <div class="tiles">
 <div class="tile g"><small>Apex creator film</small><b>11M</b><span>views on one film</span></div>
 <div class="tile"><small>Second creator film</small><b>1M+</b><span>views</span></div>
@@ -58,7 +58,7 @@ Apex sells a full range: the 1300, 2600, 5220, 5220 Pro and 16K lithium batterie
 
 The result is that an Apex post is recognisable in a feed before anyone reads it, and every single post ends with a way to buy. When a new product arrives, it drops into the system in a day instead of needing a fresh design from scratch.
 
-<div class="panel"><h4>What every solar product post needs</h4><p>The checklist behind the Apex Solar design system.</p>
+<div class="panel"><h3>What every solar product post needs</h3><p>The checklist behind the Apex Solar design system.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>One clear product</b><span>Name and model, large enough to read on a phone</span></div>
 <div class="step"><i>02</i><b>A clean real shot</b><span>The actual unit, lit properly, same background every time</span></div>

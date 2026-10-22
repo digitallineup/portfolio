@@ -1,6 +1,6 @@
 ---
 title: Meta Ads for TV Mounting Businesses: How a Perth Installer Went From 9 to 135 Leads a Month
-seo_title: Meta Ads for TV Mounting Businesses: 9 to 135 Leads a Month (Case Study)
+seo_title: Meta Ads for TV Mounting Businesses: 9 to 135 Leads
 description: Real Meta Ads numbers from a Perth TV mounting and picture hanging business: 388 leads in five months and cost per lead down from $119.63 to $32.17 AUD.
 date: 2026-10-20
 cover: /blog/covers/perth-installer-meta-ads.jpg
@@ -13,7 +13,7 @@ Most TV mounting and picture hanging businesses we speak to have the same story.
 
 This is a breakdown of one Perth installer we worked with from April to August 2026. We delivered the account through a partner agency, so we cannot name the business, and the branding on the creatives is blurred. Every number below comes from the Meta Ads report.
 
-<div class="panel"><h4>Five months at a glance</h4><p>One Perth TV mounting and picture hanging business, April to August 2026. All figures in AUD.</p>
+<div class="panel"><h2>Five months at a glance</h2><p>One Perth TV mounting and picture hanging business, April to August 2026. All figures in AUD.</p>
 <div class="tiles">
 <div class="tile g"><small>Leads per month</small><b>9 &rarr; 135</b><span>April to August</span></div>
 <div class="tile"><small>Cost per lead</small><b>$119.63 &rarr; $32.17</b><span>Whole account</span></div>
@@ -51,7 +51,7 @@ The main lead campaign on its own reached **$25.14 per lead in July**. The whole
 
 ## What we actually changed
 
-<div class="panel"><h4>The setup, in order</h4><p>Seven changes, roughly in the order we made them.</p>
+<div class="panel"><h3>The setup, in order</h3><p>Seven changes, roughly in the order we made them.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Fresh pixel</b><span>Tracks real quote requests, warmed up before scaling</span></div>
 <div class="step"><i>02</i><b>Lookalikes</b><span>Built from people who actually asked for a quote</span></div>

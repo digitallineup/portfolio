@@ -1,7 +1,7 @@
 ---
 title: Restaurant and Bakery Marketing in Multan: What Actually Sells on Social Media
-seo_title: Restaurant and Bakery Marketing in Multan: What Sells on Social Media
-description: What we learned running social media, food photography and launch campaigns for Shangrilla's bakery, Chinese restaurant and garden BBQ in Multan, including a launch that worked with zero ad spend.
+seo_title: Restaurant and Bakery Marketing in Multan
+description: What sold on social media for Shangrilla's bakery, Chinese restaurant and garden BBQ in Multan, including a launch that worked with zero ad spend.
 date: 2026-10-20
 cover: /blog/covers/restaurant-marketing-multan.jpg
 cover_alt: Food photography of a Shangrilla platter shot by Digital Lineup in Multan
@@ -36,7 +36,7 @@ When Shangrilla Cuisine Bakers' website needed new category banners, the brief w
 
 The Can Cake launch is the best example we have. Instead of "new product, now available", we built humour-led mood posters around how people actually feel when they want something sweet, and backed them with short product videos. It performed fully organically. No boosting.
 
-<div class="panel"><h4>How we build a food launch</h4><p>The same five steps for a cake, a burger or a new menu.</p>
+<div class="panel"><h3>How we build a food launch</h3><p>The same five steps for a cake, a burger or a new menu.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>One idea</b><span>A feeling or a joke your customer already has</span></div>
 <div class="step"><i>02</i><b>Real shoot</b><span>The actual product, styled and lit properly</span></div>

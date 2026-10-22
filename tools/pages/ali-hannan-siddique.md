@@ -41,7 +41,7 @@ For four years we grew without a single paid ad for ourselves. Every client came
 
 Today the team is six people: content production, media, design, project management and strategy, all in-house.
 
-<div class="panel"><h4>Milestones</h4><p>The short version.</p>
+<div class="panel"><h3>Milestones</h3><p>The short version.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Digital Lineup starts</b><span>Content and social media for local brands, grown entirely by referral</span></div>
 <div class="step"><i>02</i><b>Energy and food clients</b><span>Apex Solar, Solar Mandee and the Shangrilla group</span></div>

@@ -1,7 +1,7 @@
 ---
 title: How to Choose a Digital Marketing Agency in Pakistan: 10 Questions to Ask Before You Pay
-seo_title: How to Choose a Digital Marketing Agency in Pakistan (2026 Guide)
-description: Ten questions that separate a real digital marketing agency in Pakistan from a page that posts for you. Ownership, in-house video, reporting, contracts and red flags.
+seo_title: Digital Marketing Agency in Pakistan: How to Choose
+description: Ten questions that separate a real digital marketing agency in Pakistan from a page that posts for you: ownership, video, reporting and red flags.
 date: 2026-10-20
 cover: /blog/covers/choose-agency-pakistan.jpg
 cover_alt: Ali Hannan Siddique, founder of Digital Lineup, in the Multan office
@@ -52,7 +52,7 @@ You should get a monthly report you can read in two minutes: what went out, what
 
 A good agency can describe the first month without hesitating. Ours looks like this:
 
-<div class="panel"><h4>The first month with an agency should look like this</h4><p>Four steps. You see the work at every stage and the numbers at the end.</p>
+<div class="panel"><h3>The first month with an agency should look like this</h3><p>Four steps. You see the work at every stage and the numbers at the end.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Brief and audit</b><span>Week 1. Your brand, buyers and competitors, on one page</span></div>
 <div class="step"><i>02</i><b>Concept</b><span>Week 1 to 2. Two or three directions as real mockups</span></div>

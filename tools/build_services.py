@@ -53,7 +53,7 @@ def mega(cur):
     for col in ['Photography', 'Production', 'Growth', 'Brand & Web']:
         items = ''.join(f'<a class="it{" on" if n == cur else ""}" href="{u}"><i>{icon(ic)}</i><span>{esc(n)}<small>{esc(d)}</small></span></a>'
                         for c, n, d, u, ic in MENU if c == col)
-        cols.append(f'<div><h6>{esc(col)}</h6>{items}</div>')
+        cols.append(f'<div><p class="mh">{esc(col)}</p>{items}</div>')
     feat = '<a class="feat" href="/services/"><img src="/work/assets/img/lume-07.jpg" alt="" loading="lazy" width="1080" height="1350"><span>Explore all services</span></a>'
     return '<div class="mega" role="region" aria-label="Services">' + ''.join(cols) + feat + '</div>'
 

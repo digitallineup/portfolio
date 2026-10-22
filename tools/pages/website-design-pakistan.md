@@ -1,8 +1,8 @@
 ---
 title: Website Design in Pakistan
-seo_title: Website Design in Pakistan | Webflow & Shopify Websites | Digital Lineup
+seo_title: Website Design Agency: Webflow & Shopify | Digital Lineup
 lead: Fast, good-looking websites and landing pages that turn visitors into enquiries, built in Webflow, Shopify or custom code.
-description: Website design in Pakistan by Digital Lineup, Multan: Webflow business websites, Shopify stores and landing pages built for speed, SEO and leads.
+description: Website design agency for Webflow business sites, Shopify stores and landing pages built for speed, SEO and enquiries.
 path: /services/website-design-pakistan/
 parent: Services|/services/
 nav: services
@@ -36,7 +36,7 @@ Yes. Landing pages are a big part of our [Meta ads](/services/meta-ads-agency-pa
 
 ## What every website includes
 
-<div class="panel"><h4>Built in, not added later</h4><p>The basics that decide whether a website brings business.</p>
+<div class="panel"><h3>Built in, not added later</h3><p>The basics that decide whether a website brings business.</p>
 <div class="tiles">
 <div class="tile g"><small>Speed</small><b>Phone first</b><span>Light pages that load fast on mobile data</span></div>
 <div class="tile"><small>SEO</small><b>Ready to rank</b><span>Titles, schema, sitemap, Search Console</span></div>
@@ -46,7 +46,7 @@ Yes. Landing pages are a big part of our [Meta ads](/services/meta-ads-agency-pa
 
 ## How a website project runs
 
-<div class="panel"><h4>From brief to launch</h4><p>You see the design before a line of the site is built.</p>
+<div class="panel"><h3>From brief to launch</h3><p>You see the design before a line of the site is built.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Brief and sitemap</b><span>Pages, content and what each page must do</span></div>
 <div class="step"><i>02</i><b>Design</b><span>Real page designs in your brand, on desktop and phone</span></div>

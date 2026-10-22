@@ -1,8 +1,8 @@
 ---
 title: Social Media Management Agency in Pakistan
-seo_title: Social Media Management Agency in Pakistan | Digital Lineup
+seo_title: Social Media Management Services | Digital Lineup
 lead: Content calendars, design, reels, community and monthly reporting for brands that want a feed people actually follow.
-description: Social media management in Pakistan by Digital Lineup, Multan: content calendar, post and reel design, community management, paid boosting and monthly reports.
+description: Social media management services: content calendar, post and reel design, community management and monthly reports, made in-house.
 path: /services/social-media-management-pakistan/
 parent: Services|/services/
 nav: services
@@ -29,7 +29,7 @@ It depends on the package and your goals. For example, we plan 12 posts a month 
 
 ## Social media results we can show
 
-<div class="panel"><h4>From our clients</h4><p>Numbers from client work and Google reviews.</p>
+<div class="panel"><h3>From our clients</h3><p>Numbers from client work and Google reviews.</p>
 <div class="tiles">
 <div class="tile g"><small>Solar Mandee</small><b>150K+</b><span>Facebook followers in 8 months</span></div>
 <div class="tile"><small>Solar Mandee</small><b>3.5M+</b><span>Account reach</span></div>
@@ -55,7 +55,7 @@ It depends on the package and your goals. For example, we plan 12 posts a month 
 
 ## How we start
 
-<div class="panel"><h4>Your first month</h4><p>You see the plan before anything goes live.</p>
+<div class="panel"><h3>Your first month</h3><p>You see the plan before anything goes live.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Audit</b><span>Your pages, your competitors and what your buyers respond to</span></div>
 <div class="step"><i>02</i><b>Plan</b><span>A one-page strategy and the first content calendar</span></div>

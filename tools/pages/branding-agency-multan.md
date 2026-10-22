@@ -1,8 +1,8 @@
 ---
 title: Branding Agency in Multan
-seo_title: Branding Agency in Multan | Logo Design & Brand Identity | Digital Lineup
+seo_title: Branding Agency in Multan | Digital Lineup
 lead: Logos, brand systems, brand books, signage, packaging and mascots for businesses in Multan and across Pakistan.
-description: Digital Lineup is a branding agency in Multan: logo design, brand identity, brand books, signage, packaging and mascots, with full case studies.
+description: Branding agency in Multan: logo design, brand identity, brand books, signage, packaging and mascots, with full case studies.
 path: /services/branding-agency-multan/
 parent: Services|/services/
 nav: services
@@ -29,7 +29,7 @@ No. Our studio is in Multan, and we have built identities for brands across Paki
 
 ## Identities we have built
 
-<div class="panel"><h4>Recent brand identity work</h4><p>Each one has a full case study with the brand book.</p>
+<div class="panel"><h3>Recent brand identity work</h3><p>Each one has a full case study with the brand book.</p>
 <div class="tiles">
 <div class="tile g"><small>Capxa</small><b>Agency</b><span>Arrow mark, brand book, launch content</span></div>
 <div class="tile"><small>Lume Beauty Studio</small><b>Beauty</b><span>Gold flower mark, signage, packaging</span></div>
@@ -50,7 +50,7 @@ See the full work: [Capxa](/work/capxa.html), [Lume Beauty Studio](/work/lume.ht
 
 ## How a branding project runs
 
-<div class="panel"><h4>Four steps to a finished identity</h4><p>You see real mockups, not mood boards.</p>
+<div class="panel"><h3>Four steps to a finished identity</h3><p>You see real mockups, not mood boards.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Brief and research</b><span>Your business, buyers and competitors on one page</span></div>
 <div class="step"><i>02</i><b>Concepts</b><span>Two or three directions shown in your real world</span></div>

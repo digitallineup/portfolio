@@ -71,7 +71,7 @@ Daily content, design and community for brands that want a feed people actually 
 
 ## How a project runs
 
-<div class="panel"><h4>Four steps, no mystery</h4><p>You see the work at every stage and the numbers at the end.</p>
+<div class="panel"><h3>Four steps, no mystery</h3><p>You see the work at every stage and the numbers at the end.</p>
 <div class="steps">
 <div class="step"><i>01</i><b>Brief and audit</b><span>Week 1. A one-page plan, not a 40-slide deck</span></div>
 <div class="step"><i>02</i><b>Concept</b><span>Week 1 to 2. Two or three directions as real mockups</span></div>
