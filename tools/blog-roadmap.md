@@ -10,7 +10,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] School and college admissions marketing in Pakistan (keywords: school admission campaign ideas Pakistan, college admissions marketing Pakistan). Data: work/al-shifa.html.
+- [ ] School and college admissions marketing in Pakistan (keywords: school admission campaign ideas Pakistan, college admissions marketing Pakistan). Data: work/al-shifa.html plus verified Meta ads results (Ads Manager, read 23 Oct 2026, also on tools/services/meta-ads.html): 8 campaigns pointed at Messenger and WhatsApp, 5,576 admissions conversations started, about $0.08 average cost per conversation, best campaign 3,844 chats at $0.04 each from a scholarship offer. Creatives: scholarship and admissions posters, student videos, a creator post. Do not show total spend. Link /services/meta-ads/ and /services/social-media-management/.
 - [ ] Brand identity process for a new business in Pakistan: logo to brand book (keywords: brand identity design Pakistan, brand book example, logo design process). Data: work/capxa.html, work/lume.html, work/spice-and-grill.html.
 - [ ] Product photography for retail shops in Pakistan (keywords: product photography Multan, product photography for ecommerce Pakistan). Data: work/hamid-enterprises.html.
 - [ ] LinkedIn marketing for B2B companies in Pakistan (keywords: LinkedIn marketing Pakistan, B2B carousel ideas, LinkedIn content for printing company). Data: work/rainbow-printing.html.
