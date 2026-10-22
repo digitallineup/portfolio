@@ -1,13 +1,13 @@
 ---
 title: About Digital Lineup
 seo_title: About Digital Lineup: Content Production and Marketing Agency in Multan
-lead: A content production and digital marketing agency in Multan, Pakistan. Six people, one office, four years of work for brands in Pakistan and Australia.
+lead: A content production and digital marketing agency in Multan, Pakistan. Six people, one office, four years of work for brands in Pakistan and worldwide.
 description: Digital Lineup is a content production and digital marketing agency in Multan, Pakistan, founded by Ali Hannan Siddique. Meet the team, the story and the numbers.
 path: /about/
 nav: about
 ---
 
-Digital Lineup is a content production and digital marketing agency based in Multan, Pakistan. We make brand films, reels, identities and ad campaigns, and we run social media and Meta ads for brands in Pakistan, Australia and beyond. Everything is made in-house by our own team.
+Digital Lineup is a content production and digital marketing agency based in Multan, Pakistan. We make brand films, reels, identities and ad campaigns, and we run social media and Meta ads for brands in Pakistan and around the world. Everything is made in-house by our own team.
 
 <div class="panel"><h4>Digital Lineup in numbers</h4><p>Four years of client work, counted.</p>
 <div class="tiles">
@@ -21,7 +21,7 @@ Digital Lineup is a content production and digital marketing agency based in Mul
 
 Digital Lineup started four years ago with a simple idea: a business in Pakistan should not need three different vendors for a video, a logo and an ad campaign. It should be able to brief one team, see the work at every stage and get the numbers at the end.
 
-For most of those four years we worked remotely with clients across Pakistan and in Australia. In September 2026 we opened our first physical office and studio in Multan, so clients can now walk in, have chai, see the work on our screens and meet the people who will make theirs.
+For most of those four years we worked remotely with clients across Pakistan and abroad. In September 2026 we opened our first physical office and studio in Multan, so clients can now walk in, have chai, see the work on our screens and meet the people who will make theirs.
 
 Every client we have so far came to us through a referral. That is the part of the story we are proudest of, because nobody refers an agency that did not move their numbers.
 
@@ -38,7 +38,7 @@ We kept four services and built a team around each one. You can read more on our
 
 - An [Apex Solar](/work/apex-solar.html) creator film reached **11 million views**.
 - Solar Mandee's Facebook page grew past **150K followers in eight months**.
-- A Perth TV mounting and picture hanging business went **from 9 to 135 leads a month** in five months, with cost per lead falling from about A$120 to under A$35. The full breakdown is in [this case study](/blog/meta-ads-for-tv-mounting-businesses/).
+- A TV mounting and picture hanging business went **from 9 to 135 leads a month** in five months, with cost per lead falling from about A$120 to under A$35. The full breakdown is in [this case study](/blog/meta-ads-for-tv-mounting-businesses/).
 
 See every project on our [portfolio](/work/).
 

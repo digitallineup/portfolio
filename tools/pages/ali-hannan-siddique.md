@@ -11,7 +11,7 @@ draft: yes
 
 <div class="founder"><img src="/img/ali-hannan-founder.jpg" alt="Ali Hannan Siddique, founder of Digital Lineup, in the Multan office" width="640" height="800"></div>
 
-I am Ali Hannan Siddique, the founder of [Digital Lineup](/about/), a content production and digital marketing agency in Multan, Pakistan. We make brand films, reels, identities and ad campaigns, and run social media and Meta ads for brands in Pakistan and Australia. I started the agency four years ago, and I still sit on every account.
+I am Ali Hannan Siddique, the founder of [Digital Lineup](/about/), a content production and digital marketing agency in Multan, Pakistan. We make brand films, reels, identities and ad campaigns, and run social media and Meta ads for brands in Pakistan and around the world. I started the agency four years ago, and I still sit on every account.
 
 ## Quick answers
 
@@ -21,7 +21,7 @@ Ali Hannan Siddique is the founder of Digital Lineup, a content production and d
 
 ### What does Ali Hannan do?
 
-He runs Digital Lineup and leads the strategy on its accounts: Meta and Google ads, content and campaign concepts, brand identity direction and consultations for business owners in Pakistan and Australia.
+He runs Digital Lineup and leads the strategy on its accounts: Meta and Google ads, content and campaign concepts, brand identity direction and consultations for business owners in Pakistan and abroad.
 
 ### Where is Ali Hannan based?
 
@@ -45,7 +45,7 @@ Today the team is six people: content production, media, design, project managem
 <div class="steps">
 <div class="step"><i>01</i><b>Digital Lineup starts</b><span>Content and social media for local brands, grown entirely by referral</span></div>
 <div class="step"><i>02</i><b>Energy and food clients</b><span>Apex Solar, Solar Mandee and the Shangrilla group</span></div>
-<div class="step"><i>03</i><b>Australia</b><span>Meta ads for a Perth TV mounting and picture hanging business</span></div>
+<div class="step"><i>03</i><b>International clients</b><span>Meta ads and content for businesses outside Pakistan</span></div>
 <div class="step"><i>04</i><b>Multan studio</b><span>First physical office opens, September 2026</span></div>
 </div></div>
 
@@ -60,7 +60,7 @@ Today the team is six people: content production, media, design, project managem
 
 - An [Apex Solar](/work/apex-solar.html) creator film that reached **11 million views**.
 - Solar Mandee's Facebook page grown past **150K followers in eight months**.
-- A Perth TV mounting and picture hanging business taken **from 9 to 135 leads a month**. [Read the case study](/blog/meta-ads-for-tv-mounting-businesses/).
+- A TV mounting and picture hanging business taken **from 9 to 135 leads a month**. [Read the case study](/blog/meta-ads-for-tv-mounting-businesses/).
 - The Can Cake launch for [Shangrilla Cuisine Bakers](/work/shangrilla-bakers.html), which ran **fully organic** with no paid boosting.
 
 See everything on the [portfolio](/work/).

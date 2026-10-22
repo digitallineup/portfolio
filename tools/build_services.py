@@ -107,7 +107,7 @@ def footer():
         word += f'<span style="--i:{i}"{cls}>' + ('&nbsp;' if ch == ' ' else ch) + '</span>' 
     svc = ''.join(f'<a href="{u}">{esc(n)}</a>' for c, n, d, u, ic in MENU)
     return f'''<footer class="ft"><div class="wrap">
-<div class="cols"><div><h6>Studio</h6><address>Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony, Multan, Pakistan.<br><br>Working with brands in Pakistan, Australia and beyond.</address></div>
+<div class="cols"><div><h6>Studio</h6><address>Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony, Multan, Pakistan.<br><br>Working with brands worldwide.</address></div>
 <div><h6>Services</h6>{svc}</div>
 <div><h6>Company</h6><a href="/work/">Work</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a><a href="/ali-hannan-siddique/">Founder</a></div>
 <div><h6>Follow</h6><a href="https://www.instagram.com/digitallineup_/">Instagram</a><a href="https://www.linkedin.com/company/digital-lineup-agency">LinkedIn</a><a href="https://www.facebook.com/digitallineup1">Facebook</a><a href="https://www.youtube.com/@DigitalLineup">YouTube</a><a href="https://wa.me/923009590042">WhatsApp</a></div></div>
@@ -139,7 +139,7 @@ def build_one(src):
             {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': re.sub('<[^>]+>', '', a)}} for q, a in faqs]})
     ldtag = ''.join('<script type="application/ld+json">' + json.dumps(x, ensure_ascii=False) + '</script>' for x in ld)
     robots = '<meta name="robots" content="noindex,follow">' if meta.get('noindex') else ''
-    og = SITE + meta.get('og_image', '/og.jpg')
+    og = SITE + meta.get('og_image', '/og-home.jpg')
     down = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>'
     page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">

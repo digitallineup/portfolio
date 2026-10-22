@@ -347,7 +347,7 @@ def build_pages(md):
         out = os.path.join(ROOT, path.strip('/'))
         os.makedirs(out, exist_ok=True)
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(
-            page(meta.get('seo_title', meta['title']), meta['description'], path, body, ld, SITE + '/og.jpg', 'website', JS_POST, meta.get('nav', '')))
+            page(meta.get('seo_title', meta['title']), meta['description'], path, body, ld, SITE + '/og-home.jpg', 'website', JS_POST, meta.get('nav', '')))
         urls.append((path, datetime.date.today().isoformat(), '0.5' if noside else '0.8'))
     return urls
 
@@ -413,7 +413,7 @@ def build():
     open(os.path.join(ROOT, 'blog', 'index.html'), 'w', encoding='utf-8').write(
         page('Blog: Meta Ads, Content Production and Branding Insights | Digital Lineup',
              'Practical, numbers-first articles on Meta ads, content production, branding and social media from Digital Lineup, an agency in Multan, Pakistan.',
-             '/blog/', body, ld, SITE + '/og.jpg', 'website', JS_INDEX))
+             '/blog/', body, ld, SITE + '/og-home.jpg', 'website', JS_INDEX))
 
     items = ''.join(f"<item><title>{esc(p['title'])}</title><link>{SITE}/blog/{p['slug']}/</link><guid>{SITE}/blog/{p['slug']}/</guid><pubDate>{datetime.date.fromisoformat(p['date']).strftime('%a, %d %b %Y 09:00:00 +0500')}</pubDate><description>{esc(p['description'])}</description></item>" for p in posts)
     open(os.path.join(ROOT, 'blog', 'feed.xml'), 'w', encoding='utf-8').write(

@@ -2,7 +2,7 @@
 title: Our Services
 seo_title: Services: Video Production, Meta Ads, Branding and Social Media | Digital Lineup
 lead: Four things, done properly. Video and content production, performance marketing, brand identity and social media management, all made in-house in Multan.
-description: Digital Lineup services: video and content production, Meta and Google ads, brand identity and social media management for brands in Pakistan and Australia.
+description: Digital Lineup services: video and content production, Meta and Google ads, brand identity and social media management for brands in Pakistan and worldwide.
 path: /services/
 nav: services
 draft: yes
@@ -18,7 +18,7 @@ Four: video and content production, performance marketing (Meta and Google ads),
 
 ### Do you work with businesses outside Pakistan?
 
-Yes. We work with brands across Pakistan and with businesses in Australia, including TV mounting and picture hanging installers. Our team works through the Australian afternoon and evening.
+Yes. We work with brands in any country, with briefs, reviews and reporting run remotely in your time zone.
 
 ### Is ad spend included in your fee?
 
@@ -45,7 +45,7 @@ Meta and Google ads with the creative, landing pages and pixel work done by the 
 - Landing pages that work on a phone
 - A monthly report you can read in two minutes
 
-**Proof:** a Perth TV mounting and picture hanging business went from 9 to 135 leads a month, with cost per lead down from about A$120 to under A$35. [Read the full case study](/blog/meta-ads-for-tv-mounting-businesses/). Installers in Australia can see our [packages for installers](/installers/).
+**Proof:** a TV mounting and picture hanging business went from 9 to 135 leads a month, with cost per lead down from about A$120 to under A$35. [Read the full case study](/blog/meta-ads-for-tv-mounting-businesses/). Installers in Australia can see our [packages for installers](/installers/).
 
 ## 3. Brand identity
 
