@@ -170,7 +170,7 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
     <nav class="flinks" aria-label="Site pages"><a href="/services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
     <a href="#">Back to top &uarr;</a>
   </div>
-  <div class="fpit" data-pit aria-label="Contact links">
+  <div class="fpit" data-pit role="group" aria-label="Contact links">
     <a class="pill" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp</a>
     <a class="pill" href="mailto:hello@digitallineup.com">Email</a>
     <a class="pill" href="https://www.instagram.com/digitallineup_/" target="_blank" rel="noopener">Instagram</a>
@@ -200,4 +200,4 @@ var ims=[].slice.call(document.querySelectorAll('.card .im')),tick=false;
 function upd(){tick=false;var vh=innerHeight,small=innerWidth<560,max=small?210:230,min=small?150:130;
   ims.forEach(function(im){var r=im.getBoundingClientRect();var p=Math.min(1,Math.max(0,(vh*0.72-r.top)/(vh*0.6)));im.style.setProperty('--h',(max-(max-min)*p).toFixed(1)+'px');});}
 addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});addEventListener('resize',upd);upd();
-})();</script><script src="/js/matter.min.js" defer></script><script src="/js/footer.js?v=20261022" defer></script></body></html>
+})();</script><script src="/js/footer.js?v=20261022b" defer></script></body></html>

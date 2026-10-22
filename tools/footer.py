@@ -4,7 +4,7 @@ import datetime
 
 import pathlib as _p
 HEAD = '<style id="ft-css">' + (_p.Path(__file__).resolve().parent.parent / 'css/footer.css').read_text(encoding='utf-8').replace('\n', '') + '</style>'
-SCRIPTS = '<script src="/js/matter.min.js" defer></script><script src="/js/footer.js?v=20261022" defer></script>'
+SCRIPTS = '<script src="/js/footer.js?v=20261022b" defer></script>'
 
 
 def footer_html(contact_href='/contact/'):
@@ -15,7 +15,7 @@ def footer_html(contact_href='/contact/'):
     <nav class="flinks" aria-label="Site pages"><a href="/services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
     <a href="#">Back to top &uarr;</a>
   </div>
-  <div class="fpit" data-pit aria-label="Contact links">
+  <div class="fpit" data-pit role="group" aria-label="Contact links">
     <a class="pill" href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp</a>
     <a class="pill" href="mailto:hello@digitallineup.com">Email</a>
     <a class="pill" href="https://www.instagram.com/digitallineup_/" target="_blank" rel="noopener">Instagram</a>

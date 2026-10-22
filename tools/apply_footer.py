@@ -12,8 +12,9 @@ for p in sorted((ROOT / 'work').glob('*.html')):
         s2 = re.sub(r'<style id="ft-css">.*?</style>', lambda m: HEAD, s2, count=1, flags=re.S)
     else:
         s2 = s2.replace('</head>', HEAD + '' + '</head>', 1)
-    if '/js/footer.js' not in s2:
-        s2 = s2.replace('</body>', SCRIPTS + '</body>', 1)
+    s2 = re.sub(r'<script src="/js/matter\.min\.js" defer></script>', '', s2)
+    s2 = re.sub(r'<script src="/js/footer\.js[^"]*" defer></script>', '', s2)
+    s2 = s2.replace('</body>', SCRIPTS + '</body>', 1)
     if s2 != s:
         p.write_text(s2, encoding='utf-8'); n += 1
 print('footer applied to', n, 'pages')

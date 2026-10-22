@@ -63,7 +63,7 @@ def set_attr(tag, name, value):
 
 
 def process(page):
-    s = page.read_text(encoding='utf-8')
+    s = orig = page.read_text(encoding='utf-8')
     count = [0]
     seen = [0]
 
@@ -98,10 +98,25 @@ def process(page):
         count[0] += 1
         return tag
 
+    def fix_poster(m):
+        tag = m.group(0)
+        if 'data-noopt' in tag:
+            return tag
+        src = attr(tag, 'poster')
+        p = local_path(html.unescape(src), page) if src else None
+        if not p:
+            return tag
+        vs = variants(p)
+        want = 960 if 'data-poster-big' in tag else 480
+        pick = next((v for v in vs if v[0] >= want), vs[-1])
+        count[0] += 1
+        return set_attr(tag, 'poster', url_for(pick[1], page, src))
+
+    s = re.sub(r'<video\b[^>]*>', fix_poster, s)
     s2 = re.sub(r'<img\b[^>]*>', fix, s)
     if count[0] and GUARD not in s2:
         s2 = re.sub(r'(<head[^>]*>)', r'\1' + GUARD, s2, count=1)
-    if s2 != s:
+    if s2 != orig:
         page.write_text(s2, encoding='utf-8')
     return count[0]
 
