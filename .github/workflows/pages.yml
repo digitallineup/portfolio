@@ -25,6 +25,7 @@ jobs:
         run: |
           pip install markdown
           python tools/build_blog.py
+          python tools/build_services.py
           python tools/harden.py
       - uses: actions/configure-pages@v5
         with:
