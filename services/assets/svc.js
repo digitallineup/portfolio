@@ -1,5 +1,5 @@
 /* Digital Lineup service pages: menu, motion and lead form. No libraries. */
-(function(){
+(function(){function start(){
 var d=document,w=window,RM=matchMedia('(prefers-reduced-motion: reduce)').matches,FINE=matchMedia('(hover:hover) and (pointer:fine)').matches;
 function $(s,c){return (c||d).querySelector(s)}function $$(s,c){return [].slice.call((c||d).querySelectorAll(s))}
 function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
@@ -107,4 +107,7 @@ if(gx.length&&!RM){var gsec=$('.giant'),gt=false;
   gx.forEach(function(el){var dir=parseFloat(el.dataset.gx);el.style.transform='translate3d('+((dir<0?-1:0)*el.scrollWidth*0.33+dir*(p-.5)*-600)+'px,0,0)'})}
  addEventListener('scroll',function(){if(!gt){gt=true;requestAnimationFrame(gup)}},{passive:true});addEventListener('resize',gup);gup();}
 var yr=$('[data-year]');if(yr)yr.textContent=new Date().getFullYear();
+}
+/* run after first paint so the page shows before the motion wiring starts */
+if(window.requestIdleCallback)requestIdleCallback(start,{timeout:500});else setTimeout(start,0);
 })();
