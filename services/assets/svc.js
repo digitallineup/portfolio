@@ -85,17 +85,28 @@ function tick(){ticking=false;var vh=innerHeight;hdUpd();
 addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(tick)}},{passive:true});
 addEventListener('resize',tick);addEventListener('load',tick);bookImgs.forEach(function(im){im.addEventListener('load',tick)});tick();
 
-/* lead form */
+/* lead form: madlib sentence, fields grow with their text */
 var f=$('#lead');
-if(f)f.addEventListener('submit',function(e){e.preventDefault();var er=$('.err',f);
- var o=Object.fromEntries(new FormData(f));if(o._honey)return;
- if(!o.name||!o.name.trim()||!(o.email||'').trim()||!/^\S+@\S+\.\S+$/.test(o.email)){er.textContent='Please add your name and a valid email.';er.style.display='block';return}
- er.style.display='none';var b=$('button[type=submit]',f),lbl=b.firstChild.textContent;b.disabled=true;b.firstChild.textContent='Sending ';
- o.page='digitallineup.com'+location.pathname;o._subject='Service page lead: '+(o.service||'')+' ('+(o.budget||'budget not set')+')';o._template='table';o._captcha='false';
- o.message=['Service: '+(o.service||''),'Budget: '+(o.budget||''),'Company: '+(o.business||''),'Country: '+(o.country||''),'Phone: '+(o.phone||''),'',o.details||''].join('\n');
- fetch(f.dataset.url,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)})
- .then(function(){f.classList.add('sent');f.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'})})
- .catch(function(){b.disabled=false;b.firstChild.textContent=lbl;er.innerHTML='That did not send. Please try again, or <a href="https://wa.me/923009590042" style="text-decoration:underline">message us on WhatsApp</a>.';er.style.display='block'});
-});
+if(f){
+ var meas=d.createElement('span');meas.style.cssText='position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:0';d.body.appendChild(meas);
+ function fit(el){var cs=getComputedStyle(el);meas.style.font=cs.font;meas.style.letterSpacing=cs.letterSpacing;
+  meas.textContent=el.tagName==='SELECT'?el.options[el.selectedIndex].text:(el.value||el.placeholder);
+  var extra=el.tagName==='SELECT'?parseFloat(cs.fontSize)*1.35:parseFloat(cs.fontSize)*.35;el.style.width=Math.ceil(meas.getBoundingClientRect().width+extra)+'px';}
+ var flds=$$('.fld input,.fld select',f);
+ function fitAll(){flds.forEach(fit)}
+ flds.forEach(function(el){el.addEventListener(el.tagName==='SELECT'?'change':'input',function(){fit(el)})});
+ fitAll();addEventListener('resize',fitAll);addEventListener('load',fitAll);if(d.fonts&&d.fonts.ready)d.fonts.ready.then(fitAll);
+ f.addEventListener('submit',function(e){e.preventDefault();var er=$('.err',f);
+  var o=Object.fromEntries(new FormData(f));if(o._honey)return;
+  var miss=[];if(!(o.name||'').trim())miss.push('your name');if(!/^\S+@\S+\.\S+$/.test((o.email||'').trim()))miss.push('a valid email');if(!o.service)miss.push('a service');if(!o.budget)miss.push('a budget range');
+  if(miss.length){er.textContent='Please add '+miss.join(', ')+'.';er.style.display='block';var first=flds.filter(function(x){return !x.value||(x.type==='email'&&!/^\S+@\S+\.\S+$/.test(x.value))})[0];if(first)first.focus();return}
+  er.style.display='none';var b=$('button[type=submit]',f),lbl=b.firstChild.textContent;b.disabled=true;b.firstChild.textContent='Sending ';
+  o.page='digitallineup.com'+location.pathname;o._subject='Service page lead: '+(o.service||'')+' ('+(o.budget||'')+')';o._template='table';o._captcha='false';
+  o.message=['Service: '+(o.service||''),'Budget: '+(o.budget||''),'Company: '+(o.business||''),'Page: '+location.pathname].join('\n');
+  fetch(f.dataset.url,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)})
+  .then(function(){f.classList.add('sent');f.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'})})
+  .catch(function(){b.disabled=false;b.firstChild.textContent=lbl;er.innerHTML='That did not send. Please try again, or <a href="https://wa.me/923009590042" style="text-decoration:underline">message us on WhatsApp</a>.';er.style.display='block'});
+ });
+}
 var yr=$('[data-year]');if(yr)yr.textContent=new Date().getFullYear();
 })();

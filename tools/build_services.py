@@ -13,7 +13,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / 'tools' / 'services'
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
-VER = '20261022b'
+VER = '20261022d'
 
 I = {  # small line icons for the mega-menu
     'cam': '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
@@ -36,7 +36,7 @@ MENU = [
     ('Brand & Web', 'Branding & Identity', 'Logos, systems, brand books', '/services/branding-identity/', 'pen'),
     ('Brand & Web', 'Website Design', 'Fast sites that convert', '/services/website-design-pakistan/', 'web'),
 ]
-BUDGETS = ['PKR 120K to 250K', 'PKR 250K to 500K', 'PKR 500K+', 'Not sure yet']
+BUDGETS = ['PKR 120K to 250K', 'PKR 250K to 500K', 'PKR 500K plus', 'in USD, let\'s talk', 'not decided yet']
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 
 
@@ -75,29 +75,38 @@ def faq_html(faqs):
 
 
 def form_html(service):
-    opts = ''.join(f'<option{" selected" if n == service else ""}>{esc(n)}</option>' for c, n, d, u, ic in MENU) + f'<option{" selected" if service not in [m[1] for m in MENU] else ""}>Something else</option>'
-    pills = ''.join(f'<label><input type="radio" name="budget" value="{esc(b)}"><span>{esc(b)}</span></label>' for b in BUDGETS)
-    return f'''<section class="contact" id="contact"><div class="wrap g">
-<div class="side"><span class="eyebrow" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.25)">Start a project</span>
-<h2 class="h-l" data-split style="margin-top:24px">Let&rsquo;s build yours.</h2>
-<p data-rv>Tell us a little about the business. Ali or the project lead replies personally with next steps and a time to talk.</p>
-<ul data-rv><li><small>WhatsApp</small><a href="https://wa.me/923009590042">+92 300 959 0042</a></li>
-<li><small>Email</small><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a></li>
-<li><small>Studio</small><span>Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Multan, Pakistan</span></li></ul></div>
-<form id="lead" class="lf" novalidate data-url="{LEADS_URL}" data-rv>
-<div class="f"><label for="f-name">Your name *</label><input id="f-name" name="name" autocomplete="name" required placeholder="Full name"></div>
-<div class="f"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div>
-<div class="f"><label for="f-phone">WhatsApp or phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+92 or your country code"></div>
-<div class="f"><label for="f-biz">Company or brand</label><input id="f-biz" name="business" autocomplete="organization" placeholder="Brand name"></div>
-<div class="f"><label for="f-country">Country</label><input id="f-country" name="country" autocomplete="country-name" placeholder="Where is the business?"></div>
-<div class="f"><label for="f-svc">Service</label><select id="f-svc" name="service">{opts}</select></div>
-<div class="f full"><label>Budget</label><div class="pills" role="radiogroup" aria-label="Budget">{pills}</div></div>
-<div class="f full"><label for="f-msg">About the project</label><textarea id="f-msg" name="details" placeholder="What do you sell, who buys it, and what do you need first?"></textarea></div>
+    lower = {n: n.lower() for c, n, d, u, ic in MENU}
+    lower['Meta Ads'] = 'Meta ads'
+    opts = ''.join(f'<option value="{esc(n)}"{" selected" if n == service else ""}>{esc(lower[n])}</option>' for c, n, d, u, ic in MENU)
+    opts = ('<option value="" disabled' + ('' if service in lower else ' selected') + '>pick a service</option>') + opts + '<option value="Not sure yet">not sure yet</option>'
+    budgets = ''.join(f'<option>{esc(b)}</option>' for b in BUDGETS)
+    arrow = '<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>'
+    return f'''<section class="contact" id="contact"><div class="wrap">
+<div class="ml-card" data-rv>
+<span class="eyebrow" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.25)">Start something cool</span>
+<form id="lead" class="ml" novalidate autocomplete="on" data-url="{LEADS_URL}">
 <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<p>Hi Digital Lineup, I&rsquo;m
+<label class="fld"><span class="sr">Name</span><input name="name" required placeholder="your name" autocomplete="name"></label>
+from <label class="fld"><span class="sr">Company or brand</span><input name="business" placeholder="your brand" autocomplete="organization"></label>
+and you can reach me at
+<span class="nw"><label class="fld"><span class="sr">Email</span><input type="email" name="email" required placeholder="your@email.com" autocomplete="email"></label>.</span>
+I&nbsp;need
+<label class="fld sel"><span class="sr">Service</span><select name="service" required>{opts}</select></label>
+and the budget in&nbsp;hand&nbsp;is
+<span class="nw"><label class="fld sel"><span class="sr">Budget</span><select name="budget" required><option value="" disabled selected>pick a range</option>{budgets}</select></label>.</span>
+</p>
 <p class="err" role="alert"></p>
-<div class="sub"><small>We only use your details to reply to this enquiry. See our <a href="/privacy-policy/" style="text-decoration:underline">privacy policy</a>.</small><button class="btn lime" type="submit">Send enquiry {ARROW}</button></div>
-<div class="ok" role="status"><b>Got it, thank you.</b>We will reply within one working day. For anything urgent, message us on <a href="https://wa.me/923009590042" style="text-decoration:underline">WhatsApp</a>.</div>
-</form></div></section>'''
+<div class="mact"><button type="submit" class="btn lime big">Send now {arrow}</button>
+<span class="mnote">Packages start from PKR 120,000. Or skip the form: <a href="https://wa.me/923009590042" target="_blank" rel="noopener">WhatsApp +92 300 959 0042</a></span></div>
+<div class="ok" role="status"><b>Got it, thank you.</b>We will reply within one working day. For anything urgent, message us on <a href="https://wa.me/923009590042">WhatsApp</a>.</div>
+</form>
+</div>
+<ul class="cinfo" data-rv><li><small>WhatsApp</small><a href="https://wa.me/923009590042">+92 300 959 0042</a></li>
+<li><small>Email</small><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a></li>
+<li><small>Studio</small><span>Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Multan, Pakistan</span></li>
+<li><small>Clients</small><span>Pakistan and worldwide, briefed remotely</span></li></ul>
+</div></section>'''
 
 
 def footer():
