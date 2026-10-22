@@ -18,7 +18,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cur.big{width:86px;height:86px;margin:-43px 0 0 -43px}
 .cur.big span{opacity:1}
 .cur.link{width:44px;height:44px;margin:-22px 0 0 -22px;background:rgba(0,210,76,.35)}
-@media (hover:none),(pointer:coarse){.cur{display:none}}
+@media (hover:none),(pointer:coarse){.cur,.float{display:none}}
 
 /* ---------- type + reveal ---------- */
 .eyebrow{justify-self:start;width:max-content;display:inline-flex;align-items:center;gap:10px;font-size:14px;letter-spacing:.02em;padding:8px 14px;border:1px solid var(--line);border-radius:99px;background:#fff}
