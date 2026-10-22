@@ -20,6 +20,7 @@ import html, json, os, re, glob, datetime
 import sys as _sys, pathlib as _pl
 _sys.path.insert(0, str(_pl.Path(__file__).resolve().parent))
 from footer import footer_html, HEAD as FOOT_HEAD, SCRIPTS as FOOT_JS
+from header import header_html, HEAD as HEAD_CSS, SCRIPTS as HEAD_JS
 import markdown
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -254,12 +255,11 @@ def page(title, desc, path, body, ld, og_image, og_type='website', js='', nav_on
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="{og_type}"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{og_image}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FBF6EF"><link rel="icon" href="/img/mark-dark.svg"><link rel="alternate" type="application/rss+xml" title="Digital Lineup blog" href="/blog/feed.xml">
-{ldtag}<style>{CSS}</style>{FOOT_HEAD}</head><body>
-<header class="top"><div class="wrap"><a href="/" aria-label="Digital Lineup home"><img src="/logo-dark.svg" alt="Digital Lineup" width="98" height="36"></a>
-<nav>{''.join(f'<a class="{"on " if nav_on == k else ""}{c}" href="{h}">{t}</a>' for k, h, t, c in NAV)}<a class="go" href="/contact/">Let's talk</a></nav></div></header>
+{ldtag}<style>{CSS}</style>{HEAD_CSS}{FOOT_HEAD}</head><body>
+{header_html(nav_on)}
 <main>{body}</main>
 {footer_html()}
-{js}{FOOT_JS}</body></html>
+{HEAD_JS}{js}{FOOT_JS}</body></html>
 """
 
 

@@ -5,6 +5,7 @@ lead: A content production and digital marketing agency in Multan, Pakistan. Six
 description: Digital Lineup is a creative and digital marketing agency in Multan, Pakistan, founded by Ali Hannan Siddique. Meet the team and see the work.
 path: /about/
 nav: about
+draft: yes
 ---
 
 Digital Lineup is a content production and digital marketing agency based in Multan, Pakistan. We make brand films, reels, identities and ad campaigns, and we run social media and Meta ads for brands in Pakistan and around the world. Everything is made in-house by our own team.

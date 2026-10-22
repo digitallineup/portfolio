@@ -4,23 +4,6 @@ var d=document,w=window,RM=matchMedia('(prefers-reduced-motion: reduce)').matche
 function $(s,c){return (c||d).querySelector(s)}function $$(s,c){return [].slice.call((c||d).querySelectorAll(s))}
 function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
 
-/* header: solid after scroll, hide on scroll down */
-var hd=$('.hd'),lastY=0;
-function hdUpd(){var y=scrollY;hd.classList.toggle('solid',y>30);if(!d.body.classList.contains('navopen'))hd.classList.toggle('hide',y>lastY&&y>400&&!$('.has.open'));lastY=y;}
-
-/* mega menu: hover on desktop, click + keyboard everywhere */
-$$('.has').forEach(function(h){var b=$('button',h),t;
- function open(){clearTimeout(t);h.classList.add('open');b.setAttribute('aria-expanded','true')}
- function close(){t=setTimeout(function(){h.classList.remove('open');b.setAttribute('aria-expanded','false')},140)}
- if(FINE){h.addEventListener('mouseenter',open);h.addEventListener('mouseleave',close)}
- b.addEventListener('click',function(){h.classList.contains('open')?(clearTimeout(t),h.classList.remove('open'),b.setAttribute('aria-expanded','false')):open()});
- h.addEventListener('focusout',function(e){if(!h.contains(e.relatedTarget))close()});
- d.addEventListener('keydown',function(e){if(e.key==='Escape'){h.classList.remove('open');b.setAttribute('aria-expanded','false')}});
-});
-var bg=$('.burger'),mn=$('.mnav');
-if(bg)bg.addEventListener('click',function(){var on=!d.body.classList.contains('navopen');d.body.classList.toggle('navopen',on);mn.classList.toggle('on',on);bg.setAttribute('aria-expanded',on)});
-$$('.mnav a').forEach(function(a){a.addEventListener('click',function(){d.body.classList.remove('navopen');mn.classList.remove('on')})});
-
 /* split headings into words */
 $$('[data-split]').forEach(function(el){var i=0;
  (function walk(n){[].slice.call(n.childNodes).forEach(function(c){
@@ -71,7 +54,7 @@ if(fl&&FINE&&!RM){var fx=0,fy=0,gx=0,gy=0,fon=false,fims=$$('img',fl);
 /* scroll-driven motion */
 var cols=$$('.collage .col'),coll=$('.collage'),cards=$$('.card'),book=$('.book'),meter=$('.book .meter i'),reel=$('.reel'),films=$('.films'),steps=$('.steps'),bar=$('.steps .bar'),stepEls=$$('.step');
 var ticking=false;
-function tick(){ticking=false;var vh=innerHeight;hdUpd();
+function tick(){ticking=false;var vh=innerHeight;
  fills.forEach(function(f){var r=f.el.getBoundingClientRect(),p=clamp((vh*.88-r.top)/(r.height+vh*.45),0,1),n=Math.round(p*f.ws.length);f.ws.forEach(function(s,i){s.classList.toggle('on',i<n)})});
  if(RM)return;
  if(coll){var r=coll.getBoundingClientRect();if(r.bottom>0&&r.top<vh){var p=(vh-r.top)/(vh+r.height);cols.forEach(function(c,i){c.style.transform='translate3d(0,'+((i%2?1:-1)*(p-.5)*220)+'px,0)'})}}
@@ -108,5 +91,20 @@ if(f){
   .catch(function(){b.disabled=false;b.firstChild.textContent=lbl;er.innerHTML='That did not send. Please try again, or <a href="https://wa.me/923009590042" style="text-decoration:underline">message us on WhatsApp</a>.';er.style.display='block'});
  });
 }
+
+/* about: review quotes slider */
+var qs=$('[data-qs]');
+if(qs){var qb=$$('blockquote',qs),qi=0,qn=$('.qn'),qt;
+ function qgo(n){qb[qi].classList.remove('on');qi=(n+qb.length)%qb.length;qb[qi].classList.add('on');if(qn)qn.textContent=(qi+1)+' / '+qb.length;}
+ function qauto(){clearInterval(qt);if(!RM)qt=setInterval(function(){qgo(qi+1)},6500)}
+ $$('[data-q]').forEach(function(b){b.addEventListener('click',function(){qgo(qi+parseInt(b.dataset.q,10));qauto()})});
+ function qfit(){var h=0;qb.forEach(function(b){h=Math.max(h,b.scrollHeight)});qs.style.minHeight=h+'px'}qfit();addEventListener('resize',qfit);addEventListener('load',qfit);
+ qauto();}
+/* about: giant words slide with scroll */
+var gx=$$('[data-gx]');
+if(gx.length&&!RM){var gsec=$('.giant'),gt=false;
+ function gup(){gt=false;var r=gsec.getBoundingClientRect(),vh=innerHeight;if(r.bottom<0||r.top>vh)return;var p=(vh-r.top)/(vh+r.height);
+  gx.forEach(function(el){var dir=parseFloat(el.dataset.gx);el.style.transform='translate3d('+((dir<0?-1:0)*el.scrollWidth*0.33+dir*(p-.5)*-600)+'px,0,0)'})}
+ addEventListener('scroll',function(){if(!gt){gt=true;requestAnimationFrame(gup)}},{passive:true});addEventListener('resize',gup);gup();}
 var yr=$('[data-year]');if(yr)yr.textContent=new Date().getFullYear();
 })();

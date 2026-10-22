@@ -8,63 +8,20 @@ Shared CSS and JS live in /services/assets/.
 import json, pathlib, re, html, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from footer import footer_html, HEAD as FOOT_HEAD, SCRIPTS as FOOT_JS
+from header import MENU, header_html, HEAD as HEAD_CSS, SCRIPTS as HEAD_JS
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / 'tools' / 'services'
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
-VER = '20261022d'
+VER = '20261022e'
 
-I = {  # small line icons for the mega-menu
-    'cam': '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
-    'box': '<path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/>',
-    'film': '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/>',
-    'star': '<path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/>',
-    'chart': '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
-    'chat': '<path d="M4 5h16v11H9l-5 4z"/>',
-    'pen': '<path d="M12 20l8-8-4-4-8 8-1 5z"/><path d="M14 6l4 4"/>',
-    'web': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/>',
-}
-# (column, name, one-liner, url, icon). URLs switch to the new pages as each one ships.
-MENU = [
-    ('Photography', 'Food Photography', 'Restaurants, bakeries, menus', '/services/', 'cam'),
-    ('Photography', 'Product Photography', 'Ecommerce, catalogues, ads', '/services/', 'box'),
-    ('Production', 'Video Production', 'Brand films, reels, drone', '/services/video-production-multan/', 'film'),
-    ('Production', 'Creator Campaigns', 'Influencer films that travel', '/work/apex-solar.html', 'star'),
-    ('Growth', 'Meta Ads', 'Leads and sales, tracked', '/services/meta-ads-agency-pakistan/', 'chart'),
-    ('Growth', 'Social Media Management', 'Content, posting, community', '/services/social-media-management-pakistan/', 'chat'),
-    ('Brand & Web', 'Branding & Identity', 'Logos, systems, brand books', '/services/branding-identity/', 'pen'),
-    ('Brand & Web', 'Website Design', 'Fast sites that convert', '/services/website-design-pakistan/', 'web'),
-]
 BUDGETS = ['PKR 120K to 250K', 'PKR 250K to 500K', 'PKR 500K plus', 'in USD, let\'s talk', 'not decided yet']
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 
 
 def esc(s):
     return html.escape(s, quote=True)
-
-
-def icon(k):
-    return f'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{I[k]}</svg>'
-
-
-def mega(cur):
-    cols = []
-    for col in ['Photography', 'Production', 'Growth', 'Brand & Web']:
-        items = ''.join(f'<a class="it{" on" if n == cur else ""}" href="{u}"><i>{icon(ic)}</i><span>{esc(n)}<small>{esc(d)}</small></span></a>'
-                        for c, n, d, u, ic in MENU if c == col)
-        cols.append(f'<div><p class="mh">{esc(col)}</p>{items}</div>')
-    feat = '<a class="feat" href="/services/"><img src="/work/assets/img/lume-07.jpg" alt="" loading="lazy" width="1080" height="1350"><span>Explore all services</span></a>'
-    return '<div class="mega" role="region" aria-label="Services">' + ''.join(cols) + feat + '</div>'
-
-
-def mobile_menu():
-    grp = ''
-    for col in ['Photography', 'Production', 'Growth', 'Brand & Web']:
-        grp += f'<b>{esc(col)}</b>' + ''.join(f'<a href="{u}">{esc(n)}</a>' for c, n, d, u, ic in MENU if c == col)
-    return ('<nav class="mnav" aria-label="Mobile menu"><details open><summary>Services <span>+</span></summary><div class="grp">' + grp + '</div></details>'
-            '<a href="/work/">Work</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="#contact">Contact</a>'
-            '<div class="mfoot"><a href="https://wa.me/923009590042">WhatsApp +92 300 959 0042</a><a href="mailto:hello@digitallineup.com">hello@digitallineup.com</a><span>Studio in Multan, Pakistan. Working worldwide.</span></div></nav>')
 
 
 def faq_html(faqs):
@@ -133,7 +90,19 @@ def build_one(src):
     path, title, desc, svc = meta['path'], meta['seo_title'], meta['description'], meta['service']
     url = SITE + path
     faqs = meta.get('faqs', [])
-    ld = [
+    if meta.get('page') == 'about':
+        ld = [
+            {'@context': 'https://schema.org', '@type': 'AboutPage', 'name': meta['title'], 'url': url, 'description': desc,
+             'mainEntity': {'@type': 'ProfessionalService', '@id': SITE + '/#org', 'name': 'Digital Lineup', 'url': SITE + '/',
+                            'founder': {'@type': 'Person', 'name': 'Ali Hannan Siddique', 'url': SITE + '/ali-hannan-siddique/'},
+                            'address': {'@type': 'PostalAddress', 'streetAddress': 'Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony', 'addressLocality': 'Multan', 'addressCountry': 'PK'},
+                            'telephone': '+92 300 959 0042', 'email': 'hello@digitallineup.com', 'areaServed': 'Worldwide'}},
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
+                {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]},
+        ]
+    else:
+        ld = [
         {'@context': 'https://schema.org', '@type': 'Service', 'name': meta['title'], 'serviceType': meta.get('service_type', svc),
          'description': desc, 'url': url, 'areaServed': 'Worldwide',
          'provider': {'@type': 'ProfessionalService', 'name': 'Digital Lineup', 'url': SITE + '/',
@@ -142,7 +111,7 @@ def build_one(src):
             {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'Services', 'item': SITE + '/services/'}]
             + ([{'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url}] if path != '/services/' else [])},
-    ]
+        ]
     if faqs:
         ld.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
             {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': re.sub('<[^>]+>', '', a)}} for q, a in faqs]})
@@ -154,17 +123,14 @@ def build_one(src):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{robots}<link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{og}"><meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#ffffff"><link rel="icon" href="/img/mark-dark.svg">
-<link rel="stylesheet" href="/services/assets/svc.css?v={VER}">{FOOT_HEAD}{ldtag}</head><body>
+<meta name="theme-color" content="#FBF6EF"><link rel="icon" href="/img/mark-dark.svg">
+<link rel="stylesheet" href="/services/assets/svc.css?v={VER}">{HEAD_CSS}{FOOT_HEAD}{ldtag}</head><body>
 <a class="sr" href="#main">Skip to content</a>
 <div class="cur" aria-hidden="true"><span></span></div>
-<header class="hd"><div class="wrap"><a class="logo" href="/" aria-label="Digital Lineup home"><img src="/logo-dark.svg" alt="Digital Lineup" width="98" height="36"></a>
-<nav class="main" aria-label="Main"><a href="/about/">About</a><a href="/work/">Work</a><div class="has"><button type="button" aria-expanded="false">Services {down}</button>{mega(svc)}</div><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
-<a class="cta" href="#contact">Start a project</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button></div></header>
-{mobile_menu()}
+{header_html(meta.get('nav', 'services'), svc, '#contact')}
 <main id="main">{body}{faq_html(faqs) if faqs else ''}{form_html(svc)}</main>
 {footer_html('#contact')}
-<script src="/services/assets/svc.js?v={VER}" defer></script>{FOOT_JS}</body></html>
+{HEAD_JS}<script src="/services/assets/svc.js?v={VER}" defer></script>{FOOT_JS}</body></html>
 '''
     out = ROOT / path.strip('/') / 'index.html'
     out.parent.mkdir(parents=True, exist_ok=True)
