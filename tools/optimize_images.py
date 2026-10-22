@@ -66,6 +66,7 @@ def process(page):
     s = orig = page.read_text(encoding='utf-8')
     count = [0]
     seen = [0]
+    has_priority = 'fetchpriority="high"' in s
 
     def fix(m):
         tag = m.group(0)
@@ -83,6 +84,9 @@ def process(page):
         best = next((v for v in vs if v[0] >= 960), vs[-1])
         tag = set_attr(tag, 'src', url_for(best[1], page, src))
         tag = set_attr(tag, 'srcset', ', '.join(f'{url_for(d, page, src)} {w}w' for w, d in vs))
+        if seen[0] == 1 and not has_priority and 'class="th"' not in tag:
+            tag = re.sub(r'\sloading="lazy"', '', tag)
+            tag = set_attr(tag, 'fetchpriority', 'high')
         lazy = attr(tag, 'loading') == 'lazy'
         eager_hint = attr(tag, 'fetchpriority') == 'high'
         if attr(tag, 'sizes') is None:
