@@ -34,8 +34,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 [data-split].in .w>span{transform:none}
 [data-rv]{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1.1s var(--ease);transition-delay:var(--d,0ms)}
 [data-rv].in{opacity:1;transform:none}
-[data-fill] .fw{opacity:.16;transition:opacity .25s linear}
-[data-fill] .fw.on{opacity:1}
+[data-fill] .fw{color:#7d8882;transition:color .25s linear}
+[data-fill] .fw.on{color:var(--ink)}
+.ab-fill [data-fill] .fw:not(.on){color:#5d6d64}
 .btn{display:inline-flex;align-items:center;gap:12px;padding:17px 26px;border-radius:99px;background:var(--ink);color:#fff;font-size:16px;border:0;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;transition:color .35s}
 .btn:after{content:"";position:absolute;inset:0;background:var(--lime);transform:translateY(101%);border-radius:inherit;transition:transform .5s var(--ease);z-index:-1}
 .btn:hover{color:var(--ink)}
@@ -386,7 +387,7 @@ section.s{padding:clamp(90px,12vw,170px) 0}
 @media (prefers-reduced-motion:reduce){
  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
  [data-split] .w>span,[data-rv]{transform:none;opacity:1}
- [data-fill] .fw{opacity:1}
+ [data-fill] .fw{color:var(--ink)}
  .book{height:auto}.book .pin{position:static;height:auto}
  .device .scr{overflow:auto}
 }

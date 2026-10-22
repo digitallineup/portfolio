@@ -4,6 +4,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
 from header import header_html, HEAD, SCRIPTS
 
+def _css(s, head):
+    s = re.sub(r'<link rel="stylesheet" href="/css/header\.css[^"]*">', '', s)
+    s = re.sub(r'<style id="hd-css">.*?</style>', '', s, flags=re.S)
+    return s.replace('</head>', head + '</head>', 1)
+
+
 HOME_FIX = ('<style id="hd-fix">.hero{margin-top:10px!important;padding-top:clamp(56px,8vh,100px)!important}'
             '@media(max-width:700px){.hero{padding-top:44px!important}}</style>')
 
@@ -16,8 +22,11 @@ def swap(path, active, cta, extra_head=''):
     else:
         s2 = re.sub(r'<header class="nav">.*?</header>', lambda m: new_hdr, s, count=1, flags=re.S)
         s2 = re.sub(r'\s*<nav class="menu" aria-label="Site menu">.*?</nav>', '', s2, count=1, flags=re.S)
-    if '/css/header.css' not in s2:
-        s2 = s2.replace('</head>', HEAD + extra_head + '</head>', 1)
+    s2 = re.sub(r'<link rel="stylesheet" href="/css/header\\.css[^"]*">', '', s2)
+    if re.search(r'<style id="hd-css">.*?</style>', s2, flags=re.S):
+        s2 = re.sub(r'<style id="hd-css">.*?</style>', lambda m: HEAD, s2, count=1, flags=re.S)
+    else:
+        s2 = s2.replace('</head>', HEAD + ('' if 'id="hd-fix"' in s2 else extra_head) + '</head>', 1)
     if '/js/header.js' not in s2:
         s2 = s2.replace('</body>', SCRIPTS + '</body>', 1)
     if s2 != s:

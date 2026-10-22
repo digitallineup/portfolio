@@ -2,7 +2,8 @@
 Used by build_blog.py, build_services.py and apply_footer.py (work pages)."""
 import datetime
 
-HEAD = '<link rel="stylesheet" href="/css/footer.css?v=20261022">'
+import pathlib as _p
+HEAD = '<style id="ft-css">' + (_p.Path(__file__).resolve().parent.parent / 'css/footer.css').read_text(encoding='utf-8').replace('\n', '') + '</style>'
 SCRIPTS = '<script src="/js/matter.min.js" defer></script><script src="/js/footer.js?v=20261022" defer></script>'
 
 

@@ -2,7 +2,8 @@
 Used by build_services.py, build_blog.py and apply_header.py (homepage and work pages)."""
 import html
 
-HEAD = '<link rel="stylesheet" href="/css/header.css?v=20261022">'
+import pathlib as _p
+HEAD = '<style id="hd-css">' + (_p.Path(__file__).resolve().parent.parent / 'css/header.css').read_text(encoding='utf-8').replace('\n', '') + '</style>'
 SCRIPTS = '<script src="/js/header.js?v=20261022" defer></script>'
 
 
@@ -42,7 +43,7 @@ def mega(cur):
         items = ''.join(f'<a class="it{" on" if n == cur else ""}" href="{u}"><i>{icon(ic)}</i><span>{esc(n)}<small>{esc(d)}</small></span></a>'
                         for c, n, d, u, ic in MENU if c == col)
         cols.append(f'<div><p class="mh">{esc(col)}</p>{items}</div>')
-    feat = '<a class="feat" href="/services/"><img src="/work/assets/img/lume-07.jpg" alt="" loading="lazy" width="1080" height="1350"><span>Explore all services</span></a>'
+    feat = '<a class="feat" href="/services/"><img src="/work/assets/img/lume-07-640.webp" alt="" loading="lazy" decoding="async" width="640" height="800"><span>Explore all services</span></a>'
     return '<div class="mega" role="region" aria-label="Services">' + ''.join(cols) + feat + '</div>'
 
 
