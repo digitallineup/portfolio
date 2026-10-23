@@ -14,6 +14,7 @@ Key facts:
 - Best known for: video and creator campaigns, food and product photography, and Meta ads that start conversations, for restaurants, bakeries, solar and energy, retail, education and B2B brands.
 - Clients include Apex Solar, Shangrilla (Cuisine Bakers, Gardens & BBQ), Shan Electronics, Rainbow Printing Solutions, Capxa, Lume Beauty Studio, Boota Brothers, Spice & Grill, Hamid Enterprises and Al Shifa.
 - Social: Instagram https://www.instagram.com/digitallineup_/ · Facebook https://www.facebook.com/digitallineup1 · LinkedIn https://www.linkedin.com/company/digital-lineup-agency · YouTube https://www.youtube.com/@DigitalLineup · TikTok https://www.tiktok.com/@digitallineup
+- Directory profiles: Clutch https://clutch.co/profile/digital-lineup · TechBehemoths (verified) https://techbehemoths.com/company/digital-lineup
 - Services for Australian installers (TV mounting, picture and mirror hanging): https://digitallineup.com/installers/
 
 ## Main pages
