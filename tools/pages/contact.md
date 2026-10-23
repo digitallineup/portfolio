@@ -5,6 +5,7 @@ lead: Tell us what you are building. WhatsApp, email or visit our studio in Mult
 description: Contact Digital Lineup: WhatsApp +92 300 959 0042, email hello@digitallineup.com, or visit our studio in Multan, Pakistan.
 path: /contact/
 nav: contact
+draft: yes
 ---
 
 The fastest way to reach us is WhatsApp. You can also email us, fill in the form on this page, or come to the studio for chai and see the work on our screens.

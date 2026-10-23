@@ -15,7 +15,7 @@ SRC = ROOT / 'tools' / 'services'
 SVC_CSS = (ROOT / 'services' / 'assets' / 'svc.css').read_text(encoding='utf-8')
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
-VER = '20261023d'
+VER = '20261023e'
 
 BUDGETS = ['PKR 120K to 250K', 'PKR 250K to 500K', 'PKR 500K plus', 'in USD, let\'s talk', 'not decided yet']
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
@@ -91,7 +91,18 @@ def build_one(src):
     path, title, desc, svc = meta['path'], meta['seo_title'], meta['description'], meta['service']
     url = SITE + path
     faqs = meta.get('faqs', [])
-    if meta.get('page') == 'about':
+    if meta.get('page') == 'contact':
+        ld = [
+            {'@context': 'https://schema.org', '@type': 'ContactPage', 'name': meta['title'], 'url': url, 'description': desc,
+             'mainEntity': {'@type': 'ProfessionalService', '@id': SITE + '/#org', 'name': 'Digital Lineup', 'url': SITE + '/',
+                            'address': {'@type': 'PostalAddress', 'streetAddress': 'Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony', 'addressLocality': 'Multan', 'postalCode': '60000', 'addressCountry': 'PK'},
+                            'telephone': '+92 300 959 0042', 'email': 'hello@digitallineup.com', 'areaServed': 'Worldwide',
+                            'contactPoint': {'@type': 'ContactPoint', 'contactType': 'sales', 'telephone': '+92 300 959 0042', 'email': 'hello@digitallineup.com', 'availableLanguage': ['English', 'Urdu']}}},
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
+                {'@type': 'ListItem', 'position': 2, 'name': 'Contact', 'item': url}]},
+        ]
+    elif meta.get('page') == 'about':
         ld = [
             {'@context': 'https://schema.org', '@type': 'AboutPage', 'name': meta['title'], 'url': url, 'description': desc,
              'mainEntity': {'@type': 'ProfessionalService', '@id': SITE + '/#org', 'name': 'Digital Lineup', 'url': SITE + '/',
@@ -120,6 +131,12 @@ def build_one(src):
     robots = '<meta name="robots" content="noindex,follow">' if meta.get('noindex') else ''
     og = SITE + meta.get('og_image', '/og-home.jpg')
     down = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>'
+    is_contact = meta.get('page') == 'contact'
+    faq = faq_html(faqs) if faqs else ''
+    if is_contact:
+        main, cta = body.replace('<!--FAQ-->', faq), '#brief'
+    else:
+        main, cta = body + faq + form_html(svc), '#contact'
     page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{robots}<link rel="canonical" href="{url}">
@@ -128,9 +145,9 @@ def build_one(src):
 <style id="svc-css">{SVC_CSS}</style>{HEAD_CSS}{FOOT_HEAD}{ldtag}</head><body>
 <a class="sr" href="#main">Skip to content</a>
 <div class="cur" aria-hidden="true"><span></span></div>
-{header_html(meta.get('nav', 'services'), svc, '#contact')}
-<main id="main">{body}{faq_html(faqs) if faqs else ''}{form_html(svc)}</main>
-{footer_html('#contact')}
+{header_html(meta.get('nav', 'services'), svc, cta)}
+<main id="main">{main}</main>
+{footer_html(cta)}
 {HEAD_JS}<script src="/services/assets/svc.js?v={VER}" defer></script>{FOOT_JS}</body></html>
 '''
     out = ROOT / path.strip('/') / 'index.html'
