@@ -15,7 +15,7 @@ SRC = ROOT / 'tools' / 'services'
 SVC_CSS = (ROOT / 'services' / 'assets' / 'svc.css').read_text(encoding='utf-8')
 SITE = 'https://digitallineup.com'
 LEADS_URL = 'https://script.google.com/macros/s/AKfycbzxXJoWIFjgC3vkHPjD8hULkTI7GZZrGoFeuULeVolUNI9fhGg2DP7Lt_m7JjRn-85CKQ/exec'
-VER = '20261023e'
+VER = '20261024a'
 
 BUDGETS = ['PKR 120K to 250K', 'PKR 250K to 500K', 'PKR 500K plus', 'in USD, let\'s talk', 'not decided yet']
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
