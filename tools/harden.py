@@ -48,6 +48,8 @@ for p in ROOT.rglob('*.html'):
         s2, k = re.subn(r'(<head[^>]*>\s*\n?)', r'\1' + TAGS, s, count=1, flags=re.I)
     if k and ANALYTICS and 'noindex' not in s2:
         s2 = s2.replace('</head>', ANALYTICS + '</head>', 1)
+    if k and 'og:site_name' not in s2:
+        s2 = s2.replace('</head>', '<meta property="og:site_name" content="Digital Lineup">\n</head>', 1)
     if k:
         p.write_text(s2, encoding='utf-8'); n += 1
 print(f'hardened {n} pages')
