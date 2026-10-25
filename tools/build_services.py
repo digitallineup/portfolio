@@ -83,6 +83,17 @@ def footer():
 </div></footer>'''
 
 
+def playbooks():
+    """Every source page that declares a "playbook" block, ordered by its number."""
+    out = []
+    for f in sorted(SRC.glob('*.html')):
+        m = re.match(r'\s*<!--(.*?)-->', f.read_text(encoding='utf-8'), re.S)
+        meta = json.loads(m.group(1))
+        if meta.get('playbook') and not meta.get('noindex'):
+            out.append(meta)
+    return sorted(out, key=lambda x: x['playbook']['n'])
+
+
 def build_one(src):
     raw = src.read_text(encoding='utf-8')
     m = re.match(r'\s*<!--(.*?)-->\s*', raw, re.S)
@@ -114,13 +125,29 @@ def build_one(src):
                 {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]},
         ]
     elif meta.get('page') == 'resource':
+        crumbs = [{'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'}]
+        if path.startswith('/playbooks/'):
+            crumbs.append({'@type': 'ListItem', 'position': 2, 'name': 'Playbooks', 'item': SITE + '/playbooks/'})
+        crumbs.append({'@type': 'ListItem', 'position': len(crumbs) + 1, 'name': meta['title'], 'item': url})
         ld = [
             {'@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['title'], 'url': url, 'description': desc,
+             'isPartOf': {'@id': SITE + '/#website'},
              'publisher': {'@type': 'ProfessionalService', '@id': SITE + '/#org', 'name': 'Digital Lineup', 'url': SITE + '/'}},
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': crumbs},
+        ]
+    elif meta.get('page') == 'playbooks':
+        pbs = playbooks()
+        ld = [
+            {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': meta['title'], 'url': url, 'description': desc,
+             'isPartOf': {'@id': SITE + '/#website'},
+             'mainEntity': {'@type': 'ItemList', 'itemListElement': [
+                 {'@type': 'ListItem', 'position': i + 1, 'url': SITE + pm['path'], 'name': pm['playbook']['name']} for i, pm in enumerate(pbs)]}},
             {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
                 {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
-                {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]},
+                {'@type': 'ListItem', 'position': 2, 'name': 'Playbooks', 'item': url}]},
         ]
+        cards = ''.join(f'''<a class="pb-card" href="{pm['path']}" data-rv><span class="pb-n">{pm['playbook']['n']}</span><span class="pb-k">{esc(pm['playbook']['kicker'])}</span><h2>{esc(pm['playbook']['name'])}</h2><p>{esc(pm['playbook']['summary'])}</p><span class="pb-go">Open playbook <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>''' for pm in pbs)
+        body = body.replace('<!--PLAYBOOKS-->', cards)
     else:
         ld = [
         {'@context': 'https://schema.org', '@type': 'Service', 'name': meta['title'], 'serviceType': meta.get('service_type', svc),
@@ -184,6 +211,7 @@ REDIRECTS = {
     '/services/meta-ads-agency-pakistan/': '/services/meta-ads/',
     '/services/social-media-management-pakistan/': '/services/social-media-management/',
     '/services/website-design-pakistan/': '/services/website-design/',
+    '/checklist/': '/playbooks/meta-ads-checklist/',
 }
 
 

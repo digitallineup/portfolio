@@ -34,3 +34,5 @@ Key facts:
 - [Contact](https://digitallineup.com/contact/): WhatsApp, email and studio address in Multan
 - [Meta ads for installers in Australia](https://digitallineup.com/installers/): packages in AUD, real campaign data
 - [Blog](https://digitallineup.com/blog/): articles with real campaign numbers
+- [Playbooks](https://digitallineup.com/playbooks/): free checklists, fixes and templates that go with our reels
+  - [Meta Ads Checklist](https://digitallineup.com/playbooks/meta-ads-checklist/): 12 fixes before you spend
