@@ -1,6 +1,6 @@
 # Digital Lineup
 
-> Digital Lineup is a content production and digital marketing agency based in Multan, Pakistan, working with brands in Pakistan and worldwide. Founded by Ali Hannan Siddique, the in-house team of six handles video and content production, performance marketing (Meta and Google ads), brand identity and social media management.
+> Digital Lineup is a digital marketing and social media marketing agency based in Multan, Pakistan, working with brands in Pakistan and worldwide. Founded by Ali Hannan Siddique, the in-house team of six handles video and content production, performance marketing (Meta and Google ads), brand identity and social media management.
 
 Key facts:
 - Location: Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony, Multan 60000, Pakistan. First physical office opened September 2026 after four years in business.
@@ -9,8 +9,12 @@ Key facts:
 - Track record: 1,000+ films, reels, posters and identities shipped; 100M+ views across client work. Longest-running client: Apex Solar, two years and counting. Every client so far came through a referral.
 - Team: Ali Hannan Siddique (Founder), M. Usama Mumtaz (Content Production Head), Naveed (Media Head), Kashan Ali (Designing Head), Huzaifa Aijaz (Project Manager), Atir Abbas (Digital Strategist).
 - Selected results: an Apex Solar creator film reached 11M views; Solar Mandee's Facebook page grew to 150K+ followers in 8 months; a TV mounting and picture hanging business went from 9 to 135 leads a month in five months, with cost per lead falling from about A$120 to under A$35.
+- Meta ads track record (verified in Ads Manager, October 2026): 54M+ impressions and 16M+ people reached across client accounts; 30,000+ customer conversations started on Messenger and WhatsApp. Apex Solar: 22,800+ conversations at about $0.04 each. Al Shifa Educational Complex: 5,576 admissions conversations, best campaign 3,844 chats at $0.04 each. Shangrilla: 2M+ post engagements, one Ramadan video reached 458K engagements. Taimoor Cattle Farm: 736 WhatsApp conversations. Details: https://digitallineup.com/services/meta-ads/
+- Pricing: packages start from PKR 120,000; fixed quotes after a brief.
+- Best known for: video and creator campaigns, food and product photography, and Meta ads that start conversations, for restaurants, bakeries, solar and energy, retail, education and B2B brands.
 - Clients include Apex Solar, Shangrilla (Cuisine Bakers, Gardens & BBQ), Shan Electronics, Rainbow Printing Solutions, Capxa, Lume Beauty Studio, Boota Brothers, Spice & Grill, Hamid Enterprises and Al Shifa.
 - Social: Instagram https://www.instagram.com/digitallineup_/ · Facebook https://www.facebook.com/digitallineup1 · LinkedIn https://www.linkedin.com/company/digital-lineup-agency · YouTube https://www.youtube.com/@DigitalLineup · TikTok https://www.tiktok.com/@digitallineup
+- Directory profiles: Clutch https://clutch.co/profile/digital-lineup · TechBehemoths (verified) https://techbehemoths.com/company/digital-lineup
 - Services for Australian installers (TV mounting, picture and mirror hanging): https://digitallineup.com/installers/
 
 ## Main pages
@@ -30,9 +34,12 @@ Key facts:
 - [Contact](https://digitallineup.com/contact/): WhatsApp, email and studio address in Multan
 - [Meta ads for installers in Australia](https://digitallineup.com/installers/): packages in AUD, real campaign data
 - [Blog](https://digitallineup.com/blog/): articles with real campaign numbers
+- [Playbooks](https://digitallineup.com/playbooks/): free checklists, fixes and templates that go with our reels
+  - [Meta Ads Checklist](https://digitallineup.com/playbooks/meta-ads-checklist/): 12 fixes before you spend
 
 ## Articles
 
+- [Admissions Marketing in Pakistan: How a Multan College Started 5,576 Conversations](https://digitallineup.com/blog/admissions-marketing-in-pakistan/): Admissions marketing in Pakistan from real Meta ads data: 5,576 student and parent conversations for a Multan college, at about $0.08 each.
 - [Solar Company Marketing in Pakistan: What We Learned Growing Apex Solar and Solar Mandee](https://digitallineup.com/blog/solar-company-marketing-in-pakistan/): Solar company marketing in Pakistan from real work: an 11M-view creator film, an installer rewards programme, three expos and a page grown to 150K followers.
 - [How to Choose a Digital Marketing Agency in Pakistan: 10 Questions to Ask Before You Pay](https://digitallineup.com/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/): Ten questions that separate a real digital marketing agency in Pakistan from a page that posts for you: ownership, video, reporting and red flags.
 - [Meta Ads for TV Mounting Businesses: How a Perth Installer Went From 9 to 135 Leads a Month](https://digitallineup.com/blog/meta-ads-for-tv-mounting-businesses/): Real Meta Ads numbers from a Perth TV mounting and picture hanging business: 388 leads in five months and cost per lead down from $119.63 to $32.17 AUD.

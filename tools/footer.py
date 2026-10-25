@@ -12,7 +12,7 @@ def footer_html(contact_href='/contact/'):
     return f'''<footer class="foot2" id="footer">
   <div class="fmeta wrap">
     <span>&copy; {y} Digital Lineup. Multan, Pakistan.</span>
-    <nav class="flinks" aria-label="Site pages"><a href="/services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
+    <nav class="flinks" aria-label="Site pages"><a href="/services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/playbooks/">Playbooks</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
     <a href="#">Back to top &uarr;</a>
   </div>
   <div class="fpit" data-pit role="group" aria-label="Contact links">

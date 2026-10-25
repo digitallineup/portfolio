@@ -76,7 +76,7 @@ def footer():
     return f'''<footer class="ft"><div class="wrap">
 <div class="cols"><div><h6>Studio</h6><address>Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony, Multan, Pakistan.<br><br>Working with brands worldwide.</address></div>
 <div><h6>Services</h6>{svc}</div>
-<div><h6>Company</h6><a href="/work/">Work</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a><a href="/ali-hannan-siddique/">Founder</a></div>
+<div><h6>Company</h6><a href="/work/">Work</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/playbooks/">Playbooks</a><a href="/contact/">Contact</a><a href="/ali-hannan-siddique/">Founder</a></div>
 <div><h6>Follow</h6><a href="https://www.instagram.com/digitallineup_/">Instagram</a><a href="https://www.linkedin.com/company/digital-lineup-agency">LinkedIn</a><a href="https://www.facebook.com/digitallineup1">Facebook</a><a href="https://www.youtube.com/@DigitalLineup">YouTube</a><a href="https://wa.me/923009590042">WhatsApp</a></div></div>
 <div class="big" aria-hidden="true">{word}</div>
 <div class="base"><span>&copy; <span data-year>2026</span> Digital Lineup. All rights reserved.</span><span><a href="/privacy-policy/">Privacy</a></span></div>
