@@ -104,6 +104,8 @@ If you run a TV mounting, picture hanging, mirror or shelf installation business
 - **Make the landing page work on a phone.** Reviews at the top, a short form, a button that never leaves the screen.
 - **Judge it over months, not days.** The first month here was mostly setup. The results came after.
 
+Want to see where your own ads stand? Run them through our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/): it takes two minutes and gives you a score.
+
 ## How we work with installers
 
 You own your ad account and pay Meta directly. We bill monthly in Australian dollars and there is no lock-in. Our team is in Multan, Pakistan, and works through your afternoon and evening, so new ads and videos are usually ready by the next morning.

@@ -91,6 +91,8 @@ Solar Mandee is a solar marketplace, and their goal was clear: grow the page to 
 
 There was no secret trick. Targeted ad campaigns brought the right people to the page, and strong, consistent design gave them a reason to follow once they arrived. Ads without good creative waste money. Good creative without ads waits a long time to be seen. You need both.
 
+If you already run ads, check them against our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) before you add more budget.
+
 ## 7. Show up on the days people already care about
 
 A solar brand can still feel human. Alongside product posts, Apex marks the dates its customers mark: Independence Day, Defence Day on 6 September, Father's Day and Jummah. These posts are not selling anything directly, and that is the point. They keep the brand present in the feed between purchases, which for a battery can be years apart.

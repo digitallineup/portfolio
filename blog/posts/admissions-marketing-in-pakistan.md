@@ -111,6 +111,8 @@ My advice to any school or college running conversation ads:
 - **Stay active all year.** A living page makes the admissions ads work harder.
 - **Answer fast.** The ad starts the conversation; your team finishes it.
 
+Before your next intake, check your setup with our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/). Tick what you already do and see your score.
+
 You can see the admissions creatives in our [Al Shifa case study](/work/al-shifa.html), and the full Meta ads results for all our clients on the [Meta ads service page](/services/meta-ads/). If you are comparing agencies before your next intake, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
 
 If you run a school, college or training academy and want to plan your next admissions campaign, message us on WhatsApp. I am happy to talk it through.
