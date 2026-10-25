@@ -1,0 +1,144 @@
+<!--{
+"title": "Free Ad Fix Checklist",
+"seo_title": "Free Meta Ads Checklist: 12 Fixes Before You Spend | Digital Lineup",
+"description": "A free 12-point checklist for Facebook and Instagram ads: setup, creative, targeting and budget. Tick it in your browser, see your score, get a free ad audit.",
+"path": "/checklist/",
+"page": "resource",
+"nav": "",
+"service": "Meta Ads",
+"og_image": "/media/ad-fix-checklist-square.png",
+"faqs": [
+ ["Is this checklist really free?", "Yes. No email, no sign-up. Tick the boxes on this page or download the image and keep it."],
+ ["Why shouldn't I use the Boost Post button?", "Boost skips most of what makes ads work: a proper campaign goal, detailed audiences, pixel tracking and A/B testing. Ads Manager gives you all of it, so the same budget usually goes further."],
+ ["What is the learning phase?", "When an ad set launches or is significantly edited, Meta spends roughly a week learning who responds. Big edits during that time restart it, which is why changing ads every few days keeps results unstable."],
+ ["What happens in the free ad audit?", "Send us your page or ad account details and we review your setup, creatives, targeting and budget split, then tell you what to fix first. No obligation to hire us."]
+]
+}-->
+<style>
+.ck-hero .top{gap:26px}
+.ck-hero .lead{max-width:52ch}
+.ck-wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start;margin-top:clamp(40px,6vw,72px)}
+.ck-sec{background:#fff;border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3vw,34px);margin-bottom:18px}
+.ck-sec h2{display:flex;align-items:center;gap:14px;font-size:clamp(22px,2vw,28px);font-weight:500;letter-spacing:-.02em;margin-bottom:10px}
+.ck-n{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--ink);color:var(--lime);font-size:15px;font-weight:600}
+.ck-item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ck-item:first-of-type{border-top:0}
+.ck-item input{position:absolute;opacity:0;pointer-events:none}
+.ck-box{flex:0 0 28px;height:28px;border:2px solid var(--ink);border-radius:8px;display:grid;place-items:center;transition:background .2s,border-color .2s;margin-top:1px}
+.ck-box svg{width:16px;height:16px;opacity:0;transform:scale(.6);transition:opacity .2s,transform .25s var(--ease)}
+.ck-item input:checked+.ck-box{background:var(--lime);border-color:var(--lime)}
+.ck-item input:checked+.ck-box svg{opacity:1;transform:none}
+.ck-item input:focus-visible+.ck-box{outline:3px solid rgba(0,210,76,.4);outline-offset:2px}
+.ck-t{font-size:clamp(17px,1.35vw,19px);line-height:1.45}
+.ck-t b{font-weight:600}
+.ck-t small{display:block;color:var(--muted);font-size:15px;margin-top:4px;line-height:1.45}
+.ck-side{position:sticky;top:110px;display:grid;gap:18px}
+.ck-score{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(24px,3vw,36px)}
+.ck-score .lbl{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:#9fb3a8}
+.ck-score .num{font-size:clamp(64px,7vw,96px);line-height:1;letter-spacing:-.04em;margin-top:10px}
+.ck-score .num span{color:#6f857a;font-size:.45em;letter-spacing:0}
+.ck-bar{height:10px;border-radius:99px;background:rgba(255,255,255,.12);margin:20px 0 18px;overflow:hidden}
+.ck-bar i{display:block;height:100%;width:0;background:var(--lime);border-radius:inherit;transition:width .5s var(--ease)}
+.ck-verdict{font-size:20px;line-height:1.35;min-height:2.7em}
+.ck-score .acts{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+.ck-score .btn{justify-content:center;background:var(--lime);color:var(--ink)}
+.ck-score .btn:after{background:#fff}
+.ck-ghost{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:15px 22px;border-radius:99px;border:1px solid rgba(255,255,255,.25);font-size:15px}
+.ck-ghost:hover{border-color:var(--lime);color:var(--lime)}
+.ck-dl{background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;display:flex;gap:18px;align-items:center}
+.ck-dl img{width:84px;border-radius:12px;border:1px solid var(--line)}
+.ck-dl b{display:block;font-weight:600;font-size:17px}
+.ck-dl a{display:inline-block;margin-top:6px;text-decoration:underline;font-size:15px}
+.ck-mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--ink);color:#fff;border-radius:99px;padding:10px 10px 10px 22px;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 10px 30px rgba(3,24,14,.25)}
+.ck-mbar b{font-size:20px;font-weight:600}.ck-mbar b span{color:#8fa59a;font-weight:400;font-size:15px}
+.ck-mbar a{background:var(--lime);color:var(--ink);border-radius:99px;padding:12px 18px;font-size:15px;font-weight:500}
+.ck-reset{background:none;border:0;color:var(--muted);font-size:14px;text-decoration:underline;cursor:pointer;justify-self:start}
+@media (max-width:900px){
+ .ck-wrap{grid-template-columns:1fr}
+ .ck-side{position:static}
+ .ck-mbar{display:flex}
+ section.ck-pad{padding-bottom:120px!important}
+ .ck-score{padding:22px}
+ .ck-score .num{font-size:56px}
+}
+</style>
+
+<section class="hero ck-hero">
+ <div class="wrap top">
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Free Ad Fix Checklist</span></nav>
+  <span class="eyebrow" data-rv>Free resource</span>
+  <h1 class="h-l" data-split>Is your ad budget<br><span class="lime">leaking money?</span></h1>
+  <p class="lead" data-rv>12 checks for Facebook and Instagram ads, from the same audits we run for clients. Tick what you already do. Your score updates as you go.</p>
+ </div>
+</section>
+
+<section class="ck-pad" style="padding-bottom:clamp(60px,8vw,110px)">
+ <div class="wrap ck-wrap">
+  <div id="ck-list">
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">01</span>Setup</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Running from <b>Ads Manager</b>, not the "Boost Post" button<small>Boost hides goals, detailed audiences, tracking and testing.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Campaign goal is <b>sales, leads or messages</b>, not engagement<small>Meta delivers exactly what you ask for. Ask for likes, you get likes.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>Pixel or conversion tracking</b> is installed and firing<small>Without it, you can't tell which ad actually sold.</small></span></label>
+   </div>
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">02</span>Creative</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Message readable in <b>3 seconds</b>, logo kept small<small>People buy the offer, not the logo.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>Original</b> photos and video, no stock images<small>Stock looks like everyone else's ad, so it gets scrolled past.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>One offer, one clear call to action</b> per ad<small>Two offers in one ad usually means neither gets clicked.</small></span></label>
+   </div>
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">03</span>Targeting</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Audience defined by <b>location, age and interest</b><small>Know who you're paying to reach before the ad goes live.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>Retargeting</b> people who already viewed or engaged<small>Warm audiences are often where the sales come from.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Testing <b>one variable at a time</b> (A/B)<small>Change the image and the audience together and you learn nothing.</small></span></label>
+   </div>
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">04</span>Budget &amp; patience</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>No major edits for about 7 days</b> after launch<small>Big edits restart Meta's learning phase, so results never settle.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Budget split across <b>awareness, retargeting and conversions</b><small>All budget on one stage leaves the funnel empty or leaking.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Success judged by <b>cost per sale or lead</b>, not likes<small>Likes don't pay the bills.</small></span></label>
+   </div>
+
+  </div>
+
+  <aside class="ck-side">
+   <div class="ck-score" id="ck-score" aria-live="polite">
+    <div class="lbl">Your score</div>
+    <div class="num"><b id="ck-n">0</b><span>/12</span></div>
+    <div class="ck-bar"><i id="ck-bar"></i></div>
+    <p class="ck-verdict" id="ck-v">Start ticking. Be honest, nobody's watching.</p>
+    <div class="acts">
+     <a class="btn" href="https://ig.me/m/digitallineup_" target="_blank" rel="noopener" data-ck="ig">Get a free ad audit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+     <a class="ck-ghost" href="https://wa.me/923009590042?text=Hi%20Digital%20Lineup%2C%20I%20used%20your%20Ad%20Fix%20Checklist%20and%20want%20a%20free%20ad%20audit." target="_blank" rel="noopener" data-ck="wa">Or ask on WhatsApp</a>
+    </div>
+   </div>
+   <div class="ck-dl" data-rv>
+    <img src="/media/ad-fix-checklist.png" alt="Ad Fix Checklist preview" width="84" height="149" loading="lazy">
+    <div><b>Keep a copy</b><span class="mut" style="font-size:15px">Phone-sized image of all 12 checks.</span><br><a href="/media/ad-fix-checklist.png" download="Digital-Lineup-Ad-Fix-Checklist.png">Download the checklist</a></div>
+   </div>
+   <button class="ck-reset" type="button" id="ck-reset">Clear my answers</button>
+  </aside>
+ </div>
+</section>
+
+<div class="ck-mbar" aria-hidden="true"><b><em id="ck-m" style="font-style:normal">0</em><span>/12 ticked</span></b><a href="#ck-score">See my result</a></div>
+<script>
+(function(){
+ var boxes=[].slice.call(document.querySelectorAll('#ck-list input')),n=document.getElementById('ck-n'),bar=document.getElementById('ck-bar'),v=document.getElementById('ck-v'),K='dl-ck-v1';
+ var lines=[[0,"Start ticking. Be honest, nobody's watching."],[1,'Your ads are leaking money. Most of the budget is going to people who will never buy.'],[6,'Halfway there. A few fixes here could change your cost per sale a lot.'],[10,'Solid setup. The last gaps are usually where the extra sales hide.'],[12,'Excellent. Your setup is clean. Want a second pair of eyes on the numbers?']];
+ function save(){try{localStorage.setItem(K,JSON.stringify(boxes.map(function(b){return b.checked?1:0})))}catch(e){}}
+ function load(){try{var s=JSON.parse(localStorage.getItem(K)||'[]');boxes.forEach(function(b,i){b.checked=!!s[i]})}catch(e){}}
+ function upd(){var c=boxes.filter(function(b){return b.checked}).length,any=boxes.some(function(b){return b.checked}),t=lines[0][1];
+  if(any){for(var i=1;i<lines.length;i++){if(c>=lines[i][0])t=lines[i][1]}}
+  n.textContent=c;document.getElementById('ck-m').textContent=c;bar.style.width=(c/12*100)+'%';v.textContent=t}
+ boxes.forEach(function(b){b.addEventListener('change',function(){upd();save()})});
+ document.getElementById('ck-reset').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});upd();save()});
+ [].forEach.call(document.querySelectorAll('[data-ck]'),function(a){a.addEventListener('click',function(){try{window.gtag&&gtag('event','checklist_cta',{channel:a.getAttribute('data-ck'),score:+n.textContent})}catch(e){}})});
+ load();upd();
+})();
+</script>

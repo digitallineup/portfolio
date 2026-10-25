@@ -113,6 +113,14 @@ def build_one(src):
                 {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
                 {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]},
         ]
+    elif meta.get('page') == 'resource':
+        ld = [
+            {'@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['title'], 'url': url, 'description': desc,
+             'publisher': {'@type': 'ProfessionalService', '@id': SITE + '/#org', 'name': 'Digital Lineup', 'url': SITE + '/'}},
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
+                {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]},
+        ]
     else:
         ld = [
         {'@context': 'https://schema.org', '@type': 'Service', 'name': meta['title'], 'serviceType': meta.get('service_type', svc),
