@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Brand identity process for a new business in Pakistan: logo to brand book (keywords: brand identity design Pakistan, brand book example, logo design process). Data: work/capxa.html, work/lume.html, work/spice-and-grill.html.
 - [ ] Product photography for retail shops in Pakistan (keywords: product photography Multan, product photography for ecommerce Pakistan). Data: work/hamid-enterprises.html.
 - [ ] LinkedIn marketing for B2B companies in Pakistan (keywords: LinkedIn marketing Pakistan, B2B carousel ideas, LinkedIn content for printing company). Data: work/rainbow-printing.html.
 - [ ] Meta ads vs Google ads for TV mounting and handyman businesses in Australia (keywords: Facebook ads for handyman Australia, TV mounting leads, picture hanging business marketing). Data: blog/posts/meta-ads-for-tv-mounting-businesses.md, installers/index.html. CTA: installers.
@@ -31,6 +30,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-10-26 brand-identity-design-in-pakistan (primary keyword: brand identity design in Pakistan; data: Capxa, Lume, Spice & Grill)
 - [x] 2026-10-23 admissions-marketing-in-pakistan (primary keyword: admissions marketing in Pakistan; Friday refresh: restaurant-and-bakery-marketing-in-multan updated with Shangrilla Meta ads data)
 - [x] 2026-10-21 solar-company-marketing-in-pakistan (primary keyword: solar company marketing in Pakistan)
 - [x] 2026-10-20 meta-ads-for-tv-mounting-businesses
