@@ -5,16 +5,16 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 CFG = json.loads((ROOT / 'tools' / 'site-config.json').read_text())
 GA, CL = CFG.get('ga4_measurement_id', '').strip(), CFG.get('clarity_project_id', '').strip()
 CSP = ("default-src 'self'; "
-       "script-src 'self' 'unsafe-inline'"
+       "script-src 'self' 'unsafe-inline' https://app.cal.com"
        + (" https://www.googletagmanager.com" if GA else "") + (" https://www.clarity.ms https://*.clarity.ms" if CL else "") + "; "
        "style-src 'self' 'unsafe-inline'; "
        "img-src 'self' data: https:; "
        "font-src 'self' data:; "
        "media-src 'self' blob:; "
-       "connect-src 'self' https://script.google.com https://script.googleusercontent.com https://formsubmit.co"
+       "connect-src 'self' https://app.cal.com https://cal.com https://script.google.com https://script.googleusercontent.com https://formsubmit.co"
        + (" https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com" if GA else "")
        + (" https://*.clarity.ms https://c.bing.com" if CL else "") + "; "
-       "frame-src https://maps.google.com https://www.google.com; "
+       "frame-src https://maps.google.com https://www.google.com https://cal.com https://app.cal.com; "
        "base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'; "
        "upgrade-insecure-requests")
 TAGS = (f'<meta http-equiv="Content-Security-Policy" content="{CSP}">\n'

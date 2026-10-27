@@ -172,7 +172,7 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
 <header class="top">
   <div class="wrap">
     <img src="../logo-dark.svg" alt="Digital Lineup" width="120" height="30">
-    <a class="btn" href="#book" data-book>Book a call</a>
+    <a class="btn" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book>Book a call</a>
   </div>
 </header>
 
@@ -183,7 +183,7 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
     <h1>We market installers.</h1>
     <p class="lead">A Perth installer went from 9 leads a month to 135 in five months.</p>
     <div class="acts">
-      <a class="btn" href="#book" data-book>Book a 15-minute call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book>Book a 15-minute call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn ghost" href="#numbers">See the numbers</a>
     </div>
     <div class="stats">
@@ -285,7 +285,7 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
         <h3>Quick Fix</h3>
         <div class="price">$650 <small>AUD, once</small></div>
         <ul><li>Find and fix the leak in your lead flow</li><li>Reviews on your site</li><li>Pixel and tracking set up</li><li>A quote form that works on a phone</li></ul>
-        <a class="btn ghost" href="#book" data-book>Book a call</a>
+        <a class="btn ghost" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book data-plan="Quick Fix">Book a call</a>
       </div>
       <div class="pc feat">
         <span class="tag">Start with a 30-day pilot</span>
@@ -293,14 +293,14 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
         <div class="price">$1,200 <small>AUD / month</small></div>
         <p class="plus">Plus ad spend, paid to Meta</p>
         <ul><li>Meta lead campaigns</li><li>Landing page</li><li>4 new ad creatives a month</li><li>Monthly report</li></ul>
-        <a class="btn" href="#book" data-book>Book a call</a>
+        <a class="btn" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book data-plan="Lead Engine">Book a call</a>
       </div>
       <div class="pc">
         <h3>Brand + Performance</h3>
         <div class="price">$1,950 <small>AUD / month</small></div>
         <p class="plus">Plus ad spend, paid to Meta</p>
         <ul><li>Everything in Lead Engine</li><li>Instagram and Facebook management</li><li>8 install reels a month</li><li>Review system</li></ul>
-        <a class="btn ghost" href="#book" data-book>Book a call</a>
+        <a class="btn ghost" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book data-plan="Brand + Performance">Book a call</a>
       </div>
     </div>
     <p class="pnote">All prices in AUD. Ad spend is paid by you, directly to Meta.</p>
@@ -315,7 +315,7 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
       <div class="card" id="cal">
         <h3>Book a 15-minute call</h3>
         <p>Pick a time that suits you and we'll walk you through what we'd change first.</p>
-        <a class="btn dark" id="calbtn" href="#quote" target="_blank" rel="noopener">Choose a time</a>
+        <a class="btn dark" id="calbtn" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book>Choose a time</a>
         <a class="btn ghost" href="https://wa.me/923009590042?text=Hi%20Digital%20Lineup%2C%20I%20run%20an%20installation%20business%20in%20Australia." target="_blank" rel="noopener">Message us on WhatsApp</a>
       </div>
       <div class="card" id="quote">
@@ -358,16 +358,40 @@ details p{color:var(--ink-2);margin-top:10px;font-size:15px}
 </footer>
 
 <div class="sticky">
-  <a class="btn" href="#book" data-book>Book a 15-minute call</a>
+  <a class="btn" href="https://cal.com/digital-lineup/installers" target="_blank" rel="noopener" data-book>Book a 15-minute call</a>
   <a class="btn wa" href="https://wa.me/923009590042" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
 </div>
 
 <script>
 (function(){
-  // Paste the Calendly link here when Huzaifa sends it. Empty = "Book" buttons go to the booking section.
-  var CALENDLY_URL = '';
-  var cb=document.getElementById('calbtn');
-  if(CALENDLY_URL){cb.href=CALENDLY_URL;}else{cb.removeAttribute('target');cb.textContent='Get a quick quote below';}
+  // Booking: Cal.com opens as a popup on this page (keeps the visitor here and lets us count real bookings).
+  // Without JS, or if Cal.com fails to load, every Book button still opens the Cal.com page in a new tab.
+  var CAL_LINK='digital-lineup/installers', CAL_URL='https://cal.com/'+CAL_LINK, ns='installers', calReady=0, calFail=0, calOk=0;
+  function track(n,p){try{if(window.gtag)gtag('event',n,p||{});if(n==='book_call'&&window.fbq)fbq('track','Schedule');}catch(e){}}
+  function loadCal(){
+    if(calReady)return;calReady=1;
+    (function(C,A,L){var p=function(a,ar){a.q.push(ar)},d=C.document;C.Cal=C.Cal||function(){var cal=C.Cal,ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];var sc=d.createElement('script');sc.src=A;sc.onerror=function(){calFail=1};sc.onload=function(){calOk=1};d.head.appendChild(sc);cal.loaded=true}if(ar[0]===L){var api=function(){p(api,arguments)},n=ar[1];api.q=api.q||[];if(typeof n==='string'){cal.ns[n]=cal.ns[n]||api;p(cal.ns[n],ar);p(cal,['initNamespace',n])}else p(cal,ar);return}p(cal,ar)}})(window,'https://app.cal.com/embed/embed.js','init');
+    Cal('init',ns,{origin:'https://cal.com'});
+    Cal.ns[ns]('ui',{theme:'light',cssVarsPerTheme:{light:{'cal-brand':'#03180e'}},hideEventTypeDetails:false,layout:'month_view'});
+    Cal.ns[ns]('on',{action:'bookingSuccessful',callback:function(){track('book_call',{page_path:location.pathname});try{dispatchEvent(new CustomEvent('dl:book'))}catch(e){}}});
+  }
+  // UTMs from the ad click ride along into the booking, plus which package they clicked.
+  var q=new URLSearchParams(location.search), utm={};
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){if(q.get(k))utm[k]=q.get(k)});
+  document.querySelectorAll('[data-book]').forEach(function(a){
+    a.addEventListener('pointerenter',loadCal,{once:true,passive:true});
+    a.addEventListener('touchstart',loadCal,{once:true,passive:true});
+    a.addEventListener('click',function(e){
+      var cfg={layout:'month_view'};for(var k in utm)cfg[k]=utm[k];
+      if(a.dataset.plan)cfg['metadata[plan]']=a.dataset.plan;
+      track('book_click',{page_path:location.pathname,plan:a.dataset.plan||''});
+      if(calFail)return; // let the link open Cal.com in a new tab
+      e.preventDefault();loadCal();
+      Cal.ns[ns]('modal',{calLink:CAL_LINK,config:cfg});
+      // safety net: if the popup script never arrives, fall back to the Cal.com page
+      setTimeout(function(){if(!calOk){calFail=1;location.href=CAL_URL+'?'+new URLSearchParams(cfg)}},6000);
+    });
+  });
 
   // bar charts (one series each, single axis, value labels on every bar since there are only five)
   var M=['Apr','May','Jun','Jul','Aug'];
