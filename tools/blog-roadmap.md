@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Product photography for retail shops in Pakistan (keywords: product photography Multan, product photography for ecommerce Pakistan). Data: work/hamid-enterprises.html.
 - [ ] LinkedIn marketing for B2B companies in Pakistan (keywords: LinkedIn marketing Pakistan, B2B carousel ideas, LinkedIn content for printing company). Data: work/rainbow-printing.html.
 - [ ] Meta ads vs Google ads for TV mounting and handyman businesses in Australia (keywords: Facebook ads for handyman Australia, TV mounting leads, picture hanging business marketing). Data: blog/posts/meta-ads-for-tv-mounting-businesses.md, installers/index.html. CTA: installers.
 - [ ] Drone and corporate video production in Multan (keywords: drone videography Multan, corporate video production Multan). Data: work/boota-brothers.html.
@@ -30,6 +29,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-10-28 product-photography-in-pakistan (primary keyword: product photography in Pakistan; data: Hamid Enterprises, Shan Electronics, Apex Solar, Shangrilla)
 - [x] 2026-10-26 brand-identity-design-in-pakistan (primary keyword: brand identity design in Pakistan; data: Capxa, Lume, Spice & Grill)
 - [x] 2026-10-23 admissions-marketing-in-pakistan (primary keyword: admissions marketing in Pakistan; Friday refresh: restaurant-and-bakery-marketing-in-multan updated with Shangrilla Meta ads data)
 - [x] 2026-10-21 solar-company-marketing-in-pakistan (primary keyword: solar company marketing in Pakistan)
