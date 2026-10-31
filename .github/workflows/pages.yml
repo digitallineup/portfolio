@@ -42,7 +42,7 @@ jobs:
             --exclude=./.gitignore --exclude='*.md' --exclude=.DS_Store . | tar -xf - -C _site
           test -f _site/index.html && test -f _site/llms.txt && test -f _site/CNAME
           ! test -e _site/tools
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
