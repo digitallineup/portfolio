@@ -1,0 +1,146 @@
+<!--{
+"title": "Food Shoot Checklist",
+"seo_title": "Free Food Shoot Checklist: 12 Steps for Food Reels | Digital Lineup",
+"description": "A free 12-step checklist for shooting restaurant food reels and photos: light, styling, camera movement and editing. Works on a camera or a phone.",
+"path": "/playbooks/food-shoot-checklist/",
+"playbook": {"n": "02", "kicker": "Food content", "name": "Food Shoot Checklist: 12 steps to reels that sell", "summary": "The exact process from our restaurant shoots: light, set, camera movement and edit. Tick it before your next shoot."},
+"page": "resource",
+"nav": "",
+"service": "Food Photography",
+"og_image": "/media/food-shoot-checklist.png",
+"faqs": [
+ ["Can I shoot food reels on a phone?", "Yes. Most of these 12 steps are about light, timing and movement, not gear. A recent phone with one big window or soft light beside the table gets you most of the way."],
+ ["What is the best light for food videos?", "One large, soft light from the side or slightly behind the dish, with the room's overhead lights off and a white card opposite to fill the shadows."],
+ ["How long should a restaurant reel be?", "Long enough to show the dish and the offer, usually 7 to 20 seconds. What matters most is the first 2 seconds: open on the sizzle, pour or cheese pull."],
+ ["Can Digital Lineup shoot our menu?", "Yes. We shoot, edit and post food content for restaurants, cafés and bakeries. Message us on Instagram or WhatsApp, or send a brief at the bottom of this page."]
+]
+}-->
+<style>
+.ck-hero .top{gap:26px}
+.ck-hero .lime{color:#009c39}
+.ck-hero .lead{max-width:52ch}
+.ck-wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start;margin-top:clamp(40px,6vw,72px)}
+.ck-sec{background:#fff;border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3vw,34px);margin-bottom:18px}
+.ck-sec h2{display:flex;align-items:center;gap:14px;font-size:clamp(22px,2vw,28px);font-weight:500;letter-spacing:-.02em;margin-bottom:10px}
+.ck-n{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--ink);color:var(--lime);font-size:15px;font-weight:600}
+.ck-item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ck-item:first-of-type{border-top:0}
+.ck-item input{position:absolute;opacity:0;pointer-events:none}
+.ck-box{flex:0 0 28px;height:28px;border:2px solid var(--ink);border-radius:8px;display:grid;place-items:center;transition:background .2s,border-color .2s;margin-top:1px}
+.ck-box svg{width:16px;height:16px;opacity:0;transform:scale(.6);transition:opacity .2s,transform .25s var(--ease)}
+.ck-item input:checked+.ck-box{background:var(--lime);border-color:var(--lime)}
+.ck-item input:checked+.ck-box svg{opacity:1;transform:none}
+.ck-item input:focus-visible+.ck-box{outline:3px solid rgba(0,210,76,.4);outline-offset:2px}
+.ck-t{font-size:clamp(17px,1.35vw,19px);line-height:1.45}
+.ck-t b{font-weight:600}
+.ck-t small{display:block;color:var(--muted);font-size:15px;margin-top:4px;line-height:1.45}
+.ck-side{position:sticky;top:110px;display:grid;gap:18px}
+.ck-score{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(24px,3vw,36px)}
+.ck-score .lbl{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:#9fb3a8}
+.ck-score .num{font-size:clamp(64px,7vw,96px);line-height:1;letter-spacing:-.04em;margin-top:10px}
+.ck-score .num span{color:#6f857a;font-size:.45em;letter-spacing:0}
+.ck-bar{height:10px;border-radius:99px;background:rgba(255,255,255,.12);margin:20px 0 18px;overflow:hidden}
+.ck-bar i{display:block;height:100%;width:0;background:var(--lime);border-radius:inherit;transition:width .5s var(--ease)}
+.ck-verdict{font-size:20px;line-height:1.35;min-height:2.7em}
+.ck-score .acts{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+.ck-score .btn{justify-content:center;background:var(--lime);color:var(--ink)}
+.ck-score .btn:after{background:#fff}
+.ck-ghost{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:15px 22px;border-radius:99px;border:1px solid rgba(255,255,255,.25);font-size:15px}
+.ck-ghost:hover{border-color:var(--lime);color:var(--lime)}
+.ck-dl{background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;display:flex;gap:18px;align-items:center}
+.ck-dl img{width:84px;border-radius:12px;border:1px solid var(--line)}
+.ck-dl b{display:block;font-weight:600;font-size:17px}
+.ck-dl a{display:inline-block;margin-top:6px;text-decoration:underline;font-size:15px}
+.ck-mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--ink);color:#fff;border-radius:99px;padding:10px 10px 10px 22px;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 10px 30px rgba(3,24,14,.25)}
+.ck-mbar b{font-size:20px;font-weight:600}.ck-mbar b span{color:#8fa59a;font-weight:400;font-size:15px}
+.ck-mbar a{background:var(--lime);color:var(--ink);border-radius:99px;padding:12px 18px;font-size:15px;font-weight:500}
+.ck-reset{background:none;border:0;color:var(--muted);font-size:14px;text-decoration:underline;cursor:pointer;justify-self:start}
+@media (max-width:900px){
+ .ck-wrap{grid-template-columns:1fr}
+ .ck-side{position:static}
+ .ck-mbar{display:flex}
+ section.ck-pad{padding-bottom:120px!important}
+ .ck-score{padding:22px}
+ .ck-score .num{font-size:56px}
+}
+</style>
+
+<section class="hero ck-hero">
+ <div class="wrap top">
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/playbooks/">Playbooks</a><span>/</span><span>Food Shoot Checklist</span></nav>
+  <span class="eyebrow" data-rv>Playbook 02 · Food content</span>
+  <h1 class="h-l" data-split>Make every plate<br><span class="lime">look worth ordering.</span></h1>
+  <p class="lead" data-rv>The 12-step process from our restaurant shoots, the same one in the reel. Tick what you already do. Your score shows what to fix before the next shoot.</p>
+ </div>
+</section>
+
+<section class="ck-pad" style="padding-bottom:clamp(60px,8vw,110px)">
+ <div class="wrap ck-wrap">
+  <div id="ck-list">
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">01</span>Light</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>One big soft light</b> from the side or back<small>Front light flattens food. Side or back light shows texture, steam and shine.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>Overhead room lights off</b><small>Mixed light sources turn whites yellow and make food look dull.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">A <b>white bounce</b> opposite the light<small>A white card or foam board lifts the shadows without a second light.</small></span></label>
+   </div>
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">02</span>Set &amp; styling</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>One clean surface colour</b> that suits your brand<small>A busy table competes with the food. One colour keeps the plate the hero.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">Shoot within <b>2 minutes of plating</b><small>Steam, melt and sauce shine disappear fast. Have the camera ready before the plate lands.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>2 to 3 props max</b><small>A napkin, a spoon, one ingredient. Anything more steals attention.</small></span></label>
+   </div>
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">03</span>Camera &amp; movement</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>Lock focus and exposure</b> on the food<small>Tap and hold on the dish so the phone doesn't hunt or flicker mid-shot.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>One slow move per shot</b>: an arc, a push-in or a pull-out<small>Plan the start and end frame. Slow and steady looks expensive, fast and shaky looks cheap.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>45° for bowls and burgers</b>, top-down for flat dishes<small>Height needs an angle. Pizza, thalis and platters read best from above.</small></span></label>
+   </div>
+
+   <div class="ck-sec" data-rv>
+    <h2><span class="ck-n">04</span>Story &amp; edit</h2>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">A <b>hook in the first 2 seconds</b><small>A sizzle, a pour or a cheese pull. Start with the best moment, not the logo.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t"><b>Real sound</b>: the crunch and the sizzle<small>Food sounds make people hungry. Keep music low under them.</small></span></label>
+    <label class="ck-item"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24" fill="none" stroke="#03180e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="ck-t">End on the <b>hero shot plus the offer</b><small>Finish with the best frame and tell people where to order.</small></span></label>
+   </div>
+
+  </div>
+
+  <aside class="ck-side">
+   <div class="ck-score" id="ck-score" aria-live="polite">
+    <div class="lbl">Your score</div>
+    <div class="num"><b id="ck-n">0</b><span>/12</span></div>
+    <div class="ck-bar"><i id="ck-bar"></i></div>
+    <p class="ck-verdict" id="ck-v">Start ticking. Be honest, the food can't hear you.</p>
+    <div class="acts">
+     <a class="btn" href="https://ig.me/m/digitallineup_" target="_blank" rel="noopener" data-ck="ig">Get your menu shot by us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+     <a class="ck-ghost" href="https://wa.me/923009590042?text=Hi%20Digital%20Lineup%2C%20I%20used%20your%20Food%20Shoot%20Checklist%20and%20want%20to%20book%20a%20food%20shoot." target="_blank" rel="noopener" data-ck="wa">Or ask on WhatsApp</a>
+    </div>
+   </div>
+   <div class="ck-dl" data-rv>
+    <img src="/media/food-shoot-checklist.png" alt="Food Shoot Checklist preview" width="84" height="149" loading="lazy">
+    <div><b>Keep a copy</b><span class="mut" style="font-size:15px">Phone-sized image of all 12 steps.</span><br><a href="/media/food-shoot-checklist.png" download="Digital-Lineup-Food-Shoot-Checklist.png">Download the checklist</a></div>
+   </div>
+   <a class="ck-ghost" href="/services/food-photography/" style="border-color:var(--line);color:var(--ink)">See our food photography work</a>
+   <button class="ck-reset" type="button" id="ck-reset">Clear my answers</button>
+  </aside>
+ </div>
+</section>
+
+<div class="ck-mbar" aria-hidden="true"><b><em id="ck-m" style="font-style:normal">0</em><span>/12 ticked</span></b><a href="#ck-score" tabindex="-1">See my result</a></div>
+<script>
+(function(){
+ var boxes=[].slice.call(document.querySelectorAll('#ck-list input')),n=document.getElementById('ck-n'),bar=document.getElementById('ck-bar'),v=document.getElementById('ck-v'),K='dl-ck-food-v1';
+ var lines=[[0,"Start ticking. Be honest, the food can't hear you."],[1,'Your food is better than your content. A few basics here will change how it looks on screen.'],[6,'Halfway there. Fix the light first, it changes everything else.'],[10,'Strong setup. The last steps are what make people stop and order.'],[12,'Pro level. Want us to shoot your full menu like this?']];
+ function save(){try{localStorage.setItem(K,JSON.stringify(boxes.map(function(b){return b.checked?1:0})))}catch(e){}}
+ function load(){try{var s=JSON.parse(localStorage.getItem(K)||'[]');boxes.forEach(function(b,i){b.checked=!!s[i]})}catch(e){}}
+ function upd(){var c=boxes.filter(function(b){return b.checked}).length,any=boxes.some(function(b){return b.checked}),t=lines[0][1];
+  if(any){for(var i=1;i<lines.length;i++){if(c>=lines[i][0])t=lines[i][1]}}
+  n.textContent=c;document.getElementById('ck-m').textContent=c;bar.style.width=(c/12*100)+'%';v.textContent=t}
+ boxes.forEach(function(b){b.addEventListener('change',function(){upd();save()})});
+ document.getElementById('ck-reset').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});upd();save()});
+ [].forEach.call(document.querySelectorAll('[data-ck]'),function(a){a.addEventListener('click',function(){try{window.gtag&&gtag('event','food_checklist_cta',{channel:a.getAttribute('data-ck'),score:+n.textContent})}catch(e){}})});
+ load();upd();
+})();
+</script>
