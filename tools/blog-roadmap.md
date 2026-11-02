@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Meta ads vs Google ads for TV mounting and handyman businesses in Australia (keywords: Facebook ads for handyman Australia, TV mounting leads, picture hanging business marketing). Data: blog/posts/meta-ads-for-tv-mounting-businesses.md, installers/index.html. CTA: installers.
 - [ ] Drone and corporate video production in Multan (keywords: drone videography Multan, corporate video production Multan). Data: work/boota-brothers.html.
 - [ ] Mascot branding for retail brands: Shan Electronics (keywords: brand mascot design, 3D mascot for brand Pakistan). Data: work/shan-electronics.html.
 - [ ] Restaurant brand identity: building Spice & Grill (keywords: restaurant logo design Pakistan, restaurant branding ideas). Data: work/spice-and-grill.html.
@@ -28,6 +27,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-11-02 facebook-ads-vs-google-ads-for-handyman-businesses (primary keyword: Facebook ads vs Google ads for handyman businesses; data: Perth installer Meta ads, April to August 2026; CTA: installers)
 - [x] 2026-10-30 linkedin-marketing-in-pakistan (primary keyword: LinkedIn marketing in Pakistan; data: Rainbow Printing Solutions; Friday refresh: how-to-choose-a-digital-marketing-agency-in-pakistan updated with verified Meta ads data, office, retention and links to newer posts and /services/ pages)
 - [x] 2026-10-28 product-photography-in-pakistan (primary keyword: product photography in Pakistan; data: Hamid Enterprises, Shan Electronics, Apex Solar, Shangrilla)
 - [x] 2026-10-26 brand-identity-design-in-pakistan (primary keyword: brand identity design in Pakistan; data: Capxa, Lume, Spice & Grill)
