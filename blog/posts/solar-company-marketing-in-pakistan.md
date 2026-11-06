@@ -3,6 +3,7 @@ title: Solar Company Marketing in Pakistan: What We Learned Growing Apex Solar a
 seo_title: Solar Company Marketing in Pakistan
 description: Solar company marketing in Pakistan from real work: an 11M-view creator film, an installer rewards programme, three expos and a page grown to 150K followers.
 date: 2026-10-21
+updated: 2026-11-06
 cover: /blog/covers/solar-company-marketing-pakistan.jpg
 cover_alt: Apex Solar's red exhibition booth at the Lahore Solar Expo 2026, photographed by Digital Lineup
 tags: Solar and energy, Pakistan, Meta ads, Case study
@@ -28,7 +29,7 @@ Lead with video that explains the product in a real setting, keep every product 
 
 ### Can a solar business grow a big Facebook page quickly?
 
-Yes, with ads and design working together. Solar Mandee's Facebook page grew past 150K followers in eight months, with more than 3.5M accounts reached, through targeted ad campaigns and consistent, strong design.
+Yes, with ads and design working together. Solar Mandee's Facebook page grew past 150K followers in eight months, with more than 3.5M accounts reached. Page-follow ads alone brought 29,700 follows, at Rs 0.93 per follow on the main campaign.
 
 ### Are solar expos worth the money for a brand?
 
@@ -39,6 +40,8 @@ They are if you market the expo before, during and after it. For Apex Solar we r
 The film that reached 11 million views for Apex Solar is not a spec sheet. It is set in a neighbourhood shop, the kind of place where fridges, lights and a till all stop when the power goes. The presenter walks through the shop and talks to the people in it, and the battery's capacity, warranty and nationwide support network appear on screen as part of that story.
 
 That is the whole lesson in one film. People do not buy kilowatt hours. They buy a shop that stays open during load-shedding. If your viewer can picture their own business or home in the first few seconds, they keep watching, and the specs land as proof instead of noise.
+
+Across the account we have made creator films with Shahid Khan, Shaheen Shah Afridi and Dr Sab, and we shoot them ourselves rather than leaving it to the creator's phone, so the product looks right and the cut can run as an ad. How we pick creators and write the brief is on our [creator campaigns](/services/influencer-marketing/) page.
 
 ## 2. Teach, do not just sell
 
@@ -56,7 +59,7 @@ Apex sells a full range: the 1300, 2600, 5220, 5220 Pro and 16K lithium batterie
 - A short Urdu promise stamped in the corner.
 - The same footer on every post: "Ready stock available" and the WhatsApp number to order.
 
-The result is that an Apex post is recognisable in a feed before anyone reads it, and every single post ends with a way to buy. When a new product arrives, it drops into the system in a day instead of needing a fresh design from scratch.
+The result is that an Apex post is recognisable in a feed before anyone reads it, and every single post ends with a way to buy. When a new product arrives, it drops into the system in a day instead of needing a fresh design from scratch. We go deeper on lighting, backgrounds and layouts in our guide to [product photography in Pakistan](/blog/product-photography-in-pakistan/).
 
 <div class="panel"><h3>What every solar product post needs</h3><p>The checklist behind the Apex Solar design system.</p>
 <div class="steps">
@@ -87,11 +90,21 @@ We have now done this for Apex in Lahore, Islamabad and Karachi. The case study 
 
 ## 6. Use ads and design together to grow a page fast
 
+For Apex, Meta ads are where the films and posters earn their keep. Across 22 campaigns, read from Ads Manager, the account has delivered 45M impressions and reached 24M people. One creator film ad alone drew 7.1M video views. More importantly, the WhatsApp lead ads started 22,800 conversations with dealers and customers at about $0.04 each, which is the number we actually report, because a conversation on WhatsApp is where a battery sale in Pakistan begins.
+
+<div class="panel"><h3>Apex Solar on Meta</h3><p>Lifetime results across 22 campaigns, from Ads Manager.</p>
+<div class="tiles">
+<div class="tile g"><small>WhatsApp conversations</small><b>22,800</b><span>at about $0.04 each</span></div>
+<div class="tile"><small>People reached</small><b>24M</b><span>from 45M impressions</span></div>
+<div class="tile"><small>One creator film ad</small><b>7.1M</b><span>video views</span></div>
+<div class="tile"><small>Campaigns</small><b>22</b><span>films, posters, expos and lead ads</span></div>
+</div></div>
+
 Solar Mandee is a solar marketplace, and their goal was clear: grow the page to a size where it could earn money. In eight months the Facebook page grew past 150K followers, with more than 3.5M accounts reached. In their own words on our review, it was "instrumental in achieving our monetization goals".
 
-There was no secret trick. Targeted ad campaigns brought the right people to the page, and strong, consistent design gave them a reason to follow once they arrived. Ads without good creative waste money. Good creative without ads waits a long time to be seen. You need both.
+There was no secret trick. Page-follow campaigns with product and offer creative brought 29,700 follows on their own, at Rs 0.93 per follow on the main campaign, and installment and lead ads then targeted Lahore and Multan. The ads brought the right people to the page, and strong, consistent design gave them a reason to follow once they arrived. Ads without good creative waste money. Good creative without ads waits a long time to be seen. You need both.
 
-If you already run ads, check them against our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) before you add more budget.
+If you already run ads, check them against our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) before you add more budget. Our [Meta ads](/services/meta-ads/) page has the results from every account we run, in the currency each one runs in.
 
 ## 7. Show up on the days people already care about
 
@@ -105,7 +118,8 @@ A solar brand can still feel human. Alongside product posts, Apex marks the date
 - **Win the installers.** A rewards programme and expo incentives give the people who recommend you a reason to.
 - **Plan expos end to end.** Before, during and after, not just a banner on the day.
 - **Pair ads with design.** That combination is what grew Solar Mandee to 150K+ followers.
+- **Measure conversations, not likes.** For Apex the number that matters is 22,800 WhatsApp chats at about $0.04 each.
 
-You can see the films, the product posters and the expo gallery in our [Apex Solar case study](/work/apex-solar.html), and the rest of our clients on the [portfolio](/work/). If you are still deciding who should run this for you, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
+You can see the films, the product posters and the expo gallery in our [Apex Solar case study](/work/apex-solar.html), and the rest of our clients on the [portfolio](/work/). If you also need the day-to-day feed handled, that is our [social media management](/services/social-media-management/) work, and if your shop sells the same brands as everyone around it, our post on [brand mascot design in Pakistan](/blog/brand-mascot-design-in-pakistan/) shows another way to stand out. If you are still deciding who should run this for you, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
 
 If you run a solar, battery or inverter business and want to talk through what would work for yours, message us on WhatsApp. I am happy to have that conversation.
