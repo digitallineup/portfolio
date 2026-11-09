@@ -179,7 +179,7 @@ h1,h2,h3{letter-spacing:-.03em;line-height:1.12;font-weight:600}
 .tile span{font-size:13px;color:var(--ink-2)}
 .cta{background:var(--green);color:var(--cream);border-radius:24px;padding:30px 26px;margin:48px 0 10px}
 .cta h2{font-size:28px;margin:0 0 10px;color:var(--cream)}
-.cta p{color:rgba(251,246,239,.8);margin-bottom:18px;font-size:16px}
+.cta p{color:rgba(251,246,239,.8);margin-bottom:18px;font-size:16px}.cta p a{color:var(--cream);text-decoration:underline;text-underline-offset:3px}
 .cta .row{display:flex;flex-wrap:wrap;gap:10px}
 .author{display:flex;gap:16px;align-items:flex-start;border-top:1px solid var(--line);padding:28px 0;margin-top:20px}
 .author img{width:64px;height:64px;border-radius:16px;object-fit:cover;object-position:top;flex:none}
@@ -369,7 +369,7 @@ def build():
             cta_html = '<div class="cta rv"><h2>Run an installation business in Australia?</h2><p>See the full numbers and how we work with installers, or email us your website for a free 2-minute video on what we would fix first.</p><div class="row"><a class="btn" href="/installers/">See how we work with installers</a><a class="btn ghost" href="mailto:hello@digitallineup.com?subject=Free%202-minute%20video">Email us your website</a></div></div>'
             side_h, side_p = 'More leads from the ads you already run.', 'Meta ads, install reels and landing pages for Australian installers.'
         else:
-            cta_html = '<div class="cta rv"><h2>Want this for your brand?</h2><p>Video, brand identity, Meta ads and social media, made in-house by our team in Multan. Tell us what you are building.</p><div class="row"><a class="btn" href="/#contact">Start a project</a><a class="btn ghost" href="https://wa.me/923009590042">WhatsApp us</a></div></div>'
+            cta_html = '<div class="cta rv"><h2>Want this for your brand?</h2><p>Digital Lineup is a <a href="/services/social-media-management/">social media marketing agency in Multan</a>: <a href="/services/video-production/">video</a>, <a href="/services/branding-identity/">brand identity</a>, <a href="/services/meta-ads/">Meta ads and ad design</a>, all made in-house. See all <a href="/services/">digital marketing services</a> or tell us what you are building.</p><div class="row"><a class="btn" href="/#contact">Start a project</a><a class="btn ghost" href="https://wa.me/923009590042">WhatsApp us</a></div></div>'
             side_h, side_p = 'Your brand should look as good as it is.', 'Video, branding, Meta ads and social, made in-house in Multan.'
         side_card = f"""<div class="scard"><span class="rb">Google <i>&#9733;&#9733;&#9733;&#9733;&#9733;</i> 5.0</span><p class="sh">{side_h}</p><p>{side_p}</p>
 <form id="sf" novalidate><input name="name" placeholder="Your name" autocomplete="name" required><input name="email" type="email" placeholder="Work email" autocomplete="email" required><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Start your project</button></form>
