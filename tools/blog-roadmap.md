@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Restaurant brand identity: building Spice & Grill (keywords: restaurant logo design Pakistan, restaurant branding ideas). Data: work/spice-and-grill.html.
 - [ ] Beauty salon branding and marketing in Pakistan (keywords: salon branding ideas, beauty salon marketing Pakistan). Data: work/lume.html.
 - [ ] Webflow vs WordPress for Pakistani businesses (keywords: Webflow vs WordPress, business website Pakistan). Data: work/boota-brothers.html.
 - [ ] Digital marketing agency in Multan: what a full in-house team looks like (keywords: digital marketing agency Multan, video production Multan). Data: tools/llms-intro.md, team, office.
@@ -25,6 +24,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-11-09 restaurant-branding-in-pakistan (primary keyword: restaurant branding in Pakistan; related: restaurant logo design, restaurant branding ideas, restaurant menu design, takeaway packaging; data: Spice & Grill case study and brand book, branding-identity service page, Shangrilla Meta ads data)
 - [x] 2026-11-06 brand-mascot-design-in-pakistan (primary keyword: brand mascot design in Pakistan; related: 3D mascot for brand, store opening campaign, retail branding; data: Shan Electronics case study, branding films, branding-identity and social media service pages; Friday refresh: solar-company-marketing-in-pakistan updated with verified Apex Solar and Solar Mandee Meta ads data and links to /services/ pages and newer posts)
 - [x] 2026-11-04 corporate-video-production-in-multan (primary keyword: corporate video production in Multan; related: drone videography Multan; data: Boota Brothers Flour Mills Webflow site and drone shoot, video production service page)
 - [x] 2026-11-02 facebook-ads-vs-google-ads-for-handyman-businesses (primary keyword: Facebook ads vs Google ads for handyman businesses; data: Perth installer Meta ads, April to August 2026; CTA: installers)
