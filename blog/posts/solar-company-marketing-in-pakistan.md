@@ -123,3 +123,8 @@ A solar brand can still feel human. Alongside product posts, Apex marks the date
 You can see the films, the product posters and the expo gallery in our [Apex Solar case study](/work/apex-solar.html), and the rest of our clients on the [portfolio](/work/). If you also need the day-to-day feed handled, that is our [social media management](/social-media-marketing-agency/) work, and if your shop sells the same brands as everyone around it, our post on [brand mascot design in Pakistan](/blog/brand-mascot-design-in-pakistan/) shows another way to stand out. If you are still deciding who should run this for you, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
 
 If you run a solar, battery or inverter business and want to talk through what would work for yours, message us on WhatsApp. I am happy to have that conversation.
+
+## Solar companies outside Pakistan
+
+The same funnel works for solar installers in Australia, the UK and the US: local targeting, your compliance rules, budgets in your currency, and the creative and account management done from Multan at a fraction of a local agency's fee. What we do for solar brands, with the Apex and Solar Mandee numbers, is on our [marketing for solar companies](/marketing-for-solar-companies/) page.
+

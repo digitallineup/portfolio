@@ -105,6 +105,10 @@ Every post carries the same visual system: the brand red, a black or clean white
 
 **Treating the page as a noticeboard.** A post with no point of view gets no reaction. Every post should teach, prove or ask something.
 
+## For manufacturers and exporters
+
+If you run a mill, a factory or a printing business, the LinkedIn work above is one part of a bigger package: plant films, product photography and a website buyers trust. It is all on [marketing for manufacturers and B2B](/marketing-for-manufacturers/).
+
 ## What to take away
 
 - **LinkedIn works for B2B in Pakistan** when the page teaches buyers something useful.

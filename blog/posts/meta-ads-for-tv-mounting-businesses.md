@@ -111,3 +111,8 @@ Want to see where your own ads stand? Run them through our free [12-point Meta A
 You own your ad account and pay Meta directly. We bill monthly in Australian dollars and there is no lock-in. Our team is in Multan, Pakistan, and works through your afternoon and evening, so new ads and videos are usually ready by the next morning.
 
 If you want the full numbers, the packages and a one-minute intro from me, they are on our [page for installers](/installers/).
+
+## Running this from outside Australia
+
+Every creative, landing page and ad in this account was made in Multan, Pakistan, for a business in Perth. That is the model behind our [outsourced social media and ads](/outsource-social-media-management/) offer for installers and trades in Australia, the UK and the US: your market, your currency, a studio team at a fraction of the local price.
+

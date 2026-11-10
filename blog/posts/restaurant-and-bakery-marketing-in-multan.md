@@ -98,3 +98,8 @@ The ad that works for a restaurant is the content itself, cut for the feed: a sh
 You can see more of the Shangrilla work in our case studies for [Shangrilla Cuisine Bakers](/work/shangrilla-bakers.html) and [Shangrilla Gardens & BBQ](/work/shangrilla-gardens.html). If you want someone to run the monthly feed for you, see how we handle [social media management](/social-media-marketing-agency/). And if your business runs on enquiries rather than walk-ins, our post on [admissions marketing in Pakistan](/blog/admissions-marketing-in-pakistan/) shows how conversation ads work, and the [solar company marketing](/blog/solar-company-marketing-in-pakistan/) post covers creator films that reached 11M views.
 
 If you run a restaurant, bakery or café and want to talk through your next launch, message us on WhatsApp. I am happy to have that conversation.
+
+## The restaurant offer
+
+Everything in this post, monthly shoots, reels, posts and ads from one team, is packaged on our [marketing for restaurants](/marketing-for-restaurants/) page, for restaurants in Multan, across Pakistan and overseas.
+
