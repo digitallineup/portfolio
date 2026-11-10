@@ -23,14 +23,14 @@ I = {  # small line icons for the mega-menu
 }
 # (column, name, one-liner, url, icon). URLs switch to the new pages as each one ships.
 MENU = [
-    ('Photography', 'Food Photography', 'Restaurants, bakeries, menus', '/services/food-photography/', 'cam'),
-    ('Photography', 'Product Photography', 'Ecommerce, catalogues, ads', '/services/product-photography/', 'box'),
-    ('Production', 'Video Production', 'Brand films, reels, drone', '/services/video-production/', 'film'),
-    ('Production', 'Creator Campaigns', 'Influencer films that travel', '/services/influencer-marketing/', 'star'),
-    ('Growth', 'Meta Ads', 'Leads and sales, tracked', '/services/meta-ads/', 'chart'),
-    ('Growth', 'Social Media Management', 'Content, posting, community', '/services/social-media-management/', 'chat'),
-    ('Brand & Web', 'Branding & Identity', 'Logos, systems, brand books', '/services/branding-identity/', 'pen'),
-    ('Brand & Web', 'Website Design', 'Fast sites that convert', '/services/website-design/', 'web'),
+    ('Photography', 'Food Photography', 'Restaurants, bakeries, menus', '/food-photography/', 'cam'),
+    ('Photography', 'Product Photography', 'Ecommerce, catalogues, ads', '/product-photography/', 'box'),
+    ('Production', 'Video Production', 'Brand films, reels, drone', '/video-production-company/', 'film'),
+    ('Production', 'Creator Campaigns', 'Influencer films that travel', '/influencer-marketing-agency/', 'star'),
+    ('Growth', 'Meta Ads', 'Leads and sales, tracked', '/meta-ads-agency/', 'chart'),
+    ('Growth', 'Social Media Management', 'Content, posting, community', '/social-media-marketing-agency/', 'chat'),
+    ('Brand & Web', 'Branding & Identity', 'Logos, systems, brand books', '/branding-agency/', 'pen'),
+    ('Brand & Web', 'Website Design', 'Fast sites that convert', '/website-design-agency/', 'web'),
 ]
 
 def icon(k):
@@ -43,7 +43,7 @@ def mega(cur):
         items = ''.join(f'<a class="it{" on" if n == cur else ""}" href="{u}"><i>{icon(ic)}</i><span>{esc(n)}<small>{esc(d)}</small></span></a>'
                         for c, n, d, u, ic in MENU if c == col)
         cols.append(f'<div><p class="mh">{esc(col)}</p>{items}</div>')
-    feat = '<a class="feat" href="/services/"><img src="/work/assets/img/lume-07-640.webp" alt="" loading="lazy" decoding="async" width="640" height="800"><span>Explore all services</span></a>'
+    feat = '<a class="feat" href="/digital-marketing-services/"><img src="/work/assets/img/lume-07-640.webp" alt="" loading="lazy" decoding="async" width="640" height="800"><span>Explore all services</span></a>'
     return '<div class="mega" role="region" aria-label="Services">' + ''.join(cols) + feat + '</div>'
 
 

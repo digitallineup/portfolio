@@ -8,7 +8,7 @@ cover_alt: The Digital Lineup logo mark in brand green, the digital marketing ag
 tags: Multan, Agency, Social media, Meta ads, Video production
 ---
 
-Search "digital marketing agency in Multan" and you get three kinds of result: freelancers on Upwork, Facebook pages with a logo and a phone number, and software houses that added "digital marketing" to the menu last year. Very few are agencies in the full sense, with a crew, a studio and an ads team under one roof. This post is about what that looks like in practice, written from our office at Al Shifa Hospital on Masoom Shah Road, so you can judge any marketing agency in Multan, including us, by the same checklist.
+Search "digital marketing agency in Multan" and you get three kinds of result: freelancers on Upwork, Facebook pages with a logo and a phone number, and software houses that added "digital marketing" to the menu last year. Very few are agencies in the full sense, with a crew, a studio and an ads team under one roof. This post is about what that looks like in practice, written from [our office at Al Shifa Hospital on Masoom Shah Road](/multan/), so you can judge any marketing agency in Multan, including us, by the same checklist.
 
 Digital Lineup has been running since 2022 and opened its first physical office in Multan in September 2026. Six people, one standard. Every client so far came through a referral, which is a nice thing to say and a bad way to be found on Google, so here is the long version of who we are and what we do.
 
@@ -24,7 +24,7 @@ Digital Lineup has been running since 2022 and opened its first physical office 
 
 **Is Digital Lineup a digital marketing agency in Multan?** Yes. Our studio, crew and ads team are at Office #1, Basement, Al Shifa Hospital, Masoom Shah Road, Ahmad Park Colony, Multan. We work with brands in Multan, across Pakistan and overseas, including Australia.
 
-**What services do you offer?** [Social media marketing](/services/social-media-management/), [Meta ads with in-house ad design](/services/meta-ads/), [video and reels production](/services/video-production/), [food](/services/food-photography/) and [product photography](/services/product-photography/), [creator campaigns](/services/influencer-marketing/), [brand identity](/services/branding-identity/) and [website design](/services/website-design/). The full list is on our [digital marketing services](/services/) page.
+**What services do you offer?** [Social media marketing](/social-media-marketing-agency/), [Meta ads with in-house ad design](/meta-ads-agency/), [video and reels production](/video-production-company/), [food](/food-photography/) and [product photography](/product-photography/), [creator campaigns](/influencer-marketing-agency/), [brand identity](/branding-agency/) and [website design](/website-design-agency/). The full list is on our [digital marketing services](/digital-marketing-services/) page.
 
 **What does it cost?** Packages start from PKR 120,000. We give a fixed quote after a brief, and ad spend is paid by you directly to Meta.
 
@@ -53,7 +53,7 @@ Our own camera, lights and edit suite. Brand films, reels, product shoots, drone
 
 ### 2. Meta ads and ad design
 
-We design the creative and run the campaigns, so the ad is never a stock image with a logo on it. Across client accounts: 54M+ impressions, 16M+ people reached and 30,000+ Messenger and WhatsApp conversations started. Al Shifa Educational Complex got 5,576 admissions conversations, with the best campaign at about $0.04 a chat. The method is on the [Meta ads service page](/services/meta-ads/) and in our free [Meta ads checklist](/playbooks/meta-ads-checklist/).
+We design the creative and run the campaigns, so the ad is never a stock image with a logo on it. Across client accounts: 54M+ impressions, 16M+ people reached and 30,000+ Messenger and WhatsApp conversations started. Al Shifa Educational Complex got 5,576 admissions conversations, with the best campaign at about $0.04 a chat. The method is on the [Meta ads service page](/meta-ads-agency/) and in our free [Meta ads checklist](/playbooks/meta-ads-checklist/).
 
 ### 3. Social media marketing and management
 

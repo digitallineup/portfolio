@@ -4,7 +4,7 @@ seo_title: Website Design Agency: Webflow & Shopify | Digital Lineup
 lead: Fast, good-looking websites and landing pages that turn visitors into enquiries, built in Webflow, Shopify or custom code.
 description: Website design agency for Webflow business sites, Shopify stores and landing pages built for speed, SEO and enquiries.
 path: /services/website-design-pakistan/
-parent: Services|/services/
+parent: Services|/digital-marketing-services/
 nav: services
 service: Website design
 draft: yes

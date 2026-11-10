@@ -38,7 +38,7 @@ One programme, what it leads to, the one reason to apply now (a scholarship, a c
 
 The first decision on any admissions campaign is what the ads are for. A like on an admissions poster is worth nothing. A parent asking "what is the fee for BS-CS, and is the scholarship still open?" is worth a great deal.
 
-So every Al Shifa campaign was set up with one goal: start a conversation on Messenger or WhatsApp. That changes everything downstream. The creative ends with a reason to message, the audience is chosen for people likely to apply, and the report shows one number: conversations and the cost of each. This is the same goal-first approach we use for every [Meta ads](/services/meta-ads/) client, from solar brands to restaurants.
+So every Al Shifa campaign was set up with one goal: start a conversation on Messenger or WhatsApp. That changes everything downstream. The creative ends with a reason to message, the audience is chosen for people likely to apply, and the report shows one number: conversations and the cost of each. This is the same goal-first approach we use for every [Meta ads](/meta-ads-agency/) client, from solar brands to restaurants.
 
 It also suits how families in Pakistan actually decide. Nobody enrols in a four-year degree from a poster. They ask questions first, often a parent on WhatsApp, and they want a human answer. A chat is the natural first step, and the ad should make that step as easy as possible.
 
@@ -88,7 +88,7 @@ A video with real students in it does something a poster cannot: it lets a young
 
 Admissions run in seasons, but trust is built all year. A page that only posts "Admissions Open" twice a year looks abandoned the rest of the time, and parents notice.
 
-So between intakes we keep Al Shifa's feed active with content that is not selling anything, such as a 14 August Independence Day post that is designed with the same care as the admissions work. When the next intake opens, the page already looks established, and the admissions ads land on a profile that feels alive. This is the everyday side of [social media management](/services/social-media-management/), and for an education brand it matters as much as the ads.
+So between intakes we keep Al Shifa's feed active with content that is not selling anything, such as a 14 August Independence Day post that is designed with the same care as the admissions work. When the next intake opens, the page already looks established, and the admissions ads land on a profile that feels alive. This is the everyday side of [social media management](/social-media-marketing-agency/), and for an education brand it matters as much as the ads.
 
 ## 7. Treat every conversation as a lead, then reply fast
 
@@ -113,6 +113,6 @@ My advice to any school or college running conversation ads:
 
 Before your next intake, check your setup with our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/). Tick what you already do and see your score.
 
-You can see the admissions creatives in our [Al Shifa case study](/work/al-shifa.html), and the full Meta ads results for all our clients on the [Meta ads service page](/services/meta-ads/). If you are comparing agencies before your next intake, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
+You can see the admissions creatives in our [Al Shifa case study](/work/al-shifa.html), and the full Meta ads results for all our clients on the [Meta ads service page](/meta-ads-agency/). If you are comparing agencies before your next intake, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
 
 If you run a school, college or training academy and want to plan your next admissions campaign, message us on WhatsApp. I am happy to talk it through.

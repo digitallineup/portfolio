@@ -41,7 +41,7 @@ Consistency matters more than volume. For Shangrilla Gardens & BBQ we plan 12 po
 
 ## 1. Shoot the real product, properly
 
-Customers can tell when food is fake. Over-edited or AI-generated photos look good in a feed and disappoint at the table, which kills repeat orders. We shoot the real product as it comes out of the kitchen, with proper lighting and styling. For Shangrilla Chinese that meant every dish shot for the menu, the delivery apps and the feed, plus a chef film for the launch. Our [food photography](/services/food-photography/) page shows frames from all three Shangrilla kitchens.
+Customers can tell when food is fake. Over-edited or AI-generated photos look good in a feed and disappoint at the table, which kills repeat orders. We shoot the real product as it comes out of the kitchen, with proper lighting and styling. For Shangrilla Chinese that meant every dish shot for the menu, the delivery apps and the feed, plus a chef film for the launch. Our [food photography](/food-photography/) page shows frames from all three Shangrilla kitchens.
 
 When Shangrilla Cuisine Bakers' website needed new category banners, the brief was the same: real, unaltered Shangrilla products, laid out cleanly. Nothing invented.
 
@@ -83,7 +83,7 @@ Behind-the-scenes content from our bakery shoots consistently earns attention. P
 
 Organic reach is a bonus, not a plan. For Shangrilla, 27 campaigns put the food films and deal posters our own crew made in front of the right people around the festival calendar: Ramadan and Eid menus, product launches and branch deals. Together they reached 3.7M people and earned more than 2M post engagements at about $0.0005 each.
 
-The ad that works for a restaurant is the content itself, cut for the feed: a short [food film](/services/video-production/) or a deal poster with one clear offer. A logo with "visit us today" competes with every other page in Multan. A steaming platter in the first second does not. The [Meta ads](/services/meta-ads/) page has the full breakdown of how we set these up.
+The ad that works for a restaurant is the content itself, cut for the feed: a short [food film](/video-production-company/) or a deal poster with one clear offer. A logo with "visit us today" competes with every other page in Multan. A steaming platter in the first second does not. The [Meta ads](/meta-ads-agency/) page has the full breakdown of how we set these up.
 
 ## What this means for your restaurant or bakery
 
@@ -95,6 +95,6 @@ The ad that works for a restaurant is the content itself, cut for the feed: a sh
 - Show the kitchen and the people behind it.
 - Put ad money behind real food films and clear deals.
 
-You can see more of the Shangrilla work in our case studies for [Shangrilla Cuisine Bakers](/work/shangrilla-bakers.html) and [Shangrilla Gardens & BBQ](/work/shangrilla-gardens.html). If you want someone to run the monthly feed for you, see how we handle [social media management](/services/social-media-management/). And if your business runs on enquiries rather than walk-ins, our post on [admissions marketing in Pakistan](/blog/admissions-marketing-in-pakistan/) shows how conversation ads work, and the [solar company marketing](/blog/solar-company-marketing-in-pakistan/) post covers creator films that reached 11M views.
+You can see more of the Shangrilla work in our case studies for [Shangrilla Cuisine Bakers](/work/shangrilla-bakers.html) and [Shangrilla Gardens & BBQ](/work/shangrilla-gardens.html). If you want someone to run the monthly feed for you, see how we handle [social media management](/social-media-marketing-agency/). And if your business runs on enquiries rather than walk-ins, our post on [admissions marketing in Pakistan](/blog/admissions-marketing-in-pakistan/) shows how conversation ads work, and the [solar company marketing](/blog/solar-company-marketing-in-pakistan/) post covers creator films that reached 11M views.
 
 If you run a restaurant, bakery or café and want to talk through your next launch, message us on WhatsApp. I am happy to have that conversation.

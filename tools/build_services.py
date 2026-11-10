@@ -1,4 +1,4 @@
-"""Build the rich service pages (/services/<slug>/) from tools/services/*.html.
+"""Build the rich service pages (/digital-marketing-services/<slug>/) from tools/services/*.html.
 
 Each source file starts with a JSON header inside an HTML comment, then the page body.
 The shell adds the header with the Services mega-menu, the FAQ, the lead form,
@@ -151,13 +151,17 @@ def build_one(src):
     else:
         ld = [
         {'@context': 'https://schema.org', '@type': 'Service', 'name': meta['title'], 'serviceType': meta.get('service_type', svc),
-         'description': desc, 'url': url, 'areaServed': 'Worldwide',
+         'description': desc, 'url': url, 'areaServed': meta.get('area', ['Multan', 'Pakistan', 'Worldwide']),
          'provider': {'@type': 'ProfessionalService', 'name': 'Digital Lineup', 'url': SITE + '/',
                       'address': {'@type': 'PostalAddress', 'addressLocality': 'Multan', 'addressCountry': 'PK'}}},
         {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
-            {'@type': 'ListItem', 'position': 2, 'name': 'Services', 'item': SITE + '/services/'}]
-            + ([{'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url}] if path != '/services/' else [])},
+            {'@type': 'ListItem', 'position': 2, 'name': 'Services', 'item': SITE + '/digital-marketing-services/'}]
+            + ([{'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url}] if path != '/digital-marketing-services/' else [])}
+            if not meta.get('top') else
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE + '/'},
+            {'@type': 'ListItem', 'position': 2, 'name': meta['title'], 'item': url}]},
         ]
     if faqs:
         ld.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
@@ -206,11 +210,21 @@ def add_to_sitemap(paths):
 
 
 REDIRECTS = {
-    '/services/branding-agency-multan/': '/services/branding-identity/',
-    '/services/video-production-multan/': '/services/video-production/',
-    '/services/meta-ads-agency-pakistan/': '/services/meta-ads/',
-    '/services/social-media-management-pakistan/': '/services/social-media-management/',
-    '/services/website-design-pakistan/': '/services/website-design/',
+    # Nov 2026: service pages moved out of /services/ (the folder Google refused to crawl for 4 weeks).
+    '/services/': '/digital-marketing-services/',
+    '/services/social-media-management/': '/social-media-marketing-agency/',
+    '/services/meta-ads/': '/meta-ads-agency/',
+    '/services/video-production/': '/video-production-company/',
+    '/services/branding-identity/': '/branding-agency/',
+    '/services/food-photography/': '/food-photography/',
+    '/services/product-photography/': '/product-photography/',
+    '/services/influencer-marketing/': '/influencer-marketing-agency/',
+    '/services/website-design/': '/website-design-agency/',
+    '/services/branding-agency-multan/': '/branding-agency/',
+    '/services/video-production-multan/': '/video-production-company/',
+    '/services/meta-ads-agency-pakistan/': '/meta-ads-agency/',
+    '/services/social-media-management-pakistan/': '/social-media-marketing-agency/',
+    '/services/website-design-pakistan/': '/website-design-agency/',
     '/checklist/': '/playbooks/meta-ads-checklist/',
 }
 

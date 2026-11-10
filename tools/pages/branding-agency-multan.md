@@ -4,7 +4,7 @@ seo_title: Branding Agency in Multan | Digital Lineup
 lead: Logos, brand systems, brand books, signage, packaging and mascots for businesses in Multan and across Pakistan.
 description: Branding agency in Multan: logo design, brand identity, brand books, signage, packaging and mascots, with full case studies.
 path: /services/branding-agency-multan/
-parent: Services|/services/
+parent: Services|/digital-marketing-services/
 nav: services
 service: Brand identity design
 draft: yes

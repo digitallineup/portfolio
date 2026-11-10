@@ -113,6 +113,6 @@ Every post carries the same visual system: the brand red, a black or clean white
 - **Use carousels to teach one idea** with a hook, one point per slide and a clear ask.
 - **Film the factory.** Your production floor is the content your competitors are not posting.
 
-We run this kind of content as part of our [social media management service](/services/social-media-management/), with design, reels and reporting from one team in Multan. If your page also needs a stronger visual system first, our guide to [brand identity design in Pakistan](/blog/brand-identity-design-in-pakistan/) covers how we build one.
+We run this kind of content as part of our [social media management service](/social-media-marketing-agency/), with design, reels and reporting from one team in Multan. If your page also needs a stronger visual system first, our guide to [brand identity design in Pakistan](/blog/brand-identity-design-in-pakistan/) covers how we build one.
 
 If you run a manufacturing or B2B company and your LinkedIn page is mostly greetings, message us on WhatsApp. I am happy to look at your last ten posts and tell you what I would post next.

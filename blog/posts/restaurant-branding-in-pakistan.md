@@ -120,6 +120,6 @@ We see the payoff of that consistency with the Shangrilla group, where we run so
 - **Brand the cheap parts cleverly.** A printed band on a stock box gives you branded takeaway for a fraction of the cost of custom boxes.
 - **Launch with a moment.** A short logo film and a planned first month give people a reason to notice.
 
-Our full branding process, with the Spice & Grill brand book you can scroll page by page, is on the [branding and identity service page](/services/branding-identity/). When the identity is ready, our [food photography](/services/food-photography/) team shoots the dishes to match it. And if you want to see the same process applied to a beauty studio and an agency, read our guide to [brand identity design in Pakistan](/blog/brand-identity-design-in-pakistan/).
+Our full branding process, with the Spice & Grill brand book you can scroll page by page, is on the [branding and identity service page](/branding-agency/). When the identity is ready, our [food photography](/food-photography/) team shoots the dishes to match it. And if you want to see the same process applied to a beauty studio and an agency, read our guide to [brand identity design in Pakistan](/blog/brand-identity-design-in-pakistan/).
 
 If you are opening a restaurant, or your current one has drifted into five versions of itself, message us on WhatsApp. I am happy to look at what you have and tell you honestly where I would start.

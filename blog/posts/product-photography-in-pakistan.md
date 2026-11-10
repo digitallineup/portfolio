@@ -113,6 +113,6 @@ The test shot is the step I would never skip. It costs very little and it settle
 - **Write copy for the buyer's home.** Hamid's posters talk about bathrooms and choices, not model numbers.
 - **Approve a test shot first.** It saves the whole shoot.
 
-Our full range, the product films and the process are on the [product photography service page](/services/product-photography/). If the photos are going into a bigger brand refresh, our guide to [brand identity design in Pakistan](/blog/brand-identity-design-in-pakistan/) covers the system they should sit inside.
+Our full range, the product films and the process are on the [product photography service page](/product-photography/). If the photos are going into a bigger brand refresh, our guide to [brand identity design in Pakistan](/blog/brand-identity-design-in-pakistan/) covers the system they should sit inside.
 
 If you run a retail shop or a product brand and your feed looks like everyone else's, message us on WhatsApp. I am happy to look at your current photos and tell you what I would shoot first.

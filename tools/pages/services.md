@@ -3,7 +3,7 @@ title: Our Services
 seo_title: Services: Video Production, Meta Ads, Branding and Social Media | Digital Lineup
 lead: Four things, done properly. Video and content production, performance marketing, brand identity and social media management, all made in-house in Multan.
 description: Digital Lineup services: video and content production, Meta and Google ads, brand identity and social media management for brands in Pakistan and worldwide.
-path: /services/
+path: /digital-marketing-services/
 nav: services
 draft: yes
 ---
@@ -26,7 +26,7 @@ No. You pay Meta or Google directly from your own ad account, and our fee covers
 
 ## 1. Video and content production
 
-Brand films, reels, product shoots and creator campaigns. Our own crew, lights and camera, on site where it matters, edited in-house the same week. [More on video production in Multan](/services/video-production/).
+Brand films, reels, product shoots and creator campaigns. Our own crew, lights and camera, on site where it matters, edited in-house the same week. [More on video production in Multan](/video-production-company/).
 
 - Brand films and campaign films
 - Reels and short-form video for Instagram, Facebook and TikTok
@@ -37,7 +37,7 @@ Brand films, reels, product shoots and creator campaigns. Our own crew, lights a
 
 ## 2. Performance marketing
 
-Meta and Google ads with the creative, landing pages and pixel work done by the same team. [More on our Meta ads service](/services/meta-ads/).
+Meta and Google ads with the creative, landing pages and pixel work done by the same team. [More on our Meta ads service](/meta-ads-agency/).
 
 - Meta (Facebook and Instagram) ads and Google ads
 - Pixel and conversion tracking set up properly
@@ -49,7 +49,7 @@ Meta and Google ads with the creative, landing pages and pixel work done by the 
 
 ## 3. Brand identity
 
-Logo, brand system, signage, packaging and the brand book that holds it all together, for businesses that are about to be seen by a lot more people. [More on branding and identity](/services/branding-identity/).
+Logo, brand system, signage, packaging and the brand book that holds it all together, for businesses that are about to be seen by a lot more people. [More on branding and identity](/branding-agency/).
 
 - Logo and visual system
 - Brand book and guidelines
@@ -60,7 +60,7 @@ Logo, brand system, signage, packaging and the brand book that holds it all toge
 
 ## 4. Social media management
 
-Daily content, design and community for brands that want a feed people actually follow. [More on social media management](/services/social-media-management/).
+Daily content, design and community for brands that want a feed people actually follow. [More on social media management](/social-media-marketing-agency/).
 
 - Monthly content calendar
 - Post and reel design
@@ -81,6 +81,6 @@ Daily content, design and community for brands that want a feed people actually 
 
 ## Websites and landing pages
 
-We also design and build fast websites and landing pages in Webflow, Shopify or custom code. [More on website design](/services/website-design/).
+We also design and build fast websites and landing pages in Webflow, Shopify or custom code. [More on website design](/website-design-agency/).
 
 Ready to start? [Contact us](/contact/) or see the [portfolio](/work/) first.

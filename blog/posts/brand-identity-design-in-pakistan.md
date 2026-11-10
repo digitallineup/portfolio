@@ -112,6 +112,6 @@ Every post came out of the same template, which is the real value of a brand boo
 - **Get the brand book.** It is what keeps every future post, print and campaign consistent.
 - **Plan the launch.** The identity and the first content should arrive together.
 
-Our full process, the logo films and more identities, including the lightning S and 3D mascot for Shan Electronics, are on the [branding and identity service page](/services/branding-identity/). If you are comparing studios first, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions worth asking.
+Our full process, the logo films and more identities, including the lightning S and 3D mascot for Shan Electronics, are on the [branding and identity service page](/branding-agency/). If you are comparing studios first, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions worth asking.
 
 If you are opening a new business, or your current brand has drifted into five versions of itself, message us on WhatsApp. I am happy to talk through what your identity needs to do.

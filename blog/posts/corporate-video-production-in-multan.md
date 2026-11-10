@@ -112,6 +112,6 @@ That is how we plan every film now. The same shoot works as a brand film, a reel
 - **Cut every shoot for every screen**: website, reels, ads and LinkedIn.
 - **Use real footage only.** Your actual plant beats stock every time.
 
-We do this end to end through our [video production service](/services/video-production/), and when the footage needs a home, our [website design service](/services/website-design/) builds the site around it. If you are a B2B company wondering what to post once the films are done, our guide to [LinkedIn marketing in Pakistan](/blog/linkedin-marketing-in-pakistan/) shows how we turn factory content into a feed buyers follow.
+We do this end to end through our [video production service](/video-production-company/), and when the footage needs a home, our [website design service](/website-design-agency/) builds the site around it. If you are a B2B company wondering what to post once the films are done, our guide to [LinkedIn marketing in Pakistan](/blog/linkedin-marketing-in-pakistan/) shows how we turn factory content into a feed buyers follow.
 
 If you run a mill, factory or plant and your website still looks smaller than your business, message us on WhatsApp. Tell me where the site is and I will tell you what I would film first.

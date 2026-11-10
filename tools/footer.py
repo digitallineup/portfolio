@@ -12,7 +12,7 @@ def footer_html(contact_href='/contact/'):
     return f'''<footer class="foot2" id="footer">
   <div class="fmeta wrap">
     <span>&copy; {y} Digital Lineup. Multan, Pakistan.</span>
-    <nav class="flinks" aria-label="Site pages"><a href="/services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/playbooks/">Playbooks</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
+    <nav class="flinks" aria-label="Site pages"><a href="/digital-marketing-services/">Services</a><a href="/work/">Work</a><a href="/blog/">Blog</a><a href="/playbooks/">Playbooks</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a></nav>
     <a href="#">Back to top &uarr;</a>
   </div>
   <div class="fpit" data-pit role="group" aria-label="Contact links">
@@ -24,7 +24,7 @@ def footer_html(contact_href='/contact/'):
     <a class="pill" href="https://www.youtube.com/@DigitalLineup" target="_blank" rel="noopener">YouTube</a>
     <a class="pill" href="https://www.tiktok.com/@digitallineup" target="_blank" rel="noopener">TikTok</a>
     <a class="pill" href="https://www.google.com/maps?cid=114504805028664053" target="_blank" rel="noopener">Google 5.0</a>
-    <a class="pill" href="/services/">Services</a>
+    <a class="pill" href="/digital-marketing-services/">Services</a>
     <a class="pill accent" href="{contact_href}">Start something cool</a>
     <a class="pill ghost" href="#">Carrier pigeon</a>
   </div>

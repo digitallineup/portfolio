@@ -41,7 +41,7 @@ The film that reached 11 million views for Apex Solar is not a spec sheet. It is
 
 That is the whole lesson in one film. People do not buy kilowatt hours. They buy a shop that stays open during load-shedding. If your viewer can picture their own business or home in the first few seconds, they keep watching, and the specs land as proof instead of noise.
 
-Across the account we have made creator films with Shahid Khan, Shaheen Shah Afridi and Dr Sab, and we shoot them ourselves rather than leaving it to the creator's phone, so the product looks right and the cut can run as an ad. How we pick creators and write the brief is on our [creator campaigns](/services/influencer-marketing/) page.
+Across the account we have made creator films with Shahid Khan, Shaheen Shah Afridi and Dr Sab, and we shoot them ourselves rather than leaving it to the creator's phone, so the product looks right and the cut can run as an ad. How we pick creators and write the brief is on our [creator campaigns](/influencer-marketing-agency/) page.
 
 ## 2. Teach, do not just sell
 
@@ -104,7 +104,7 @@ Solar Mandee is a solar marketplace, and their goal was clear: grow the page to 
 
 There was no secret trick. Page-follow campaigns with product and offer creative brought 29,700 follows on their own, at Rs 0.93 per follow on the main campaign, and installment and lead ads then targeted Lahore and Multan. The ads brought the right people to the page, and strong, consistent design gave them a reason to follow once they arrived. Ads without good creative waste money. Good creative without ads waits a long time to be seen. You need both.
 
-If you already run ads, check them against our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) before you add more budget. Our [Meta ads](/services/meta-ads/) page has the results from every account we run, in the currency each one runs in.
+If you already run ads, check them against our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) before you add more budget. Our [Meta ads](/meta-ads-agency/) page has the results from every account we run, in the currency each one runs in.
 
 ## 7. Show up on the days people already care about
 
@@ -120,6 +120,6 @@ A solar brand can still feel human. Alongside product posts, Apex marks the date
 - **Pair ads with design.** That combination is what grew Solar Mandee to 150K+ followers.
 - **Measure conversations, not likes.** For Apex the number that matters is 22,800 WhatsApp chats at about $0.04 each.
 
-You can see the films, the product posters and the expo gallery in our [Apex Solar case study](/work/apex-solar.html), and the rest of our clients on the [portfolio](/work/). If you also need the day-to-day feed handled, that is our [social media management](/services/social-media-management/) work, and if your shop sells the same brands as everyone around it, our post on [brand mascot design in Pakistan](/blog/brand-mascot-design-in-pakistan/) shows another way to stand out. If you are still deciding who should run this for you, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
+You can see the films, the product posters and the expo gallery in our [Apex Solar case study](/work/apex-solar.html), and the rest of our clients on the [portfolio](/work/). If you also need the day-to-day feed handled, that is our [social media management](/social-media-marketing-agency/) work, and if your shop sells the same brands as everyone around it, our post on [brand mascot design in Pakistan](/blog/brand-mascot-design-in-pakistan/) shows another way to stand out. If you are still deciding who should run this for you, our guide on [how to choose a digital marketing agency in Pakistan](/blog/how-to-choose-a-digital-marketing-agency-in-pakistan/) covers the questions to ask first.
 
 If you run a solar, battery or inverter business and want to talk through what would work for yours, message us on WhatsApp. I am happy to have that conversation.

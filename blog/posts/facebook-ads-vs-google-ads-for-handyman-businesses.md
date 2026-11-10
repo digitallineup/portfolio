@@ -107,6 +107,6 @@ Most TV mounting, picture hanging and installation businesses will answer "put i
 - **Tracking comes before either.** Our Perth account's first month was fixing that, and everything after depended on it.
 - **Judge it over months.** The jump from 9 to 135 leads took five months, not five days.
 
-If you want to check your current Meta setup yourself, our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) takes two minutes. You can also see how we run campaigns across other industries on our [Meta ads service page](/services/meta-ads/).
+If you want to check your current Meta setup yourself, our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/) takes two minutes. You can also see how we run campaigns across other industries on our [Meta ads service page](/meta-ads-agency/).
 
 You own your ad account and pay Meta directly, we bill monthly in AUD, and there is no lock-in. If you run a TV mounting, handyman or installation business in Australia and want a second opinion on where your next dollar should go, send me your website and I will tell you which platform I would start with and why.

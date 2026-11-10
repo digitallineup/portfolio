@@ -45,7 +45,7 @@ A portfolio of good-looking designs proves an agency can design. It does not pro
 
 Ours are on the [portfolio](/work/) and in [Google reviews](https://www.google.com/maps?cid=114504805028664053): an Apex Solar creator film with 11 million views, Solar Mandee's Facebook page grown past 150K followers in eight months, and a Perth installer who went [from 9 to 135 leads a month](/blog/meta-ads-for-tv-mounting-businesses/).
 
-For ads, ask to see the numbers inside Ads Manager, not a screenshot of a single good day. Across our client accounts, verified in October 2026, our [Meta ads](/services/meta-ads/) have delivered 54M+ impressions, reached 16M+ people and started 30,000+ customer conversations on Messenger and WhatsApp. One school campaign for Al Shifa Educational Complex started 3,844 admissions chats at about $0.04 each, which I break down in our guide to [admissions marketing in Pakistan](/blog/admissions-marketing-in-pakistan/).
+For ads, ask to see the numbers inside Ads Manager, not a screenshot of a single good day. Across our client accounts, verified in October 2026, our [Meta ads](/meta-ads-agency/) have delivered 54M+ impressions, reached 16M+ people and started 30,000+ customer conversations on Messenger and WhatsApp. One school campaign for Al Shifa Educational Complex started 3,844 admissions chats at about $0.04 each, which I break down in our guide to [admissions marketing in Pakistan](/blog/admissions-marketing-in-pakistan/).
 
 ### 4. What will you report, and how often?
 
@@ -65,7 +65,7 @@ A good agency can describe the first month without hesitating. Ours looks like t
 
 ### 6. Do you shoot video yourselves?
 
-On Instagram, Facebook and TikTok, video does most of the work. An agency that only designs static posts will struggle to grow you in 2026. Ask whether they have their own camera crew and editors, and ask to see recent reels they shot, not just edited. Our [video production](/services/video-production/) and [product photography](/services/product-photography/) are shot in-house, and our guide to [product photography in Pakistan](/blog/product-photography-in-pakistan/) shows what a single shoot day should give you.
+On Instagram, Facebook and TikTok, video does most of the work. An agency that only designs static posts will struggle to grow you in 2026. Ask whether they have their own camera crew and editors, and ask to see recent reels they shot, not just edited. Our [video production](/video-production-company/) and [product photography](/product-photography/) are shot in-house, and our guide to [product photography in Pakistan](/blog/product-photography-in-pakistan/) shows what a single shoot day should give you.
 
 ### 7. Do you understand my market?
 
@@ -96,6 +96,6 @@ Reviews help, and real conversations help more. Ask for a client in a similar bu
 
 Shortlist three agencies. Send each the same brief. Compare who asked the best questions back, who showed real numbers, and who explained the first month clearly. Price matters, but the cheapest agency that does not move your numbers is the most expensive one.
 
-Everything we offer is on one [services page](/services/), from [social media management](/services/social-media-management/) to [branding](/services/branding-identity/) and [websites](/services/website-design/), so you can see exactly what you would be paying for.
+Everything we offer is on one [services page](/digital-marketing-services/), from [social media management](/social-media-marketing-agency/) to [branding](/branding-agency/) and [websites](/website-design-agency/), so you can see exactly what you would be paying for.
 
 If you are in Multan, you are welcome to visit our studio for chai and see the work on our screens before you decide. If you are anywhere else, a call works just as well.

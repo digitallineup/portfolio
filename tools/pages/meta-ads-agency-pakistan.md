@@ -4,7 +4,7 @@ seo_title: Meta Ads Agency: Facebook & Instagram Ads | Digital Lineup
 lead: Facebook and Instagram ads with the creative, tracking and landing pages done by the same team, for brands in Pakistan and worldwide.
 description: Meta ads agency for brands in Pakistan and worldwide: Facebook and Instagram ads, pixel tracking, ad creative and monthly reports.
 path: /services/meta-ads-agency-pakistan/
-parent: Services|/services/
+parent: Services|/digital-marketing-services/
 nav: services
 service: Meta ads management
 draft: yes

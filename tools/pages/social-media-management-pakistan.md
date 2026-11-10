@@ -4,7 +4,7 @@ seo_title: Social Media Management Services | Digital Lineup
 lead: Content calendars, design, reels, community and monthly reporting for brands that want a feed people actually follow.
 description: Social media management services: content calendar, post and reel design, community management and monthly reports, made in-house.
 path: /services/social-media-management-pakistan/
-parent: Services|/services/
+parent: Services|/digital-marketing-services/
 nav: services
 service: Social media management
 draft: yes

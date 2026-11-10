@@ -4,7 +4,7 @@ seo_title: Corporate Video Production & Brand Films | Digital Lineup
 lead: Brand films, reels, product films and creator campaigns, shot by our own crew in Multan and edited in-house the same week.
 description: Corporate video production, brand films, reels, product films and drone shoots by Digital Lineup, with real results from real clients.
 path: /services/video-production-multan/
-parent: Services|/services/
+parent: Services|/digital-marketing-services/
 nav: services
 service: Video production
 draft: yes

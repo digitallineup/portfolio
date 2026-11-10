@@ -93,7 +93,7 @@ Alongside the posters we made three films for Shan: a brand story film, a brandi
 
 The branding reel starts with a question typed into a search bar, the one every shop owner asks: why does nobody remember my shop? It is the problem from the top of this post, told in under a minute.
 
-Films like this matter for retail because they explain the identity to the people who matter most early on: the owner's own team, suppliers and repeat customers who notice the change. The [video production](/services/video-production/) page has more on how we plan and cut short brand films.
+Films like this matter for retail because they explain the identity to the people who matter most early on: the owner's own team, suppliers and repeat customers who notice the change. The [video production](/video-production-company/) page has more on how we plan and cut short brand films.
 
 ## Mistakes to avoid with a brand mascot
 
@@ -115,6 +115,6 @@ Films like this matter for retail because they explain the identity to the peopl
 - **Give the mascot jobs.** Teasers and announcements, not every price post.
 - **Build a system around it.** Store front posts, price layouts and seasonal characters keep the feed fresh while the mascot stays special.
 
-The full set of 41 posters, the three films and the brand book are on the [Shan Electronics case study](/work/shan-electronics.html). Mascots and 3D characters are part of our [branding and identity service](/services/branding-identity/), and if you want the same team to run the feed after launch, that is our [social media management](/services/social-media-management/) work.
+The full set of 41 posters, the three films and the brand book are on the [Shan Electronics case study](/work/shan-electronics.html). Mascots and 3D characters are part of our [branding and identity service](/branding-agency/), and if you want the same team to run the feed after launch, that is our [social media management](/social-media-marketing-agency/) work.
 
 If your store sells what everyone else sells and you want it to be the one people remember, message us on WhatsApp. I am happy to talk through whether a mascot is right for your brand.

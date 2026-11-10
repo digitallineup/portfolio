@@ -9,7 +9,7 @@ Key facts:
 - Track record: 1,000+ films, reels, posters and identities shipped; 100M+ views across client work. Longest-running client: Apex Solar, two years and counting. Every client so far came through a referral.
 - Team: Ali Hannan Siddique (Founder), M. Usama Mumtaz (Content Production Head), Naveed (Media Head), Kashan Ali (Designing Head), Huzaifa Aijaz (Project Manager), Atir Abbas (Digital Strategist).
 - Selected results: an Apex Solar creator film reached 11M views; Solar Mandee's Facebook page grew to 150K+ followers in 8 months; a TV mounting and picture hanging business went from 9 to 135 leads a month in five months, with cost per lead falling from about A$120 to under A$35.
-- Meta ads track record (verified in Ads Manager, October 2026): 54M+ impressions and 16M+ people reached across client accounts; 30,000+ customer conversations started on Messenger and WhatsApp. Apex Solar: 22,800+ conversations at about $0.04 each. Al Shifa Educational Complex: 5,576 admissions conversations, best campaign 3,844 chats at $0.04 each. Shangrilla: 2M+ post engagements, one Ramadan video reached 458K engagements. Taimoor Cattle Farm: 736 WhatsApp conversations. Details: https://digitallineup.com/services/meta-ads/
+- Meta ads track record (verified in Ads Manager, October 2026): 54M+ impressions and 16M+ people reached across client accounts; 30,000+ customer conversations started on Messenger and WhatsApp. Apex Solar: 22,800+ conversations at about $0.04 each. Al Shifa Educational Complex: 5,576 admissions conversations, best campaign 3,844 chats at $0.04 each. Shangrilla: 2M+ post engagements, one Ramadan video reached 458K engagements. Taimoor Cattle Farm: 736 WhatsApp conversations. Details: https://digitallineup.com/meta-ads-agency/
 - Pricing: packages start from PKR 120,000; fixed quotes after a brief.
 - Best known for: video and creator campaigns, food and product photography, and Meta ads that start conversations, for restaurants, bakeries, solar and energy, retail, education and B2B brands.
 - Clients include Apex Solar, Shangrilla (Cuisine Bakers, Gardens & BBQ), Shan Electronics, Rainbow Printing Solutions, Capxa, Lume Beauty Studio, Boota Brothers, Spice & Grill, Hamid Enterprises and Al Shifa.
@@ -18,17 +18,21 @@ Key facts:
 - Services for Australian installers (TV mounting, picture and mirror hanging): https://digitallineup.com/installers/
 
 ## Main pages
+- /multan/ : Digital marketing agency in Multan, the studio and what it does for Multan brands
+- /marketing-for-restaurants/ , /marketing-for-solar-companies/ , /marketing-for-schools/ , /marketing-for-manufacturers/ : industry pages built on client case studies
+- /outsource-social-media-management/ : for businesses in Australia, the UK, the US and the Gulf that outsource social media and ads to us
+- /ali-hannan-siddique/ : founder page
 
 - [Home](https://digitallineup.com/): services, selected work, process, reviews, team, contact
 - [Services](https://digitallineup.com/services/): photography, video, creator campaigns, Meta ads, social media, branding and websites
-  - [Food photography](https://digitallineup.com/services/food-photography/)
-  - [Product photography](https://digitallineup.com/services/product-photography/)
-  - [Video production](https://digitallineup.com/services/video-production/)
-  - [Creator and influencer campaigns](https://digitallineup.com/services/influencer-marketing/)
-  - [Meta ads](https://digitallineup.com/services/meta-ads/)
-  - [Social media management](https://digitallineup.com/services/social-media-management/)
-  - [Branding & identity](https://digitallineup.com/services/branding-identity/)
-  - [Website design](https://digitallineup.com/services/website-design/)
+  - [Food photography](https://digitallineup.com/food-photography/)
+  - [Product photography](https://digitallineup.com/product-photography/)
+  - [Video production](https://digitallineup.com/video-production-company/)
+  - [Creator and influencer campaigns](https://digitallineup.com/influencer-marketing-agency/)
+  - [Meta ads](https://digitallineup.com/meta-ads-agency/)
+  - [Social media management](https://digitallineup.com/social-media-marketing-agency/)
+  - [Branding & identity](https://digitallineup.com/branding-agency/)
+  - [Website design](https://digitallineup.com/website-design-agency/)
 - [Portfolio](https://digitallineup.com/work/): case studies for every client
 - [About](https://digitallineup.com/about/): story, team, numbers and clients
 - [Contact](https://digitallineup.com/contact/): WhatsApp, email and studio address in Multan

@@ -21,14 +21,17 @@ Status: [ ] todo, [x] published (add the date and slug)
 - Facebook ads cost per lead / per follower in Pakistan (Apex numbers to confirm).
 - Founder story: Ali Hannan Siddique (waiting on his history, photos, links). Will be a page at /ali-hannan-siddique/ plus one long post.
 
+## Site pages (not blog posts) added 11 Nov 2026
+/multan/, /marketing-for-restaurants/, /marketing-for-solar-companies/, /marketing-for-schools/, /marketing-for-manufacturers/, /outsource-social-media-management/, /ali-hannan-siddique/. Link new posts to the matching one. Service pages moved: /services/<x>/ is now /social-media-marketing-agency/, /meta-ads-agency/, /video-production-company/, /branding-agency/, /food-photography/, /product-photography/, /influencer-marketing-agency/, /website-design-agency/, hub /digital-marketing-services/.
+
 ## Published
 
 - [x] 2026-11-09 digital-marketing-agency-in-multan (primary keyword: digital marketing agency in Multan; related: marketing agency in Multan, social media marketing agency Multan; data: tools/llms-intro.md, team, office, Meta ads figures; extra post this week for the Multan keyword push)
 - [x] 2026-11-09 restaurant-branding-in-pakistan (primary keyword: restaurant branding in Pakistan; related: restaurant logo design, restaurant branding ideas, restaurant menu design, takeaway packaging; data: Spice & Grill case study and brand book, branding-identity service page, Shangrilla Meta ads data)
-- [x] 2026-11-06 brand-mascot-design-in-pakistan (primary keyword: brand mascot design in Pakistan; related: 3D mascot for brand, store opening campaign, retail branding; data: Shan Electronics case study, branding films, branding-identity and social media service pages; Friday refresh: solar-company-marketing-in-pakistan updated with verified Apex Solar and Solar Mandee Meta ads data and links to /services/ pages and newer posts)
+- [x] 2026-11-06 brand-mascot-design-in-pakistan (primary keyword: brand mascot design in Pakistan; related: 3D mascot for brand, store opening campaign, retail branding; data: Shan Electronics case study, branding films, branding-identity and social media service pages; Friday refresh: solar-company-marketing-in-pakistan updated with verified Apex Solar and Solar Mandee Meta ads data and links to /digital-marketing-services/ pages and newer posts)
 - [x] 2026-11-04 corporate-video-production-in-multan (primary keyword: corporate video production in Multan; related: drone videography Multan; data: Boota Brothers Flour Mills Webflow site and drone shoot, video production service page)
 - [x] 2026-11-02 facebook-ads-vs-google-ads-for-handyman-businesses (primary keyword: Facebook ads vs Google ads for handyman businesses; data: Perth installer Meta ads, April to August 2026; CTA: installers)
-- [x] 2026-10-30 linkedin-marketing-in-pakistan (primary keyword: LinkedIn marketing in Pakistan; data: Rainbow Printing Solutions; Friday refresh: how-to-choose-a-digital-marketing-agency-in-pakistan updated with verified Meta ads data, office, retention and links to newer posts and /services/ pages)
+- [x] 2026-10-30 linkedin-marketing-in-pakistan (primary keyword: LinkedIn marketing in Pakistan; data: Rainbow Printing Solutions; Friday refresh: how-to-choose-a-digital-marketing-agency-in-pakistan updated with verified Meta ads data, office, retention and links to newer posts and /digital-marketing-services/ pages)
 - [x] 2026-10-28 product-photography-in-pakistan (primary keyword: product photography in Pakistan; data: Hamid Enterprises, Shan Electronics, Apex Solar, Shangrilla)
 - [x] 2026-10-26 brand-identity-design-in-pakistan (primary keyword: brand identity design in Pakistan; data: Capxa, Lume, Spice & Grill)
 - [x] 2026-10-23 admissions-marketing-in-pakistan (primary keyword: admissions marketing in Pakistan; Friday refresh: restaurant-and-bakery-marketing-in-multan updated with Shangrilla Meta ads data)

@@ -28,7 +28,7 @@ Every client we have so far came to us through a referral. That is the part of t
 
 ## What we do
 
-We kept four services and built a team around each one. You can read more on our [services page](/services/).
+We kept four services and built a team around each one. You can read more on our [services page](/digital-marketing-services/).
 
 - **Video and content production:** brand films, reels, product shoots and creator campaigns, shot and edited in-house.
 - **Performance marketing:** Meta and Google ads, with the creative, landing pages and pixel work done by the same team.
