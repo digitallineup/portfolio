@@ -39,7 +39,7 @@ Digital Lineup started with a simple belief: a business in Pakistan should not n
 
 For four years we grew without a single paid ad for ourselves. Every client came through a referral, and some of the brands we started with are still with us today. In September 2026 we opened our first physical office and studio in Multan, so clients can walk in, have chai and see the work on our screens.
 
-Today the team is six people: content production, media, design, project management and strategy, all in-house.
+Today the team is five people: content production, media, design and project management, all in-house.
 
 <div class="panel"><h3>Milestones</h3><p>The short version.</p>
 <div class="steps">

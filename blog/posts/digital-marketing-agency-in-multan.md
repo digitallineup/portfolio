@@ -1,7 +1,7 @@
 ---
 title: Digital Marketing Agency in Multan: What a Full In-House Team Looks Like
 seo_title: Digital Marketing Agency in Multan: In-House Team, Services, Results
-description: Looking for a digital marketing agency in Multan? What our in-house team of six does, what it costs to start, and the results behind it, from a studio on Masoom Shah Road.
+description: Looking for a digital marketing agency in Multan? What our in-house team of five does, what it costs to start, and the results behind it, from a studio on Masoom Shah Road.
 date: 2026-11-09
 cover: /img/dl-logo-04.jpg
 cover_alt: The Digital Lineup logo mark in brand green, the digital marketing agency in Multan behind this post
@@ -10,11 +10,11 @@ tags: Multan, Agency, Social media, Meta ads, Video production
 
 Search "digital marketing agency in Multan" and you get three kinds of result: freelancers on Upwork, Facebook pages with a logo and a phone number, and software houses that added "digital marketing" to the menu last year. Very few are agencies in the full sense, with a crew, a studio and an ads team under one roof. This post is about what that looks like in practice, written from [our office at Al Shifa Hospital on Masoom Shah Road](/multan/), so you can judge any marketing agency in Multan, including us, by the same checklist.
 
-Digital Lineup has been running since 2022 and opened its first physical office in Multan in September 2026. Six people, one standard. Every client so far came through a referral, which is a nice thing to say and a bad way to be found on Google, so here is the long version of who we are and what we do.
+Digital Lineup has been running since 2022 and opened its first physical office in Multan in September 2026. Five people, one standard. Every client so far came through a referral, which is a nice thing to say and a bad way to be found on Google, so here is the long version of who we are and what we do.
 
 <div class="panel"><h2>Digital Lineup in numbers</h2><p>Figures from our case studies and Ads Manager, verified October 2026.</p>
 <div class="tiles">
-<div class="tile g"><small>Team</small><b>6</b><span>people in one office in Multan</span></div>
+<div class="tile g"><small>Team</small><b>5</b><span>people in one office in Multan</span></div>
 <div class="tile"><small>Since</small><b>2022</b><span>four years of work for brands</span></div>
 <div class="tile"><small>Views</small><b>100M+</b><span>across client work, 1,000+ pieces shipped</span></div>
 <div class="tile"><small>Meta ads</small><b>54M+</b><span>impressions, 30,000+ conversations started</span></div>
@@ -34,14 +34,13 @@ Digital Lineup has been running since 2022 and opened its first physical office 
 
 Most agencies in Pakistan are a project manager and a WhatsApp group of freelancers. The post designer is in Lahore, the video editor is a student, the ads are run by whoever has time. The work can still be good, but every handover loses something, and nobody owns the number at the end of the month.
 
-Our six people sit in one room:
+Our five people sit in one room:
 
 - **Ali Hannan Siddique**, founder, runs strategy and the ad accounts.
 - **M. Usama Mumtaz**, content production head, plans and directs the shoots.
 - **Naveed**, media head, shoots and edits film and photography.
 - **Kashan Ali**, designing head, owns identity, posts and ad creative.
 - **Huzaifa Aijaz**, project manager, keeps every client's month on schedule.
-- **Atir Abbas**, digital strategist, handles campaigns, reporting and growth.
 
 That is the whole agency. When a restaurant client needs a Ramadan film, the person who shoots it, the person who designs the poster and the person who runs the ad are three desks apart. The brief does not get lost between companies, and when a number is bad, there is one team to fix it.
 

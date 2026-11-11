@@ -1,13 +1,13 @@
 # Digital Lineup
 
-> Digital Lineup is a digital marketing and social media marketing agency based in Multan, Pakistan, working with brands in Pakistan and worldwide. Founded by Ali Hannan Siddique, the in-house team of six handles video and content production, performance marketing (Meta and Google ads), brand identity and social media management.
+> Digital Lineup is a digital marketing and social media marketing agency based in Multan, Pakistan, working with brands in Pakistan and worldwide. Founded by Ali Hannan Siddique, the in-house team of five handles video and content production, performance marketing (Meta and Google ads), brand identity and social media management.
 
 Key facts:
 - Location: Office #1, Basement, Al Shifa Hospital, Masoom Shah Rd, Ahmad Park Colony, Multan 60000, Pakistan. First physical office opened September 2026 after four years in business.
 - Contact: hello@digitallineup.com, WhatsApp +92 300 959 0042. Website: https://digitallineup.com
 - Rated 5.0 on Google from 16 client reviews.
 - Track record: 1,000+ films, reels, posters and identities shipped; 100M+ views across client work. Longest-running client: Apex Solar, two years and counting. Every client so far came through a referral.
-- Team: Ali Hannan Siddique (Founder), M. Usama Mumtaz (Content Production Head), Naveed (Media Head), Kashan Ali (Designing Head), Huzaifa Aijaz (Project Manager), Atir Abbas (Digital Strategist).
+- Team: Ali Hannan Siddique (Founder), M. Usama Mumtaz (Content Production Head), Naveed (Media Head), Kashan Ali (Designing Head), Huzaifa Aijaz (Project Manager).
 - Selected results: an Apex Solar creator film reached 11M views; Solar Mandee's Facebook page grew to 150K+ followers in 8 months; a TV mounting and picture hanging business went from 9 to 135 leads a month in five months, with cost per lead falling from about A$120 to under A$35.
 - Meta ads track record (verified in Ads Manager, October 2026): 54M+ impressions and 16M+ people reached across client accounts; 30,000+ customer conversations started on Messenger and WhatsApp. Apex Solar: 22,800+ conversations at about $0.04 each. Al Shifa Educational Complex: 5,576 admissions conversations, best campaign 3,844 chats at $0.04 each. Shangrilla: 2M+ post engagements, one Ramadan video reached 458K engagements. Taimoor Cattle Farm: 736 WhatsApp conversations. Details: https://digitallineup.com/meta-ads-agency/
 - Pricing: packages start from PKR 120,000; fixed quotes after a brief.

@@ -37,7 +37,7 @@ This is the first question for a reason. Some agencies run ads from their own ac
 
 Many agencies sell you a team and then outsource the design or video to freelancers. That is not always bad, but you should know. Ask who will design your posts, who will shoot your videos and who will run your ads, by name.
 
-At Digital Lineup the answer is our own team of six in Multan: content production, media, design, project management and strategy under one roof. After four years of working remotely, we opened our first physical office in September 2026, so clients can walk in and meet the people doing the work.
+At Digital Lineup the answer is our own team of five in Multan: content production, media, design, project management and strategy under one roof. After four years of working remotely, we opened our first physical office in September 2026, so clients can walk in and meet the people doing the work.
 
 ### 3. Can you show results with numbers, not just nice posts?
 
