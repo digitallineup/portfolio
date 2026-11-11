@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Beauty salon branding and marketing in Pakistan (keywords: salon branding ideas, beauty salon marketing Pakistan). Data: work/lume.html.
 - [ ] Webflow vs WordPress for Pakistani businesses (keywords: Webflow vs WordPress, business website Pakistan). Data: work/boota-brothers.html.
 - [ ] Creator and influencer campaigns in Pakistan: what made an 11M-view film (keywords: influencer marketing Pakistan, creator campaign). Data: work/apex-solar.html.
 - [ ] Eid marketing campaign ideas for Pakistani brands (keywords: Eid campaign ideas, Eid social media posts). Data: Shangrilla Eid film, blog restaurant post.
@@ -26,6 +25,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-11-11 beauty-salon-branding-in-pakistan (primary keyword: beauty salon branding in Pakistan; related: salon branding ideas, beauty salon marketing, salon logo colours, salon packaging; data: Lume Beauty Studio case study and 12 identity boards, branding-identity and meta-ads service pages)
 - [x] 2026-11-09 digital-marketing-agency-in-multan (primary keyword: digital marketing agency in Multan; related: marketing agency in Multan, social media marketing agency Multan; data: tools/llms-intro.md, team, office, Meta ads figures; extra post this week for the Multan keyword push)
 - [x] 2026-11-09 restaurant-branding-in-pakistan (primary keyword: restaurant branding in Pakistan; related: restaurant logo design, restaurant branding ideas, restaurant menu design, takeaway packaging; data: Spice & Grill case study and brand book, branding-identity service page, Shangrilla Meta ads data)
 - [x] 2026-11-06 brand-mascot-design-in-pakistan (primary keyword: brand mascot design in Pakistan; related: 3D mascot for brand, store opening campaign, retail branding; data: Shan Electronics case study, branding films, branding-identity and social media service pages; Friday refresh: solar-company-marketing-in-pakistan updated with verified Apex Solar and Solar Mandee Meta ads data and links to /digital-marketing-services/ pages and newer posts)
