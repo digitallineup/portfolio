@@ -3,15 +3,16 @@ title: Meta Ads for TV Mounting Businesses: How a Perth Installer Went From 9 to
 seo_title: Meta Ads for TV Mounting Businesses: 9 to 135 Leads
 description: Real Meta Ads numbers from a Perth TV mounting and picture hanging business: 388 leads in five months and cost per lead down from $119.63 to $32.17 AUD.
 date: 2026-10-20
+updated: 2026-11-13
 cover: /blog/covers/perth-installer-meta-ads.jpg
 cover_alt: Before and after Meta ad for a Perth TV mounting service, client branding blurred
 tags: Meta ads, Australia, Home services, Case study
 cta: installers
 ---
 
-Most TV mounting and picture hanging businesses we speak to have the same story. Great reviews, happy customers, and a phone that goes quiet for weeks at a time. They have tried boosting a post or running a few ads, and either the money disappeared or the leads were tyre kickers who wanted a $50 job done for free.
+Most TV mounting and picture hanging businesses we speak to have the same story. Great reviews, happy customers, and a phone that goes quiet for weeks at a time. They have boosted a few posts, and either the money disappeared or the leads were tyre kickers.
 
-This is a breakdown of one Perth installer we worked with from April to August 2026. We delivered the account through a partner agency, so we cannot name the business, and the branding on the creatives is blurred. Every number below comes from the Meta Ads report.
+This is a breakdown of one Perth installer we worked with from April to August 2026. We delivered the account through a partner agency, so we cannot name the business, and the branding on the creatives is blurred. Every number below comes from the Meta Ads report, and the creative is on the [Perth installer case study](/work/perth-installer.html).
 
 <div class="panel"><h2>Five months at a glance</h2><p>One Perth TV mounting and picture hanging business, April to August 2026. All figures in AUD.</p>
 <div class="tiles">
@@ -78,13 +79,13 @@ TV mounting, picture hanging and "all services" each got their own campaign, bud
 
 This was the biggest creative lesson. In June, the before-and-after ad set was running at about **$29.50 per lead**, while an ad set built around a poster of the installer was at **$37.28**. We paused the installer poster.
 
-People do not buy an installer. They buy a clean wall with no cables hanging down. Before-and-after images, finished rooms and short install reels consistently beat "meet the team" style ads.
+People do not buy an installer. They buy a clean wall with no cables hanging down. Before-and-after images, finished rooms and short install reels consistently beat "meet the team" style ads. The whole account ran on a small, focused set: 6 pieces of ad creative and 18 installation photos, refreshed as winners emerged. We test new hooks on a 7-day creative cycle, so a tired ad never runs for long.
 
 When we added video, we put it into the winning before-and-after ad set as a second creative instead of launching new ad sets. That let Meta share the budget between the static ad and the video without restarting the learning phase.
 
 ### 5. A landing page that does not leak
 
-The landing page had over 500 reviews, but they were not visible above the fold. We moved trust signals to the top, kept the quote form short and easy to fill in on a phone, and added a sticky call-to-action so the button is always on screen. Most installer leads come from mobile, often from someone standing in their living room looking at the wall.
+The landing page had over 500 reviews, but they were not visible above the fold. We moved trust signals to the top, kept the quote form short and easy to fill in on a phone, and added a sticky call-to-action so the button is always on screen. Most installer leads come from mobile, often from someone standing in their living room looking at the wall. The platform under the page matters far less than this: one offer, one form, one button. I go into that in [Webflow vs WordPress in Pakistan](/blog/webflow-vs-wordpress-in-pakistan/), and our [website design service](/website-design-agency/) builds these pages alongside the ads.
 
 ### 6. A steady content engine
 
@@ -103,12 +104,13 @@ If you run a TV mounting, picture hanging, mirror or shelf installation business
 - **Show the result, not the installer.** Before and after, finished rooms, short reels of real jobs.
 - **Make the landing page work on a phone.** Reviews at the top, a short form, a button that never leaves the screen.
 - **Judge it over months, not days.** The first month here was mostly setup. The results came after.
+- **Do not assume Google is the answer.** For a visual service like TV mounting, Meta can win. I compare the two using this same account in [Facebook ads vs Google ads for handyman businesses](/blog/facebook-ads-vs-google-ads-for-handyman-businesses/).
 
 Want to see where your own ads stand? Run them through our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/): it takes two minutes and gives you a score.
 
 ## How we work with installers
 
-You own your ad account and pay Meta directly. We bill monthly in Australian dollars and there is no lock-in. Our team is in Multan, Pakistan, and works through your afternoon and evening, so new ads and videos are usually ready by the next morning.
+This is the same approach behind our [Meta ads service](/meta-ads-agency/), which has run 75+ campaigns across energy, food, education and services. You own your ad account and pay Meta directly. We bill monthly in Australian dollars and there is no lock-in. Our team is in Multan, Pakistan, and works through your afternoon and evening, so new ads and videos are usually ready by the next morning.
 
 If you want the full numbers, the packages and a one-minute intro from me, they are on our [page for installers](/installers/).
 
