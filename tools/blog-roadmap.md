@@ -10,7 +10,6 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Queue (pick the first [ ] whose data is available)
 
-- [ ] Creator and influencer campaigns in Pakistan: what made an 11M-view film (keywords: influencer marketing Pakistan, creator campaign). Data: work/apex-solar.html.
 - [ ] Eid marketing campaign ideas for Pakistani brands (keywords: Eid campaign ideas, Eid social media posts). Data: Shangrilla Eid film, blog restaurant post.
 
 ## Needs data from Ali (do not publish until confirmed)
@@ -24,6 +23,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- [x] 2026-11-16 influencer-marketing-in-pakistan (primary keyword: influencer marketing in Pakistan; related: creator campaign, influencer marketing agency in Pakistan, celebrity endorsement, usage rights for ads, WhatsApp lead ads; data: Apex Solar case study and creator films, influencer-marketing and meta-ads service pages)
 - [x] 2026-11-13 webflow-vs-wordpress-in-pakistan (primary keyword: Webflow vs WordPress in Pakistan; related: business website in Pakistan, Webflow website, Shopify store, website design in Multan, landing page for ads; data: Boota Brothers case study, website-design service page, Karyana Bazar review, Perth installer landing page; Friday refresh: meta-ads-for-tv-mounting-businesses tightened, case study creative counts and 7-day creative cycle added, links to /meta-ads-agency/, /website-design-agency/, /work/perth-installer.html and newer posts)
 - [x] 2026-11-11 beauty-salon-branding-in-pakistan (primary keyword: beauty salon branding in Pakistan; related: salon branding ideas, beauty salon marketing, salon logo colours, salon packaging; data: Lume Beauty Studio case study and 12 identity boards, branding-identity and meta-ads service pages)
 - [x] 2026-11-09 digital-marketing-agency-in-multan (primary keyword: digital marketing agency in Multan; related: marketing agency in Multan, social media marketing agency Multan; data: tools/llms-intro.md, team, office, Meta ads figures; extra post this week for the Multan keyword push)
