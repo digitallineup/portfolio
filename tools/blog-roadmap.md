@@ -12,6 +12,11 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 - (queue empty: add new topics with real data)
 
+## Proposed by the Friday 20 Nov run (move to Queue to approve; not published until Ali OKs)
+
+- [ ] Food photography for restaurants in Pakistan (keywords: food photography in Pakistan, food photography Multan, menu photography). Data: tools/services/food-photography.html (100+ dishes for one group, 3 kitchens), work/shangrilla-gardens.html (46 pieces, 5 branch deal campaigns, 7 food films), Shangrilla Meta ads data on meta-ads.html.
+- [ ] How we grew a Facebook page to 150K followers in Pakistan (keywords: grow Facebook page Pakistan, social media management Pakistan). Data: Solar Mandee 150K+ followers in 8 months, 3.5M+ reach, 29,700 page follows from ads at Rs 0.93 each (social-media-management.html, meta-ads.html), Shangrilla Gardens 12 posts a month. Needs Ali to confirm what content Solar Mandee ran.
+
 ## Needs data from Ali (do not publish until confirmed)
 
 - Social media management cost in Pakistan (our real package prices).
@@ -23,6 +28,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- 2026-11-20 no new post (queue empty). Friday refresh: admissions-marketing-in-pakistan tightened, 30,000+ conversations across accounts and Grip Institute first-ad result added, links to influencer marketing and Eid posts, /influencer-marketing-agency/ and /video-production-company/.
 - [x] 2026-11-18 eid-campaign-ideas-for-pakistani-brands (primary keyword: Eid campaign ideas for Pakistani brands; related: Eid social media posts, Eid ul Adha marketing, Ramadan marketing, Eid gift box campaign, WhatsApp ads for Eid; data: Shangrilla Cuisine Bakers Eid ul Adha film, Shangrilla Ramadan video and 27 Meta campaigns, Taimoor Cattle Farm WhatsApp ads from meta-ads service page)
 - [x] 2026-11-16 influencer-marketing-in-pakistan (primary keyword: influencer marketing in Pakistan; related: creator campaign, influencer marketing agency in Pakistan, celebrity endorsement, usage rights for ads, WhatsApp lead ads; data: Apex Solar case study and creator films, influencer-marketing and meta-ads service pages)
 - [x] 2026-11-13 webflow-vs-wordpress-in-pakistan (primary keyword: Webflow vs WordPress in Pakistan; related: business website in Pakistan, Webflow website, Shopify store, website design in Multan, landing page for ads; data: Boota Brothers case study, website-design service page, Karyana Bazar review, Perth installer landing page; Friday refresh: meta-ads-for-tv-mounting-businesses tightened, case study creative counts and 7-day creative cycle added, links to /meta-ads-agency/, /website-design-agency/, /work/perth-installer.html and newer posts)

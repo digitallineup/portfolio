@@ -3,12 +3,13 @@ title: Admissions Marketing in Pakistan: How a Multan College Started 5,576 Conv
 seo_title: Admissions Marketing in Pakistan: 5,576 Real Chats
 description: Admissions marketing in Pakistan from real Meta ads data: 5,576 student and parent conversations for a Multan college, at about $0.08 each.
 date: 2026-10-23
+updated: 2026-11-20
 cover: /blog/covers/admissions-marketing-pakistan.jpg
 cover_alt: Admissions open poster for Al Shifa Educational Complex in Multan with its campus and NCEAC and HEC badges, designed by Digital Lineup
 tags: Education, Pakistan, Meta ads, Case study
 ---
 
-Every admissions season the same poster floods Pakistani feeds: a logo, a list of ten programmes, "Admissions Open" in red, and three phone numbers. Parents scroll past dozens of them. Admissions marketing in Pakistan does not fail because institutes are invisible. It fails because every institute looks identical, and nothing gives a student a reason to message this one today.
+Every admissions season the same poster floods Pakistani feeds: a logo, a list of ten programmes, "Admissions Open" in red, and three phone numbers. Parents scroll past dozens of them. Admissions marketing in Pakistan rarely fails because an institute is invisible. It fails because every institute looks the same, and nothing gives a student a reason to message this one today.
 
 We run admissions campaigns and social media for Al Shifa Educational Complex in Multan: its BS-IT and BS-CS programmes and its IT and professional skills institute. Across 8 Meta campaigns pointed at Messenger and WhatsApp, those ads started 5,576 admissions conversations with students and parents, at about $0.08 each. One campaign alone brought in 3,844 chats at $0.04 each. Here is what we built, why it worked, and the school admission campaign ideas I would use for any school, college or academy.
 
@@ -38,7 +39,7 @@ One programme, what it leads to, the one reason to apply now (a scholarship, a c
 
 The first decision on any admissions campaign is what the ads are for. A like on an admissions poster is worth nothing. A parent asking "what is the fee for BS-CS, and is the scholarship still open?" is worth a great deal.
 
-So every Al Shifa campaign was set up with one goal: start a conversation on Messenger or WhatsApp. That changes everything downstream. The creative ends with a reason to message, the audience is chosen for people likely to apply, and the report shows one number: conversations and the cost of each. This is the same goal-first approach we use for every [Meta ads](/meta-ads-agency/) client, from solar brands to restaurants.
+So every Al Shifa campaign was set up with one goal: start a conversation on Messenger or WhatsApp. That changes everything downstream. The creative ends with a reason to message, the audience is chosen for people likely to apply, and the report shows one number: conversations and the cost of each. This is the same goal-first approach we use for every [Meta ads](/meta-ads-agency/) client, from solar brands to restaurants. Across the accounts we manage, it has started 30,000+ conversations on Messenger and WhatsApp, and Al Shifa is one of the clearest examples.
 
 It also suits how families in Pakistan actually decide. Nobody enrols in a four-year degree from a poster. They ask questions first, often a parent on WhatsApp, and they want a human answer. A chat is the natural first step, and the ad should make that step as easy as possible.
 
@@ -82,13 +83,13 @@ None of this is clever. It is just honest, visible proof, and it answers the que
 
 Posters carry the facts. Video carries the feeling. Alongside the admissions and scholarship posters, the Al Shifa campaigns used student videos and a creator post.
 
-A video with real students in it does something a poster cannot: it lets a young person picture themselves there. A creator post reaches people who do not follow the institute yet and would never stop on an "Admissions Open" graphic. Using all three formats also gives you more to test. In our process, new hooks go in every week and the budget follows whatever starts the most conversations at the lowest cost.
+A video with real students in it does something a poster cannot: it lets a young person picture themselves there. A creator post reaches people who do not follow the institute yet and would never stop on an "Admissions Open" graphic. If you are new to working with creators, our guide to [influencer marketing in Pakistan](/blog/influencer-marketing-in-pakistan/) covers briefs, usage rights and how we turned one [creator film](/influencer-marketing-agency/) into 11M views for Apex Solar. Student and campus films are part of our [video production](/video-production-company/) work, shot by the same crew that designs the posters, so the look stays consistent. Using all three formats also gives you more to test. In our process, new hooks go in every week and the budget follows whatever starts the most conversations at the lowest cost.
 
 ## 6. Keep the page alive between intakes
 
 Admissions run in seasons, but trust is built all year. A page that only posts "Admissions Open" twice a year looks abandoned the rest of the time, and parents notice.
 
-So between intakes we keep Al Shifa's feed active with content that is not selling anything, such as a 14 August Independence Day post that is designed with the same care as the admissions work. When the next intake opens, the page already looks established, and the admissions ads land on a profile that feels alive. This is the everyday side of [social media management](/social-media-marketing-agency/), and for an education brand it matters as much as the ads.
+So between intakes we keep Al Shifa's feed active with content that is not selling anything, such as a 14 August Independence Day post that is designed with the same care as the admissions work. National days, results days and religious festivals give you a ready-made calendar; our post on [Eid campaign ideas for Pakistani brands](/blog/eid-campaign-ideas-for-pakistani-brands/) shows how we plan around those moments. When the next intake opens, the page already looks established, and the admissions ads land on a profile that feels alive. This is the everyday side of [social media management](/social-media-marketing-agency/), and for an education brand it matters as much as the ads.
 
 ## 7. Treat every conversation as a lead, then reply fast
 
@@ -110,6 +111,7 @@ My advice to any school or college running conversation ads:
 - **Use video and creators.** Posters carry facts; students and creators carry the feeling.
 - **Stay active all year.** A living page makes the admissions ads work harder.
 - **Answer fast.** The ad starts the conversation; your team finishes it.
+- **Judge the first ad fast too.** Grip Institute, another education client, got 109 enquiry conversations at $0.07 from the first ad we ran. A good offer shows itself within days.
 
 Before your next intake, check your setup with our free [12-point Meta Ads Checklist](/playbooks/meta-ads-checklist/). Tick what you already do and see your score.
 
