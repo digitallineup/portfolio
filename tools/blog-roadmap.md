@@ -28,6 +28,7 @@ Status: [ ] todo, [x] published (add the date and slug)
 
 ## Published
 
+- 2026-11-27 no new post (queue empty, the two proposed topics still await Ali's OK). Friday refresh: brand-identity-design-in-pakistan tightened, Shan Electronics section added (41 campaign pieces, 3 films on one identity), overseas-client quick answer, links to restaurant-branding, beauty-salon-branding and brand-mascot posts, /branding-agency/, /marketing-for-restaurants/, /social-media-marketing-agency/, /meta-ads-agency/.
 - 2026-11-20 no new post (queue empty). Friday refresh: admissions-marketing-in-pakistan tightened, 30,000+ conversations across accounts and Grip Institute first-ad result added, links to influencer marketing and Eid posts, /influencer-marketing-agency/ and /video-production-company/.
 - [x] 2026-11-18 eid-campaign-ideas-for-pakistani-brands (primary keyword: Eid campaign ideas for Pakistani brands; related: Eid social media posts, Eid ul Adha marketing, Ramadan marketing, Eid gift box campaign, WhatsApp ads for Eid; data: Shangrilla Cuisine Bakers Eid ul Adha film, Shangrilla Ramadan video and 27 Meta campaigns, Taimoor Cattle Farm WhatsApp ads from meta-ads service page)
 - [x] 2026-11-16 influencer-marketing-in-pakistan (primary keyword: influencer marketing in Pakistan; related: creator campaign, influencer marketing agency in Pakistan, celebrity endorsement, usage rights for ads, WhatsApp lead ads; data: Apex Solar case study and creator films, influencer-marketing and meta-ads service pages)
